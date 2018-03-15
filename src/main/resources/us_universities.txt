@@ -1,0 +1,600 @@
+1
+Western Governors University
+54,735
+C+
+Salt Lake City, UT
+100%
+2
+Texas A&M University
+43,531
+A+
+College Station, TX
+66.64%
+3
+Ohio State University
+41,117
+A+
+Columbus, OH
+49.38%
+4
+Penn State
+39,520
+A+
+State College, PA
+51.32%
+5
+Arizona State University
+38,212
+A
+Tempe, AZ
+82.91%
+6
+University of Central Florida
+37,661
+A-
+Orlando, FL
+48.57%
+7
+Ashford University
+37,066
+C-
+San Diego, CA
+100%
+8
+University of Texas - Austin
+36,565
+A+
+Austin, TX
+39.24%
+9
+Michigan State University
+35,645
+A+
+East Lansing, MI
+66.28%
+10
+Rutgers University
+33,392
+A
+New Brunswick, NJ
+58.45%
+11
+University of Illinois at Urbana-Champaign
+31,989
+A+
+Champaign, IL
+65.56%
+12
+Indiana University - Bloomington
+31,728
+A
+Bloomington, IN
+77.99%
+13
+California State University - Northridge
+30,281
+B
+Los Angeles, CA
+45.6%
+14
+University of Florida
+30,168
+A+
+Gainesville, FL
+47.54%
+15
+University of Arizona
+29,597
+A-
+Tucson, AZ
+76.43%
+16
+Florida State University
+29,185
+A
+Tallahassee, FL
+55.9%
+17
+University of Minnesota - Twin Cities
+29,168
+A+
+Minneapolis, MN
+44.58%
+18
+University of California - Los Angeles
+29,004
+A+
+Los Angeles, CA
+17.28%
+19
+Iowa State University
+28,771
+A
+Ames, IA
+87.15%
+20
+University of Alabama
+28,689
+A
+Tuscaloosa, AL
+53.59%
+21
+Purdue University
+28,682
+A+
+West Lafayette, IN
+58.97%
+22
+University of Wisconsin
+28,555
+A+
+Madison, WI
+57.61%
+23
+University of Washington
+28,377
+A+
+Seattle, WA
+53.33%
+24
+California State University - Long Beach
+27,829
+A-
+Long Beach, CA
+33.82%
+25
+Liberty University
+27,671
+B+
+Lynchburg, VA
+21.56%
+26
+University of California - Davis
+27,453
+A
+Davis, CA
+37.95%
+27
+Texas State University
+27,369
+B+
+San Marcos, TX
+70.84%
+28
+Brigham Young University
+27,339
+A+
+Provo, UT
+48.05%
+29
+University of Michigan - Ann Arbor
+27,258
+A+
+Ann Arbor, MI
+26.28%
+30
+California State University - Fullerton
+27,105
+B+
+Fullerton, CA
+41.86%
+31
+University of California - Berkeley
+26,622
+A+
+Berkeley, CA
+16.88%
+32
+Texas Tech University
+26,121
+A-
+Lubbock, TX
+63.06%
+33
+University of Missouri
+26,027
+A-
+Columbia, MO
+78.13%
+34
+San Diego State University
+26,010
+A-
+San Diego, CA
+34.41%
+35
+University of California - San Diego
+25,922
+A
+San Diego, CA
+33.74%
+36
+University of Georgia
+25,906
+A+
+Athens, GA
+52.88%
+37
+Florida International University
+25,638
+A-
+Miami, FL
+50.4%
+38
+Ivy Tech Community College - Central Indiana
+25,614
+C+
+Indianapolis, IN
+100%
+39
+University of Maryland - College Park
+25,410
+A+
+College Park, MD
+44.88%
+40
+Temple University
+25,318
+A-
+Philadelphia, PA
+55.68%
+41
+University of Colorado - Boulder
+25,059
+A
+Boulder, CO
+79.62%
+42
+University of North Texas
+24,918
+A-
+Denton, TX
+70.15%
+43
+University of Houston
+24,912
+A-
+Houston, TX
+59.72%
+44
+University of California - Irvine
+24,854
+A
+Irvine, CA
+38.68%
+45
+Virginia Tech
+24,841
+A+
+Blacksburg, VA
+73.41%
+46
+Miami Dade College
+24,716
+C
+Miami, FL
+100%
+47
+New York University
+24,480
+A+
+New York City, NY
+32.07%
+48
+University of South Florida
+24,088
+A
+Tampa, FL
+44.64%
+49
+University of South Carolina
+23,613
+A-
+Columbia, SC
+64.53%
+50
+Louisiana State University
+23,602
+A-
+Baton Rouge, LA
+77.34%
+51
+San Francisco State University
+22,206
+B-
+San Francisco, CA
+67.88%
+52
+California State University - Sacramento
+22,165
+B
+Sacramento, CA
+67.25%
+53
+San Jose State University
+21,638
+B-
+San Jose, CA
+55.22%
+54
+Northern Arizona University
+21,494
+B+
+Flagstaff, AZ
+78%
+55
+Washington State University
+21,384
+A-
+Pullman, WA
+79.64%
+56
+University of Kentucky
+21,199
+A-
+Lexington, KY
+89.11%
+57
+University of Massachusetts - Amherst
+21,098
+A
+Amherst, MA
+58.32%
+58
+North Carolina State University
+21,023
+A+
+Raleigh, NC
+50.43%
+59
+University of Cincinnati
+21,017
+A-
+Cincinnati, OH
+85.58%
+60
+Montclair State University
+21,000
+B
+Montclair Township, NJ
+70.07%
+61
+Colorado State University
+20,769
+A
+Fort Collins, CO
+80.82%
+62
+University of Tennessee
+20,569
+A-
+Knoxville, TN
+76.3%
+63
+West Virginia University
+20,532
+A-
+Morgantown, WV
+85.81%
+64
+California State University - Los Angeles
+20,380
+B-
+Los Angeles, CA
+68.13%
+65
+University of California - Santa Barbara
+20,243
+A+
+Santa Barbara, CA
+32.64%
+66
+University of Texas - San Antonio
+20,234
+B
+San Antonio, TX
+77.95%
+67
+Southern New Hampshire University
+20,193
+B
+Manchester, NH
+84%
+68
+Virginia Commonwealth University
+20,137
+B+
+Richmond, VA
+78.95%
+69
+University of Iowa
+19,911
+A
+Iowa City, IA
+80.74%
+70
+University of North Carolina at Charlotte
+19,765
+B+
+Charlotte, NC
+63.31%
+71
+Auburn University
+19,738
+A
+Auburn, AL
+77.66%
+72
+California State Polytechnic University - Pomona
+19,615
+B
+Pomona, CA
+39.31%
+73
+University of Arkansas
+19,607
+A
+Fayetteville, AR
+60.06%
+74
+Grand Valley State University
+19,376
+B+
+Allendale, MI
+81.14%
+75
+East Carolina University
+19,336
+B+
+Greenville, NC
+69.04%
+76
+California Polytechnic State University - San Luis Obispo
+19,318
+A
+San Luis Obispo, CA
+31.29%
+77
+Kent State University
+19,207
+B
+Kent, OH
+84.76%
+78
+University of Nebraska - Lincoln
+18,817
+A
+Lincoln, NE
+76.36%
+79
+Georgia State University
+18,813
+B+
+Atlanta, GA
+56.65%
+80
+Lone Star College System
+18,683
+B-
+The Woodlands, TX
+100%
+81
+California State University - Fresno
+18,671
+B
+Fresno, CA
+52.19%
+82
+University of Oregon
+18,630
+A
+Eugene, OR
+74.22%
+83
+Oregon State University
+18,493
+A-
+Corvallis, OR
+78.36%
+84
+University at Buffalo, SUNY
+18,452
+A-
+Buffalo, NY
+59.99%
+85
+Northern Virginia Community College
+18,435
+C+
+Annandale, VA
+100%
+86
+James Madison University
+18,433
+A
+Harrisonburg, VA
+72.57%
+87
+George Mason University
+18,430
+A-
+Fairfax, VA
+68.87%
+88
+Oklahoma State University
+18,347
+A
+Stillwater, OK
+75.13%
+89
+University of Wisconsin - Milwaukee
+18,316
+B+
+Milwaukee, WI
+85.78%
+90
+University of California - Riverside
+18,279
+A-
+Riverside, CA
+55.6%
+91
+University of Southern California
+18,208
+A+
+Los Angeles, CA
+16.6%
+92
+University of Oklahoma
+18,133
+A
+Norman, OK
+77.64%
+93
+University of Connecticut
+18,131
+A-
+Storrs, CT
+53.17%
+94
+CUNY Borough of Manhattan Community College
+18,074
+B-
+New York City, NY
+100%
+95
+Kansas State University
+17,935
+A
+Manhattan, KS
+94.92%
+96
+Full Sail University
+17,890
+B
+Winter Park, FL
+100%
+97
+University of Pittsburgh
+17,887
+A
+Pittsburgh, PA
+53.89%
+98
+Kennesaw State University
+17,732
+B
+Kennesaw, GA
+53.4481%
+99
+Central Michigan University
+17,669
+B+
+Mount Pleasant, MI
+68.75%
+100
+University of North Carolina at Chapel Hill
+17,645
+A+
+Chapel Hill, NC
+30.54%
