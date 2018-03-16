@@ -1,10 +1,8 @@
 package resumes.generators.name
 
-import org.apache.commons.math3.distribution.EnumeratedDistribution
-import org.apache.commons.math3.util.Pair
+import resumes.generators.Utils
 import resumes.generators.name.FirstNameGenerator.Gender.Gender
 
-import scala.collection.JavaConverters._
 import scala.io.Source
 
 object FirstNameGenerator {
@@ -40,13 +38,7 @@ object FirstNameGenerator {
 
     def getGenerator(gender: Gender) = {
       val filtered = all.filter(_.gender.equals(gender))
-      val popSum = filtered.map(_.popularity).sum
-      val processed = filtered.map(firstName => {
-        val value: java.lang.String = firstName.name
-        val probability: java.lang.Double = firstName.popularity.toDouble / popSum
-        new Pair(value, probability)
-      }).asJava
-      new EnumeratedDistribution(processed)
+      Utils.getGeneratorFrequency(filtered.map(x => (x.name, x.popularity)))
     }
 
     (getGenerator(Gender.Male), getGenerator(Gender.Female))

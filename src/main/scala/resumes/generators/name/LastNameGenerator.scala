@@ -1,9 +1,7 @@
 package resumes.generators.name
 
-import org.apache.commons.math3.distribution.EnumeratedDistribution
-import org.apache.commons.math3.util.Pair
+import resumes.generators.Utils
 
-import scala.collection.JavaConverters._
 import scala.io.Source
 
 object LastNameGenerator {
@@ -19,11 +17,11 @@ object LastNameGenerator {
       .toList
       .map(_.split(" ")(2).split("\t"))
       .map(values => {
-        val value: java.lang.String = values(0)
-        val probability: java.lang.Double = values(1).take(values(1).size - 1).toDouble / 100
-        new Pair(value, probability)
-      }).asJava
-    new EnumeratedDistribution(data)
+        val probability = values(1).take(values(1).size - 1).toDouble / 100
+        (values(0), probability)
+      })
+    Utils.getGenerator(data)
+
   }
 
   def generateLastName() = {

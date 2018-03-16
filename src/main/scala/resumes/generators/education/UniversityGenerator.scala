@@ -19,7 +19,7 @@ object UniversityGenerator {
   //A+
   //  College Station, TX
   //66.64%
-  val generator = {
+  private lazy val generator = {
 
     val rawData = Source
       .fromResource("us_universities.txt")
