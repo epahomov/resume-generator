@@ -13,7 +13,9 @@ object EducationGenerator {
 
   object Degree extends Enumeration {
     type Degree = Value
-    val Associate, Bachelor, Master = Value
+    val Associate = Value("Associate")
+    val Bachelor = Value("Bachelor")
+    val Master = Value("Master")
   }
 
   case class Education(
