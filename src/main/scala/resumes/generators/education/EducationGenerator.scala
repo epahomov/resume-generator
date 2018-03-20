@@ -4,6 +4,7 @@ import java.util.Calendar
 
 import resumes.generators.Utils
 import resumes.generators.education.EducationGenerator.Degree.{Associate, Bachelor, Degree, Master}
+import resumes.generators.education.UniversityGenerator.University
 
 import scala.collection.mutable.ListBuffer
 
@@ -18,7 +19,7 @@ object EducationGenerator {
   case class Education(
                         startYear: Int,
                         endYear: Int,
-                        university: String,
+                        university: University,
                         degree: Degree
                       )
 

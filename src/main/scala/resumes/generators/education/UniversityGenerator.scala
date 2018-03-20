@@ -7,6 +7,7 @@ import scala.collection.JavaConverters._
 
 object UniversityGenerator {
 
+  case class University(name: String, city: String, state: String)
   //1
   //Western Governors University
   //54,735
@@ -27,9 +28,13 @@ object UniversityGenerator {
       .toArray
 
     val parsed = (0 to 99).map(index => {
-      val universityName: java.lang.String = rawData(index * 6 + 1)
+      val universityName = rawData(index * 6 + 1)
+      val universityAddress = rawData(index * 6 + 4)
+      val universityCity = universityAddress.split(", ")(0)
+      val universityState = universityAddress.split(", ")(1)
+      val university = University(name = universityName, city = universityCity, state = universityState)
       val universityPopularity = rawData(index * 6 + 2).filter(_.isDigit).toInt
-      (universityName, universityPopularity)
+      (university, universityPopularity)
     })
 
     val sumPop = parsed.map(_._2).sum
@@ -43,7 +48,7 @@ object UniversityGenerator {
     new EnumeratedDistribution(processed)
   }
 
-  def generateRandomUniversity() = {
+  def generateRandomUniversity(): University = {
     generator.sample()
   }
 
