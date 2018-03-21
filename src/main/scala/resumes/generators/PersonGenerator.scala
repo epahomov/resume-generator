@@ -65,7 +65,7 @@ object PersonGenerator {
   }
 
   def generateRandomPeople() = {
-    (1 to 1000).foreach(index => {
+    (39 to 1000).foreach(index => {
       println(index)
       val path = s"/Users/macbook/IdeaProjects/gmailaccountcreeator/src/main/resources/random_resume/$index.json"
       val person = generatePerson()

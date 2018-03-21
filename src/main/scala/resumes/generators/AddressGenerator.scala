@@ -23,35 +23,41 @@ object AddressGenerator {
     .build()
 
   def generateAddress(location: String): Address = {
-    val cityCoordinates = GeocodingApi.geocode(context, location).await()(0).geometry.location
-    val latDelta = Random.nextDouble() / 10
-    val lngDelta = Random.nextDouble() / 10
-    val addressCoordinates = new LatLng(cityCoordinates.lat + latDelta, cityCoordinates.lng + lngDelta)
-    val address = GeocodingApi
-      .reverseGeocode(context, addressCoordinates)
-      .await()(0)
-    val addressComponents: List[AddressComponent] = scala.collection.JavaConverters.asScalaBuffer(util.Arrays.asList(address.addressComponents: _*)).toList
+    try {
+      val cityCoordinates = GeocodingApi.geocode(context, location).await()(0).geometry.location
+      val latDelta = Random.nextDouble() / 10
+      val lngDelta = Random.nextDouble() / 10
+      val addressCoordinates = new LatLng(cityCoordinates.lat + latDelta, cityCoordinates.lng + lngDelta)
+      val address = GeocodingApi
+        .reverseGeocode(context, addressCoordinates)
+        .await()(0)
+      val addressComponents: List[AddressComponent] = scala.collection.JavaConverters.asScalaBuffer(util.Arrays.asList(address.addressComponents: _*)).toList
 
-    def getValue(addressPart: String) = {
-      addressComponents.find(x => {
-        x.types(0).toCanonicalLiteral.equals(addressPart)
-      }).get
+      def getValue(addressPart: String) = {
+        addressComponents.find(x => {
+          x.types(0).toCanonicalLiteral.equals(addressPart)
+        }).get
+      }
+
+      val zipCode = getValue("postal_code").longName
+      val stateShortName = getValue("administrative_area_level_1").shortName
+      val stateFullName = getValue("administrative_area_level_1").longName
+      val city = getValue("locality").longName
+      val street = getValue("route").longName
+      val house = addressComponents(0).longName
+      Address(
+        zipCode = zipCode,
+        stateShortName = stateShortName,
+        stateFullName = stateFullName,
+        city = city,
+        street = street,
+        house = house
+      )
+    } catch {
+      case e: Exception => {
+        generateAddress(location)
+      }
     }
-
-    val zipCode = getValue("postal_code").longName
-    val stateShortName = getValue("administrative_area_level_1").shortName
-    val stateFullName = getValue("administrative_area_level_1").longName
-    val city = getValue("locality").longName
-    val street = getValue("route").longName
-    val house = addressComponents(0).longName
-    Address(
-      zipCode = zipCode,
-      stateShortName = stateShortName,
-      stateFullName = stateFullName,
-      city = city,
-      street = street,
-      house = house
-    )
   }
 
   def main(args: Array[String]): Unit = {
