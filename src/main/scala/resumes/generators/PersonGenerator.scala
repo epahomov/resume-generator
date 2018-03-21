@@ -1,5 +1,7 @@
 package resumes.generators
 
+import java.util.UUID
+
 import resumes.generators.AddressGenerator.Address
 import resumes.generators.education.EducationGenerator
 import resumes.generators.education.EducationGenerator.{Degree, Education}
@@ -13,11 +15,12 @@ import net.liftweb.json.ext.EnumSerializer
 import net.liftweb.json.parse
 import resumes.generators.name.FirstNameGenerator.Origin.Origin
 
+import scala.io.Source
 import scala.util.Random
 
 object PersonGenerator {
 
-  implicit val formats = net.liftweb.json.DefaultFormats + new EnumSerializer(Gender) + new EnumSerializer(Degree) + new EnumSerializer(Origin)
+  implicit val formats = net.liftweb.json.DefaultFormats + new EnumSerializer(Gender)  + new EnumSerializer(Origin)
 
   case class Person(name: Name,
                     education: List[Education],
@@ -26,6 +29,9 @@ object PersonGenerator {
                     gender: Gender,
                     origin: Origin
                    )
+
+  case class Candidate(id: String, person: Person, email: String, passd: String)
+
 
   def generatePerson(gender: Gender, origin: Origin) = {
     val name = NameGenerator.generateRandomName(gender, origin)
@@ -56,20 +62,30 @@ object PersonGenerator {
     generatePerson(gender, origin)
   }
 
-  def serializePerson(person: Person): String = {
-    prettyRender(decompose(person))
+  def serializeCandidate(candidate: Candidate): String = {
+    prettyRender(decompose(candidate))
   }
 
-  def deserializePerson(json: String): Person = {
-    parse(json).extract[Person]
+  def deserializeCandidate(json: String): Candidate = {
+    parse(json).extract[Candidate]
   }
 
   def generateRandomPeople() = {
-    (39 to 1000).foreach(index => {
-      println(index)
-      val path = s"/Users/macbook/IdeaProjects/gmailaccountcreeator/src/main/resources/random_resume/$index.json"
+    var count = 0
+    Source
+      .fromResource("emails.txt")
+        .getLines().foreach(credentials => {
+      count += 1
+      println(count)
+      val email = credentials.split(":")(0)
+      val passwd = credentials.split(":")(1)
+      val id = UUID.randomUUID().toString
+      val path = s"/Users/macbook/IdeaProjects/gmailaccountcreeator/src/main/resources/applications/ibm/candidates/$id.json"
       val person = generatePerson()
-      val personJson = serializePerson(person)
+      val candidate = Candidate(id, person, email, passwd)
+      val personJson = serializeCandidate(candidate)
+      //println(personJson)
+      val personBack = deserializeCandidate(personJson)
       scala.tools.nsc.io.File(path).writeAll(personJson)
     }
     )

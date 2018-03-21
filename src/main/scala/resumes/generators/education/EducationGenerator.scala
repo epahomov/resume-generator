@@ -22,7 +22,7 @@ object EducationGenerator {
                         startYear: Int,
                         endYear: Int,
                         university: University,
-                        degree: Degree
+                        degree: String
                       )
 
   lazy val highestDegreeGenerator = {
@@ -61,7 +61,7 @@ object EducationGenerator {
         startYear = currentYear - 2,
         endYear = currentYear,
         university = university,
-        degree = Master
+        degree = Master.toString
       )
       currentYear = currentYear - 2
       Some(university)
@@ -81,7 +81,7 @@ object EducationGenerator {
         startYear = currentYear - yearsInBachelor,
         endYear = currentYear,
         university = bachelorUniversity,
-        degree = Bachelor
+        degree = Bachelor.toString
       )
       if (earnedAssociatedSeparately) {
         currentYear = currentYear - 2
@@ -94,7 +94,7 @@ object EducationGenerator {
           startYear = currentYear - 2,
           endYear = currentYear,
           university = bachelorUniversity,
-          degree = Associate
+          degree = Associate.toString
         )
       }
     } else {
@@ -102,7 +102,7 @@ object EducationGenerator {
         startYear = currentYear - 2,
         endYear = currentYear,
         university = UniversityGenerator.generateRandomUniversity(),
-        degree = Associate
+        degree = Associate.toString
       )
     }
     education.toList
