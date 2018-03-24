@@ -1,4 +1,4 @@
-package resumes.generators
+package resumes.generators.person
 
 import scala.util.Random
 

@@ -1,13 +1,13 @@
 package resumes.emails
 
-import com.mongodb.client.MongoCollection
+import com.mongodb.client.{MongoCollection, MongoDatabase}
 import net.liftweb.json.Extraction.decompose
 import net.liftweb.json.JsonAST.prettyRender
 import org.bson.Document
+import resumes.MongoDB
 
 import scala.collection.JavaConverters._
 import scala.io.Source
-
 object EmailsManagerUtils {
 
   case class Email(
@@ -15,6 +15,16 @@ object EmailsManagerUtils {
                     password: String,
                     companiesInWhichBeenUsed: List[String],
                   )
+
+  implicit val formats = net.liftweb.json.DefaultFormats
+
+  val EMAILS_COLLECTION_NAME = "emails"
+
+  def uploadEmails(path: String, mongoDatabase: MongoDatabase): Unit = {
+    MongoDB.createCollectionIfNotExists(EMAILS_COLLECTION_NAME, mongoDatabase)
+    val emails = mongoDatabase.getCollection(EMAILS_COLLECTION_NAME)
+    uploadEmails(path, emails)
+  }
 
   private def uploadEmails(path: String, emails: MongoCollection[Document]): Unit = {
     val emailsParsed = Source
@@ -27,10 +37,9 @@ object EmailsManagerUtils {
           password = password,
           companiesInWhichBeenUsed = List.empty
         )
-        implicit val formats = net.liftweb.json.DefaultFormats
         Document.parse(prettyRender(decompose(email)))
       }
-      ).toList.take(100).asJava
+      ).toList.asJava
     emails.insertMany(emailsParsed)
   }
 

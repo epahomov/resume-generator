@@ -4,9 +4,7 @@ import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.{By, Keys}
 import resumes.application_submitter.{Application, Submitter}
-import resumes.generators.PersonGenerator
 
-import scala.io.Source
 import scala.util.Random
 
 object IBMApplicationSubmitter extends Submitter {
@@ -61,14 +59,4 @@ object IBMApplicationSubmitter extends Submitter {
     println("Hi")
   }
 
-  def main(args: Array[String]): Unit = {
-    val str: String = Source
-      .fromFile("/Users/macbook/IdeaProjects/gmailaccountcreeator/src/main/resources/applications/ibm/candidates/0a5fc422-f246-42a3-ab14-61a5a5c652f9.json")
-      .getLines()
-      .mkString("\n")
-    println(str)
-    val candidate = PersonGenerator.deserializeCandidate(str)
-    val application = Application(candidate, "174055")
-    submit(application)
-  }
 }
