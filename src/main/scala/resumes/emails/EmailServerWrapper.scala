@@ -4,6 +4,7 @@ import java.util.Properties
 import javax.mail.Session
 
 object EmailServerWrapper {
+
   case class Credentials(login: String, psswd: String)
 
   def getImapsStore(credentials: Credentials, host: String) = {

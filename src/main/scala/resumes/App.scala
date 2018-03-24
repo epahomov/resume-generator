@@ -17,7 +17,6 @@ object App {
     val birthYear = driver.findElementById("BirthYear")
     val gender = driver.findElementById("HiddenGender")
     val iAgree = driver.findElementById("iagreebutton")
-    //sgffdssvdf1325412
   }
 
 }
