@@ -73,7 +73,7 @@ object PersonGenerator {
   def generateRandomPeople() = {
     var count = 0
     Source
-      .fromResource("emails.txt")
+      .fromResource("emails_test.txt")
         .getLines().foreach(credentials => {
       count += 1
       println(count)
