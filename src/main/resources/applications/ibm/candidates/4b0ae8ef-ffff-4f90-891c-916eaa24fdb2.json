@@ -1,0 +1,44 @@
+{
+  "id":"4b0ae8ef-ffff-4f90-891c-916eaa24fdb2",
+  "person":{
+    "name":{
+      "firstName":"Mason",
+      "lastName":"Smith"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Auburn University",
+          "city":"Auburn",
+          "state":"AL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Auburn University",
+          "city":"Auburn",
+          "state":"AL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"36801",
+      "stateShortName":"AL",
+      "stateFullName":"Alabama",
+      "city":"Opelika",
+      "street":"Skyway Drive",
+      "house":"3300"
+    },
+    "phoneNumber":"7727018241",
+    "gender":0,
+    "origin":0
+  },
+  "email":"grynkiewicz.paulina@yahoo.com",
+  "passd":"4da0a58596"
+}

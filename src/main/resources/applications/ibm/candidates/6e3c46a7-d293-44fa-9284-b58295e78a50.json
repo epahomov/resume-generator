@@ -1,0 +1,34 @@
+{
+  "id":"6e3c46a7-d293-44fa-9284-b58295e78a50",
+  "person":{
+    "name":{
+      "firstName":"John",
+      "lastName":"Franco"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Texas",
+          "city":"Denton",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"76266",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Sanger",
+      "street":"Gribble Springs Road",
+      "house":"Gribble Springs Road"
+    },
+    "phoneNumber":"5137103843",
+    "gender":0,
+    "origin":0
+  },
+  "email":"bartovicsstanislaus@yahoo.com",
+  "passd":"6682855f27"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"1af094d4-fb23-454b-9c3e-9abc91938962",
+  "person":{
+    "name":{
+      "firstName":"Parth",
+      "lastName":"Anand"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oklahoma",
+          "city":"Norman",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"73165",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Oklahoma City",
+      "street":"South Midwest Boulevard",
+      "house":"15216"
+    },
+    "phoneNumber":"2222786923",
+    "gender":0,
+    "origin":1
+  },
+  "email":"jerromehyde@yahoo.com",
+  "passd":"fe6f897d53"
+}

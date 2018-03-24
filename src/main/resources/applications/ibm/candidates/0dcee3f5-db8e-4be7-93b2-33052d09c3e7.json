@@ -1,0 +1,34 @@
+{
+  "id":"0dcee3f5-db8e-4be7-93b2-33052d09c3e7",
+  "person":{
+    "name":{
+      "firstName":"Ramanan",
+      "lastName":"Sahni"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Sacramento",
+          "city":"Sacramento",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"95652",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"McClellan Park",
+      "street":"North Forcum Avenue",
+      "house":"North Forcum Avenue"
+    },
+    "phoneNumber":"6245933765",
+    "gender":0,
+    "origin":1
+  },
+  "email":"lam.zena@yahoo.com",
+  "passd":"98f2d69165"
+}

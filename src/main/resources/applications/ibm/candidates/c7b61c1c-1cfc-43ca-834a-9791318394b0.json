@@ -1,0 +1,34 @@
+{
+  "id":"c7b61c1c-1cfc-43ca-834a-9791318394b0",
+  "person":{
+    "name":{
+      "firstName":"Aditya",
+      "lastName":"Subramani"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78756",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"McCandless Street",
+      "house":"5300"
+    },
+    "phoneNumber":"3071934723",
+    "gender":0,
+    "origin":1
+  },
+  "email":"jelenearistophanes@yahoo.com",
+  "passd":"c19e4ad1b9"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"0a46dcf9-e807-409e-b5e9-e47d2f1e0a8f",
+  "person":{
+    "name":{
+      "firstName":"Rachel",
+      "lastName":"Johnson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"47408",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Bloomington",
+      "street":"North Viking Ridge Road",
+      "house":"6154"
+    },
+    "phoneNumber":"1223513847",
+    "gender":1,
+    "origin":0
+  },
+  "email":"balzergeno@yahoo.com",
+  "passd":"c6d9d86960"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"f2d887ba-4e9f-41f3-9df2-6b510b0bffb6",
+  "person":{
+    "name":{
+      "firstName":"Leah",
+      "lastName":"Rai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Francisco State University",
+          "city":"San Francisco",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"94501",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Alameda",
+      "street":"Monarch Street",
+      "house":"1701"
+    },
+    "phoneNumber":"3261647255",
+    "gender":1,
+    "origin":1
+  },
+  "email":"griffiealavi@yahoo.com",
+  "passd":"77efb190ba"
+}

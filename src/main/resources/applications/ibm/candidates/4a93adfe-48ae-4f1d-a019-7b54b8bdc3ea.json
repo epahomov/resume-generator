@@ -1,0 +1,34 @@
+{
+  "id":"4a93adfe-48ae-4f1d-a019-7b54b8bdc3ea",
+  "person":{
+    "name":{
+      "firstName":"Chandralekha",
+      "lastName":"Charan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Washington",
+          "city":"Seattle",
+          "state":"WA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"98102",
+      "stateShortName":"WA",
+      "stateFullName":"Washington",
+      "city":"Seattle",
+      "street":"Fairview Avenue East",
+      "house":"1508"
+    },
+    "phoneNumber":"1061003825",
+    "gender":1,
+    "origin":1
+  },
+  "email":"vettelhumfrey@yahoo.com",
+  "passd":"835ce708a4"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"d94a0d65-4bc2-42a4-ad5b-ef8df1571393",
+  "person":{
+    "name":{
+      "firstName":"Adrian",
+      "lastName":"O'neal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Montclair State University",
+          "city":"Montclair Township",
+          "state":"NJ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"07043",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Montclair",
+      "street":"Fairmount Avenue",
+      "house":"17-19"
+    },
+    "phoneNumber":"5066654224",
+    "gender":0,
+    "origin":0
+  },
+  "email":"bailliebouvier@yahoo.com",
+  "passd":"6f15571bfc"
+}

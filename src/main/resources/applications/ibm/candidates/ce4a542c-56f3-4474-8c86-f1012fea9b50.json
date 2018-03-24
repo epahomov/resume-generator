@@ -1,0 +1,34 @@
+{
+  "id":"ce4a542c-56f3-4474-8c86-f1012fea9b50",
+  "person":{
+    "name":{
+      "firstName":"Vaibhav",
+      "lastName":"Subram"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fresno",
+          "city":"Fresno",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"93727",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Fresno",
+      "street":"East Clinton Avenue",
+      "house":"5790"
+    },
+    "phoneNumber":"3402655983",
+    "gender":0,
+    "origin":1
+  },
+  "email":"meggypolk@yahoo.com",
+  "passd":"22b57fa5c2"
+}

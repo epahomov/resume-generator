@@ -1,0 +1,34 @@
+{
+  "id":"3eadfce9-db5d-4bba-a86b-e359fe73bd28",
+  "person":{
+    "name":{
+      "firstName":"Jasmin",
+      "lastName":"Johnson"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Arizona",
+          "city":"Tucson",
+          "state":"AZ"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"85712",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Tucson",
+      "street":"East Speedway Boulevard",
+      "house":"5925"
+    },
+    "phoneNumber":"2461754213",
+    "gender":1,
+    "origin":0
+  },
+  "email":"elanahochschild@yahoo.com",
+  "passd":"5acfe3b951"
+}

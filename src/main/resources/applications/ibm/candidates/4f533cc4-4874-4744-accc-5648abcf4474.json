@@ -1,0 +1,34 @@
+{
+  "id":"4f533cc4-4874-4744-accc-5648abcf4474",
+  "person":{
+    "name":{
+      "firstName":"Elizabeth",
+      "lastName":"Anderson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"George Mason University",
+          "city":"Fairfax",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"22031",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Fairfax",
+      "street":"Santayana Drive",
+      "house":"9306-9308"
+    },
+    "phoneNumber":"3352382863",
+    "gender":1,
+    "origin":0
+  },
+  "email":"rowlandpennington@yahoo.com",
+  "passd":"cf6bccf516"
+}

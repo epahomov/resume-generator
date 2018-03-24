@@ -1,0 +1,44 @@
+{
+  "id":"99d80381-5614-4197-80b7-33cb5592d655",
+  "person":{
+    "name":{
+      "firstName":"Sydney",
+      "lastName":"Warren"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"10036",
+      "stateShortName":"NY",
+      "stateFullName":"New York",
+      "city":"New York",
+      "street":"West 42nd Street",
+      "house":"369-399"
+    },
+    "phoneNumber":"2356444736",
+    "gender":1,
+    "origin":0
+  },
+  "email":"raimundomcginn@yahoo.com",
+  "passd":"448e30974e"
+}

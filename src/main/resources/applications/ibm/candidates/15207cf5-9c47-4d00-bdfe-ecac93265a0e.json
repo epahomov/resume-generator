@@ -1,0 +1,34 @@
+{
+  "id":"15207cf5-9c47-4d00-bdfe-ecac93265a0e",
+  "person":{
+    "name":{
+      "firstName":"Marco",
+      "lastName":"Hudson"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"San Jose State University",
+          "city":"San Jose",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"95132",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Jose",
+      "street":"Sierra Road",
+      "house":"4255"
+    },
+    "phoneNumber":"5051199987",
+    "gender":0,
+    "origin":0
+  },
+  "email":"metzlerrosetta@yahoo.com",
+  "passd":"323a0b7ca5"
+}

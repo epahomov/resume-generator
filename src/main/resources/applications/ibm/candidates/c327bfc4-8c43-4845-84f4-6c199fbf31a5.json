@@ -1,0 +1,34 @@
+{
+  "id":"c327bfc4-8c43-4845-84f4-6c199fbf31a5",
+  "person":{
+    "name":{
+      "firstName":"Tanvi",
+      "lastName":"Lalit"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97408",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Eugene",
+      "street":"McKenzie View Drive",
+      "house":"33465"
+    },
+    "phoneNumber":"5623863043",
+    "gender":1,
+    "origin":1
+  },
+  "email":"irwinrolland@yahoo.com",
+  "passd":"9d1a64114e"
+}

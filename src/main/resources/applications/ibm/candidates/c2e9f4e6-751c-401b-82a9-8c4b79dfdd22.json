@@ -1,0 +1,34 @@
+{
+  "id":"c2e9f4e6-751c-401b-82a9-8c4b79dfdd22",
+  "person":{
+    "name":{
+      "firstName":"Amit",
+      "lastName":"Prasad"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas Tech University",
+          "city":"Lubbock",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"79401",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Lubbock",
+      "street":"Buddy Holly Avenue",
+      "house":"1618"
+    },
+    "phoneNumber":"1136655076",
+    "gender":0,
+    "origin":1
+  },
+  "email":"aguirreeugenie@yahoo.com",
+  "passd":"1461334e24"
+}

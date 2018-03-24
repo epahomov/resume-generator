@@ -1,0 +1,34 @@
+{
+  "id":"f0117559-5658-4b9f-8d2e-42fe0e66c3bf",
+  "person":{
+    "name":{
+      "firstName":"Rutuja",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of South Florida",
+          "city":"Tampa",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"33610",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Tampa",
+      "street":"Walton Way",
+      "house":"6401"
+    },
+    "phoneNumber":"6275158171",
+    "gender":1,
+    "origin":1
+  },
+  "email":"lea.marlena@yahoo.com",
+  "passd":"25ee05d17c"
+}

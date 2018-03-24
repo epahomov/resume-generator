@@ -1,0 +1,34 @@
+{
+  "id":"b15b50f6-ed72-422f-9c4b-8be960097bb3",
+  "person":{
+    "name":{
+      "firstName":"Krishna",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Riverside",
+          "city":"Riverside",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92501",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Riverside",
+      "street":"Santa Ana River Trail",
+      "house":"Santa Ana River Trail"
+    },
+    "phoneNumber":"7617168218",
+    "gender":0,
+    "origin":1
+  },
+  "email":"legramarking@yahoo.com",
+  "passd":"1dfba67566"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"08a8891c-bb3e-4958-be65-0f85134f3551",
+  "person":{
+    "name":{
+      "firstName":"Jacob",
+      "lastName":"Thompson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"George Mason University",
+          "city":"Fairfax",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"22031",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Fairfax",
+      "street":"Ashby Road",
+      "house":"9817"
+    },
+    "phoneNumber":"3062058810",
+    "gender":0,
+    "origin":0
+  },
+  "email":"ilkalimjoco@yahoo.com",
+  "passd":"5dab3bce55"
+}

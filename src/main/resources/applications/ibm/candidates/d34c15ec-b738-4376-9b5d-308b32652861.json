@@ -1,0 +1,34 @@
+{
+  "id":"d34c15ec-b738-4376-9b5d-308b32652861",
+  "person":{
+    "name":{
+      "firstName":"Manoj",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Illinois at Urbana-Champaign",
+          "city":"Champaign",
+          "state":"IL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"61802",
+      "stateShortName":"IL",
+      "stateFullName":"Illinois",
+      "city":"Urbana",
+      "street":"County Road 1500 East",
+      "house":"4293-4799"
+    },
+    "phoneNumber":"1504552082",
+    "gender":0,
+    "origin":1
+  },
+  "email":"dudleyarduini@yahoo.com",
+  "passd":"27acfdb8f4"
+}

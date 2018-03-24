@@ -1,0 +1,34 @@
+{
+  "id":"1d734d10-5087-4c59-9621-6d67b600f382",
+  "person":{
+    "name":{
+      "firstName":"Rohit",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Penn State",
+          "city":"State College",
+          "state":"PA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"16801",
+      "stateShortName":"PA",
+      "stateFullName":"Pennsylvania",
+      "city":"State College",
+      "street":"Benner Pike",
+      "house":"1026"
+    },
+    "phoneNumber":"2553133204",
+    "gender":0,
+    "origin":1
+  },
+  "email":"toddernisse@yahoo.com",
+  "passd":"a668bfe520"
+}

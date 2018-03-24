@@ -1,0 +1,34 @@
+{
+  "id":"f24f20e9-caf4-49cb-8bb3-64678be3bead",
+  "person":{
+    "name":{
+      "firstName":"Neha",
+      "lastName":"Goel"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"New York University",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"10016",
+      "stateShortName":"NY",
+      "stateFullName":"New York",
+      "city":"New York",
+      "street":"East 32nd Street",
+      "house":"239 1/2"
+    },
+    "phoneNumber":"5304731574",
+    "gender":1,
+    "origin":1
+  },
+  "email":"renelleroutledge@yahoo.com",
+  "passd":"45c8a7969c"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"dfb2a887-1d5b-47f0-a648-702e11887572",
+  "person":{
+    "name":{
+      "firstName":"Jeremy",
+      "lastName":"Lynch"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Colorado - Boulder",
+          "city":"Boulder",
+          "state":"CO"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"80301",
+      "stateShortName":"CO",
+      "stateFullName":"Colorado",
+      "city":"Boulder",
+      "street":"28th Street",
+      "house":"2870"
+    },
+    "phoneNumber":"6551683339",
+    "gender":0,
+    "origin":0
+  },
+  "email":"hoppenicolea@yahoo.com",
+  "passd":"5084fd8adb"
+}

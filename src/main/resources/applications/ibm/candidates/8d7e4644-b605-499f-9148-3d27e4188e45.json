@@ -1,0 +1,34 @@
+{
+  "id":"8d7e4644-b605-499f-9148-3d27e4188e45",
+  "person":{
+    "name":{
+      "firstName":"Destiny",
+      "lastName":"Johnson"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Santa Barbara",
+          "city":"Santa Barbara",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"93108",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Santa Barbara",
+      "street":"Edison Catway",
+      "house":"Edison Catway"
+    },
+    "phoneNumber":"7333659526",
+    "gender":1,
+    "origin":0
+  },
+  "email":"cristapoincaire@yahoo.com",
+  "passd":"698eb8f2f6"
+}

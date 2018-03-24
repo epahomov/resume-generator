@@ -1,0 +1,34 @@
+{
+  "id":"b7c80b88-1c75-438a-a559-9329bec2c775",
+  "person":{
+    "name":{
+      "firstName":"Aditya",
+      "lastName":"Sara"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Texas Tech University",
+          "city":"Lubbock",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"79403",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Lubbock",
+      "street":"Kent Street",
+      "house":"3301"
+    },
+    "phoneNumber":"5204953772",
+    "gender":0,
+    "origin":1
+  },
+  "email":"vassiliaisner@yahoo.com",
+  "passd":"cb6c5e0bfd"
+}

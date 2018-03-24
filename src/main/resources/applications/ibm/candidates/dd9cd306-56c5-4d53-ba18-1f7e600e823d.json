@@ -1,0 +1,34 @@
+{
+  "id":"dd9cd306-56c5-4d53-ba18-1f7e600e823d",
+  "person":{
+    "name":{
+      "firstName":"Gabriela",
+      "lastName":"Miller"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Northridge",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90065",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Rainbow Avenue",
+      "house":"452"
+    },
+    "phoneNumber":"7442138343",
+    "gender":1,
+    "origin":0
+  },
+  "email":"gierkotemp@yahoo.com",
+  "passd":"1b0a019acb"
+}

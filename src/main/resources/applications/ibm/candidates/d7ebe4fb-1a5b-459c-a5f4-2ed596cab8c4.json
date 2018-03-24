@@ -1,0 +1,34 @@
+{
+  "id":"d7ebe4fb-1a5b-459c-a5f4-2ed596cab8c4",
+  "person":{
+    "name":{
+      "firstName":"Akash",
+      "lastName":"Sahni"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Cincinnati",
+          "city":"Cincinnati",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"45229",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Cincinnati",
+      "street":"Whittier Street",
+      "house":"715"
+    },
+    "phoneNumber":"2055748258",
+    "gender":0,
+    "origin":1
+  },
+  "email":"ardeenbreyman@yahoo.com",
+  "passd":"99b6121e76"
+}

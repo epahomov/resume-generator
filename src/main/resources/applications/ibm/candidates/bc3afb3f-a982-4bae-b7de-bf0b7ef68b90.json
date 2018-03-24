@@ -1,0 +1,34 @@
+{
+  "id":"bc3afb3f-a982-4bae-b7de-bf0b7ef68b90",
+  "person":{
+    "name":{
+      "firstName":"Kimberly",
+      "lastName":"Jackson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Massachusetts - Amherst",
+          "city":"Amherst",
+          "state":"MA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"01002",
+      "stateShortName":"MA",
+      "stateFullName":"Massachusetts",
+      "city":"Pelham",
+      "street":"Pine Tree Circle",
+      "house":"6"
+    },
+    "phoneNumber":"6301773355",
+    "gender":1,
+    "origin":0
+  },
+  "email":"herminiabarr@yahoo.com",
+  "passd":"d21fbd7daa"
+}

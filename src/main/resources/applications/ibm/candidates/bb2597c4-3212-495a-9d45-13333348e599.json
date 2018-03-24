@@ -1,0 +1,34 @@
+{
+  "id":"bb2597c4-3212-495a-9d45-13333348e599",
+  "person":{
+    "name":{
+      "firstName":"Manish",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Western Governors University",
+          "city":"Salt Lake City",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84103",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Salt Lake City",
+      "street":"Bonneville Shoreline Trail",
+      "house":"690"
+    },
+    "phoneNumber":"6652643467",
+    "gender":0,
+    "origin":1
+  },
+  "email":"marsischkycorrie@yahoo.com",
+  "passd":"5a4d62144d"
+}

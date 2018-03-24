@@ -1,0 +1,34 @@
+{
+  "id":"f01f0dbf-e8c5-473f-9100-d2236258e90d",
+  "person":{
+    "name":{
+      "firstName":"Camila",
+      "lastName":"Martinez"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Rutgers University",
+          "city":"New Brunswick",
+          "state":"NJ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"08820",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Edison",
+      "street":"Lamar Avenue",
+      "house":"189"
+    },
+    "phoneNumber":"6525002800",
+    "gender":1,
+    "origin":0
+  },
+  "email":"bennjack963@yahoo.com",
+  "passd":"52e49c64c1"
+}

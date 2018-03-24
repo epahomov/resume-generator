@@ -1,0 +1,34 @@
+{
+  "id":"ac8eab4b-4452-4e62-bf3e-74ad25e0dbad",
+  "person":{
+    "name":{
+      "firstName":"Derek",
+      "lastName":"Flynn"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Wisconsin",
+          "city":"Madison",
+          "state":"WI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"53704",
+      "stateShortName":"WI",
+      "stateFullName":"Wisconsin",
+      "city":"Madison",
+      "street":"Forest Run Court",
+      "house":"3310"
+    },
+    "phoneNumber":"4556654287",
+    "gender":0,
+    "origin":0
+  },
+  "email":"penzavallijanetta@yahoo.com",
+  "passd":"8ca592a47e"
+}

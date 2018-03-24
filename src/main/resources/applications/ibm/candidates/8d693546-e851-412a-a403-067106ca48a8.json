@@ -1,0 +1,34 @@
+{
+  "id":"8d693546-e851-412a-a403-067106ca48a8",
+  "person":{
+    "name":{
+      "firstName":"Sarah",
+      "lastName":"Garner"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Francisco State University",
+          "city":"San Francisco",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"94501",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Alameda",
+      "street":"Monarch Street",
+      "house":"2701"
+    },
+    "phoneNumber":"4461441605",
+    "gender":1,
+    "origin":0
+  },
+  "email":"elliottlinehangiles@yahoo.com",
+  "passd":"2e110171a5"
+}

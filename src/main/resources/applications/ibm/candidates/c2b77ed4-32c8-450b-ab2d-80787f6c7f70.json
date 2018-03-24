@@ -1,0 +1,54 @@
+{
+  "id":"c2b77ed4-32c8-450b-ab2d-80787f6c7f70",
+  "person":{
+    "name":{
+      "firstName":"Ramanan",
+      "lastName":"Patel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97333",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Corvallis",
+      "street":"Northeast Electric Road",
+      "house":"34054-34082"
+    },
+    "phoneNumber":"1325036917",
+    "gender":0,
+    "origin":1
+  },
+  "email":"battlemordecai@yahoo.com",
+  "passd":"792d70f701"
+}

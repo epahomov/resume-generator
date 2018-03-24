@@ -1,0 +1,34 @@
+{
+  "id":"c1b43bc3-3a78-455a-b70a-0f6b93eaa02a",
+  "person":{
+    "name":{
+      "firstName":"Rachel",
+      "lastName":"Stephens"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Liberty University",
+          "city":"Lynchburg",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"24572",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Madison Heights",
+      "street":"Old Wright Shop Road",
+      "house":"460-486"
+    },
+    "phoneNumber":"6141377583",
+    "gender":1,
+    "origin":0
+  },
+  "email":"ingabergfabian@yahoo.com",
+  "passd":"77fb085a99"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"3da30def-620d-4a6c-973f-3839e511e1e6",
+  "person":{
+    "name":{
+      "firstName":"Anu",
+      "lastName":"Nigam"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Michigan - Ann Arbor",
+          "city":"Ann Arbor",
+          "state":"MI"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"48105",
+      "stateShortName":"MI",
+      "stateFullName":"Michigan",
+      "city":"Ann Arbor",
+      "street":"East Dobson Place",
+      "house":"3403"
+    },
+    "phoneNumber":"5102854837",
+    "gender":1,
+    "origin":1
+  },
+  "email":"judonscepan@yahoo.com",
+  "passd":"3fe7278dea"
+}

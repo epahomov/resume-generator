@@ -1,0 +1,34 @@
+{
+  "id":"516eeb3f-073a-435d-ae2c-e417850b0876",
+  "person":{
+    "name":{
+      "firstName":"Mya",
+      "lastName":"Scott"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Texas",
+          "city":"Denton",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"76266",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Sanger",
+      "street":"B-7 Road",
+      "house":"315"
+    },
+    "phoneNumber":"7244438963",
+    "gender":1,
+    "origin":0
+  },
+  "email":"stephanimasse@yahoo.com",
+  "passd":"7eed4695f2"
+}

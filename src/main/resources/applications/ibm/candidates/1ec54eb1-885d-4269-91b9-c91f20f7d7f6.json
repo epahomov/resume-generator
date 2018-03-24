@@ -1,0 +1,54 @@
+{
+  "id":"1ec54eb1-885d-4269-91b9-c91f20f7d7f6",
+  "person":{
+    "name":{
+      "firstName":"Amit",
+      "lastName":"Vijaya"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Purdue University",
+          "city":"West Lafayette",
+          "state":"IN"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Purdue University",
+          "city":"West Lafayette",
+          "state":"IN"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"Purdue University",
+          "city":"West Lafayette",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"47906",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"West Lafayette",
+      "street":"North 9th Street",
+      "house":"4868-5832"
+    },
+    "phoneNumber":"6306184821",
+    "gender":0,
+    "origin":1
+  },
+  "email":"hoodreynold@yahoo.com",
+  "passd":"248cd7a38a"
+}

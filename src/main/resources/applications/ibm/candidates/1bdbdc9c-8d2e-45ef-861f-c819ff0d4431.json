@@ -1,0 +1,34 @@
+{
+  "id":"1bdbdc9c-8d2e-45ef-861f-c819ff0d4431",
+  "person":{
+    "name":{
+      "firstName":"Samantha",
+      "lastName":"Davis"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Colorado State University",
+          "city":"Fort Collins",
+          "state":"CO"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"80524",
+      "stateShortName":"CO",
+      "stateFullName":"Colorado",
+      "city":"Fort Collins",
+      "street":"Colorado 1",
+      "house":"5310"
+    },
+    "phoneNumber":"5675707034",
+    "gender":1,
+    "origin":0
+  },
+  "email":"denysomoregie@yahoo.com",
+  "passd":"125c06cfd5"
+}

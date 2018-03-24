@@ -1,0 +1,34 @@
+{
+  "id":"8230f12b-2220-4ada-8cb2-fe630eecd570",
+  "person":{
+    "name":{
+      "firstName":"Mayur",
+      "lastName":"Bhat"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Florida",
+          "city":"Gainesville",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32609",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Gainesville",
+      "street":"Northeast 75th Street",
+      "house":"Northeast 75th Street"
+    },
+    "phoneNumber":"6265076383",
+    "gender":0,
+    "origin":1
+  },
+  "email":"feliziobohlmann@yahoo.com",
+  "passd":"f3929756e1"
+}

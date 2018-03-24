@@ -1,0 +1,34 @@
+{
+  "id":"dd9c1092-f291-4583-9e8e-3f048b3a257d",
+  "person":{
+    "name":{
+      "firstName":"William",
+      "lastName":"Stokes"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"43219",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Interstate-670 Bikeway",
+      "house":"Interstate-670 Bikeway"
+    },
+    "phoneNumber":"3073709686",
+    "gender":0,
+    "origin":0
+  },
+  "email":"irenahartnett@yahoo.com",
+  "passd":"ca6862ba04"
+}

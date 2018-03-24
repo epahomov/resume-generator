@@ -1,0 +1,34 @@
+{
+  "id":"b1cde439-9aef-443c-87f7-eca0f6bff735",
+  "person":{
+    "name":{
+      "firstName":"Paul",
+      "lastName":"Thomas"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Florida State University",
+          "city":"Tallahassee",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"32309",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Tallahassee",
+      "street":"Lifford Circle",
+      "house":"3742"
+    },
+    "phoneNumber":"4444046014",
+    "gender":0,
+    "origin":0
+  },
+  "email":"runyanbernadine@yahoo.com",
+  "passd":"f7956c88c3"
+}

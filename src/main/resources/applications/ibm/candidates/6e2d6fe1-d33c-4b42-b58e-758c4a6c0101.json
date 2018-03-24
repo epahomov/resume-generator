@@ -1,0 +1,34 @@
+{
+  "id":"6e2d6fe1-d33c-4b42-b58e-758c4a6c0101",
+  "person":{
+    "name":{
+      "firstName":"Naveen",
+      "lastName":"Darsha"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Colorado State University",
+          "city":"Fort Collins",
+          "state":"CO"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"80524",
+      "stateShortName":"CO",
+      "stateFullName":"Colorado",
+      "city":"Fort Collins",
+      "street":"Eagle Lake Drive",
+      "house":"4320"
+    },
+    "phoneNumber":"2251208343",
+    "gender":0,
+    "origin":1
+  },
+  "email":"marjorietrevorroper@yahoo.com",
+  "passd":"85ac8d98cd"
+}

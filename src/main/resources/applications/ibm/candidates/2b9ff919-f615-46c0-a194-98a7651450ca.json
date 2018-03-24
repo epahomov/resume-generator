@@ -1,0 +1,44 @@
+{
+  "id":"2b9ff919-f615-46c0-a194-98a7651450ca",
+  "person":{
+    "name":{
+      "firstName":"Yash",
+      "lastName":"Srivastav"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32807",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Orlando",
+      "street":"Tuscany Pointe Avenue",
+      "house":"3"
+    },
+    "phoneNumber":"1361574192",
+    "gender":0,
+    "origin":1
+  },
+  "email":"adenamonaghan@yahoo.com",
+  "passd":"f97df10eaa"
+}

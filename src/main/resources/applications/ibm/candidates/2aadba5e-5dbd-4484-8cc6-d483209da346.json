@@ -1,0 +1,34 @@
+{
+  "id":"2aadba5e-5dbd-4484-8cc6-d483209da346",
+  "person":{
+    "name":{
+      "firstName":"Benjamin",
+      "lastName":"Mendoza"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Montclair State University",
+          "city":"Montclair Township",
+          "state":"NJ"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"07043",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Montclair",
+      "street":"Fairview Place",
+      "house":"40-50"
+    },
+    "phoneNumber":"4563926653",
+    "gender":0,
+    "origin":0
+  },
+  "email":"sonniemetiu@yahoo.com",
+  "passd":"d573bb097f"
+}

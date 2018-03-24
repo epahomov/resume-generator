@@ -1,0 +1,34 @@
+{
+  "id":"a5d2c837-fb6a-4ccb-ade6-326c7af2dfe9",
+  "person":{
+    "name":{
+      "firstName":"Rohan",
+      "lastName":"Malhotra"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Oklahoma State University",
+          "city":"Stillwater",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"74075",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Stillwater",
+      "street":"North Burdick Street",
+      "house":"818-824"
+    },
+    "phoneNumber":"5427416723",
+    "gender":0,
+    "origin":1
+  },
+  "email":"coopgoodchild@yahoo.com",
+  "passd":"91b3b7d279"
+}

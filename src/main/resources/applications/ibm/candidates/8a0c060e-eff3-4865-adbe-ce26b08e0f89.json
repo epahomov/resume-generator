@@ -1,0 +1,44 @@
+{
+  "id":"8a0c060e-eff3-4865-adbe-ce26b08e0f89",
+  "person":{
+    "name":{
+      "firstName":"Vaibhav",
+      "lastName":"Jai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Virginia Commonwealth University",
+          "city":"Richmond",
+          "state":"VA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Virginia Commonwealth University",
+          "city":"Richmond",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"23111",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Mechanicsville",
+      "street":"Fullview Avenue",
+      "house":"7462"
+    },
+    "phoneNumber":"2625285722",
+    "gender":0,
+    "origin":1
+  },
+  "email":"minasuzuki811@yahoo.com",
+  "passd":"2e7db20eee"
+}

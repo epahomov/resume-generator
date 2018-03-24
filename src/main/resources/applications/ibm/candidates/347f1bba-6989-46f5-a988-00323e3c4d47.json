@@ -1,0 +1,34 @@
+{
+  "id":"347f1bba-6989-46f5-a988-00323e3c4d47",
+  "person":{
+    "name":{
+      "firstName":"Payton",
+      "lastName":"Brewer"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Colorado - Boulder",
+          "city":"Boulder",
+          "state":"CO"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"80301",
+      "stateShortName":"CO",
+      "stateFullName":"Colorado",
+      "city":"Boulder",
+      "street":"61st Street",
+      "house":"3283"
+    },
+    "phoneNumber":"5271581990",
+    "gender":1,
+    "origin":0
+  },
+  "email":"vernonlamphear@yahoo.com",
+  "passd":"4bf247482f"
+}

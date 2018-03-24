@@ -1,0 +1,34 @@
+{
+  "id":"51289536-7c8c-46ab-87d8-a2683bbc4213",
+  "person":{
+    "name":{
+      "firstName":"Amit",
+      "lastName":"Sethi"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Southern New Hampshire University",
+          "city":"Manchester",
+          "state":"NH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"03106",
+      "stateShortName":"NH",
+      "stateFullName":"New Hampshire",
+      "city":"Hooksett",
+      "street":"Chester Turnpike",
+      "house":"142"
+    },
+    "phoneNumber":"4063683600",
+    "gender":0,
+    "origin":1
+  },
+  "email":"nathanialcraul@yahoo.com",
+  "passd":"c21977711d"
+}

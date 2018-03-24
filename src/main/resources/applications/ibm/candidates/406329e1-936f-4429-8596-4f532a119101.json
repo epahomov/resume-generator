@@ -1,0 +1,34 @@
+{
+  "id":"406329e1-936f-4429-8596-4f532a119101",
+  "person":{
+    "name":{
+      "firstName":"Summer",
+      "lastName":"Jones"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas A&M University",
+          "city":"College Station",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"77802",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Bryan",
+      "street":"Valley Oaks Drive",
+      "house":"3807-3809"
+    },
+    "phoneNumber":"2544442576",
+    "gender":1,
+    "origin":0
+  },
+  "email":"bittnerruperta@yahoo.com",
+  "passd":"d1c8d8a863"
+}

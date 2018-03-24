@@ -1,0 +1,34 @@
+{
+  "id":"c418a1d0-06b3-41e8-b58b-93a69e217875",
+  "person":{
+    "name":{
+      "firstName":"Gayatri",
+      "lastName":"Engineer"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas State University",
+          "city":"San Marcos",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78640",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Kyle",
+      "street":"Roland Lane",
+      "house":"1780"
+    },
+    "phoneNumber":"2076349267",
+    "gender":1,
+    "origin":1
+  },
+  "email":"wynne.ellis@yahoo.com",
+  "passd":"39f1f6b305"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"b07dc3f7-ff75-4e6f-9833-30d84913f18d",
+  "person":{
+    "name":{
+      "firstName":"Nisha",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Central Michigan University",
+          "city":"Mount Pleasant",
+          "state":"MI"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Central Michigan University",
+          "city":"Mount Pleasant",
+          "state":"MI"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"48858",
+      "stateShortName":"MI",
+      "stateFullName":"Michigan",
+      "city":"Mount Pleasant",
+      "street":"East Pickard Road",
+      "house":"8581"
+    },
+    "phoneNumber":"2471883290",
+    "gender":1,
+    "origin":1
+  },
+  "email":"shatrovdaniella@yahoo.com",
+  "passd":"0d05134e9f"
+}

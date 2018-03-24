@@ -1,0 +1,44 @@
+{
+  "id":"6beca6c5-d671-49a5-86f4-1f6ca27c8b57",
+  "person":{
+    "name":{
+      "firstName":"Sophia",
+      "lastName":"Christensen"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"James Madison University",
+          "city":"Harrisonburg",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"James Madison University",
+          "city":"Harrisonburg",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"22802",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Harrisonburg",
+      "street":"Kratzer Road",
+      "house":"4751-4799"
+    },
+    "phoneNumber":"2164209669",
+    "gender":1,
+    "origin":0
+  },
+  "email":"joyousdapice@yahoo.com",
+  "passd":"5b77eca20b"
+}

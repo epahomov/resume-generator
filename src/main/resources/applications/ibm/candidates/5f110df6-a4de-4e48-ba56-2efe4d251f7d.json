@@ -1,0 +1,34 @@
+{
+  "id":"5f110df6-a4de-4e48-ba56-2efe4d251f7d",
+  "person":{
+    "name":{
+      "firstName":"Aashna",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Nebraska - Lincoln",
+          "city":"Lincoln",
+          "state":"NE"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"68517",
+      "stateShortName":"NE",
+      "stateFullName":"Nebraska",
+      "city":"Lincoln",
+      "street":"Interstate 80",
+      "house":"Interstate 80"
+    },
+    "phoneNumber":"7356395298",
+    "gender":1,
+    "origin":1
+  },
+  "email":"chooelroy@yahoo.com",
+  "passd":"ef767cba26"
+}

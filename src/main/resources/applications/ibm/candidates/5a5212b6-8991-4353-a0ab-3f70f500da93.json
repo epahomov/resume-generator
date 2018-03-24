@@ -1,0 +1,34 @@
+{
+  "id":"5a5212b6-8991-4353-a0ab-3f70f500da93",
+  "person":{
+    "name":{
+      "firstName":"Leah",
+      "lastName":"Nigam"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Diego State University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92104",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Felton Street",
+      "house":"4207"
+    },
+    "phoneNumber":"7476817608",
+    "gender":1,
+    "origin":1
+  },
+  "email":"arlienetrainor@yahoo.com",
+  "passd":"1348c0efc8"
+}

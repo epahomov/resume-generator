@@ -1,0 +1,44 @@
+{
+  "id":"2f74618a-cb84-4a1c-bbdd-ff4520f0b055",
+  "person":{
+    "name":{
+      "firstName":"Devin",
+      "lastName":"Conrad"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32814",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Orlando",
+      "street":"Lake Baldwin Lane",
+      "house":"5254-5296"
+    },
+    "phoneNumber":"5741359402",
+    "gender":0,
+    "origin":0
+  },
+  "email":"alickbranch@yahoo.com",
+  "passd":"644bedc60f"
+}

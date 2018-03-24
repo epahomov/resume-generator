@@ -1,0 +1,44 @@
+{
+  "id":"a0b582f4-7269-45b0-bea8-82a6e17b437c",
+  "person":{
+    "name":{
+      "firstName":"Abigail",
+      "lastName":"Perkins"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Temple University",
+          "city":"Philadelphia",
+          "state":"PA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Temple University",
+          "city":"Philadelphia",
+          "state":"PA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"19120",
+      "stateShortName":"PA",
+      "stateFullName":"Pennsylvania",
+      "city":"Philadelphia",
+      "street":"North Franklin Street",
+      "house":"5259"
+    },
+    "phoneNumber":"2023866264",
+    "gender":1,
+    "origin":0
+  },
+  "email":"marashlee@yahoo.com",
+  "passd":"8b8e680fae"
+}

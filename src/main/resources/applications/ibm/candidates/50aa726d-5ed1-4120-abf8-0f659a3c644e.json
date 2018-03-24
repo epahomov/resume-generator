@@ -1,0 +1,34 @@
+{
+  "id":"50aa726d-5ed1-4120-abf8-0f659a3c644e",
+  "person":{
+    "name":{
+      "firstName":"Rylee",
+      "lastName":"Miller"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32792",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Winter Park",
+      "street":"Sherbrooke Road",
+      "house":"2416"
+    },
+    "phoneNumber":"6166925285",
+    "gender":1,
+    "origin":0
+  },
+  "email":"andrianazharim@yahoo.com",
+  "passd":"09a92fc516"
+}

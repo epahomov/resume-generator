@@ -1,0 +1,34 @@
+{
+  "id":"21b7d5c8-aa85-4dbb-8f20-01028653f409",
+  "person":{
+    "name":{
+      "firstName":"Rahul",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"43211",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Aberdeen Avenue",
+      "house":"2456"
+    },
+    "phoneNumber":"6314938896",
+    "gender":0,
+    "origin":1
+  },
+  "email":"kareemhultgren@yahoo.com",
+  "passd":"99d476e2fe"
+}

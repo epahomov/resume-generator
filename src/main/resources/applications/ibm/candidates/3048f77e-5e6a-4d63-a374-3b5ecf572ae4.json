@@ -1,0 +1,34 @@
+{
+  "id":"3048f77e-5e6a-4d63-a374-3b5ecf572ae4",
+  "person":{
+    "name":{
+      "firstName":"William",
+      "lastName":"Griffin"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - San Antonio",
+          "city":"San Antonio",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78209",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"San Antonio",
+      "street":"Woodhaven Street",
+      "house":"7607"
+    },
+    "phoneNumber":"3416277908",
+    "gender":0,
+    "origin":0
+  },
+  "email":"edithadyson@yahoo.com",
+  "passd":"69caea17dd"
+}

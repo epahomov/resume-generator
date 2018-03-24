@@ -1,0 +1,34 @@
+{
+  "id":"b7ea9dc7-8386-4df0-9df8-72b0d801d115",
+  "person":{
+    "name":{
+      "firstName":"Mia",
+      "lastName":"Taylor"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Texas",
+          "city":"Denton",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"76227",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Aubrey",
+      "street":"Green Valley Circle",
+      "house":"6256"
+    },
+    "phoneNumber":"4757158651",
+    "gender":1,
+    "origin":0
+  },
+  "email":"cissycrauel@yahoo.com",
+  "passd":"81f630a314"
+}

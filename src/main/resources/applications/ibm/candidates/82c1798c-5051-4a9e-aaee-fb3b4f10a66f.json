@@ -1,0 +1,34 @@
+{
+  "id":"82c1798c-5051-4a9e-aaee-fb3b4f10a66f",
+  "person":{
+    "name":{
+      "firstName":"Chandralekha",
+      "lastName":"Patel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Iowa State University",
+          "city":"Ames",
+          "state":"IA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"50010",
+      "stateShortName":"IA",
+      "stateFullName":"Iowa",
+      "city":"Ames",
+      "street":"North Dayton Avenue",
+      "house":"3692"
+    },
+    "phoneNumber":"5064194646",
+    "gender":1,
+    "origin":1
+  },
+  "email":"yorkesoibelman@yahoo.com",
+  "passd":"069885211c"
+}

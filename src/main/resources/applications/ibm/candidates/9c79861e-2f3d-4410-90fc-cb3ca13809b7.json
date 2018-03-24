@@ -1,0 +1,54 @@
+{
+  "id":"9c79861e-2f3d-4410-90fc-cb3ca13809b7",
+  "person":{
+    "name":{
+      "firstName":"Katie",
+      "lastName":"Hall"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"44241",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Streetsboro",
+      "street":"Ohio 303",
+      "house":"1674"
+    },
+    "phoneNumber":"4212107430",
+    "gender":1,
+    "origin":0
+  },
+  "email":"melvointheresa@yahoo.com",
+  "passd":"7be26f2340"
+}

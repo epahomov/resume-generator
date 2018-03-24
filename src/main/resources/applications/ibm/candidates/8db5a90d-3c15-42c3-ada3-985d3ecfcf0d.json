@@ -1,0 +1,34 @@
+{
+  "id":"8db5a90d-3c15-42c3-ada3-985d3ecfcf0d",
+  "person":{
+    "name":{
+      "firstName":"Evan",
+      "lastName":"Rosario"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97408",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Eugene",
+      "street":"Coburg Road",
+      "house":"3227"
+    },
+    "phoneNumber":"4724658993",
+    "gender":0,
+    "origin":0
+  },
+  "email":"phillipcourtney865@yahoo.com",
+  "passd":"8908b900b7"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"56451bb9-1ed1-4bcf-ae4e-12b9d2c8ea47",
+  "person":{
+    "name":{
+      "firstName":"Shashank",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Houston",
+          "city":"Houston",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77016",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Houston",
+      "street":"Bigwood Street",
+      "house":"7409-7413"
+    },
+    "phoneNumber":"3631667566",
+    "gender":0,
+    "origin":1
+  },
+  "email":"karlotta.liem@yahoo.com",
+  "passd":"6c6bf4c609"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"0c435f87-9483-4150-a350-1db5aac4a42c",
+  "person":{
+    "name":{
+      "firstName":"Kaylee",
+      "lastName":"Gordon"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas A&M University",
+          "city":"College Station",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Texas A&M University",
+          "city":"College Station",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"77802",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Bryan",
+      "street":"Texas 6 Frontage Road",
+      "house":"4470"
+    },
+    "phoneNumber":"7056461494",
+    "gender":1,
+    "origin":0
+  },
+  "email":"minervacanel@yahoo.com",
+  "passd":"bad3ea673f"
+}

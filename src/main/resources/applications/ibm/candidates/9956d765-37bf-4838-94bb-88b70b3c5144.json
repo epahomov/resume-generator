@@ -1,0 +1,34 @@
+{
+  "id":"9956d765-37bf-4838-94bb-88b70b3c5144",
+  "person":{
+    "name":{
+      "firstName":"Maya",
+      "lastName":"Young"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"New York University",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"10025",
+      "stateShortName":"NY",
+      "stateFullName":"New York",
+      "city":"New York",
+      "street":"West 107th Street",
+      "house":"167"
+    },
+    "phoneNumber":"3253204963",
+    "gender":1,
+    "origin":0
+  },
+  "email":"kamekoamarsanchez@yahoo.com",
+  "passd":"48ac0fd6e2"
+}

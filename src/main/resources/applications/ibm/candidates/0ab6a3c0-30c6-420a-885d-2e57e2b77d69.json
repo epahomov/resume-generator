@@ -1,0 +1,44 @@
+{
+  "id":"0ab6a3c0-30c6-420a-885d-2e57e2b77d69",
+  "person":{
+    "name":{
+      "firstName":"Jose",
+      "lastName":"Parrish"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oklahoma",
+          "city":"Norman",
+          "state":"OK"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Oklahoma",
+          "city":"Norman",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"73165",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Oklahoma City",
+      "street":"South Midwest Boulevard",
+      "house":"16201-16317"
+    },
+    "phoneNumber":"1473106907",
+    "gender":0,
+    "origin":0
+  },
+  "email":"prudikratz@yahoo.com",
+  "passd":"e4b5bdf49c"
+}

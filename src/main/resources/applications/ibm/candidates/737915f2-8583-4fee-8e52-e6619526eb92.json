@@ -1,0 +1,34 @@
+{
+  "id":"737915f2-8583-4fee-8e52-e6619526eb92",
+  "person":{
+    "name":{
+      "firstName":"Taylor",
+      "lastName":"Cobb"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas State University",
+          "city":"San Marcos",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78666",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"San Marcos",
+      "street":"Lime Kiln Road",
+      "house":"5065"
+    },
+    "phoneNumber":"3054206917",
+    "gender":1,
+    "origin":0
+  },
+  "email":"mariuslapidus@yahoo.com",
+  "passd":"ebd470b40b"
+}

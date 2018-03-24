@@ -1,0 +1,34 @@
+{
+  "id":"95f724db-ba48-434b-b143-3fca0ab3772f",
+  "person":{
+    "name":{
+      "firstName":"Natasha",
+      "lastName":"Patel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Louisiana State University",
+          "city":"Baton Rouge",
+          "state":"LA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"70811",
+      "stateShortName":"LA",
+      "stateFullName":"Louisiana",
+      "city":"Baton Rouge",
+      "street":"Joor Road",
+      "house":"6749-7199"
+    },
+    "phoneNumber":"5225112241",
+    "gender":1,
+    "origin":1
+  },
+  "email":"xenamcconkey@yahoo.com",
+  "passd":"9a8f3425a5"
+}

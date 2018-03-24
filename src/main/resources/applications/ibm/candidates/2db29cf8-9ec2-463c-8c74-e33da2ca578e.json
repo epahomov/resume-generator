@@ -1,0 +1,54 @@
+{
+  "id":"2db29cf8-9ec2-463c-8c74-e33da2ca578e",
+  "person":{
+    "name":{
+      "firstName":"Sam",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Wisconsin - Milwaukee",
+          "city":"Milwaukee",
+          "state":"WI"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Wisconsin - Milwaukee",
+          "city":"Milwaukee",
+          "state":"WI"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"University of Wisconsin - Milwaukee",
+          "city":"Milwaukee",
+          "state":"WI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"53211",
+      "stateShortName":"WI",
+      "stateFullName":"Wisconsin",
+      "city":"Milwaukee",
+      "street":"North Lake Drive",
+      "house":"3288-3294"
+    },
+    "phoneNumber":"5276144132",
+    "gender":1,
+    "origin":1
+  },
+  "email":"wareinada@yahoo.com",
+  "passd":"4cb4e44c99"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"9e698b3b-4eac-455f-825e-f3fc56dd5914",
+  "person":{
+    "name":{
+      "firstName":"Katie",
+      "lastName":"Palmer"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"06278",
+      "stateShortName":"CT",
+      "stateFullName":"Connecticut",
+      "city":"Ashford",
+      "street":"Upton Road",
+      "house":"93"
+    },
+    "phoneNumber":"7002421803",
+    "gender":1,
+    "origin":0
+  },
+  "email":"onidafavazza@yahoo.com",
+  "passd":"70e5c2d1a2"
+}

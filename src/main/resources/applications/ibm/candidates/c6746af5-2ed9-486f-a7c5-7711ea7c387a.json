@@ -1,0 +1,34 @@
+{
+  "id":"c6746af5-2ed9-486f-a7c5-7711ea7c387a",
+  "person":{
+    "name":{
+      "firstName":"Michael",
+      "lastName":"Mccormick"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas Tech University",
+          "city":"Lubbock",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"79403",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Lubbock",
+      "street":"Olive Avenue",
+      "house":"6204"
+    },
+    "phoneNumber":"5536241545",
+    "gender":0,
+    "origin":0
+  },
+  "email":"annamariazhao@yahoo.com",
+  "passd":"e68cb2ea20"
+}

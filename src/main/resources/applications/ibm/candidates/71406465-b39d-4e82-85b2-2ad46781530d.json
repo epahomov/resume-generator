@@ -1,0 +1,34 @@
+{
+  "id":"71406465-b39d-4e82-85b2-2ad46781530d",
+  "person":{
+    "name":{
+      "firstName":"Nathan",
+      "lastName":"Colon"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"George Mason University",
+          "city":"Fairfax",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"22181",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Vienna",
+      "street":"Sutton Road",
+      "house":"Sutton Road"
+    },
+    "phoneNumber":"3513015671",
+    "gender":0,
+    "origin":0
+  },
+  "email":"mairprejsnar@yahoo.com",
+  "passd":"c89b64f417"
+}

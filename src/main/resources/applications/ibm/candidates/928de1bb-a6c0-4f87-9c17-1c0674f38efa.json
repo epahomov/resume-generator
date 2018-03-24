@@ -1,0 +1,34 @@
+{
+  "id":"928de1bb-a6c0-4f87-9c17-1c0674f38efa",
+  "person":{
+    "name":{
+      "firstName":"Tanvi",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Southern California",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"90065",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Andrita Street",
+      "house":"3210"
+    },
+    "phoneNumber":"5752344546",
+    "gender":1,
+    "origin":1
+  },
+  "email":"drusillagoldhagen@yahoo.com",
+  "passd":"9a22e21ca9"
+}

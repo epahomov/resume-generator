@@ -1,0 +1,34 @@
+{
+  "id":"f32fceb5-536b-4449-a1fd-7c98ac3e2906",
+  "person":{
+    "name":{
+      "firstName":"Tanvi",
+      "lastName":"Subram"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oklahoma",
+          "city":"Norman",
+          "state":"OK"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"73026",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Norman",
+      "street":"South Midwest Boulevard",
+      "house":"5100-5390"
+    },
+    "phoneNumber":"2063133827",
+    "gender":1,
+    "origin":1
+  },
+  "email":"renateblake@yahoo.com",
+  "passd":"87a00069a5"
+}

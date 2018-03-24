@@ -1,0 +1,34 @@
+{
+  "id":"a7f16f07-1667-46d2-a819-76e65e2c9162",
+  "person":{
+    "name":{
+      "firstName":"William",
+      "lastName":"Love"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Michigan - Ann Arbor",
+          "city":"Ann Arbor",
+          "state":"MI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"48105",
+      "stateShortName":"MI",
+      "stateFullName":"Michigan",
+      "city":"Ann Arbor",
+      "street":"Katie Lane",
+      "house":"5894"
+    },
+    "phoneNumber":"3254658741",
+    "gender":0,
+    "origin":0
+  },
+  "email":"reidarmossmann@yahoo.com",
+  "passd":"6b4b13ff78"
+}

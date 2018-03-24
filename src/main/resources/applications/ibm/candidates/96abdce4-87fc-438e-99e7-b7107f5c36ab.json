@@ -1,0 +1,34 @@
+{
+  "id":"96abdce4-87fc-438e-99e7-b7107f5c36ab",
+  "person":{
+    "name":{
+      "firstName":"Abigail",
+      "lastName":"Mathews"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"San Diego State University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92116",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Campus Avenue",
+      "house":"4510"
+    },
+    "phoneNumber":"2051239423",
+    "gender":1,
+    "origin":0
+  },
+  "email":"renataphelps@yahoo.com",
+  "passd":"6deb7359ec"
+}

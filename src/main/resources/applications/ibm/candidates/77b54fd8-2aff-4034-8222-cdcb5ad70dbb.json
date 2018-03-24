@@ -1,0 +1,34 @@
+{
+  "id":"77b54fd8-2aff-4034-8222-cdcb5ad70dbb",
+  "person":{
+    "name":{
+      "firstName":"David",
+      "lastName":"Fitzgerald"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Brigham Young University",
+          "city":"Provo",
+          "state":"UT"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"84604",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Provo",
+      "street":"Spring Hollow Road",
+      "house":"Spring Hollow Road"
+    },
+    "phoneNumber":"7776939019",
+    "gender":0,
+    "origin":0
+  },
+  "email":"joachimshipp@yahoo.com",
+  "passd":"31d1bcad9e"
+}

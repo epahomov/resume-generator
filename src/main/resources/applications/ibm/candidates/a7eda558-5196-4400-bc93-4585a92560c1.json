@@ -1,0 +1,34 @@
+{
+  "id":"a7eda558-5196-4400-bc93-4585a92560c1",
+  "person":{
+    "name":{
+      "firstName":"Abhi",
+      "lastName":"Pal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Northern Virginia Community College",
+          "city":"Annandale",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"22041",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Falls Church",
+      "street":"Larchwood Road",
+      "house":"3821-3823"
+    },
+    "phoneNumber":"3651661121",
+    "gender":0,
+    "origin":1
+  },
+  "email":"ingamarmannello@yahoo.com",
+  "passd":"49177f63a7"
+}

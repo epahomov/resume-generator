@@ -1,0 +1,34 @@
+{
+  "id":"a109bd84-e000-4a13-8280-81baeee97696",
+  "person":{
+    "name":{
+      "firstName":"Lauren",
+      "lastName":"Johnson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fresno",
+          "city":"Fresno",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"93702",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Fresno",
+      "street":"East Turner Avenue",
+      "house":"3667-3673"
+    },
+    "phoneNumber":"6742747297",
+    "gender":1,
+    "origin":0
+  },
+  "email":"bobbeetashjian@yahoo.com",
+  "passd":"32c5d0533d"
+}

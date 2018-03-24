@@ -1,0 +1,44 @@
+{
+  "id":"3e885d7d-0e3d-4d97-aeff-64d44302b4c3",
+  "person":{
+    "name":{
+      "firstName":"Owen",
+      "lastName":"Graham"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"06278",
+      "stateShortName":"CT",
+      "stateFullName":"Connecticut",
+      "city":"Ashford",
+      "street":"Squaw Hollow Road",
+      "house":"99-211"
+    },
+    "phoneNumber":"6501941867",
+    "gender":0,
+    "origin":0
+  },
+  "email":"fuentessimona@yahoo.com",
+  "passd":"96143db941"
+}

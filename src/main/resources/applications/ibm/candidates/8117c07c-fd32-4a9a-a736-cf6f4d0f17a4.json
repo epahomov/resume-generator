@@ -1,0 +1,34 @@
+{
+  "id":"8117c07c-fd32-4a9a-a736-cf6f4d0f17a4",
+  "person":{
+    "name":{
+      "firstName":"Krishna",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Florida State University",
+          "city":"Tallahassee",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32312",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Tallahassee",
+      "street":"Bobbin Brook Circle",
+      "house":"3933"
+    },
+    "phoneNumber":"4115465512",
+    "gender":0,
+    "origin":1
+  },
+  "email":"grassarodi@yahoo.com",
+  "passd":"a8448ea7d1"
+}

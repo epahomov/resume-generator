@@ -1,0 +1,34 @@
+{
+  "id":"3fb010f0-6a09-4de9-9618-5969059b8663",
+  "person":{
+    "name":{
+      "firstName":"Gayatri",
+      "lastName":"Kapoor"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Brigham Young University",
+          "city":"Provo",
+          "state":"UT"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"84604",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Provo",
+      "street":"Bonneville Shoreline Trail",
+      "house":"Bonneville Shoreline Trail"
+    },
+    "phoneNumber":"3745181479",
+    "gender":1,
+    "origin":1
+  },
+  "email":"aftonbrowdy@yahoo.com",
+  "passd":"dbdfccce3e"
+}

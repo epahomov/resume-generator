@@ -1,0 +1,34 @@
+{
+  "id":"9cd3761b-5f82-4f86-a43b-0a0cc201c46c",
+  "person":{
+    "name":{
+      "firstName":"Jeremiah",
+      "lastName":"Bolton"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas Tech University",
+          "city":"Lubbock",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"79403",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Lubbock",
+      "street":"North Guava Avenue",
+      "house":"North Guava Avenue"
+    },
+    "phoneNumber":"3634884082",
+    "gender":0,
+    "origin":0
+  },
+  "email":"hammadhelbling@yahoo.com",
+  "passd":"c65cf83a7d"
+}

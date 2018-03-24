@@ -1,0 +1,34 @@
+{
+  "id":"ef5a79ca-e19c-4eb7-ba9c-f4210f3bd987",
+  "person":{
+    "name":{
+      "firstName":"Sanjay",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Texas A&M University",
+          "city":"College Station",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77808",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Bryan",
+      "street":"East State Highway 21",
+      "house":"6198-6214"
+    },
+    "phoneNumber":"7437426499",
+    "gender":0,
+    "origin":1
+  },
+  "email":"beachkaitlynn@yahoo.com",
+  "passd":"597e522c7e"
+}

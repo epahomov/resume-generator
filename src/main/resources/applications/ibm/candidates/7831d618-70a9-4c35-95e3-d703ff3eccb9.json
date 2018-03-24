@@ -1,0 +1,34 @@
+{
+  "id":"7831d618-70a9-4c35-95e3-d703ff3eccb9",
+  "person":{
+    "name":{
+      "firstName":"Alexa",
+      "lastName":"Perry"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Purdue University",
+          "city":"West Lafayette",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"47906",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"West Lafayette",
+      "street":"Indiana 43",
+      "house":"4449"
+    },
+    "phoneNumber":"4702028850",
+    "gender":1,
+    "origin":0
+  },
+  "email":"whittakeryerkes@yahoo.com",
+  "passd":"2dd2c99a13"
+}

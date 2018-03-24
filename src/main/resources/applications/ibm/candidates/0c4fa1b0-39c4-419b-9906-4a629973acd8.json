@@ -1,0 +1,34 @@
+{
+  "id":"0c4fa1b0-39c4-419b-9906-4a629973acd8",
+  "person":{
+    "name":{
+      "firstName":"William",
+      "lastName":"Park"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"James Madison University",
+          "city":"Harrisonburg",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"22802",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Harrisonburg",
+      "street":"McKeever Lane",
+      "house":"3388"
+    },
+    "phoneNumber":"1323896203",
+    "gender":0,
+    "origin":0
+  },
+  "email":"zerkwynne@yahoo.com",
+  "passd":"37c6e61dd3"
+}

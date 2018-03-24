@@ -1,0 +1,34 @@
+{
+  "id":"12f66792-0476-4a0c-9422-108083470132",
+  "person":{
+    "name":{
+      "firstName":"Hayden",
+      "lastName":"Vega"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Colorado State University",
+          "city":"Fort Collins",
+          "state":"CO"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"80524",
+      "stateShortName":"CO",
+      "stateFullName":"Colorado",
+      "city":"Fort Collins",
+      "street":"Gait Circle",
+      "house":"525"
+    },
+    "phoneNumber":"7542802266",
+    "gender":0,
+    "origin":0
+  },
+  "email":"norry.henrichs@yahoo.com",
+  "passd":"120c388d3c"
+}

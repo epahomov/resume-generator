@@ -1,0 +1,34 @@
+{
+  "id":"bd9a4512-ddf7-47a1-a15e-72cf04f4e84e",
+  "person":{
+    "name":{
+      "firstName":"Suhani",
+      "lastName":"Jai"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State Polytechnic University - Pomona",
+          "city":"Pomona",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"91711",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Claremont",
+      "street":"Loretto Court",
+      "house":"146-198"
+    },
+    "phoneNumber":"7732268786",
+    "gender":1,
+    "origin":1
+  },
+  "email":"valeneakcay@yahoo.com",
+  "passd":"e1ea945f3c"
+}

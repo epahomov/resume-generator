@@ -1,0 +1,34 @@
+{
+  "id":"fdc712e0-2bd3-4611-866f-8323365724cb",
+  "person":{
+    "name":{
+      "firstName":"Ethan",
+      "lastName":"Morgan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ivy Tech Community College - Central Indiana",
+          "city":"Indianapolis",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"46220",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Indianapolis",
+      "street":"North College Avenue",
+      "house":"5905"
+    },
+    "phoneNumber":"2037417813",
+    "gender":0,
+    "origin":0
+  },
+  "email":"leeannekarpati@yahoo.com",
+  "passd":"c376376319"
+}

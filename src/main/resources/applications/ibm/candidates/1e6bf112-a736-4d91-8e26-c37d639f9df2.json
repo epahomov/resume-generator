@@ -1,0 +1,44 @@
+{
+  "id":"1e6bf112-a736-4d91-8e26-c37d639f9df2",
+  "person":{
+    "name":{
+      "firstName":"Varun",
+      "lastName":"Joshi"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Purdue University",
+          "city":"West Lafayette",
+          "state":"IN"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Purdue University",
+          "city":"West Lafayette",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"47904",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Lafayette",
+      "street":"Longlois Drive",
+      "house":"3203-3205"
+    },
+    "phoneNumber":"2001246058",
+    "gender":0,
+    "origin":1
+  },
+  "email":"cristopherjewett@yahoo.com",
+  "passd":"7c6dae5909"
+}

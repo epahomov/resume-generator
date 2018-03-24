@@ -1,0 +1,44 @@
+{
+  "id":"607d50a5-e792-4da8-845b-d28c049ad00c",
+  "person":{
+    "name":{
+      "firstName":"Grace",
+      "lastName":"Ortega"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Full Sail University",
+          "city":"Winter Park",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Full Sail University",
+          "city":"Winter Park",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32708",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Winter Springs",
+      "street":"Leopard Trail",
+      "house":"803-805"
+    },
+    "phoneNumber":"7377283879",
+    "gender":1,
+    "origin":0
+  },
+  "email":"israelachviliminda@yahoo.com",
+  "passd":"d25d5ba93d"
+}

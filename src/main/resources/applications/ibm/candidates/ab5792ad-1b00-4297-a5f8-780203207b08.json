@@ -1,0 +1,34 @@
+{
+  "id":"ab5792ad-1b00-4297-a5f8-780203207b08",
+  "person":{
+    "name":{
+      "firstName":"Prince",
+      "lastName":"Jai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Texas",
+          "city":"Denton",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"76227",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Aubrey",
+      "street":"Elm Bottom Circle",
+      "house":"4612"
+    },
+    "phoneNumber":"3704778165",
+    "gender":0,
+    "origin":1
+  },
+  "email":"kendellpiacentino@yahoo.com",
+  "passd":"939c2b3350"
+}

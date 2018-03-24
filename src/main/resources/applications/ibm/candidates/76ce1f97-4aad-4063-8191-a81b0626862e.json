@@ -1,0 +1,34 @@
+{
+  "id":"76ce1f97-4aad-4063-8191-a81b0626862e",
+  "person":{
+    "name":{
+      "firstName":"Ramanan",
+      "lastName":"Anand"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Florida",
+          "city":"Gainesville",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"32609",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Gainesville",
+      "street":"Unnamed Road",
+      "house":"Unnamed Road"
+    },
+    "phoneNumber":"6641688118",
+    "gender":0,
+    "origin":1
+  },
+  "email":"feinsteinfleur@yahoo.com",
+  "passd":"47bad255bd"
+}

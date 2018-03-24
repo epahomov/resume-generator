@@ -1,0 +1,34 @@
+{
+  "id":"63c8d902-9559-4a48-9e33-9cf3adbeb750",
+  "person":{
+    "name":{
+      "firstName":"Priyanka",
+      "lastName":"Jai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97321",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Albany",
+      "street":"Riverside Drive",
+      "house":"35580"
+    },
+    "phoneNumber":"5365974312",
+    "gender":1,
+    "origin":1
+  },
+  "email":"carolannrent@yahoo.com",
+  "passd":"577ffcffc1"
+}

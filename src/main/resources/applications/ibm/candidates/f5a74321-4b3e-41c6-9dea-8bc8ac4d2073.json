@@ -1,0 +1,34 @@
+{
+  "id":"f5a74321-4b3e-41c6-9dea-8bc8ac4d2073",
+  "person":{
+    "name":{
+      "firstName":"N.priyanka",
+      "lastName":"Subramani"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California Polytechnic State University - San Luis Obispo",
+          "city":"San Luis Obispo",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"93420",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Arroyo Grande",
+      "street":"Reservoir Canyon Road",
+      "house":"Reservoir Canyon Road"
+    },
+    "phoneNumber":"1353809600",
+    "gender":1,
+    "origin":1
+  },
+  "email":"ainsleedeacon@yahoo.com",
+  "passd":"6e03994235"
+}

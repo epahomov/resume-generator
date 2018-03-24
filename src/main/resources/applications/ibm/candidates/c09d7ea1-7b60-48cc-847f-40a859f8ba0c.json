@@ -1,0 +1,34 @@
+{
+  "id":"c09d7ea1-7b60-48cc-847f-40a859f8ba0c",
+  "person":{
+    "name":{
+      "firstName":"Logan",
+      "lastName":"Henry"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97477",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Springfield",
+      "street":"10th Street",
+      "house":"1817"
+    },
+    "phoneNumber":"6724655877",
+    "gender":0,
+    "origin":0
+  },
+  "email":"feodorariedo@yahoo.com",
+  "passd":"3625c17274"
+}

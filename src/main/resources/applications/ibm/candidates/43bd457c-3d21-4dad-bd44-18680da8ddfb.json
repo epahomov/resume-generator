@@ -1,0 +1,44 @@
+{
+  "id":"43bd457c-3d21-4dad-bd44-18680da8ddfb",
+  "person":{
+    "name":{
+      "firstName":"Isabella",
+      "lastName":"Jenkins"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Washington",
+          "city":"Seattle",
+          "state":"WA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Washington",
+          "city":"Seattle",
+          "state":"WA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"98115",
+      "stateShortName":"WA",
+      "stateFullName":"Washington",
+      "city":"Seattle",
+      "street":"Banner Way Northeast",
+      "house":"2494"
+    },
+    "phoneNumber":"6235602694",
+    "gender":1,
+    "origin":0
+  },
+  "email":"jogillevet@yahoo.com",
+  "passd":"ba03acd560"
+}

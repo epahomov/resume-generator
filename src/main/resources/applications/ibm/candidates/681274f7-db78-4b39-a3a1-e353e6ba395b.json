@@ -1,0 +1,44 @@
+{
+  "id":"681274f7-db78-4b39-a3a1-e353e6ba395b",
+  "person":{
+    "name":{
+      "firstName":"Divya",
+      "lastName":"Chander"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Arizona",
+          "city":"Tucson",
+          "state":"AZ"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Arizona",
+          "city":"Tucson",
+          "state":"AZ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"85711",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Tucson",
+      "street":"East Broadway Boulevard",
+      "house":"5991-6019"
+    },
+    "phoneNumber":"3004412076",
+    "gender":1,
+    "origin":1
+  },
+  "email":"isabellerilke@yahoo.com",
+  "passd":"0a8d0f126d"
+}

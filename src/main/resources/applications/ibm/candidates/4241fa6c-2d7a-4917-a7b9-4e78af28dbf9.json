@@ -1,0 +1,34 @@
+{
+  "id":"4241fa6c-2d7a-4917-a7b9-4e78af28dbf9",
+  "person":{
+    "name":{
+      "firstName":"Varsha",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Louisiana State University",
+          "city":"Baton Rouge",
+          "state":"LA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"70818",
+      "stateShortName":"LA",
+      "stateFullName":"Louisiana",
+      "city":"Baton Rouge",
+      "street":"Glen Watts Road",
+      "house":"11267"
+    },
+    "phoneNumber":"4203148135",
+    "gender":1,
+    "origin":1
+  },
+  "email":"jaquelinchipman@yahoo.com",
+  "passd":"a44bf018b8"
+}

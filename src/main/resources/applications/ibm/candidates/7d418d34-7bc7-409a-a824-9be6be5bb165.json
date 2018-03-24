@@ -1,0 +1,34 @@
+{
+  "id":"7d418d34-7bc7-409a-a824-9be6be5bb165",
+  "person":{
+    "name":{
+      "firstName":"Deepro",
+      "lastName":"Kapoor"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Lone Star College System",
+          "city":"The Woodlands",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77302",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Conroe",
+      "street":"Lyric Road",
+      "house":"14201-14431"
+    },
+    "phoneNumber":"6055865699",
+    "gender":0,
+    "origin":1
+  },
+  "email":"mottamortie@yahoo.com",
+  "passd":"d114c782e8"
+}

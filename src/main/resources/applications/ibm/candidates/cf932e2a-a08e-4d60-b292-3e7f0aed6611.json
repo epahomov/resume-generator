@@ -1,0 +1,34 @@
+{
+  "id":"cf932e2a-a08e-4d60-b292-3e7f0aed6611",
+  "person":{
+    "name":{
+      "firstName":"Aswini",
+      "lastName":"Kishore"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ashford University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92103",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Georgia Street",
+      "house":"3945"
+    },
+    "phoneNumber":"7657132399",
+    "gender":1,
+    "origin":1
+  },
+  "email":"mercedeseckhaus@yahoo.com",
+  "passd":"a2c64f4352"
+}

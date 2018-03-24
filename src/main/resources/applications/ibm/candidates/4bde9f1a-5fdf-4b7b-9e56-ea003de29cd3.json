@@ -1,0 +1,44 @@
+{
+  "id":"4bde9f1a-5fdf-4b7b-9e56-ea003de29cd3",
+  "person":{
+    "name":{
+      "firstName":"Joseph",
+      "lastName":"Wilson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Florida International University",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Florida International University",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"33140",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Miami Beach",
+      "street":"Lakeview Drive",
+      "house":"4960-4998"
+    },
+    "phoneNumber":"4353631725",
+    "gender":0,
+    "origin":0
+  },
+  "email":"meggyglasman@yahoo.com",
+  "passd":"9079fd7f0b"
+}

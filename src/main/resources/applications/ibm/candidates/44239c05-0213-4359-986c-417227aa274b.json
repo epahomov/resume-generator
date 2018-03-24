@@ -1,0 +1,54 @@
+{
+  "id":"44239c05-0213-4359-986c-417227aa274b",
+  "person":{
+    "name":{
+      "firstName":"Angel",
+      "lastName":"Diaz"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"06268",
+      "stateShortName":"CT",
+      "stateFullName":"Connecticut",
+      "city":"Mansfield",
+      "street":"Chaffeeville Road",
+      "house":"574"
+    },
+    "phoneNumber":"6434615460",
+    "gender":0,
+    "origin":0
+  },
+  "email":"hofflynn@yahoo.com",
+  "passd":"537543bb85"
+}

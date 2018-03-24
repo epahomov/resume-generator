@@ -1,0 +1,44 @@
+{
+  "id":"1d999f21-9721-464d-b67f-a5804735deda",
+  "person":{
+    "name":{
+      "firstName":"Aaron",
+      "lastName":"Henry"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Francisco State University",
+          "city":"San Francisco",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"San Francisco State University",
+          "city":"San Francisco",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"94133",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Francisco",
+      "street":"Pier 39 Concourse",
+      "house":"13"
+    },
+    "phoneNumber":"6511493219",
+    "gender":0,
+    "origin":0
+  },
+  "email":"ellilauro@yahoo.com",
+  "passd":"11eb243459"
+}

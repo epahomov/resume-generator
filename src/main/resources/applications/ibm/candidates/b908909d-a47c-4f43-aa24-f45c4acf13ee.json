@@ -1,0 +1,34 @@
+{
+  "id":"b908909d-a47c-4f43-aa24-f45c4acf13ee",
+  "person":{
+    "name":{
+      "firstName":"Sophia",
+      "lastName":"Rowe"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Massachusetts - Amherst",
+          "city":"Amherst",
+          "state":"MA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"01054",
+      "stateShortName":"MA",
+      "stateFullName":"Massachusetts",
+      "city":"Leverett",
+      "street":"Shutesbury Road",
+      "house":"191"
+    },
+    "phoneNumber":"5114628576",
+    "gender":1,
+    "origin":0
+  },
+  "email":"ramonachiandotto@yahoo.com",
+  "passd":"a015eea82a"
+}

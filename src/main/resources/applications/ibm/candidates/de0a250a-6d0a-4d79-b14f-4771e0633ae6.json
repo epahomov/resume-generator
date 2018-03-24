@@ -1,0 +1,44 @@
+{
+  "id":"de0a250a-6d0a-4d79-b14f-4771e0633ae6",
+  "person":{
+    "name":{
+      "firstName":"Maxwell",
+      "lastName":"Harris"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Sacramento",
+          "city":"Sacramento",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"California State University - Sacramento",
+          "city":"Sacramento",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"95815",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Sacramento",
+      "street":"Jedediah Smith Memorial Trail",
+      "house":"Jedediah Smith Memorial Trail"
+    },
+    "phoneNumber":"6573777924",
+    "gender":0,
+    "origin":0
+  },
+  "email":"modestalunsford@yahoo.com",
+  "passd":"5fabcce1b3"
+}

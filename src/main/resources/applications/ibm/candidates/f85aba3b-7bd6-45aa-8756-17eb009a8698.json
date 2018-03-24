@@ -1,0 +1,34 @@
+{
+  "id":"f85aba3b-7bd6-45aa-8756-17eb009a8698",
+  "person":{
+    "name":{
+      "firstName":"Mayank",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Brigham Young University",
+          "city":"Provo",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84604",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Provo",
+      "street":"Forest Road 590",
+      "house":"Forest Road 590"
+    },
+    "phoneNumber":"4076681417",
+    "gender":0,
+    "origin":1
+  },
+  "email":"mercigivens@yahoo.com",
+  "passd":"3850f74bac"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"7f501657-4f84-47d6-9455-5f4a5ce81797",
+  "person":{
+    "name":{
+      "firstName":"Luke",
+      "lastName":"Fletcher"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oklahoma",
+          "city":"Norman",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Oklahoma",
+          "city":"Norman",
+          "state":"OK"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"73071",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Norman",
+      "street":"East Franklin Road",
+      "house":"367-799"
+    },
+    "phoneNumber":"6002434202",
+    "gender":0,
+    "origin":0
+  },
+  "email":"phoebewolfman@yahoo.com",
+  "passd":"07003a3299"
+}

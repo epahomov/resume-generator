@@ -1,0 +1,34 @@
+{
+  "id":"3c5e93f9-64be-432c-a386-0eefff4f3e9c",
+  "person":{
+    "name":{
+      "firstName":"Varsha",
+      "lastName":"Chander"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Florida",
+          "city":"Gainesville",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32609",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Gainesville",
+      "street":"Northeast 15th Street",
+      "house":"4977-5127"
+    },
+    "phoneNumber":"5045788722",
+    "gender":1,
+    "origin":1
+  },
+  "email":"carline.drager@yahoo.com",
+  "passd":"82d222eaa5"
+}

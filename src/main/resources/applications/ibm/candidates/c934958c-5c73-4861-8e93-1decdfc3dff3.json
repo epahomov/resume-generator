@@ -1,0 +1,34 @@
+{
+  "id":"c934958c-5c73-4861-8e93-1decdfc3dff3",
+  "person":{
+    "name":{
+      "firstName":"Cody",
+      "lastName":"Mcdonald"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Riverside",
+          "city":"Riverside",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92506",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Riverside",
+      "street":"Olivewood Avenue",
+      "house":"5360"
+    },
+    "phoneNumber":"5761384435",
+    "gender":0,
+    "origin":0
+  },
+  "email":"vierrarobena@yahoo.com",
+  "passd":"e26a0ec968"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"edbb3a39-148c-4056-b590-169723beddb7",
+  "person":{
+    "name":{
+      "firstName":"Olivia",
+      "lastName":"Harris"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Los Angeles",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"91105",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Pasadena",
+      "street":"South Orange Grove Boulevard",
+      "house":"834"
+    },
+    "phoneNumber":"7516348948",
+    "gender":1,
+    "origin":0
+  },
+  "email":"gussiepeters@yahoo.com",
+  "passd":"ea31322f10"
+}

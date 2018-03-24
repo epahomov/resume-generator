@@ -1,0 +1,34 @@
+{
+  "id":"dfb2acf6-401a-46d0-adf8-4a141ddbe27d",
+  "person":{
+    "name":{
+      "firstName":"Haley",
+      "lastName":"Williams"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"West Virginia University",
+          "city":"Morgantown",
+          "state":"WV"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"26508",
+      "stateShortName":"WV",
+      "stateFullName":"West Virginia",
+      "city":"Morgantown",
+      "street":"Sunset Beach Road",
+      "house":"89"
+    },
+    "phoneNumber":"1535538812",
+    "gender":1,
+    "origin":0
+  },
+  "email":"nealhughesdavies@yahoo.com",
+  "passd":"2c89859e03"
+}

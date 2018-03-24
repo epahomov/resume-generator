@@ -1,0 +1,34 @@
+{
+  "id":"e57bae9e-69a1-4bcd-bcfd-4f975ce9da9c",
+  "person":{
+    "name":{
+      "firstName":"Zoe",
+      "lastName":"Thomas"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Illinois at Urbana-Champaign",
+          "city":"Champaign",
+          "state":"IL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"61878",
+      "stateShortName":"IL",
+      "stateFullName":"Illinois",
+      "city":"Thomasboro",
+      "street":"County Road 1200 East",
+      "house":"2365"
+    },
+    "phoneNumber":"7214426467",
+    "gender":1,
+    "origin":0
+  },
+  "email":"leveybontempo@yahoo.com",
+  "passd":"a4982ff0e9"
+}

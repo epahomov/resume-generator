@@ -1,0 +1,34 @@
+{
+  "id":"2b380241-da9a-41cd-8c2e-43ac76c148b4",
+  "person":{
+    "name":{
+      "firstName":"Ajith",
+      "lastName":"Bhat"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"James Madison University",
+          "city":"Harrisonburg",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"22802",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Harrisonburg",
+      "street":"Spring House Circle",
+      "house":"5088"
+    },
+    "phoneNumber":"7313868682",
+    "gender":0,
+    "origin":1
+  },
+  "email":"helaineritzau@yahoo.com",
+  "passd":"8fdc86573a"
+}

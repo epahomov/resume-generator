@@ -1,0 +1,34 @@
+{
+  "id":"45ed8d6b-79ee-4b56-ae5a-671ac4073ba7",
+  "person":{
+    "name":{
+      "firstName":"Erica",
+      "lastName":"Gay"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"10012",
+      "stateShortName":"NY",
+      "stateFullName":"New York",
+      "city":"New York",
+      "street":"West Houston Street",
+      "house":"144-146"
+    },
+    "phoneNumber":"2732328587",
+    "gender":1,
+    "origin":0
+  },
+  "email":"cyndeclipper@yahoo.com",
+  "passd":"ade214efde"
+}

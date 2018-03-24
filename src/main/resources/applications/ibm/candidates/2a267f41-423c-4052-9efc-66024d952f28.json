@@ -1,0 +1,34 @@
+{
+  "id":"2a267f41-423c-4052-9efc-66024d952f28",
+  "person":{
+    "name":{
+      "firstName":"Shrinidhi",
+      "lastName":"Rai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32792",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Winter Park",
+      "street":"Palmer Avenue",
+      "house":"1832-1836"
+    },
+    "phoneNumber":"3145487529",
+    "gender":1,
+    "origin":1
+  },
+  "email":"bearharn@yahoo.com",
+  "passd":"ff2bd042ba"
+}

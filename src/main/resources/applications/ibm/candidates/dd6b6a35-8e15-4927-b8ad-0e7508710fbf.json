@@ -1,0 +1,34 @@
+{
+  "id":"dd6b6a35-8e15-4927-b8ad-0e7508710fbf",
+  "person":{
+    "name":{
+      "firstName":"Eva",
+      "lastName":"Smith"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Texas A&M University",
+          "city":"College Station",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77840",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"College Station",
+      "street":"Berkeley Street",
+      "house":"1202"
+    },
+    "phoneNumber":"7472071299",
+    "gender":1,
+    "origin":0
+  },
+  "email":"dirksensheff@yahoo.com",
+  "passd":"2ad814feab"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"cb24ed12-78e0-4ad5-b336-89bbe9482433",
+  "person":{
+    "name":{
+      "firstName":"Caden",
+      "lastName":"Black"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Georgia State University",
+          "city":"Atlanta",
+          "state":"GA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"30305",
+      "stateShortName":"GA",
+      "stateFullName":"Georgia",
+      "city":"Atlanta",
+      "street":"Kinsey Court Northeast",
+      "house":"299"
+    },
+    "phoneNumber":"6355234352",
+    "gender":0,
+    "origin":0
+  },
+  "email":"joycelinlittlehale@yahoo.com",
+  "passd":"0ccf4830d0"
+}

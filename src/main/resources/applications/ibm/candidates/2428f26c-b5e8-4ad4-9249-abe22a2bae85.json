@@ -1,0 +1,34 @@
+{
+  "id":"2428f26c-b5e8-4ad4-9249-abe22a2bae85",
+  "person":{
+    "name":{
+      "firstName":"Vedant",
+      "lastName":"Sudha"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oklahoma",
+          "city":"Norman",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"73071",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Norman",
+      "street":"East Franklin Road",
+      "house":"302"
+    },
+    "phoneNumber":"1475625067",
+    "gender":0,
+    "origin":1
+  },
+  "email":"cobleclerkclaude@yahoo.com",
+  "passd":"7993536033"
+}

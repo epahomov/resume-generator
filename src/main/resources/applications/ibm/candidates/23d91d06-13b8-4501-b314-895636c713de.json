@@ -1,0 +1,44 @@
+{
+  "id":"23d91d06-13b8-4501-b314-895636c713de",
+  "person":{
+    "name":{
+      "firstName":"Angel",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Cincinnati",
+          "city":"Cincinnati",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Cincinnati",
+          "city":"Cincinnati",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"45229",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Cincinnati",
+      "street":"Gholson Avenue",
+      "house":"651"
+    },
+    "phoneNumber":"7001397759",
+    "gender":1,
+    "origin":1
+  },
+  "email":"dimitrouferraro@yahoo.com",
+  "passd":"8249224a96"
+}

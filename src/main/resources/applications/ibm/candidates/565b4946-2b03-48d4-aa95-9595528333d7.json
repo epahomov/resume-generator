@@ -1,0 +1,34 @@
+{
+  "id":"565b4946-2b03-48d4-aa95-9595528333d7",
+  "person":{
+    "name":{
+      "firstName":"Abdul",
+      "lastName":"Bhat"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Purdue University",
+          "city":"West Lafayette",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"47920",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Battle Ground",
+      "street":"Indiana 225",
+      "house":"2115"
+    },
+    "phoneNumber":"1556961634",
+    "gender":0,
+    "origin":1
+  },
+  "email":"pridhamleta@yahoo.com",
+  "passd":"c1c5f8139a"
+}

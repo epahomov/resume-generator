@@ -1,0 +1,34 @@
+{
+  "id":"3efd60be-40d6-4044-bffd-890c4613bfad",
+  "person":{
+    "name":{
+      "firstName":"Amit",
+      "lastName":"Pawan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Irvine",
+          "city":"Irvine",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92602",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Irvine",
+      "street":"Bryan Avenue",
+      "house":"3498-3550"
+    },
+    "phoneNumber":"5263864970",
+    "gender":0,
+    "origin":1
+  },
+  "email":"jeffreyfigel@yahoo.com",
+  "passd":"c3ee27b3cb"
+}

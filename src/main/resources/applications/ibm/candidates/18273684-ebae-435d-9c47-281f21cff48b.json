@@ -1,0 +1,44 @@
+{
+  "id":"18273684-ebae-435d-9c47-281f21cff48b",
+  "person":{
+    "name":{
+      "firstName":"Yash",
+      "lastName":"Samuel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Kansas State University",
+          "city":"Manhattan",
+          "state":"KS"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Kansas State University",
+          "city":"Manhattan",
+          "state":"KS"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"66502",
+      "stateShortName":"KS",
+      "stateFullName":"Kansas",
+      "city":"Manhattan",
+      "street":"Harvest Road",
+      "house":"4352-4398"
+    },
+    "phoneNumber":"4003994712",
+    "gender":0,
+    "origin":1
+  },
+  "email":"ashleenystrom@yahoo.com",
+  "passd":"01575326b9"
+}

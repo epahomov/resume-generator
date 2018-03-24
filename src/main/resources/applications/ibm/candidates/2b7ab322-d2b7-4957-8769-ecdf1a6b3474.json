@@ -1,0 +1,34 @@
+{
+  "id":"2b7ab322-d2b7-4957-8769-ecdf1a6b3474",
+  "person":{
+    "name":{
+      "firstName":"Michael",
+      "lastName":"Guerrero"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Cincinnati",
+          "city":"Cincinnati",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"45226",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Cincinnati",
+      "street":"Totten Avenue",
+      "house":"3555"
+    },
+    "phoneNumber":"1555805170",
+    "gender":0,
+    "origin":0
+  },
+  "email":"silverbergwilldon@yahoo.com",
+  "passd":"ccb9d58476"
+}

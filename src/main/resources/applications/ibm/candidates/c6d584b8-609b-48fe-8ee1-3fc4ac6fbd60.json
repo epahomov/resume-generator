@@ -1,0 +1,34 @@
+{
+  "id":"c6d584b8-609b-48fe-8ee1-3fc4ac6fbd60",
+  "person":{
+    "name":{
+      "firstName":"Shivani",
+      "lastName":"Raji"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78752",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"North Interstate Highway 35",
+      "house":"6505"
+    },
+    "phoneNumber":"2452723681",
+    "gender":1,
+    "origin":1
+  },
+  "email":"lennagoncalves@yahoo.com",
+  "passd":"5a106e17ee"
+}

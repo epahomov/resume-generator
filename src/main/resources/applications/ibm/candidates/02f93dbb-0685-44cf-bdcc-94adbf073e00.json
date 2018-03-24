@@ -1,0 +1,34 @@
+{
+  "id":"02f93dbb-0685-44cf-bdcc-94adbf073e00",
+  "person":{
+    "name":{
+      "firstName":"Chloe",
+      "lastName":"Nelson"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fullerton",
+          "city":"Fullerton",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92870",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Placentia",
+      "street":"South Angelina Drive",
+      "house":"155-199"
+    },
+    "phoneNumber":"7342272253",
+    "gender":1,
+    "origin":0
+  },
+  "email":"gaelanforgione@yahoo.com",
+  "passd":"2b762429f5"
+}

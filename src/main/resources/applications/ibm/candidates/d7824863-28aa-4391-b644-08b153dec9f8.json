@@ -1,0 +1,44 @@
+{
+  "id":"d7824863-28aa-4391-b644-08b153dec9f8",
+  "person":{
+    "name":{
+      "firstName":"Diego",
+      "lastName":"Whitehead"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"47408",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Bloomington",
+      "street":"East Robinson Road",
+      "house":"3685"
+    },
+    "phoneNumber":"2674517922",
+    "gender":0,
+    "origin":0
+  },
+  "email":"sulaholter@yahoo.com",
+  "passd":"f2eac14e24"
+}

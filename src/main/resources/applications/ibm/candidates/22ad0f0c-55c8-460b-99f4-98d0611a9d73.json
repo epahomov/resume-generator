@@ -1,0 +1,34 @@
+{
+  "id":"22ad0f0c-55c8-460b-99f4-98d0611a9d73",
+  "person":{
+    "name":{
+      "firstName":"Vinay",
+      "lastName":"Lalit"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ashford University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92115",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Mary Lane Drive",
+      "house":"5646"
+    },
+    "phoneNumber":"2634412119",
+    "gender":0,
+    "origin":1
+  },
+  "email":"zakarianelysee@yahoo.com",
+  "passd":"a052fa4fc0"
+}

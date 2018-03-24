@@ -1,0 +1,34 @@
+{
+  "id":"c930dd58-deb4-4b94-8e96-4ed22ce07ac6",
+  "person":{
+    "name":{
+      "firstName":"Mason",
+      "lastName":"Andrews"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97321",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Albany",
+      "street":"Excor Road Southwest",
+      "house":"34081"
+    },
+    "phoneNumber":"6321788225",
+    "gender":0,
+    "origin":0
+  },
+  "email":"caitlinuyterhoeven@yahoo.com",
+  "passd":"06075d7d3b"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"60f6cf91-a577-464f-8285-adc34733ffbf",
+  "person":{
+    "name":{
+      "firstName":"Shyam",
+      "lastName":"Pal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Houston",
+          "city":"Houston",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"77028",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Houston",
+      "street":"Sandra Street",
+      "house":"6818"
+    },
+    "phoneNumber":"6145184104",
+    "gender":0,
+    "origin":1
+  },
+  "email":"artemisreeves@yahoo.com",
+  "passd":"f194c2968c"
+}

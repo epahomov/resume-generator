@@ -1,0 +1,44 @@
+{
+  "id":"09d23cd3-9922-4817-9044-2e0241cddb8d",
+  "person":{
+    "name":{
+      "firstName":"Amit",
+      "lastName":"Sara"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"West Virginia University",
+          "city":"Morgantown",
+          "state":"WV"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"West Virginia University",
+          "city":"Morgantown",
+          "state":"WV"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"26508",
+      "stateShortName":"WV",
+      "stateFullName":"West Virginia",
+      "city":"Morgantown",
+      "street":"Cheat Road",
+      "house":"263"
+    },
+    "phoneNumber":"1422734124",
+    "gender":0,
+    "origin":1
+  },
+  "email":"pernellcongreve@yahoo.com",
+  "passd":"2d1a030156"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"afa7796c-334c-4cdf-a2f2-4e6c59e8d057",
+  "person":{
+    "name":{
+      "firstName":"William",
+      "lastName":"Coffey"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Washington State University",
+          "city":"Pullman",
+          "state":"WA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"99163",
+      "stateShortName":"WA",
+      "stateFullName":"Washington",
+      "city":"Pullman",
+      "street":"Airport Road",
+      "house":"4800"
+    },
+    "phoneNumber":"5633338725",
+    "gender":0,
+    "origin":0
+  },
+  "email":"derylrenjel@yahoo.com",
+  "passd":"e342db6804"
+}

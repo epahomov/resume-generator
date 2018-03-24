@@ -1,0 +1,34 @@
+{
+  "id":"63f2b6dd-d397-4c3d-a488-b44ef6d325e2",
+  "person":{
+    "name":{
+      "firstName":"Shane",
+      "lastName":"Pennington"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Washington",
+          "city":"Seattle",
+          "state":"WA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"98115",
+      "stateShortName":"WA",
+      "stateFullName":"Washington",
+      "city":"Seattle",
+      "street":"Ravenna Avenue Northeast",
+      "house":"6840-6842"
+    },
+    "phoneNumber":"4104577786",
+    "gender":0,
+    "origin":0
+  },
+  "email":"joagdevclementine@yahoo.com",
+  "passd":"207d659c3e"
+}

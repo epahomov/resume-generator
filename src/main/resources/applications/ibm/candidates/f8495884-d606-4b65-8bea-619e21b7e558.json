@@ -1,0 +1,44 @@
+{
+  "id":"f8495884-d606-4b65-8bea-619e21b7e558",
+  "person":{
+    "name":{
+      "firstName":"Alex",
+      "lastName":"Mcclain"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"East Carolina University",
+          "city":"Greenville",
+          "state":"NC"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"East Carolina University",
+          "city":"Greenville",
+          "state":"NC"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"27834",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Greenville",
+      "street":"Martin Luther King Junior Highway",
+      "house":"5155-5199"
+    },
+    "phoneNumber":"2144997453",
+    "gender":0,
+    "origin":0
+  },
+  "email":"proffittstan@yahoo.com",
+  "passd":"753b65f8ae"
+}

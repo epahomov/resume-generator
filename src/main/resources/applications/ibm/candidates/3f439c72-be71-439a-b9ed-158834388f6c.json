@@ -1,0 +1,34 @@
+{
+  "id":"3f439c72-be71-439a-b9ed-158834388f6c",
+  "person":{
+    "name":{
+      "firstName":"Blake",
+      "lastName":"Banks"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Miami Dade College",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"33132",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Miami",
+      "street":"Antarctica Way",
+      "house":"Antarctica Way"
+    },
+    "phoneNumber":"7471196058",
+    "gender":0,
+    "origin":0
+  },
+  "email":"shakhnovichreginald@yahoo.com",
+  "passd":"cb47f4295a"
+}

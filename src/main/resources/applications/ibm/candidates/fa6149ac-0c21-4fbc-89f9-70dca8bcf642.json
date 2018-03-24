@@ -1,0 +1,34 @@
+{
+  "id":"fa6149ac-0c21-4fbc-89f9-70dca8bcf642",
+  "person":{
+    "name":{
+      "firstName":"Prashant",
+      "lastName":"Neel"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"78757",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"Pompton Drive",
+      "house":"1800"
+    },
+    "phoneNumber":"3021577042",
+    "gender":0,
+    "origin":1
+  },
+  "email":"hezekiahsobol@yahoo.com",
+  "passd":"45509fb20d"
+}

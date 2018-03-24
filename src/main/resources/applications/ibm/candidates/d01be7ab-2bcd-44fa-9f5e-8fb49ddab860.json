@@ -1,0 +1,44 @@
+{
+  "id":"d01be7ab-2bcd-44fa-9f5e-8fb49ddab860",
+  "person":{
+    "name":{
+      "firstName":"Nishi",
+      "lastName":"Chandra"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"44266",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Ravenna",
+      "street":"Ohio 14",
+      "house":"7830"
+    },
+    "phoneNumber":"5335465487",
+    "gender":1,
+    "origin":1
+  },
+  "email":"colemankling@yahoo.com",
+  "passd":"541f347aaf"
+}

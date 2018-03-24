@@ -1,0 +1,34 @@
+{
+  "id":"b7ce9304-1c11-4e7b-b2c3-6e6ea73d057e",
+  "person":{
+    "name":{
+      "firstName":"Shreya",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Colorado State University",
+          "city":"Fort Collins",
+          "state":"CO"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"80524",
+      "stateShortName":"CO",
+      "stateFullName":"Colorado",
+      "city":"Fort Collins",
+      "street":"East Co Road 56",
+      "house":"101-325"
+    },
+    "phoneNumber":"4725304765",
+    "gender":1,
+    "origin":1
+  },
+  "email":"davidjohnston103@yahoo.com",
+  "passd":"5972a1f4ab"
+}

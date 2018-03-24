@@ -1,0 +1,44 @@
+{
+  "id":"da9bbb76-1c61-4683-8436-ffc0c33561c3",
+  "person":{
+    "name":{
+      "firstName":"Brady",
+      "lastName":"Johnson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"86001",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Flagstaff",
+      "street":"Lookout Road",
+      "house":"Lookout Road"
+    },
+    "phoneNumber":"7374244004",
+    "gender":0,
+    "origin":0
+  },
+  "email":"edikreyes@yahoo.com",
+  "passd":"8898f39d0b"
+}

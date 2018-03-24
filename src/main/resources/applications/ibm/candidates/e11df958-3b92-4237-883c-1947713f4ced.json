@@ -1,0 +1,54 @@
+{
+  "id":"e11df958-3b92-4237-883c-1947713f4ced",
+  "person":{
+    "name":{
+      "firstName":"John",
+      "lastName":"Yang"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Texas",
+          "city":"Denton",
+          "state":"TX"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of North Texas",
+          "city":"Denton",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"University of North Texas",
+          "city":"Denton",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"76227",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Aubrey",
+      "street":"Farm to Market Road 428",
+      "house":"10744-10798"
+    },
+    "phoneNumber":"2603323280",
+    "gender":0,
+    "origin":0
+  },
+  "email":"tobie.villemaire@yahoo.com",
+  "passd":"0d80a67a85"
+}

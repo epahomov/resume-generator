@@ -1,0 +1,34 @@
+{
+  "id":"a17cecf6-7e31-44ad-a5b2-4ede48f31e97",
+  "person":{
+    "name":{
+      "firstName":"Nitin",
+      "lastName":"Patel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97408",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Eugene",
+      "street":"Egge Road",
+      "house":"90375"
+    },
+    "phoneNumber":"1641733914",
+    "gender":0,
+    "origin":1
+  },
+  "email":"wyliejuritz@yahoo.com",
+  "passd":"433067c5e3"
+}

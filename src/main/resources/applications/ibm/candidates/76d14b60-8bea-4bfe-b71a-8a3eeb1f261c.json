@@ -1,0 +1,34 @@
+{
+  "id":"76d14b60-8bea-4bfe-b71a-8a3eeb1f261c",
+  "person":{
+    "name":{
+      "firstName":"Isaiah",
+      "lastName":"Lee"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"10021",
+      "stateShortName":"NY",
+      "stateFullName":"New York",
+      "city":"New York",
+      "street":"2nd Avenue",
+      "house":"1413"
+    },
+    "phoneNumber":"3226733555",
+    "gender":0,
+    "origin":0
+  },
+  "email":"seitzlewie@yahoo.com",
+  "passd":"ddfe306fd3"
+}

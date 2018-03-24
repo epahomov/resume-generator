@@ -1,0 +1,34 @@
+{
+  "id":"bc18e937-4119-414a-b876-a413d5122291",
+  "person":{
+    "name":{
+      "firstName":"Atul",
+      "lastName":"Samuel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Minnesota - Twin Cities",
+          "city":"Minneapolis",
+          "state":"MN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"55421",
+      "stateShortName":"MN",
+      "stateFullName":"Minnesota",
+      "city":"Columbia Heights",
+      "street":"4th Street Northeast",
+      "house":"4448"
+    },
+    "phoneNumber":"3642463881",
+    "gender":0,
+    "origin":1
+  },
+  "email":"wilburlouie@yahoo.com",
+  "passd":"b10f4acdd4"
+}

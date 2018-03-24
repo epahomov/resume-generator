@@ -1,0 +1,34 @@
+{
+  "id":"79df812d-687f-43bf-8acd-92cef50ca90d",
+  "person":{
+    "name":{
+      "firstName":"Zachary",
+      "lastName":"Perez"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"78701",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"Red River Street",
+      "house":"1704-1710"
+    },
+    "phoneNumber":"7423485184",
+    "gender":0,
+    "origin":0
+  },
+  "email":"ronnasladek@yahoo.com",
+  "passd":"1ecd52e173"
+}

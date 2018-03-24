@@ -1,0 +1,34 @@
+{
+  "id":"1443f83c-61cc-4325-843c-65b9b4593893",
+  "person":{
+    "name":{
+      "firstName":"Levi",
+      "lastName":"Whitney"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Sacramento",
+          "city":"Sacramento",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"95838",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Sacramento",
+      "street":"Bell Avenue",
+      "house":"1650"
+    },
+    "phoneNumber":"1251908357",
+    "gender":0,
+    "origin":0
+  },
+  "email":"jasminesykes664@yahoo.com",
+  "passd":"dc3ac09b2a"
+}

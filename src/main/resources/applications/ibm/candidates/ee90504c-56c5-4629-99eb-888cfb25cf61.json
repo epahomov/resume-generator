@@ -1,0 +1,54 @@
+{
+  "id":"ee90504c-56c5-4629-99eb-888cfb25cf61",
+  "person":{
+    "name":{
+      "firstName":"Debbie",
+      "lastName":"Sethi"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Miami Dade College",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Miami Dade College",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"Miami Dade College",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"33139",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Miami Beach",
+      "street":"4th Street",
+      "house":"701"
+    },
+    "phoneNumber":"2653203956",
+    "gender":1,
+    "origin":1
+  },
+  "email":"jerromeketelhohn@yahoo.com",
+  "passd":"eb8a61cd4f"
+}

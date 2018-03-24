@@ -1,0 +1,34 @@
+{
+  "id":"6667c164-c2fc-4abe-aeff-df3656f24247",
+  "person":{
+    "name":{
+      "firstName":"Emma",
+      "lastName":"Davidson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Western Governors University",
+          "city":"Salt Lake City",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84102",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Salt Lake City",
+      "street":"East Elizabeth Street",
+      "house":"250-266"
+    },
+    "phoneNumber":"6631066617",
+    "gender":1,
+    "origin":0
+  },
+  "email":"nygaardluella@yahoo.com",
+  "passd":"272f393d44"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"90ecfa50-fe7b-4e06-8fc3-79d7ec7ea66c",
+  "person":{
+    "name":{
+      "firstName":"Ram",
+      "lastName":"Jana"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Rutgers University",
+          "city":"New Brunswick",
+          "state":"NJ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"08817",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Edison",
+      "street":"Conover Court",
+      "house":"22"
+    },
+    "phoneNumber":"5315218238",
+    "gender":0,
+    "origin":1
+  },
+  "email":"reichenbergerhalli@yahoo.com",
+  "passd":"052c40ae8f"
+}

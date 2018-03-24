@@ -1,0 +1,34 @@
+{
+  "id":"6b326124-95f8-449a-9b4a-f8b693f646d7",
+  "person":{
+    "name":{
+      "firstName":"Ella",
+      "lastName":"Savage"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Irvine",
+          "city":"Irvine",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92780",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Tustin",
+      "street":"Newport Avenue",
+      "house":"13421"
+    },
+    "phoneNumber":"4754526324",
+    "gender":1,
+    "origin":0
+  },
+  "email":"jodie_mcguigan@yahoo.com",
+  "passd":"50de17546a"
+}

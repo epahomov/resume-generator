@@ -1,0 +1,54 @@
+{
+  "id":"17b08ce4-52dd-4406-ba5c-953101079ab8",
+  "person":{
+    "name":{
+      "firstName":"Shyam",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Wisconsin - Milwaukee",
+          "city":"Milwaukee",
+          "state":"WI"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Wisconsin - Milwaukee",
+          "city":"Milwaukee",
+          "state":"WI"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"University of Wisconsin - Milwaukee",
+          "city":"Milwaukee",
+          "state":"WI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"53217",
+      "stateShortName":"WI",
+      "stateFullName":"Wisconsin",
+      "city":"Fox Point",
+      "street":"North Beach Drive",
+      "house":"7535"
+    },
+    "phoneNumber":"7045586398",
+    "gender":0,
+    "origin":1
+  },
+  "email":"mateldaprotter@yahoo.com",
+  "passd":"80a2b0e861"
+}

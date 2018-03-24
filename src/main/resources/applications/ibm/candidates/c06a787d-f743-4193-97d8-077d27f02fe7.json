@@ -1,0 +1,44 @@
+{
+  "id":"c06a787d-f743-4193-97d8-077d27f02fe7",
+  "person":{
+    "name":{
+      "firstName":"Rahul",
+      "lastName":"Chander"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of South Florida",
+          "city":"Tampa",
+          "state":"FL"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of South Florida",
+          "city":"Tampa",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"33612",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Tampa",
+      "street":"Meridel Avenue",
+      "house":"1808-1810"
+    },
+    "phoneNumber":"5534186543",
+    "gender":0,
+    "origin":1
+  },
+  "email":"sarenapeixoto@yahoo.com",
+  "passd":"b8c2a44069"
+}

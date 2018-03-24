@@ -1,0 +1,54 @@
+{
+  "id":"3e640b41-074b-48aa-be65-2142cd3b830f",
+  "person":{
+    "name":{
+      "firstName":"Olivia",
+      "lastName":"Robertson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"North Carolina State University",
+          "city":"Raleigh",
+          "state":"NC"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"North Carolina State University",
+          "city":"Raleigh",
+          "state":"NC"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"North Carolina State University",
+          "city":"Raleigh",
+          "state":"NC"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"27604",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Raleigh",
+      "street":"Yonkers Road",
+      "house":"3090"
+    },
+    "phoneNumber":"2455138769",
+    "gender":1,
+    "origin":0
+  },
+  "email":"kalindikleinfelder@yahoo.com",
+  "passd":"0225ee5931"
+}

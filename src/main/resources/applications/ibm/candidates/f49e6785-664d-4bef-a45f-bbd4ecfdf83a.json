@@ -1,0 +1,44 @@
+{
+  "id":"f49e6785-664d-4bef-a45f-bbd4ecfdf83a",
+  "person":{
+    "name":{
+      "firstName":"Taylor",
+      "lastName":"Perez"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Minnesota - Twin Cities",
+          "city":"Minneapolis",
+          "state":"MN"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Minnesota - Twin Cities",
+          "city":"Minneapolis",
+          "state":"MN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"55113",
+      "stateShortName":"MN",
+      "stateFullName":"Minnesota",
+      "city":"Roseville",
+      "street":"Prior Avenue North",
+      "house":"2355-2357"
+    },
+    "phoneNumber":"5005445146",
+    "gender":1,
+    "origin":0
+  },
+  "email":"zookelwira@yahoo.com",
+  "passd":"4e520d350c"
+}

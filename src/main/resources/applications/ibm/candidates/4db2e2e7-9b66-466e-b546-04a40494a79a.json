@@ -1,0 +1,44 @@
+{
+  "id":"4db2e2e7-9b66-466e-b546-04a40494a79a",
+  "person":{
+    "name":{
+      "firstName":"Vivek",
+      "lastName":"Prasad"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Georgia",
+          "city":"Athens",
+          "state":"GA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Georgia",
+          "city":"Athens",
+          "state":"GA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"30683",
+      "stateShortName":"GA",
+      "stateFullName":"Georgia",
+      "city":"Winterville",
+      "street":"Dusty Road",
+      "house":"40"
+    },
+    "phoneNumber":"3343704475",
+    "gender":0,
+    "origin":1
+  },
+  "email":"violegreenfield@yahoo.com",
+  "passd":"0e6d443237"
+}

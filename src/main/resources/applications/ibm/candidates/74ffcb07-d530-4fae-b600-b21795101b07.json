@@ -1,0 +1,34 @@
+{
+  "id":"74ffcb07-d530-4fae-b600-b21795101b07",
+  "person":{
+    "name":{
+      "firstName":"Vaishnavi",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97330",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Corvallis",
+      "street":"Northeast Pettibone Drive",
+      "house":"6821-7123"
+    },
+    "phoneNumber":"5055365902",
+    "gender":1,
+    "origin":1
+  },
+  "email":"fawnia.friedell@yahoo.com",
+  "passd":"afdee0c04a"
+}

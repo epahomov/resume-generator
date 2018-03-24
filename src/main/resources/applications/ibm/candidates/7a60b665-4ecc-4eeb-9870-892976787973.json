@@ -1,0 +1,34 @@
+{
+  "id":"7a60b665-4ecc-4eeb-9870-892976787973",
+  "person":{
+    "name":{
+      "firstName":"Faith",
+      "lastName":"Harrison"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Northridge",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90041",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Mount Helena Avenue",
+      "house":"5070"
+    },
+    "phoneNumber":"1374743360",
+    "gender":1,
+    "origin":0
+  },
+  "email":"hershelmagee@yahoo.com",
+  "passd":"99fcde45c2"
+}

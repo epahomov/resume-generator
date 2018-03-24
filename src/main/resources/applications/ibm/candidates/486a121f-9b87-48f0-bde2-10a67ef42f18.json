@@ -1,0 +1,44 @@
+{
+  "id":"486a121f-9b87-48f0-bde2-10a67ef42f18",
+  "person":{
+    "name":{
+      "firstName":"Tisha",
+      "lastName":"Nirmal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fullerton",
+          "city":"Fullerton",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"California State University - Fullerton",
+          "city":"Fullerton",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92831",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Fullerton",
+      "street":"East Ruby Drive",
+      "house":"2927-2965"
+    },
+    "phoneNumber":"4221271003",
+    "gender":1,
+    "origin":1
+  },
+  "email":"emmycannon@yahoo.com",
+  "passd":"22478a083e"
+}

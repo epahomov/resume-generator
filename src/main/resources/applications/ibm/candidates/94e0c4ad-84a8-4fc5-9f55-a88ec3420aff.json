@@ -1,0 +1,34 @@
+{
+  "id":"94e0c4ad-84a8-4fc5-9f55-a88ec3420aff",
+  "person":{
+    "name":{
+      "firstName":"Sarah",
+      "lastName":"Williams"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"New York University",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"07020",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Edgewater",
+      "street":"Somerset Lane",
+      "house":"9"
+    },
+    "phoneNumber":"1151681608",
+    "gender":1,
+    "origin":0
+  },
+  "email":"olenkastagliano@yahoo.com",
+  "passd":"86f82c433a"
+}

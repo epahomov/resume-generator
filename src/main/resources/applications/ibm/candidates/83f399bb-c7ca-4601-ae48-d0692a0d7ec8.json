@@ -1,0 +1,34 @@
+{
+  "id":"83f399bb-c7ca-4601-ae48-d0692a0d7ec8",
+  "person":{
+    "name":{
+      "firstName":"Naomi",
+      "lastName":"Cooper"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - San Antonio",
+          "city":"San Antonio",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78219",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"San Antonio",
+      "street":"North Ww White Road",
+      "house":"North Ww White Road"
+    },
+    "phoneNumber":"3006746999",
+    "gender":1,
+    "origin":0
+  },
+  "email":"umekoetzkorn@yahoo.com",
+  "passd":"7e7128d851"
+}

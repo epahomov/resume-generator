@@ -1,0 +1,34 @@
+{
+  "id":"7d46da01-e842-4576-9189-961c169e5fc8",
+  "person":{
+    "name":{
+      "firstName":"Brooklyn",
+      "lastName":"Simpson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Florida",
+          "city":"Gainesville",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32609",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Gainesville",
+      "street":"Northeast 81 Street",
+      "house":"10104"
+    },
+    "phoneNumber":"7031307219",
+    "gender":1,
+    "origin":0
+  },
+  "email":"aidastevensmulligan@yahoo.com",
+  "passd":"ae04dd8a4b"
+}

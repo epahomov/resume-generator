@@ -1,0 +1,44 @@
+{
+  "id":"605e00e9-af9a-46b7-8a21-a91b38eb612f",
+  "person":{
+    "name":{
+      "firstName":"Daniel",
+      "lastName":"Martinez"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"43211",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"East 21st Avenue",
+      "house":"1036"
+    },
+    "phoneNumber":"6177045162",
+    "gender":0,
+    "origin":0
+  },
+  "email":"beecherhunt@yahoo.com",
+  "passd":"0e4ff9efc8"
+}

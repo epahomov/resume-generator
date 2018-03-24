@@ -1,0 +1,44 @@
+{
+  "id":"7dbb9ae5-d66c-4e15-8309-b13f539f5c6c",
+  "person":{
+    "name":{
+      "firstName":"Suresh",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of South Florida",
+          "city":"Tampa",
+          "state":"FL"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of South Florida",
+          "city":"Tampa",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"33617",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Tampa",
+      "street":"Florida 580",
+      "house":"4139"
+    },
+    "phoneNumber":"7235256903",
+    "gender":0,
+    "origin":1
+  },
+  "email":"emanuelaruis@yahoo.com",
+  "passd":"455c479446"
+}

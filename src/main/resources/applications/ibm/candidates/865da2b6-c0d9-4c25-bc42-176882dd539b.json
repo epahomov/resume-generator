@@ -1,0 +1,34 @@
+{
+  "id":"865da2b6-c0d9-4c25-bc42-176882dd539b",
+  "person":{
+    "name":{
+      "firstName":"Austin",
+      "lastName":"Ross"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Wisconsin",
+          "city":"Madison",
+          "state":"WI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"53704",
+      "stateShortName":"WI",
+      "stateFullName":"Wisconsin",
+      "city":"Madison",
+      "street":"Manufactures Road",
+      "house":"5917"
+    },
+    "phoneNumber":"6564528002",
+    "gender":0,
+    "origin":0
+  },
+  "email":"carlinesummo@yahoo.com",
+  "passd":"65285b5eac"
+}

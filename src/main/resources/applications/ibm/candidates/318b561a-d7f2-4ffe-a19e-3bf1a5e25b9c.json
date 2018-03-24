@@ -1,0 +1,34 @@
+{
+  "id":"318b561a-d7f2-4ffe-a19e-3bf1a5e25b9c",
+  "person":{
+    "name":{
+      "firstName":"Neha",
+      "lastName":"Chandra"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fullerton",
+          "city":"Fullerton",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92821",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Brea",
+      "street":"North Spur",
+      "house":"North Spur"
+    },
+    "phoneNumber":"3154909025",
+    "gender":1,
+    "origin":1
+  },
+  "email":"jodischeff@yahoo.com",
+  "passd":"2b599067fc"
+}

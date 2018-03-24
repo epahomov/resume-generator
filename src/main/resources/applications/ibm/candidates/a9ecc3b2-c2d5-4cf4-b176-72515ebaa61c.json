@@ -1,0 +1,34 @@
+{
+  "id":"a9ecc3b2-c2d5-4cf4-b176-72515ebaa61c",
+  "person":{
+    "name":{
+      "firstName":"Sam",
+      "lastName":"Vijaya"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Francisco State University",
+          "city":"San Francisco",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"94130",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Francisco",
+      "street":"Alex Zuckermann Path",
+      "house":"Alex Zuckermann Path"
+    },
+    "phoneNumber":"2703264815",
+    "gender":0,
+    "origin":1
+  },
+  "email":"turrinilinus@yahoo.com",
+  "passd":"1dbb94caf4"
+}

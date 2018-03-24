@@ -1,0 +1,34 @@
+{
+  "id":"6223d668-88af-4e1b-87ab-9be95114b084",
+  "person":{
+    "name":{
+      "firstName":"Ella",
+      "lastName":"Carney"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Colorado State University",
+          "city":"Fort Collins",
+          "state":"CO"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"80524",
+      "stateShortName":"CO",
+      "stateFullName":"Colorado",
+      "city":"Fort Collins",
+      "street":"Richards Lake Road",
+      "house":"Richards Lake Road"
+    },
+    "phoneNumber":"5117336635",
+    "gender":1,
+    "origin":0
+  },
+  "email":"rozannasparagana@yahoo.com",
+  "passd":"6a20f456b2"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"4667d47e-8c02-4df5-8f66-6a4c81564da2",
+  "person":{
+    "name":{
+      "firstName":"Mason",
+      "lastName":"Conley"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Washington State University",
+          "city":"Pullman",
+          "state":"WA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Florida State University",
+          "city":"Tallahassee",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"99163",
+      "stateShortName":"WA",
+      "stateFullName":"Washington",
+      "city":"Pullman",
+      "street":"Kitzmiller Road",
+      "house":"802"
+    },
+    "phoneNumber":"5766697311",
+    "gender":0,
+    "origin":0
+  },
+  "email":"malissabuka@yahoo.com",
+  "passd":"dda72850b2"
+}

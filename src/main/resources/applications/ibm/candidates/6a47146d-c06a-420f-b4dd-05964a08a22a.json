@@ -1,0 +1,34 @@
+{
+  "id":"6a47146d-c06a-420f-b4dd-05964a08a22a",
+  "person":{
+    "name":{
+      "firstName":"Destiny",
+      "lastName":"Alexander"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Jose State University",
+          "city":"San Jose",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"95127",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Jose",
+      "street":"Mount Logan Drive",
+      "house":"3397"
+    },
+    "phoneNumber":"2645991651",
+    "gender":1,
+    "origin":0
+  },
+  "email":"poppydhanani@yahoo.com",
+  "passd":"a53b65b8a4"
+}

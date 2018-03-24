@@ -1,0 +1,44 @@
+{
+  "id":"14d008eb-42a0-48ef-9607-9a60727c252a",
+  "person":{
+    "name":{
+      "firstName":"Savannah",
+      "lastName":"Cook"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"47408",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Bloomington",
+      "street":"East Boltinghouse Road",
+      "house":"3656"
+    },
+    "phoneNumber":"6304232307",
+    "gender":1,
+    "origin":0
+  },
+  "email":"raynardmarlowe@yahoo.com",
+  "passd":"a520580ded"
+}

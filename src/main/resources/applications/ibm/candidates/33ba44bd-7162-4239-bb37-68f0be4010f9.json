@@ -1,0 +1,34 @@
+{
+  "id":"33ba44bd-7162-4239-bb37-68f0be4010f9",
+  "person":{
+    "name":{
+      "firstName":"Alok",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fresno",
+          "city":"Fresno",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"93720",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Fresno",
+      "street":"North Chestnut Avenue",
+      "house":"7451-7499"
+    },
+    "phoneNumber":"1404295768",
+    "gender":0,
+    "origin":1
+  },
+  "email":"nealahagans@yahoo.com",
+  "passd":"32f194ec93"
+}

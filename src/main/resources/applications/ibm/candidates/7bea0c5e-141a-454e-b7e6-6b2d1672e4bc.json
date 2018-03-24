@@ -1,0 +1,34 @@
+{
+  "id":"7bea0c5e-141a-454e-b7e6-6b2d1672e4bc",
+  "person":{
+    "name":{
+      "firstName":"Megan",
+      "lastName":"Puckett"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Michigan State University",
+          "city":"East Lansing",
+          "state":"MI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"48823",
+      "stateShortName":"MI",
+      "stateFullName":"Michigan",
+      "city":"East Lansing",
+      "street":"Isaac Lane",
+      "house":"2079"
+    },
+    "phoneNumber":"1251441527",
+    "gender":1,
+    "origin":0
+  },
+  "email":"cesaroseeber@yahoo.com",
+  "passd":"d2529f62d9"
+}

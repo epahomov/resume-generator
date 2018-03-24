@@ -1,0 +1,34 @@
+{
+  "id":"3215ce2e-e255-4995-b7ee-370fd60cefd8",
+  "person":{
+    "name":{
+      "firstName":"Deep",
+      "lastName":"Puri"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Carolina at Chapel Hill",
+          "city":"Chapel Hill",
+          "state":"NC"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"27707",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Durham",
+      "street":"Darwin Road",
+      "house":"3500-3516"
+    },
+    "phoneNumber":"1434616634",
+    "gender":0,
+    "origin":1
+  },
+  "email":"gwennlaserna@yahoo.com",
+  "passd":"4265c9cd7a"
+}

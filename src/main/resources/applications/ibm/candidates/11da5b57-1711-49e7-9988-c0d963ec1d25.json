@@ -1,0 +1,34 @@
+{
+  "id":"11da5b57-1711-49e7-9988-c0d963ec1d25",
+  "person":{
+    "name":{
+      "firstName":"Ananya",
+      "lastName":"Aggarwal"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"San Diego State University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92120",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Mission Gorge Road",
+      "house":"7000"
+    },
+    "phoneNumber":"2124545295",
+    "gender":1,
+    "origin":1
+  },
+  "email":"kemmettdevonne@yahoo.com",
+  "passd":"a2c4af74a6"
+}

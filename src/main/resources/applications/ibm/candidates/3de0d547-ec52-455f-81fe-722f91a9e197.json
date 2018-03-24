@@ -1,0 +1,54 @@
+{
+  "id":"3de0d547-ec52-455f-81fe-722f91a9e197",
+  "person":{
+    "name":{
+      "firstName":"Shivani",
+      "lastName":"Subramanian"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Florida International University",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Florida International University",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"Florida International University",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"33137",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Miami",
+      "street":"Sabal Palm Road",
+      "house":"4701"
+    },
+    "phoneNumber":"5041211759",
+    "gender":1,
+    "origin":1
+  },
+  "email":"distefanomarlane@yahoo.com",
+  "passd":"f04b687d9f"
+}

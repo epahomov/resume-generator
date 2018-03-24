@@ -1,0 +1,44 @@
+{
+  "id":"8387c4aa-fcc7-471e-8216-ae1209accceb",
+  "person":{
+    "name":{
+      "firstName":"Rahul",
+      "lastName":"Bhat"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Jose State University",
+          "city":"San Jose",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"San Jose State University",
+          "city":"San Jose",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"95132",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Jose",
+      "street":"Old Piedmont Road",
+      "house":"1822"
+    },
+    "phoneNumber":"1541392085",
+    "gender":0,
+    "origin":1
+  },
+  "email":"kevinaoh@yahoo.com",
+  "passd":"b4e1720d27"
+}

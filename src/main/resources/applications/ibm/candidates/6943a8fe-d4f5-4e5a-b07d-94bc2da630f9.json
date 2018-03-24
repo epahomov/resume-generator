@@ -1,0 +1,34 @@
+{
+  "id":"6943a8fe-d4f5-4e5a-b07d-94bc2da630f9",
+  "person":{
+    "name":{
+      "firstName":"Vishal",
+      "lastName":"Engineer"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Sacramento",
+          "city":"Sacramento",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"95815",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Sacramento",
+      "street":"Sacramento Northern Bike Trail",
+      "house":"Sacramento Northern Bike Trail"
+    },
+    "phoneNumber":"1026741637",
+    "gender":0,
+    "origin":1
+  },
+  "email":"malachirushing@yahoo.com",
+  "passd":"813438a4c3"
+}

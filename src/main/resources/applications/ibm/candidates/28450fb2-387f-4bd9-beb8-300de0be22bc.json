@@ -1,0 +1,34 @@
+{
+  "id":"28450fb2-387f-4bd9-beb8-300de0be22bc",
+  "person":{
+    "name":{
+      "firstName":"Pawan",
+      "lastName":"Srivastava"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Houston",
+          "city":"Houston",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"77026",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Houston",
+      "street":"Blaffer Street",
+      "house":"4909"
+    },
+    "phoneNumber":"2424412122",
+    "gender":0,
+    "origin":1
+  },
+  "email":"sheelahpintus@yahoo.com",
+  "passd":"8fe4c6de06"
+}

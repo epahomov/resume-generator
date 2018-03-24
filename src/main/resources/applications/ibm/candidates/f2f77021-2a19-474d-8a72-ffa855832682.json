@@ -1,0 +1,34 @@
+{
+  "id":"f2f77021-2a19-474d-8a72-ffa855832682",
+  "person":{
+    "name":{
+      "firstName":"Krithika",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Iowa",
+          "city":"Iowa City",
+          "state":"IA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"52240",
+      "stateShortName":"IA",
+      "stateFullName":"Iowa",
+      "city":"Iowa City",
+      "street":"340th Street Northeast",
+      "house":"5001-5125"
+    },
+    "phoneNumber":"1741041858",
+    "gender":1,
+    "origin":1
+  },
+  "email":"nigel.cunniffe@yahoo.com",
+  "passd":"b950eba31d"
+}

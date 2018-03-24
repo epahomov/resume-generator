@@ -1,0 +1,44 @@
+{
+  "id":"7fab41dc-dd47-4346-8eb3-dde35e074ca3",
+  "person":{
+    "name":{
+      "firstName":"Luke",
+      "lastName":"Morales"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Southern California",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Southern California",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"90032",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Mckenzie Avenue",
+      "house":"3653"
+    },
+    "phoneNumber":"6654827003",
+    "gender":0,
+    "origin":0
+  },
+  "email":"melodyglebus@yahoo.com",
+  "passd":"327c208d71"
+}

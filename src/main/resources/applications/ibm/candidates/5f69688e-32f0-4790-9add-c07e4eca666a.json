@@ -1,0 +1,34 @@
+{
+  "id":"5f69688e-32f0-4790-9add-c07e4eca666a",
+  "person":{
+    "name":{
+      "firstName":"Brianna",
+      "lastName":"Pate"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Illinois at Urbana-Champaign",
+          "city":"Champaign",
+          "state":"IL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"61802",
+      "stateShortName":"IL",
+      "stateFullName":"Illinois",
+      "city":"Urbana",
+      "street":"North High Cross Road",
+      "house":"5909"
+    },
+    "phoneNumber":"6352579158",
+    "gender":1,
+    "origin":0
+  },
+  "email":"petehilyard@yahoo.com",
+  "passd":"29bf17db73"
+}

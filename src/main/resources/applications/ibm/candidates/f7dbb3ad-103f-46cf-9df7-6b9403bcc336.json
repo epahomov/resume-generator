@@ -1,0 +1,54 @@
+{
+  "id":"f7dbb3ad-103f-46cf-9df7-6b9403bcc336",
+  "person":{
+    "name":{
+      "firstName":"Parth",
+      "lastName":"Manohar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas Tech University",
+          "city":"Lubbock",
+          "state":"TX"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Virginia Tech",
+          "city":"Blacksburg",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"Virginia Tech",
+          "city":"Blacksburg",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"79401",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Lubbock",
+      "street":"North Avenue H",
+      "house":"1005"
+    },
+    "phoneNumber":"1513049936",
+    "gender":0,
+    "origin":1
+  },
+  "email":"hestershleifer@yahoo.com",
+  "passd":"3d4c1b2545"
+}

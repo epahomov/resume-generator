@@ -1,0 +1,44 @@
+{
+  "id":"adfb0ea1-3024-4509-bab1-9edab04f1f59",
+  "person":{
+    "name":{
+      "firstName":"Christian",
+      "lastName":"Gibson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Tennessee",
+          "city":"Knoxville",
+          "state":"TN"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Tennessee",
+          "city":"Knoxville",
+          "state":"TN"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"37915",
+      "stateShortName":"TN",
+      "stateFullName":"Tennessee",
+      "city":"Knoxville",
+      "street":"Pequod Street",
+      "house":"122-198"
+    },
+    "phoneNumber":"2312556356",
+    "gender":0,
+    "origin":0
+  },
+  "email":"omalleysarajane@yahoo.com",
+  "passd":"6d39d8f7c1"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"450f197d-0e2e-4cbb-a3ab-0d6bc6599eca",
+  "person":{
+    "name":{
+      "firstName":"Krish",
+      "lastName":"Pal"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Liberty University",
+          "city":"Lynchburg",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"24572",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Madison Heights",
+      "street":"West Rucker Road",
+      "house":"125"
+    },
+    "phoneNumber":"2567352120",
+    "gender":0,
+    "origin":1
+  },
+  "email":"roxyserageldin@yahoo.com",
+  "passd":"5ac12da86a"
+}

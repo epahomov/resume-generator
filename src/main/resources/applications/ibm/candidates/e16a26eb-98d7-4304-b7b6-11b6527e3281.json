@@ -1,0 +1,44 @@
+{
+  "id":"e16a26eb-98d7-4304-b7b6-11b6527e3281",
+  "person":{
+    "name":{
+      "firstName":"Caleb",
+      "lastName":"Ortega"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Virginia Commonwealth University",
+          "city":"Richmond",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Virginia Commonwealth University",
+          "city":"Richmond",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"23227",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Richmond",
+      "street":"Waxwing Drive",
+      "house":"359"
+    },
+    "phoneNumber":"2104628542",
+    "gender":0,
+    "origin":0
+  },
+  "email":"wittyanthes@yahoo.com",
+  "passd":"c2033fce65"
+}

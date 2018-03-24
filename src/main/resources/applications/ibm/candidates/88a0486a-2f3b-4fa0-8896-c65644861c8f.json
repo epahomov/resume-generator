@@ -1,0 +1,54 @@
+{
+  "id":"88a0486a-2f3b-4fa0-8896-c65644861c8f",
+  "person":{
+    "name":{
+      "firstName":"Christina",
+      "lastName":"Holland"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"06235",
+      "stateShortName":"CT",
+      "stateFullName":"Connecticut",
+      "city":"Chaplin",
+      "street":"Bujak Road",
+      "house":"138-314"
+    },
+    "phoneNumber":"7512237219",
+    "gender":1,
+    "origin":0
+  },
+  "email":"brandenbergermunroe@yahoo.com",
+  "passd":"c14a1e1b9f"
+}

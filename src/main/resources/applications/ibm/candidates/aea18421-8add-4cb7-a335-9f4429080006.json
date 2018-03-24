@@ -1,0 +1,44 @@
+{
+  "id":"aea18421-8add-4cb7-a335-9f4429080006",
+  "person":{
+    "name":{
+      "firstName":"Ayushi",
+      "lastName":"Chande"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - San Diego",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of California - San Diego",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92116",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Meade Avenue",
+      "house":"1701-1767"
+    },
+    "phoneNumber":"4542079813",
+    "gender":1,
+    "origin":1
+  },
+  "email":"benjaminmass@yahoo.com",
+  "passd":"8d2b053762"
+}

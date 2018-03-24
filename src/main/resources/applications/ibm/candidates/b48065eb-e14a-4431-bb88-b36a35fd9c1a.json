@@ -1,0 +1,34 @@
+{
+  "id":"b48065eb-e14a-4431-bb88-b36a35fd9c1a",
+  "person":{
+    "name":{
+      "firstName":"Avery",
+      "lastName":"King"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fresno",
+          "city":"Fresno",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"93703",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Fresno",
+      "street":"East Hammond Avenue",
+      "house":"3233-3241"
+    },
+    "phoneNumber":"2033549248",
+    "gender":1,
+    "origin":0
+  },
+  "email":"christiansmadelena@yahoo.com",
+  "passd":"252698849e"
+}

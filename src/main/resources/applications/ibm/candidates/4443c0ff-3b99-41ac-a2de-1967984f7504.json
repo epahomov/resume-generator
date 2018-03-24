@@ -1,0 +1,34 @@
+{
+  "id":"4443c0ff-3b99-41ac-a2de-1967984f7504",
+  "person":{
+    "name":{
+      "firstName":"Atul",
+      "lastName":"Tyagi"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Western Governors University",
+          "city":"Salt Lake City",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84103",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Salt Lake City",
+      "street":"North G Street",
+      "house":"674-798"
+    },
+    "phoneNumber":"4227263321",
+    "gender":0,
+    "origin":1
+  },
+  "email":"dugan.nisenson@yahoo.com",
+  "passd":"ef5aed27a9"
+}

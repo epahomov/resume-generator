@@ -1,0 +1,34 @@
+{
+  "id":"6f755949-d085-43c3-b393-96cf31b96a20",
+  "person":{
+    "name":{
+      "firstName":"Nathan",
+      "lastName":"Ramos"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Long Beach",
+          "city":"Long Beach",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90713",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Lakewood",
+      "street":"Eberle Street",
+      "house":"5818-5824"
+    },
+    "phoneNumber":"5706975547",
+    "gender":0,
+    "origin":0
+  },
+  "email":"johna.horlacher@yahoo.com",
+  "passd":"732fe8c5e8"
+}

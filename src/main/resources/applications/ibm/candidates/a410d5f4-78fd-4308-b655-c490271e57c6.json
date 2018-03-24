@@ -1,0 +1,44 @@
+{
+  "id":"a410d5f4-78fd-4308-b655-c490271e57c6",
+  "person":{
+    "name":{
+      "firstName":"Alexandra",
+      "lastName":"Alexander"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"97401",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Eugene",
+      "street":"Cal Young Road",
+      "house":"2565"
+    },
+    "phoneNumber":"7464701414",
+    "gender":1,
+    "origin":0
+  },
+  "email":"chamounedi@yahoo.com",
+  "passd":"fdd2c6c03e"
+}

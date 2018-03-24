@@ -1,0 +1,34 @@
+{
+  "id":"7d5dc640-2b06-4fec-8c0e-deac7db43a8e",
+  "person":{
+    "name":{
+      "firstName":"Brandon",
+      "lastName":"Cash"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"San Jose State University",
+          "city":"San Jose",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"95112",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Jose",
+      "street":"North 8th Street",
+      "house":"275"
+    },
+    "phoneNumber":"6534587955",
+    "gender":0,
+    "origin":0
+  },
+  "email":"annadiane.summa@yahoo.com",
+  "passd":"da2d401f65"
+}

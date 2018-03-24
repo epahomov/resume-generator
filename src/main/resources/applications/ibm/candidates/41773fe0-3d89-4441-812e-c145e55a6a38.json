@@ -1,0 +1,34 @@
+{
+  "id":"41773fe0-3d89-4441-812e-c145e55a6a38",
+  "person":{
+    "name":{
+      "firstName":"Sasashy",
+      "lastName":"Srini"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Northridge",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"90065",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"North Figueroa Street",
+      "house":"3468"
+    },
+    "phoneNumber":"2363536665",
+    "gender":1,
+    "origin":1
+  },
+  "email":"ham.ramsey@yahoo.com",
+  "passd":"baa54905eb"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"3d0485d7-0c23-4347-83eb-c1250c533593",
+  "person":{
+    "name":{
+      "firstName":"Mariah",
+      "lastName":"Robinson"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Temple University",
+          "city":"Philadelphia",
+          "state":"PA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"19140",
+      "stateShortName":"PA",
+      "stateFullName":"Pennsylvania",
+      "city":"Philadelphia",
+      "street":"Clarissa Street",
+      "house":"4136-4198"
+    },
+    "phoneNumber":"5673421883",
+    "gender":1,
+    "origin":0
+  },
+  "email":"brandenburgximenez@yahoo.com",
+  "passd":"5c19742d35"
+}

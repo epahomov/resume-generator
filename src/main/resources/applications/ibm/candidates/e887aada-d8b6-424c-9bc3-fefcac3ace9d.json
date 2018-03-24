@@ -1,0 +1,44 @@
+{
+  "id":"e887aada-d8b6-424c-9bc3-fefcac3ace9d",
+  "person":{
+    "name":{
+      "firstName":"Mary",
+      "lastName":"Rai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"10002",
+      "stateShortName":"NY",
+      "stateFullName":"New York",
+      "city":"New York",
+      "street":"Bowery",
+      "house":"77"
+    },
+    "phoneNumber":"4506674389",
+    "gender":1,
+    "origin":1
+  },
+  "email":"linberezin@yahoo.com",
+  "passd":"019f446716"
+}

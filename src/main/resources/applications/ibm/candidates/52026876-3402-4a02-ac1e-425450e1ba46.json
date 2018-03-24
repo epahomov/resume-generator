@@ -1,0 +1,44 @@
+{
+  "id":"52026876-3402-4a02-ac1e-425450e1ba46",
+  "person":{
+    "name":{
+      "firstName":"Alana",
+      "lastName":"Nunez"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"East Carolina University",
+          "city":"Greenville",
+          "state":"NC"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"East Carolina University",
+          "city":"Greenville",
+          "state":"NC"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"28590",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Winterville",
+      "street":"North Carolina 903",
+      "house":"2566"
+    },
+    "phoneNumber":"7304748250",
+    "gender":1,
+    "origin":0
+  },
+  "email":"winnrenjifo@yahoo.com",
+  "passd":"80f4feab08"
+}

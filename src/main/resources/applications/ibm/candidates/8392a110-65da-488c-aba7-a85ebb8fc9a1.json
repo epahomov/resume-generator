@@ -1,0 +1,44 @@
+{
+  "id":"8392a110-65da-488c-aba7-a85ebb8fc9a1",
+  "person":{
+    "name":{
+      "firstName":"Arusha",
+      "lastName":"Malhotra"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Rutgers University",
+          "city":"New Brunswick",
+          "state":"NJ"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Rutgers University",
+          "city":"New Brunswick",
+          "state":"NJ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"08837",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Edison",
+      "street":"Meadow Road",
+      "house":"400"
+    },
+    "phoneNumber":"2573224240",
+    "gender":1,
+    "origin":1
+  },
+  "email":"lokhorstmalkah@yahoo.com",
+  "passd":"41fb173123"
+}

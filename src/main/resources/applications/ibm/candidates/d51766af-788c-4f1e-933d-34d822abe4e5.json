@@ -1,0 +1,44 @@
+{
+  "id":"d51766af-788c-4f1e-933d-34d822abe4e5",
+  "person":{
+    "name":{
+      "firstName":"Christina",
+      "lastName":"Bird"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Oklahoma State University",
+          "city":"Stillwater",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Oklahoma State University",
+          "city":"Stillwater",
+          "state":"OK"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"74075",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Stillwater",
+      "street":"Fairgrounds Road",
+      "house":"4110"
+    },
+    "phoneNumber":"4743592985",
+    "gender":1,
+    "origin":0
+  },
+  "email":"eldinnixon@yahoo.com",
+  "passd":"40424bcf68"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"45b7364d-6a91-41b2-a514-a251b2da3009",
+  "person":{
+    "name":{
+      "firstName":"Vaishnavi",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Los Angeles",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90031",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Cabot Street",
+      "house":"2339"
+    },
+    "phoneNumber":"2205853400",
+    "gender":1,
+    "origin":1
+  },
+  "email":"onfroisklar@yahoo.com",
+  "passd":"90676bebca"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"1f023430-68fc-490c-bb5d-670b557e2def",
+  "person":{
+    "name":{
+      "firstName":"Ankit",
+      "lastName":"Roy"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Houston",
+          "city":"Houston",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77020",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Houston",
+      "street":"Harlem Street",
+      "house":"2120"
+    },
+    "phoneNumber":"4242639703",
+    "gender":0,
+    "origin":1
+  },
+  "email":"curtisbiffignandi@yahoo.com",
+  "passd":"d3a9fb1331"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"043b7ac2-607e-4618-8cf5-cf4b5b42d4c9",
+  "person":{
+    "name":{
+      "firstName":"Jaden",
+      "lastName":"Calhoun"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97408",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Eugene",
+      "street":"Douthit Lane",
+      "house":"89519"
+    },
+    "phoneNumber":"2746472957",
+    "gender":0,
+    "origin":0
+  },
+  "email":"homerewoodhouse@yahoo.com",
+  "passd":"cd1e23fad3"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"7a59da86-e2d5-4150-a927-cfcc580e95f3",
+  "person":{
+    "name":{
+      "firstName":"Riya",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"47408",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Bloomington",
+      "street":"Kam Lane",
+      "house":"2800-5798"
+    },
+    "phoneNumber":"1031737967",
+    "gender":1,
+    "origin":1
+  },
+  "email":"thurstonlauralee@yahoo.com",
+  "passd":"053d22a7d6"
+}

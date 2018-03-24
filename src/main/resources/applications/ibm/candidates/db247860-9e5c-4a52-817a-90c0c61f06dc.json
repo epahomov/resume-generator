@@ -1,0 +1,34 @@
+{
+  "id":"db247860-9e5c-4a52-817a-90c0c61f06dc",
+  "person":{
+    "name":{
+      "firstName":"Abigail",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Maryland - College Park",
+          "city":"College Park",
+          "state":"MD"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"20770",
+      "stateShortName":"MD",
+      "stateFullName":"Maryland",
+      "city":"Greenbelt",
+      "street":"Laurel Hill Road",
+      "house":"14"
+    },
+    "phoneNumber":"6064381845",
+    "gender":1,
+    "origin":1
+  },
+  "email":"adelicepage@yahoo.com",
+  "passd":"2840247b1a"
+}

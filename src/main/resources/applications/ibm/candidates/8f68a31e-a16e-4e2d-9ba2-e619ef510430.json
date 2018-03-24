@@ -1,0 +1,34 @@
+{
+  "id":"8f68a31e-a16e-4e2d-9ba2-e619ef510430",
+  "person":{
+    "name":{
+      "firstName":"Emma",
+      "lastName":"Schmidt"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Houston",
+          "city":"Houston",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77028",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Houston",
+      "street":"Lockwood Drive",
+      "house":"6413"
+    },
+    "phoneNumber":"4004501635",
+    "gender":1,
+    "origin":0
+  },
+  "email":"noemitemple@yahoo.com",
+  "passd":"589e7d8ac4"
+}

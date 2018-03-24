@@ -1,0 +1,44 @@
+{
+  "id":"32d2493b-15cf-4973-98c1-22ba0bada6e8",
+  "person":{
+    "name":{
+      "firstName":"Lauren",
+      "lastName":"Lane"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Iowa",
+          "city":"Iowa City",
+          "state":"IA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Iowa",
+          "city":"Iowa City",
+          "state":"IA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"52333",
+      "stateShortName":"IA",
+      "stateFullName":"Iowa",
+      "city":"Solon",
+      "street":"245th Street Northeast",
+      "house":"4012-4134"
+    },
+    "phoneNumber":"6756319309",
+    "gender":1,
+    "origin":0
+  },
+  "email":"clelandmcgrath@yahoo.com",
+  "passd":"15cf12e31c"
+}

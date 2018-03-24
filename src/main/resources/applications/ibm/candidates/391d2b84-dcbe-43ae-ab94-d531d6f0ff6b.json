@@ -1,0 +1,34 @@
+{
+  "id":"391d2b84-dcbe-43ae-ab94-d531d6f0ff6b",
+  "person":{
+    "name":{
+      "firstName":"Mario",
+      "lastName":"Case"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Penn State",
+          "city":"State College",
+          "state":"PA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"16801",
+      "stateShortName":"PA",
+      "stateFullName":"Pennsylvania",
+      "city":"State College",
+      "street":"East College Avenue",
+      "house":"3651"
+    },
+    "phoneNumber":"4252376026",
+    "gender":0,
+    "origin":0
+  },
+  "email":"pagliaromarcus@yahoo.com",
+  "passd":"dd86745dfb"
+}

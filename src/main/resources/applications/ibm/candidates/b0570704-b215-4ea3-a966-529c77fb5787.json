@@ -1,0 +1,34 @@
+{
+  "id":"b0570704-b215-4ea3-a966-529c77fb5787",
+  "person":{
+    "name":{
+      "firstName":"Neelam",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Southern California",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"91030",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"South Pasadena",
+      "street":"Prospect Circle",
+      "house":"401"
+    },
+    "phoneNumber":"1014703233",
+    "gender":1,
+    "origin":1
+  },
+  "email":"manishmay@yahoo.com",
+  "passd":"59c8cd2e1f"
+}

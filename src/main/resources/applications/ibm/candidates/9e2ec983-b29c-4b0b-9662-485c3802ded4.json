@@ -1,0 +1,34 @@
+{
+  "id":"9e2ec983-b29c-4b0b-9662-485c3802ded4",
+  "person":{
+    "name":{
+      "firstName":"Colin",
+      "lastName":"King"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"86004",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Flagstaff",
+      "street":"North Snowflake Drive",
+      "house":"6351"
+    },
+    "phoneNumber":"2322351799",
+    "gender":0,
+    "origin":0
+  },
+  "email":"rabifigel@yahoo.com",
+  "passd":"bba6986a3c"
+}

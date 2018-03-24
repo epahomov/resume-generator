@@ -1,0 +1,34 @@
+{
+  "id":"d4cbaa66-77b8-47d1-8825-9915995b3eb1",
+  "person":{
+    "name":{
+      "firstName":"Ria",
+      "lastName":"Aggarwal"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Irvine",
+          "city":"Irvine",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92780",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Tustin",
+      "street":"Red Hill Avenue",
+      "house":"14231"
+    },
+    "phoneNumber":"2107422694",
+    "gender":1,
+    "origin":1
+  },
+  "email":"filmorekornhaber@yahoo.com",
+  "passd":"9ca6e652cc"
+}

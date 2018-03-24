@@ -1,0 +1,34 @@
+{
+  "id":"56ca3216-35c9-4622-a8b7-9cf168a24fcd",
+  "person":{
+    "name":{
+      "firstName":"Sebastian",
+      "lastName":"Nixon"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Wisconsin",
+          "city":"Madison",
+          "state":"WI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"53704",
+      "stateShortName":"WI",
+      "stateFullName":"Wisconsin",
+      "city":"Madison",
+      "street":"Farwell Drive",
+      "house":"655-659"
+    },
+    "phoneNumber":"3332227178",
+    "gender":0,
+    "origin":0
+  },
+  "email":"natthomas753@yahoo.com",
+  "passd":"5139447102"
+}

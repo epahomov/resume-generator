@@ -1,0 +1,34 @@
+{
+  "id":"871b2668-f8c6-4225-8ac4-61160a32652f",
+  "person":{
+    "name":{
+      "firstName":"Jacob",
+      "lastName":"Jimenez"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"86004",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Flagstaff",
+      "street":"U.S. 180",
+      "house":"1864"
+    },
+    "phoneNumber":"7725069844",
+    "gender":0,
+    "origin":0
+  },
+  "email":"carotirip@yahoo.com",
+  "passd":"942b6361b4"
+}

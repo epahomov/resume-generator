@@ -1,0 +1,34 @@
+{
+  "id":"ee031c0f-825c-4352-83c8-8d5e55bbe6d5",
+  "person":{
+    "name":{
+      "firstName":"Kunal",
+      "lastName":"Nath"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Arizona State University",
+          "city":"Tempe",
+          "state":"AZ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"85256",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Scottsdale",
+      "street":"East Chaparral Road",
+      "house":"9600-9998"
+    },
+    "phoneNumber":"5556001423",
+    "gender":0,
+    "origin":1
+  },
+  "email":"rodrigogamble@yahoo.com",
+  "passd":"733be78fbc"
+}

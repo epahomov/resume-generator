@@ -1,0 +1,34 @@
+{
+  "id":"23b7196b-c8ed-4bbc-8761-da819262d9e5",
+  "person":{
+    "name":{
+      "firstName":"Lily",
+      "lastName":"Burnett"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Northridge",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90012",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Academy Drive",
+      "house":"1880"
+    },
+    "phoneNumber":"1513387515",
+    "gender":1,
+    "origin":0
+  },
+  "email":"christipiegorsch@yahoo.com",
+  "passd":"9937744a92"
+}

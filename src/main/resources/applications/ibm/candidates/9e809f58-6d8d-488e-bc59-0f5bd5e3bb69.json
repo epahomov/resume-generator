@@ -1,0 +1,34 @@
+{
+  "id":"9e809f58-6d8d-488e-bc59-0f5bd5e3bb69",
+  "person":{
+    "name":{
+      "firstName":"Kaitlyn",
+      "lastName":"Blanchard"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fresno",
+          "city":"Fresno",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"93726",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Fresno",
+      "street":"East Rialto Avenue",
+      "house":"4586-4592"
+    },
+    "phoneNumber":"4054914536",
+    "gender":1,
+    "origin":0
+  },
+  "email":"fraumenijaimie@yahoo.com",
+  "passd":"1ff65b37e1"
+}

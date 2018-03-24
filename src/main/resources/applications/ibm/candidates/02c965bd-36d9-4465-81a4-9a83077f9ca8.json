@@ -1,0 +1,34 @@
+{
+  "id":"02c965bd-36d9-4465-81a4-9a83077f9ca8",
+  "person":{
+    "name":{
+      "firstName":"Akash",
+      "lastName":"Raji"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"West Virginia University",
+          "city":"Morgantown",
+          "state":"WV"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"26508",
+      "stateShortName":"WV",
+      "stateFullName":"West Virginia",
+      "city":"Morgantown",
+      "street":"Easton Mill Road",
+      "house":"11"
+    },
+    "phoneNumber":"7016291182",
+    "gender":0,
+    "origin":1
+  },
+  "email":"ursulinemartel@yahoo.com",
+  "passd":"331a937803"
+}

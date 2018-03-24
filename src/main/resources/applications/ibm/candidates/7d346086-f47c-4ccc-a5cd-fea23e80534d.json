@@ -1,0 +1,34 @@
+{
+  "id":"7d346086-f47c-4ccc-a5cd-fea23e80534d",
+  "person":{
+    "name":{
+      "firstName":"Rohit",
+      "lastName":"Mehra"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"San Jose State University",
+          "city":"San Jose",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"95116",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Jose",
+      "street":"Stowe Avenue",
+      "house":"1805"
+    },
+    "phoneNumber":"4571891591",
+    "gender":0,
+    "origin":1
+  },
+  "email":"alexandrechehabi@yahoo.com",
+  "passd":"8e6c460890"
+}

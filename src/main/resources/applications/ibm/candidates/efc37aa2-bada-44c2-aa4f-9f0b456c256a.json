@@ -1,0 +1,44 @@
+{
+  "id":"efc37aa2-bada-44c2-aa4f-9f0b456c256a",
+  "person":{
+    "name":{
+      "firstName":"Katherine",
+      "lastName":"Martin"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Montclair State University",
+          "city":"Montclair Township",
+          "state":"NJ"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Montclair State University",
+          "city":"Montclair Township",
+          "state":"NJ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"07514",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Paterson",
+      "street":"East 36th Street",
+      "house":"59-71"
+    },
+    "phoneNumber":"7501134309",
+    "gender":1,
+    "origin":0
+  },
+  "email":"ruthywoodhead@yahoo.com",
+  "passd":"554d277c14"
+}

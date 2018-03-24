@@ -1,0 +1,34 @@
+{
+  "id":"71063582-1d1e-4a85-b7db-01c54989889c",
+  "person":{
+    "name":{
+      "firstName":"Arjun",
+      "lastName":"Raje"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"43215",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"North 3rd Street",
+      "house":"400-566"
+    },
+    "phoneNumber":"6514796291",
+    "gender":0,
+    "origin":1
+  },
+  "email":"ysabeldoddis@yahoo.com",
+  "passd":"7bfa0f4394"
+}

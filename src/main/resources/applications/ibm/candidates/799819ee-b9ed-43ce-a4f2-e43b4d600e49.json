@@ -1,0 +1,44 @@
+{
+  "id":"799819ee-b9ed-43ce-a4f2-e43b4d600e49",
+  "person":{
+    "name":{
+      "firstName":"Chandralekha",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Brigham Young University",
+          "city":"Provo",
+          "state":"UT"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Brigham Young University",
+          "city":"Provo",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84604",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Provo",
+      "street":"North 1200 East",
+      "house":"2860"
+    },
+    "phoneNumber":"5446022452",
+    "gender":1,
+    "origin":1
+  },
+  "email":"sellebenny@yahoo.com",
+  "passd":"b0691d166e"
+}

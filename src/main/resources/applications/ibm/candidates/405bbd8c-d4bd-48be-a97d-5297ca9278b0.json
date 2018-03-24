@@ -1,0 +1,34 @@
+{
+  "id":"405bbd8c-d4bd-48be-a97d-5297ca9278b0",
+  "person":{
+    "name":{
+      "firstName":"James",
+      "lastName":"Flores"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Cincinnati",
+          "city":"Cincinnati",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"45208",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Cincinnati",
+      "street":"Madison Road",
+      "house":"2558"
+    },
+    "phoneNumber":"3152119080",
+    "gender":0,
+    "origin":0
+  },
+  "email":"dickinsonganny@yahoo.com",
+  "passd":"deefebfa3b"
+}

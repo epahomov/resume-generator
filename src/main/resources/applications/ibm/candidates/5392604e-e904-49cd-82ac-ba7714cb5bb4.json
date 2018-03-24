@@ -1,0 +1,44 @@
+{
+  "id":"5392604e-e904-49cd-82ac-ba7714cb5bb4",
+  "person":{
+    "name":{
+      "firstName":"Ayden",
+      "lastName":"Gomez"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Penn State",
+          "city":"State College",
+          "state":"PA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Penn State",
+          "city":"State College",
+          "state":"PA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"16823",
+      "stateShortName":"PA",
+      "stateFullName":"Pennsylvania",
+      "city":"Bellefonte",
+      "street":"Spring Creek Canyon Trail",
+      "house":"Spring Creek Canyon Trail"
+    },
+    "phoneNumber":"6535079638",
+    "gender":0,
+    "origin":0
+  },
+  "email":"pittman_barb@yahoo.com",
+  "passd":"b83b3b502e"
+}

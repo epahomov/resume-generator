@@ -1,0 +1,34 @@
+{
+  "id":"868f946e-1018-4fe1-8b9d-07c1a7379e14",
+  "person":{
+    "name":{
+      "firstName":"Kaylee",
+      "lastName":"Russell"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32792",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Winter Park",
+      "street":"County Drive Way",
+      "house":"County Drive Way"
+    },
+    "phoneNumber":"3446636501",
+    "gender":1,
+    "origin":0
+  },
+  "email":"guidomok@yahoo.com",
+  "passd":"ddb06ea04a"
+}

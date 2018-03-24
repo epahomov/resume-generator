@@ -1,0 +1,34 @@
+{
+  "id":"26cf48bb-654a-4c30-a2ab-bf81732debb8",
+  "person":{
+    "name":{
+      "firstName":"Gabrielle",
+      "lastName":"Holt"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Oklahoma State University",
+          "city":"Stillwater",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"74075",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Stillwater",
+      "street":"Wildwood Drive",
+      "house":"1601"
+    },
+    "phoneNumber":"5612777367",
+    "gender":1,
+    "origin":0
+  },
+  "email":"spanngerard@yahoo.com",
+  "passd":"b41efe444a"
+}

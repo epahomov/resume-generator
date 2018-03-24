@@ -1,0 +1,34 @@
+{
+  "id":"597c1412-eaf6-43dd-9084-e63a33af33db",
+  "person":{
+    "name":{
+      "firstName":"Sakshi",
+      "lastName":"Malik"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fullerton",
+          "city":"Fullerton",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"91789",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Walnut",
+      "street":"Portside Drive",
+      "house":"20100"
+    },
+    "phoneNumber":"7651477431",
+    "gender":1,
+    "origin":1
+  },
+  "email":"sherylcabell@yahoo.com",
+  "passd":"9bffc0af88"
+}

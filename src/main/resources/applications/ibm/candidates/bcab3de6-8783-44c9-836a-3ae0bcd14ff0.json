@@ -1,0 +1,34 @@
+{
+  "id":"bcab3de6-8783-44c9-836a-3ae0bcd14ff0",
+  "person":{
+    "name":{
+      "firstName":"Tanya",
+      "lastName":"Lalit"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Iowa",
+          "city":"Iowa City",
+          "state":"IA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"52333",
+      "stateShortName":"IA",
+      "stateFullName":"Iowa",
+      "city":"Solon",
+      "street":"Sugar Bottom Road Northeast",
+      "house":"2455-2459"
+    },
+    "phoneNumber":"6747326178",
+    "gender":1,
+    "origin":1
+  },
+  "email":"mckinleyjory@yahoo.com",
+  "passd":"1ae3105016"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"c9838251-43d9-458d-b972-36223994b64d",
+  "person":{
+    "name":{
+      "firstName":"Ava",
+      "lastName":"Brown"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Central Michigan University",
+          "city":"Mount Pleasant",
+          "state":"MI"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"48858",
+      "stateShortName":"MI",
+      "stateFullName":"Michigan",
+      "city":"Mount Pleasant",
+      "street":"South Summerton Road",
+      "house":"2957"
+    },
+    "phoneNumber":"1231353266",
+    "gender":1,
+    "origin":0
+  },
+  "email":"mikaelfinleymoise@yahoo.com",
+  "passd":"03bb6d9fdb"
+}

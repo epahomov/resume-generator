@@ -1,0 +1,34 @@
+{
+  "id":"1ce3c685-838c-4c2a-9cdf-b2a4493c40cb",
+  "person":{
+    "name":{
+      "firstName":"Arjun",
+      "lastName":"Sharma"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Missouri",
+          "city":"Columbia",
+          "state":"MO"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"65201",
+      "stateShortName":"MO",
+      "stateFullName":"Missouri",
+      "city":"Columbia",
+      "street":"Nebraska Avenue",
+      "house":"319-499"
+    },
+    "phoneNumber":"4752456900",
+    "gender":0,
+    "origin":1
+  },
+  "email":"helmuthscovel@yahoo.com",
+  "passd":"e9eac59acd"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"c1cd4d78-8532-4a22-9a40-2202a75e40aa",
+  "person":{
+    "name":{
+      "firstName":"Dawn",
+      "lastName":"Pal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Louisiana State University",
+          "city":"Baton Rouge",
+          "state":"LA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"70814",
+      "stateShortName":"LA",
+      "stateFullName":"Louisiana",
+      "city":"Baton Rouge",
+      "street":"Ridgemont Drive",
+      "house":"3874-3920"
+    },
+    "phoneNumber":"6715946635",
+    "gender":1,
+    "origin":1
+  },
+  "email":"allixcoontz@yahoo.com",
+  "passd":"6da9ab85fd"
+}

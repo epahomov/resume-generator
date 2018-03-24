@@ -1,0 +1,44 @@
+{
+  "id":"8e9b38ed-5725-4c0e-b55e-600ce5b9bae1",
+  "person":{
+    "name":{
+      "firstName":"Madison",
+      "lastName":"Glover"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Irvine",
+          "city":"Irvine",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of California - Irvine",
+          "city":"Irvine",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92705",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Santa Ana",
+      "street":"Vanderlip Avenue",
+      "house":"18492"
+    },
+    "phoneNumber":"1101178106",
+    "gender":1,
+    "origin":0
+  },
+  "email":"seltzerscarlet@yahoo.com",
+  "passd":"89b9875282"
+}

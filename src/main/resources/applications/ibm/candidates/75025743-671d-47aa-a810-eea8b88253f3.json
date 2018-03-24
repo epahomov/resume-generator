@@ -1,0 +1,34 @@
+{
+  "id":"75025743-671d-47aa-a810-eea8b88253f3",
+  "person":{
+    "name":{
+      "firstName":"Madison",
+      "lastName":"Clark"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Montclair State University",
+          "city":"Montclair Township",
+          "state":"NJ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"07424",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Woodland Park",
+      "street":"Rolling Views Drive",
+      "house":"70"
+    },
+    "phoneNumber":"2201041870",
+    "gender":1,
+    "origin":0
+  },
+  "email":"lukas_marvin@yahoo.com",
+  "passd":"be48701e62"
+}

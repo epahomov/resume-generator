@@ -1,0 +1,34 @@
+{
+  "id":"a82a5011-32ef-4f68-908e-c810fdd5a142",
+  "person":{
+    "name":{
+      "firstName":"Ananya",
+      "lastName":"Malik"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Georgia",
+          "city":"Athens",
+          "state":"GA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"30605",
+      "stateShortName":"GA",
+      "stateFullName":"Georgia",
+      "city":"Athens",
+      "street":"Winterville Road",
+      "house":"965"
+    },
+    "phoneNumber":"1505426450",
+    "gender":1,
+    "origin":1
+  },
+  "email":"frevertpauletta@yahoo.com",
+  "passd":"12ae4dba33"
+}

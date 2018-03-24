@@ -1,0 +1,54 @@
+{
+  "id":"08392181-00b5-4872-b5ff-dd4f5869f455",
+  "person":{
+    "name":{
+      "firstName":"Sarah",
+      "lastName":"Dunn"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"New York University",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"New York University",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"New York University",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"07020",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Edgewater",
+      "street":"River Road",
+      "house":"513"
+    },
+    "phoneNumber":"5011272127",
+    "gender":1,
+    "origin":0
+  },
+  "email":"elvinaboise@yahoo.com",
+  "passd":"778dfcabb3"
+}

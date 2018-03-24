@@ -1,0 +1,34 @@
+{
+  "id":"b5aca5b9-6dbe-48d8-aa9a-414febfb2788",
+  "person":{
+    "name":{
+      "firstName":"Rutuja",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"44240",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Kent",
+      "street":"North Mantua Street",
+      "house":"1400"
+    },
+    "phoneNumber":"2531151304",
+    "gender":1,
+    "origin":1
+  },
+  "email":"cletispiraino@yahoo.com",
+  "passd":"287021e536"
+}

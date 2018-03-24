@@ -1,0 +1,34 @@
+{
+  "id":"a9d843ce-f945-4b6f-8d56-abe7761821be",
+  "person":{
+    "name":{
+      "firstName":"Melissa",
+      "lastName":"Carter"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Carolina at Chapel Hill",
+          "city":"Chapel Hill",
+          "state":"NC"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"27707",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Durham",
+      "street":"Durham-Chapel Hill Boulevard",
+      "house":"4753"
+    },
+    "phoneNumber":"2774115205",
+    "gender":1,
+    "origin":0
+  },
+  "email":"yorgosmonian@yahoo.com",
+  "passd":"f46d163048"
+}

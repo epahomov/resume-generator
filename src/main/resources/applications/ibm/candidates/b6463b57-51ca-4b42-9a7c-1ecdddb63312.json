@@ -1,0 +1,34 @@
+{
+  "id":"b6463b57-51ca-4b42-9a7c-1ecdddb63312",
+  "person":{
+    "name":{
+      "firstName":"Pavithra",
+      "lastName":"Chande"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - San Diego",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92102",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Federal Boulevard",
+      "house":"4404-4538"
+    },
+    "phoneNumber":"4716521592",
+    "gender":1,
+    "origin":1
+  },
+  "email":"chantallebourdelle@yahoo.com",
+  "passd":"f471b662af"
+}

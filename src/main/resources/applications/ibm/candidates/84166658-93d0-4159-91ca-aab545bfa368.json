@@ -1,0 +1,34 @@
+{
+  "id":"84166658-93d0-4159-91ca-aab545bfa368",
+  "person":{
+    "name":{
+      "firstName":"Mohit",
+      "lastName":"Goel"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"43224",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Karl Road",
+      "house":"4133"
+    },
+    "phoneNumber":"6733464482",
+    "gender":0,
+    "origin":1
+  },
+  "email":"janennamunao@yahoo.com",
+  "passd":"758934ddec"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"b5bca3c5-f499-4eac-90c1-ef27ae2a90b4",
+  "person":{
+    "name":{
+      "firstName":"Sarah",
+      "lastName":"Thomas"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Virginia Tech",
+          "city":"Blacksburg",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"24060",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Blacksburg",
+      "street":"McDowell Court",
+      "house":"4256"
+    },
+    "phoneNumber":"6436736837",
+    "gender":1,
+    "origin":0
+  },
+  "email":"liukadonoff@yahoo.com",
+  "passd":"ea28f5b096"
+}

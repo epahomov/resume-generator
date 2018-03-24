@@ -1,0 +1,34 @@
+{
+  "id":"e988bbfd-397f-4aaf-8e66-a0bf3918588c",
+  "person":{
+    "name":{
+      "firstName":"Arusha",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Iowa State University",
+          "city":"Ames",
+          "state":"IA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"50010",
+      "stateShortName":"IA",
+      "stateFullName":"Iowa",
+      "city":"Ames",
+      "street":"Stagecoach Road",
+      "house":"3840"
+    },
+    "phoneNumber":"6305085741",
+    "gender":1,
+    "origin":1
+  },
+  "email":"mathildepermutt@yahoo.com",
+  "passd":"f1fe3723bb"
+}

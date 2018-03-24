@@ -1,0 +1,34 @@
+{
+  "id":"3de593c2-e209-4f28-bac2-2340e7efc467",
+  "person":{
+    "name":{
+      "firstName":"Eduardo",
+      "lastName":"Carroll"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Los Angeles",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90041",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"North Figueroa Street",
+      "house":"7800"
+    },
+    "phoneNumber":"6422931249",
+    "gender":0,
+    "origin":0
+  },
+  "email":"rockiefraenkel@yahoo.com",
+  "passd":"9d1b4c2018"
+}

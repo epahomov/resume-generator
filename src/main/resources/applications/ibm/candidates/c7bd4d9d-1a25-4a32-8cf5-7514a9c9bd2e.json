@@ -1,0 +1,34 @@
+{
+  "id":"c7bd4d9d-1a25-4a32-8cf5-7514a9c9bd2e",
+  "person":{
+    "name":{
+      "firstName":"Vaishnavi",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"James Madison University",
+          "city":"Harrisonburg",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"22802",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Harrisonburg",
+      "street":"Interstate 81",
+      "house":"Interstate 81"
+    },
+    "phoneNumber":"1415164277",
+    "gender":1,
+    "origin":1
+  },
+  "email":"georgettaboorstin@yahoo.com",
+  "passd":"3a86dddb67"
+}

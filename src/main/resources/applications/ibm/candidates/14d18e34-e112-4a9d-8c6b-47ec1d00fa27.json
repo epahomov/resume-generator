@@ -1,0 +1,44 @@
+{
+  "id":"14d18e34-e112-4a9d-8c6b-47ec1d00fa27",
+  "person":{
+    "name":{
+      "firstName":"Olivia",
+      "lastName":"Elliott"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Florida International University",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"32803",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Orlando",
+      "street":"Chichester Street",
+      "house":"1419"
+    },
+    "phoneNumber":"1621862914",
+    "gender":1,
+    "origin":0
+  },
+  "email":"golda.kester@yahoo.com",
+  "passd":"ff0bccf5bf"
+}

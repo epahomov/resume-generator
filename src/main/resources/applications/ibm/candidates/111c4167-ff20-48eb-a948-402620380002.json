@@ -1,0 +1,34 @@
+{
+  "id":"111c4167-ff20-48eb-a948-402620380002",
+  "person":{
+    "name":{
+      "firstName":"Sadaf",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Arizona State University",
+          "city":"Tempe",
+          "state":"AZ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"85281",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Tempe",
+      "street":"East Rio Salado Parkway",
+      "house":"1171-1299"
+    },
+    "phoneNumber":"7273165944",
+    "gender":1,
+    "origin":1
+  },
+  "email":"dawnasemenov@yahoo.com",
+  "passd":"86d8fa82a6"
+}

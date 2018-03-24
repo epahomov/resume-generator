@@ -1,0 +1,34 @@
+{
+  "id":"3508ef94-f8c9-4d75-8b37-82ad3b3fa39c",
+  "person":{
+    "name":{
+      "firstName":"Anamika",
+      "lastName":"Bhat"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Alabama",
+          "city":"Tuscaloosa",
+          "state":"AL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"35406",
+      "stateShortName":"AL",
+      "stateFullName":"Alabama",
+      "city":"Tuscaloosa",
+      "street":"Riverdale Drive",
+      "house":"372"
+    },
+    "phoneNumber":"7322282656",
+    "gender":1,
+    "origin":1
+  },
+  "email":"salmassinert@yahoo.com",
+  "passd":"55096d8008"
+}

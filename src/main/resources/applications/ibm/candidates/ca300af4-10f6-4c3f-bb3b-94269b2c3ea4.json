@@ -1,0 +1,34 @@
+{
+  "id":"ca300af4-10f6-4c3f-bb3b-94269b2c3ea4",
+  "person":{
+    "name":{
+      "firstName":"Ria",
+      "lastName":"Jai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ashford University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92105",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Martin Luther King Junior Freeway",
+      "house":"Martin Luther King Junior Freeway"
+    },
+    "phoneNumber":"7245998128",
+    "gender":1,
+    "origin":1
+  },
+  "email":"rudermantedra@yahoo.com",
+  "passd":"3d43439253"
+}

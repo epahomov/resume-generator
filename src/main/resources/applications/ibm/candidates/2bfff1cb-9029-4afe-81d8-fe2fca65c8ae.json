@@ -1,0 +1,44 @@
+{
+  "id":"2bfff1cb-9029-4afe-81d8-fe2fca65c8ae",
+  "person":{
+    "name":{
+      "firstName":"Sneha",
+      "lastName":"Neel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Lone Star College System",
+          "city":"The Woodlands",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Lone Star College System",
+          "city":"The Woodlands",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"77302",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Conroe",
+      "street":"Ehlers Road",
+      "house":"10320"
+    },
+    "phoneNumber":"2424462262",
+    "gender":1,
+    "origin":1
+  },
+  "email":"wilbursyverson@yahoo.com",
+  "passd":"94435a5b10"
+}

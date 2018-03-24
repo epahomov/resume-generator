@@ -1,0 +1,34 @@
+{
+  "id":"195a6cfb-fa90-462f-ba19-3526c3b6fbfc",
+  "person":{
+    "name":{
+      "firstName":"Joshua",
+      "lastName":"Mcbride"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Michigan State University",
+          "city":"East Lansing",
+          "state":"MI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"48823",
+      "stateShortName":"MI",
+      "stateFullName":"Michigan",
+      "city":"East Lansing",
+      "street":"Towar Avenue",
+      "house":"16641"
+    },
+    "phoneNumber":"4552095172",
+    "gender":0,
+    "origin":0
+  },
+  "email":"loveladydukie@yahoo.com",
+  "passd":"4ca9255719"
+}

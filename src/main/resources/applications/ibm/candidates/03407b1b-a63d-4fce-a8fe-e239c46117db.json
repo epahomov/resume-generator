@@ -1,0 +1,34 @@
+{
+  "id":"03407b1b-a63d-4fce-a8fe-e239c46117db",
+  "person":{
+    "name":{
+      "firstName":"Peyton",
+      "lastName":"Smith"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Illinois at Urbana-Champaign",
+          "city":"Champaign",
+          "state":"IL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"61802",
+      "stateShortName":"IL",
+      "stateFullName":"Illinois",
+      "city":"Urbana",
+      "street":"County Road 1400 East",
+      "house":"1962"
+    },
+    "phoneNumber":"5362421327",
+    "gender":0,
+    "origin":0
+  },
+  "email":"wylmaguimond@yahoo.com",
+  "passd":"b5bbc01ceb"
+}

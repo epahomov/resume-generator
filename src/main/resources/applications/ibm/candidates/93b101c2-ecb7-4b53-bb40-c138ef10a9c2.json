@@ -1,0 +1,44 @@
+{
+  "id":"93b101c2-ecb7-4b53-bb40-c138ef10a9c2",
+  "person":{
+    "name":{
+      "firstName":"Aryan",
+      "lastName":"Kapoor"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97408",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Eugene",
+      "street":"McKenzie View Drive",
+      "house":"33579"
+    },
+    "phoneNumber":"2703133892",
+    "gender":0,
+    "origin":1
+  },
+  "email":"weissbourdrodrique@yahoo.com",
+  "passd":"eac9bcdc65"
+}

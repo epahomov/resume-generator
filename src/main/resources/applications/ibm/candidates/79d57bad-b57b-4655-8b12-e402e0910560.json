@@ -1,0 +1,34 @@
+{
+  "id":"79d57bad-b57b-4655-8b12-e402e0910560",
+  "person":{
+    "name":{
+      "firstName":"Shyam",
+      "lastName":"Jai"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Texas A&M University",
+          "city":"College Station",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77802",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Bryan",
+      "street":"Boonville Road",
+      "house":"5547-5707"
+    },
+    "phoneNumber":"1032451975",
+    "gender":0,
+    "origin":1
+  },
+  "email":"sammysommariva@yahoo.com",
+  "passd":"e5a97d79be"
+}

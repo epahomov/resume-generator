@@ -1,0 +1,34 @@
+{
+  "id":"9339790b-7783-4bf3-ad08-4213d4a1015e",
+  "person":{
+    "name":{
+      "firstName":"Deep",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Rutgers University",
+          "city":"New Brunswick",
+          "state":"NJ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"08854",
+      "stateShortName":"NJ",
+      "stateFullName":"New Jersey",
+      "city":"Piscataway Township",
+      "street":"Ethel Road West",
+      "house":"70-90"
+    },
+    "phoneNumber":"1372246781",
+    "gender":0,
+    "origin":1
+  },
+  "email":"fairliehinkson@yahoo.com",
+  "passd":"e5f3677533"
+}

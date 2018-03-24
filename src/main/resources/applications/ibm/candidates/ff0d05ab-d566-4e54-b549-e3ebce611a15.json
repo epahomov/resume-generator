@@ -1,0 +1,34 @@
+{
+  "id":"ff0d05ab-d566-4e54-b549-e3ebce611a15",
+  "person":{
+    "name":{
+      "firstName":"Steven",
+      "lastName":"Hoffman"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Wisconsin",
+          "city":"Madison",
+          "state":"WI"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"53703",
+      "stateShortName":"WI",
+      "stateFullName":"Wisconsin",
+      "city":"Madison",
+      "street":"Sherman Avenue",
+      "house":"1130"
+    },
+    "phoneNumber":"6065017830",
+    "gender":0,
+    "origin":0
+  },
+  "email":"cherehargreaves@yahoo.com",
+  "passd":"871a2369b5"
+}

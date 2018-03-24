@@ -1,0 +1,34 @@
+{
+  "id":"25cd92a2-ec72-4ca5-90ac-572dc3990861",
+  "person":{
+    "name":{
+      "firstName":"Riley",
+      "lastName":"Robles"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Riverside",
+          "city":"Riverside",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92506",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Riverside",
+      "street":"Panorama Road",
+      "house":"3224-3284"
+    },
+    "phoneNumber":"7525231767",
+    "gender":1,
+    "origin":0
+  },
+  "email":"adriennordstroem@yahoo.com",
+  "passd":"5e34817d16"
+}

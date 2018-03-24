@@ -1,0 +1,44 @@
+{
+  "id":"272c8aca-5702-4f62-b8ae-16b119ac2e76",
+  "person":{
+    "name":{
+      "firstName":"Tanu",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Oregon",
+          "city":"Eugene",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97408",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Eugene",
+      "street":"Gilham Road",
+      "house":"4088"
+    },
+    "phoneNumber":"1452991897",
+    "gender":1,
+    "origin":1
+  },
+  "email":"myriamkisler@yahoo.com",
+  "passd":"8ec259e32d"
+}

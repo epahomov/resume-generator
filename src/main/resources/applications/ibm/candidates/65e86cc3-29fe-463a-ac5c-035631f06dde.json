@@ -1,0 +1,34 @@
+{
+  "id":"65e86cc3-29fe-463a-ac5c-035631f06dde",
+  "person":{
+    "name":{
+      "firstName":"Riya",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32803",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Orlando",
+      "street":"Cole Road",
+      "house":"2409-2415"
+    },
+    "phoneNumber":"1056211026",
+    "gender":1,
+    "origin":1
+  },
+  "email":"bethellcolin@yahoo.com",
+  "passd":"cf3524cae4"
+}

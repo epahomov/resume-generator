@@ -1,0 +1,34 @@
+{
+  "id":"b09959d8-5c79-4f22-98fb-081b1e7e17fa",
+  "person":{
+    "name":{
+      "firstName":"Garrett",
+      "lastName":"Williams"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Auburn University",
+          "city":"Auburn",
+          "state":"AL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"36801",
+      "stateShortName":"AL",
+      "stateFullName":"Alabama",
+      "city":"Opelika",
+      "street":"Birmingham Highway",
+      "house":"3501"
+    },
+    "phoneNumber":"1516959681",
+    "gender":0,
+    "origin":0
+  },
+  "email":"bardsleyothelia@yahoo.com",
+  "passd":"9ca921c2ab"
+}

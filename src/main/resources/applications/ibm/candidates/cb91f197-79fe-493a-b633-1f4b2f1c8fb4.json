@@ -1,0 +1,34 @@
+{
+  "id":"cb91f197-79fe-493a-b633-1f4b2f1c8fb4",
+  "person":{
+    "name":{
+      "firstName":"Ella",
+      "lastName":"Yates"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Houston",
+          "city":"Houston",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"77028",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Houston",
+      "street":"Ley Road",
+      "house":"7738"
+    },
+    "phoneNumber":"4653972440",
+    "gender":1,
+    "origin":0
+  },
+  "email":"eldridgeklinkenborg@yahoo.com",
+  "passd":"08bfd0b45a"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"4b1eb2d4-2e9d-43ff-8a88-2efa97125c62",
+  "person":{
+    "name":{
+      "firstName":"Charles",
+      "lastName":"Mendez"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97330",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Corvallis",
+      "street":"Northeast Garden Avenue",
+      "house":"3315"
+    },
+    "phoneNumber":"6157418890",
+    "gender":0,
+    "origin":0
+  },
+  "email":"bingprelich@yahoo.com",
+  "passd":"829dd925e6"
+}

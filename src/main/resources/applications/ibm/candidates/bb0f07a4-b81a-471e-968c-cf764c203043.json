@@ -1,0 +1,34 @@
+{
+  "id":"bb0f07a4-b81a-471e-968c-cf764c203043",
+  "person":{
+    "name":{
+      "firstName":"Nisha",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Irvine",
+          "city":"Irvine",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92618",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Irvine",
+      "street":"Walnut Avenue",
+      "house":"5595 1/2"
+    },
+    "phoneNumber":"4315449013",
+    "gender":1,
+    "origin":1
+  },
+  "email":"clyveling@yahoo.com",
+  "passd":"6ef1078b81"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"a2ba4453-e676-4235-b384-10c595bab00d",
+  "person":{
+    "name":{
+      "firstName":"Olivia",
+      "lastName":"Roman"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"43219",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Citygate Drive",
+      "house":"2100"
+    },
+    "phoneNumber":"7637138551",
+    "gender":1,
+    "origin":0
+  },
+  "email":"carittamargolin@yahoo.com",
+  "passd":"136a0e3454"
+}

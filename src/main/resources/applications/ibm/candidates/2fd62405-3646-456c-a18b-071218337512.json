@@ -1,0 +1,44 @@
+{
+  "id":"2fd62405-3646-456c-a18b-071218337512",
+  "person":{
+    "name":{
+      "firstName":"Fernando",
+      "lastName":"Waters"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas State University",
+          "city":"San Marcos",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Texas State University",
+          "city":"San Marcos",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78640",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Kyle",
+      "street":"South Old Stagecoach Road",
+      "house":"2850"
+    },
+    "phoneNumber":"6442984039",
+    "gender":0,
+    "origin":0
+  },
+  "email":"carli.igoe@yahoo.com",
+  "passd":"d228521eea"
+}

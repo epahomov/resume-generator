@@ -1,0 +1,44 @@
+{
+  "id":"b0df2b3e-c19a-441a-a850-9478af3b12dd",
+  "person":{
+    "name":{
+      "firstName":"Moii chhangte",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Riverside",
+          "city":"Riverside",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of California - Riverside",
+          "city":"Riverside",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92506",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Riverside",
+      "street":"Arroyo Drive",
+      "house":"2202-2216"
+    },
+    "phoneNumber":"7375595420",
+    "gender":1,
+    "origin":1
+  },
+  "email":"hoytvidal@yahoo.com",
+  "passd":"35000d025e"
+}

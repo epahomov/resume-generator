@@ -1,0 +1,34 @@
+{
+  "id":"a038620b-0a2e-4888-9f7b-760e66f33f2f",
+  "person":{
+    "name":{
+      "firstName":"Jessica",
+      "lastName":"Poole"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"San Francisco State University",
+          "city":"San Francisco",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"94607",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Oakland",
+      "street":"7th Street",
+      "house":"7th Street"
+    },
+    "phoneNumber":"2755778904",
+    "gender":1,
+    "origin":0
+  },
+  "email":"lehminggian@yahoo.com",
+  "passd":"da0141be10"
+}

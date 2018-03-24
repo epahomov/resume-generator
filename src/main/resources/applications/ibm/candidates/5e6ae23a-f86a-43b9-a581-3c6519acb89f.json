@@ -1,0 +1,34 @@
+{
+  "id":"5e6ae23a-f86a-43b9-a581-3c6519acb89f",
+  "person":{
+    "name":{
+      "firstName":"Leah",
+      "lastName":"Raji"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"43224",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Columbus-Wooster Road",
+      "house":"4065"
+    },
+    "phoneNumber":"6653017736",
+    "gender":1,
+    "origin":1
+  },
+  "email":"youkseebroddy@yahoo.com",
+  "passd":"14274eead5"
+}

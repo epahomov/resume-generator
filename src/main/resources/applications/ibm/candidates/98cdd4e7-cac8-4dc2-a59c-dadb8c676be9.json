@@ -1,0 +1,34 @@
+{
+  "id":"98cdd4e7-cac8-4dc2-a59c-dadb8c676be9",
+  "person":{
+    "name":{
+      "firstName":"Margaret",
+      "lastName":"Clayton"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Western Governors University",
+          "city":"Salt Lake City",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84010",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Bountiful",
+      "street":"South 450 West",
+      "house":"2903-2917"
+    },
+    "phoneNumber":"2472641108",
+    "gender":1,
+    "origin":0
+  },
+  "email":"angelegrosslight@yahoo.com",
+  "passd":"68e4a50173"
+}

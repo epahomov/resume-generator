@@ -1,0 +1,34 @@
+{
+  "id":"4ebf4192-b457-40e6-82bf-fb0d05610718",
+  "person":{
+    "name":{
+      "firstName":"Shivangi",
+      "lastName":"Subram"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Western Governors University",
+          "city":"Salt Lake City",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84103",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Salt Lake City",
+      "street":"Bonneville Shoreline Trail",
+      "house":"Bonneville Shoreline Trail"
+    },
+    "phoneNumber":"6504383431",
+    "gender":1,
+    "origin":1
+  },
+  "email":"supplebarnabe@yahoo.com",
+  "passd":"ac6025f425"
+}

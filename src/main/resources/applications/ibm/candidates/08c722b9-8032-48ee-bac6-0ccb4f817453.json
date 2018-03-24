@@ -1,0 +1,34 @@
+{
+  "id":"08c722b9-8032-48ee-bac6-0ccb4f817453",
+  "person":{
+    "name":{
+      "firstName":"Catherine",
+      "lastName":"Wilson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Washington State University",
+          "city":"Pullman",
+          "state":"WA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"99163",
+      "stateShortName":"WA",
+      "stateFullName":"Washington",
+      "city":"Pullman",
+      "street":"Whelan Road",
+      "house":"5382"
+    },
+    "phoneNumber":"6636503041",
+    "gender":1,
+    "origin":0
+  },
+  "email":"emylekoester@yahoo.com",
+  "passd":"6fcfd83f29"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"21d13590-79b3-4afb-80ca-3dc0bf16c71a",
+  "person":{
+    "name":{
+      "firstName":"Shyam",
+      "lastName":"Prasad"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"86004",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Flagstaff",
+      "street":"U.S. Highway 89",
+      "house":"7921-7925"
+    },
+    "phoneNumber":"5205633405",
+    "gender":0,
+    "origin":1
+  },
+  "email":"stormieliou@yahoo.com",
+  "passd":"56dd495992"
+}

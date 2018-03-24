@@ -1,0 +1,44 @@
+{
+  "id":"da40bca3-7c5d-4f31-bb19-3c583ba90ff7",
+  "person":{
+    "name":{
+      "firstName":"Emily",
+      "lastName":"Hawkins"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Washington State University",
+          "city":"Pullman",
+          "state":"WA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Washington State University",
+          "city":"Pullman",
+          "state":"WA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"99163",
+      "stateShortName":"WA",
+      "stateFullName":"Washington",
+      "city":"Pullman",
+      "street":"Rebel Flat Road",
+      "house":"Rebel Flat Road"
+    },
+    "phoneNumber":"5606111321",
+    "gender":1,
+    "origin":0
+  },
+  "email":"silva.lorrie@yahoo.com",
+  "passd":"c20c6457b4"
+}

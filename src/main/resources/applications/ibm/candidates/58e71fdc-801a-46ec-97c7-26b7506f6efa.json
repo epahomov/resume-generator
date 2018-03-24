@@ -1,0 +1,34 @@
+{
+  "id":"58e71fdc-801a-46ec-97c7-26b7506f6efa",
+  "person":{
+    "name":{
+      "firstName":"Riya",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"97330",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Corvallis",
+      "street":"Northeast Holly Acres Street",
+      "house":"4051"
+    },
+    "phoneNumber":"2263096103",
+    "gender":1,
+    "origin":1
+  },
+  "email":"brnabasprott@yahoo.com",
+  "passd":"0b3ea6c148"
+}

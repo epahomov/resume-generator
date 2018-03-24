@@ -1,0 +1,34 @@
+{
+  "id":"77c2acbe-a34f-4395-9c31-bfdfd639a34a",
+  "person":{
+    "name":{
+      "firstName":"Vedant",
+      "lastName":"Roy"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78758",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"Parkfield Drive",
+      "house":"8512"
+    },
+    "phoneNumber":"7401913317",
+    "gender":0,
+    "origin":1
+  },
+  "email":"fargosharity@yahoo.com",
+  "passd":"e6870598b4"
+}

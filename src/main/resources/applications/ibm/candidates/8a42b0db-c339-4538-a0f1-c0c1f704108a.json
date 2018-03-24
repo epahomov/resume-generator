@@ -1,0 +1,34 @@
+{
+  "id":"8a42b0db-c339-4538-a0f1-c0c1f704108a",
+  "person":{
+    "name":{
+      "firstName":"Pawan",
+      "lastName":"Patel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78723",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"Bartholomew District Park Pedestrian Walkway 19",
+      "house":"Bartholomew District Park Pedestrian Walkway 19"
+    },
+    "phoneNumber":"7102767205",
+    "gender":0,
+    "origin":1
+  },
+  "email":"osbournmcdougall@yahoo.com",
+  "passd":"1d60557fbd"
+}

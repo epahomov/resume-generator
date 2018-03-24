@@ -1,0 +1,34 @@
+{
+  "id":"c2bc2666-14ba-4d3f-9332-dc2832dfcc1c",
+  "person":{
+    "name":{
+      "firstName":"Jennifer",
+      "lastName":"Ross"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"44266",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Ravenna",
+      "street":"Weaver Road",
+      "house":"8420"
+    },
+    "phoneNumber":"2541232749",
+    "gender":1,
+    "origin":0
+  },
+  "email":"perledoering@yahoo.com",
+  "passd":"6913c7a76e"
+}

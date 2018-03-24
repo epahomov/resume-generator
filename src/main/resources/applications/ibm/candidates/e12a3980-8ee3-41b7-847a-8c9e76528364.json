@@ -1,0 +1,44 @@
+{
+  "id":"e12a3980-8ee3-41b7-847a-8c9e76528364",
+  "person":{
+    "name":{
+      "firstName":"Kalyani",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State Polytechnic University - Pomona",
+          "city":"Pomona",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"California State Polytechnic University - Pomona",
+          "city":"Pomona",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"91784",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Upland",
+      "street":"Amy Street",
+      "house":"854-870"
+    },
+    "phoneNumber":"1475453349",
+    "gender":1,
+    "origin":1
+  },
+  "email":"dulcifalchuk@yahoo.com",
+  "passd":"485bc4fd49"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"872f22da-4605-49de-9e2f-28c8a91d941a",
+  "person":{
+    "name":{
+      "firstName":"Katherine",
+      "lastName":"Allen"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"43224",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Wakefern Place",
+      "house":"3000"
+    },
+    "phoneNumber":"3472428557",
+    "gender":1,
+    "origin":0
+  },
+  "email":"roxannaesser@yahoo.com",
+  "passd":"c27c438a4f"
+}

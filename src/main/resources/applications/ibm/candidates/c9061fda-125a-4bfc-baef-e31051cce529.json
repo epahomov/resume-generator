@@ -1,0 +1,34 @@
+{
+  "id":"c9061fda-125a-4bfc-baef-e31051cce529",
+  "person":{
+    "name":{
+      "firstName":"Sarah",
+      "lastName":"Wright"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Louisiana State University",
+          "city":"Baton Rouge",
+          "state":"LA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"70739",
+      "stateShortName":"LA",
+      "stateFullName":"Louisiana",
+      "city":"Central",
+      "street":"Greenwell Springs Road",
+      "house":"14183"
+    },
+    "phoneNumber":"7443612634",
+    "gender":1,
+    "origin":0
+  },
+  "email":"anjaantell@yahoo.com",
+  "passd":"a53bc4f89a"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"0555ffda-fafc-42b2-bc2d-ab9fdf5144a3",
+  "person":{
+    "name":{
+      "firstName":"Jacob",
+      "lastName":"Saunders"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Penn State",
+          "city":"State College",
+          "state":"PA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Penn State",
+          "city":"State College",
+          "state":"PA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"16827",
+      "stateShortName":"PA",
+      "stateFullName":"Pennsylvania",
+      "city":"Boalsburg",
+      "street":"Blue Blazed Trail",
+      "house":"Blue Blazed Trail"
+    },
+    "phoneNumber":"1456823551",
+    "gender":0,
+    "origin":0
+  },
+  "email":"priscamyrvold@yahoo.com",
+  "passd":"ef324f085e"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"d5e2f6f5-8d9d-45eb-847d-b96948a85c6f",
+  "person":{
+    "name":{
+      "firstName":"Faith",
+      "lastName":"Watson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Massachusetts - Amherst",
+          "city":"Amherst",
+          "state":"MA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Massachusetts - Amherst",
+          "city":"Amherst",
+          "state":"MA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"01002",
+      "stateShortName":"MA",
+      "stateFullName":"Massachusetts",
+      "city":"Pelham",
+      "street":"Amherst Road",
+      "house":"4-8"
+    },
+    "phoneNumber":"4071724256",
+    "gender":1,
+    "origin":0
+  },
+  "email":"nevmacnamara@yahoo.com",
+  "passd":"d2007271fc"
+}

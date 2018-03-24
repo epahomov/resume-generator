@@ -1,0 +1,34 @@
+{
+  "id":"f6d47999-751d-47f0-9d8b-94e8913bfd98",
+  "person":{
+    "name":{
+      "firstName":"Cameron",
+      "lastName":"Kirk"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Michigan - Ann Arbor",
+          "city":"Ann Arbor",
+          "state":"MI"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"48105",
+      "stateShortName":"MI",
+      "stateFullName":"Michigan",
+      "city":"Ann Arbor",
+      "street":"Dhu Varren Road",
+      "house":"2403-2447"
+    },
+    "phoneNumber":"1473047109",
+    "gender":0,
+    "origin":0
+  },
+  "email":"elaynexia@yahoo.com",
+  "passd":"3ee43cc2ba"
+}

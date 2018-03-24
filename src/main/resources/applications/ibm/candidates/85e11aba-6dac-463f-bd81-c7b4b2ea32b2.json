@@ -1,0 +1,34 @@
+{
+  "id":"85e11aba-6dac-463f-bd81-c7b4b2ea32b2",
+  "person":{
+    "name":{
+      "firstName":"Ira",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Western Governors University",
+          "city":"Salt Lake City",
+          "state":"UT"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"84103",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Salt Lake City",
+      "street":"Ensign Peak Trail",
+      "house":"Ensign Peak Trail"
+    },
+    "phoneNumber":"2061488633",
+    "gender":1,
+    "origin":1
+  },
+  "email":"deepanizon@yahoo.com",
+  "passd":"5c125a0ae9"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"c594c0a7-702d-457a-805a-c99a26e3b2f8",
+  "person":{
+    "name":{
+      "firstName":"Joshua",
+      "lastName":"Bennett"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Maryland - College Park",
+          "city":"College Park",
+          "state":"MD"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"20770",
+      "stateShortName":"MD",
+      "stateFullName":"Maryland",
+      "city":"Greenbelt",
+      "street":"Ridge -Lastner Lane",
+      "house":"Ridge -Lastner Lane"
+    },
+    "phoneNumber":"2732348989",
+    "gender":0,
+    "origin":0
+  },
+  "email":"nazariojacki@yahoo.com",
+  "passd":"35482b89aa"
+}

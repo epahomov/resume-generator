@@ -1,0 +1,34 @@
+{
+  "id":"5792d815-f1e9-44a3-bec1-51826e1a8f1b",
+  "person":{
+    "name":{
+      "firstName":"Elias",
+      "lastName":"Cole"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Indiana University - Bloomington",
+          "city":"Bloomington",
+          "state":"IN"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"47468",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Unionville",
+      "street":"East State Road 45",
+      "house":"7510"
+    },
+    "phoneNumber":"4135687635",
+    "gender":0,
+    "origin":0
+  },
+  "email":"clarihuidekoper@yahoo.com",
+  "passd":"561af8775a"
+}

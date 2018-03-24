@@ -1,0 +1,44 @@
+{
+  "id":"8a96d8e9-8e35-4c97-8bb1-77345f3a6a33",
+  "person":{
+    "name":{
+      "firstName":"Kevin",
+      "lastName":"Hall"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"CUNY Borough of Manhattan Community College",
+          "city":"New York City",
+          "state":"NY"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"10014",
+      "stateShortName":"NY",
+      "stateFullName":"New York",
+      "city":"New York",
+      "street":"6th Avenue",
+      "house":"319"
+    },
+    "phoneNumber":"4664591436",
+    "gender":0,
+    "origin":0
+  },
+  "email":"chervenikalvina@yahoo.com",
+  "passd":"0e444742a3"
+}

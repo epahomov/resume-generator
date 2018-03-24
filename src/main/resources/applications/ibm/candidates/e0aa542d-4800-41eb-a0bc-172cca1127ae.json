@@ -1,0 +1,44 @@
+{
+  "id":"e0aa542d-4800-41eb-a0bc-172cca1127ae",
+  "person":{
+    "name":{
+      "firstName":"Gabriella",
+      "lastName":"Smith"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Full Sail University",
+          "city":"Winter Park",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Full Sail University",
+          "city":"Winter Park",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32708",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Winter Springs",
+      "street":"Morton Lane",
+      "house":"236"
+    },
+    "phoneNumber":"6321699994",
+    "gender":1,
+    "origin":0
+  },
+  "email":"wilbertmolea@yahoo.com",
+  "passd":"63e766405c"
+}

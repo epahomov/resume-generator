@@ -1,0 +1,34 @@
+{
+  "id":"4d66d87d-17a8-4866-8c5e-0624c998e241",
+  "person":{
+    "name":{
+      "firstName":"Colton",
+      "lastName":"Shannon"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ashford University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92120",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Princess View Drive",
+      "house":"7401-7403"
+    },
+    "phoneNumber":"1435705345",
+    "gender":0,
+    "origin":0
+  },
+  "email":"mornabeach@yahoo.com",
+  "passd":"c5204101a3"
+}

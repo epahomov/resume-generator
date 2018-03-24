@@ -1,0 +1,34 @@
+{
+  "id":"4fd5523d-d22e-4497-84d7-daf18840d53c",
+  "person":{
+    "name":{
+      "firstName":"Aishwarya",
+      "lastName":"Darsha"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Arkansas",
+          "city":"Fayetteville",
+          "state":"AR"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"72764",
+      "stateShortName":"AR",
+      "stateFullName":"Arkansas",
+      "city":"Springdale",
+      "street":"Joe Fred Starr Lane",
+      "house":"1256"
+    },
+    "phoneNumber":"7114068208",
+    "gender":1,
+    "origin":1
+  },
+  "email":"marrileealldredge@yahoo.com",
+  "passd":"cf817a5155"
+}

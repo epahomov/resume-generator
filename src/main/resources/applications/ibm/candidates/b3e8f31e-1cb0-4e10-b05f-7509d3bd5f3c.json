@@ -1,0 +1,34 @@
+{
+  "id":"b3e8f31e-1cb0-4e10-b05f-7509d3bd5f3c",
+  "person":{
+    "name":{
+      "firstName":"Dilmini",
+      "lastName":"Manju"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Oregon State University",
+          "city":"Corvallis",
+          "state":"OR"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"97330",
+      "stateShortName":"OR",
+      "stateFullName":"Oregon",
+      "city":"Corvallis",
+      "street":"Northeast Garden Avenue",
+      "house":"3405"
+    },
+    "phoneNumber":"7304256792",
+    "gender":1,
+    "origin":1
+  },
+  "email":"blakeleychary@yahoo.com",
+  "passd":"d1eff9eef5"
+}

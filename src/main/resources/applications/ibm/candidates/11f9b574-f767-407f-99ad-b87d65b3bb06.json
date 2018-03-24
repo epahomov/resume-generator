@@ -1,0 +1,44 @@
+{
+  "id":"11f9b574-f767-407f-99ad-b87d65b3bb06",
+  "person":{
+    "name":{
+      "firstName":"Jayden",
+      "lastName":"Mendez"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Full Sail University",
+          "city":"Winter Park",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Full Sail University",
+          "city":"Winter Park",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32708",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Winter Springs",
+      "street":"Winter Springs Boulevard",
+      "house":"1214-1216"
+    },
+    "phoneNumber":"7544873909",
+    "gender":0,
+    "origin":0
+  },
+  "email":"viviebabakhanian@yahoo.com",
+  "passd":"a6394409af"
+}

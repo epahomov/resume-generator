@@ -1,0 +1,34 @@
+{
+  "id":"11349103-a427-4165-afbf-95cbc96ff6a8",
+  "person":{
+    "name":{
+      "firstName":"Jacob",
+      "lastName":"Morris"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"06278",
+      "stateShortName":"CT",
+      "stateFullName":"Connecticut",
+      "city":"Ashford",
+      "street":"James Road",
+      "house":"136-142"
+    },
+    "phoneNumber":"2044126324",
+    "gender":0,
+    "origin":0
+  },
+  "email":"suehughes188@yahoo.com",
+  "passd":"dbea9c6da0"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"7186d36e-2308-4397-bca1-07a925811043",
+  "person":{
+    "name":{
+      "firstName":"Anjali",
+      "lastName":"Soni"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Carolina at Charlotte",
+          "city":"Charlotte",
+          "state":"NC"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"28206",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Charlotte",
+      "street":"Willow Green Place",
+      "house":"4013"
+    },
+    "phoneNumber":"4036438964",
+    "gender":1,
+    "origin":1
+  },
+  "email":"maugerauguste@yahoo.com",
+  "passd":"169ca4cf78"
+}

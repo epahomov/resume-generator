@@ -1,0 +1,44 @@
+{
+  "id":"fc2c5e5b-8ee9-49dd-a8b9-4d37e597a1d7",
+  "person":{
+    "name":{
+      "firstName":"Chloe",
+      "lastName":"Hudson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Maryland - College Park",
+          "city":"College Park",
+          "state":"MD"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Maryland - College Park",
+          "city":"College Park",
+          "state":"MD"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"20770",
+      "stateShortName":"MD",
+      "stateFullName":"Maryland",
+      "city":"Greenbelt",
+      "street":"Edmonston Court",
+      "house":"9106"
+    },
+    "phoneNumber":"2775723694",
+    "gender":1,
+    "origin":0
+  },
+  "email":"churchillkronebusch@yahoo.com",
+  "passd":"c020de652f"
+}

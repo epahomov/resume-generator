@@ -1,0 +1,34 @@
+{
+  "id":"3f61b337-46d1-4074-92fd-1aa7f4d80cd7",
+  "person":{
+    "name":{
+      "firstName":"Sarah",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Arizona State University",
+          "city":"Tempe",
+          "state":"AZ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"85256",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Scottsdale",
+      "street":"East McKellips Road",
+      "house":"9595"
+    },
+    "phoneNumber":"5376677562",
+    "gender":1,
+    "origin":1
+  },
+  "email":"jorganshieber@yahoo.com",
+  "passd":"db2d98ebb2"
+}

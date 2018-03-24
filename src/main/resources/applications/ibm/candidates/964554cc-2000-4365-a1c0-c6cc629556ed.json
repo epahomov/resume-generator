@@ -1,0 +1,34 @@
+{
+  "id":"964554cc-2000-4365-a1c0-c6cc629556ed",
+  "person":{
+    "name":{
+      "firstName":"Joseph",
+      "lastName":"Baker"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Illinois at Urbana-Champaign",
+          "city":"Champaign",
+          "state":"IL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"61802",
+      "stateShortName":"IL",
+      "stateFullName":"Illinois",
+      "city":"Urbana",
+      "street":"North Cottonwood Road",
+      "house":"3105"
+    },
+    "phoneNumber":"3755244664",
+    "gender":0,
+    "origin":0
+  },
+  "email":"sharlastrain@yahoo.com",
+  "passd":"d0f18d4c09"
+}

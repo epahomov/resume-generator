@@ -1,0 +1,34 @@
+{
+  "id":"964043f9-bd78-4a14-9d15-a3235334f3ad",
+  "person":{
+    "name":{
+      "firstName":"Sebastian",
+      "lastName":"Miller"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Georgia",
+          "city":"Athens",
+          "state":"GA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"30646",
+      "stateShortName":"GA",
+      "stateFullName":"Georgia",
+      "city":"Hull",
+      "street":"Spratlin Way",
+      "house":"225"
+    },
+    "phoneNumber":"6355577058",
+    "gender":0,
+    "origin":0
+  },
+  "email":"alamedatibshirani@yahoo.com",
+  "passd":"a08e8d8749"
+}

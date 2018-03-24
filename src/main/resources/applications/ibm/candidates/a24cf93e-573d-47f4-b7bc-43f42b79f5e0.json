@@ -1,0 +1,34 @@
+{
+  "id":"a24cf93e-573d-47f4-b7bc-43f42b79f5e0",
+  "person":{
+    "name":{
+      "firstName":"Nathan",
+      "lastName":"Stevens"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Western Governors University",
+          "city":"Salt Lake City",
+          "state":"UT"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"84010",
+      "stateShortName":"UT",
+      "stateFullName":"Utah",
+      "city":"Bountiful",
+      "street":"Bountiful Boulevard",
+      "house":"3117"
+    },
+    "phoneNumber":"7726653605",
+    "gender":0,
+    "origin":0
+  },
+  "email":"flammiarafferty@yahoo.com",
+  "passd":"5d2505793b"
+}

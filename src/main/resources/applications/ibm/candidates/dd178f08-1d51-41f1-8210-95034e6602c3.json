@@ -1,0 +1,54 @@
+{
+  "id":"dd178f08-1d51-41f1-8210-95034e6602c3",
+  "person":{
+    "name":{
+      "firstName":"Martin",
+      "lastName":"Greene"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Davis",
+          "city":"Davis",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of California - Davis",
+          "city":"Davis",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"University of California - Davis",
+          "city":"Davis",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"95618",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Davis",
+      "street":"Unnamed Road",
+      "house":"Unnamed Road"
+    },
+    "phoneNumber":"2222167632",
+    "gender":0,
+    "origin":0
+  },
+  "email":"hephzibahlineback@yahoo.com",
+  "passd":"0d5b0bb07b"
+}

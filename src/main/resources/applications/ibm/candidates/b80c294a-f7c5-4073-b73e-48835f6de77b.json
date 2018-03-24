@@ -1,0 +1,34 @@
+{
+  "id":"b80c294a-f7c5-4073-b73e-48835f6de77b",
+  "person":{
+    "name":{
+      "firstName":"Hannah",
+      "lastName":"Clark"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"78723",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"Rogge Lane",
+      "house":"3400"
+    },
+    "phoneNumber":"1203821019",
+    "gender":1,
+    "origin":0
+  },
+  "email":"jeroldreed@yahoo.com",
+  "passd":"55fd0e382a"
+}

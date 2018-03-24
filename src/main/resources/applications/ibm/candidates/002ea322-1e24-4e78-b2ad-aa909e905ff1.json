@@ -1,0 +1,34 @@
+{
+  "id":"002ea322-1e24-4e78-b2ad-aa909e905ff1",
+  "person":{
+    "name":{
+      "firstName":"Pavithra",
+      "lastName":"Chande"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"43224",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Ferris Road",
+      "house":"2247"
+    },
+    "phoneNumber":"4442929380",
+    "gender":1,
+    "origin":1
+  },
+  "email":"reed_stormie@yahoo.com",
+  "passd":"ac1a7802c5"
+}

@@ -1,0 +1,54 @@
+{
+  "id":"0d9eb838-9afa-4794-b261-1a358ac65488",
+  "person":{
+    "name":{
+      "firstName":"Natalie",
+      "lastName":"Pennington"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78723",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"E. M. Franklin Avenue",
+      "house":"2110"
+    },
+    "phoneNumber":"7561194791",
+    "gender":1,
+    "origin":0
+  },
+  "email":"dorreetoth@yahoo.com",
+  "passd":"0e0cafc639"
+}

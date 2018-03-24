@@ -1,0 +1,34 @@
+{
+  "id":"9c458309-cf1e-4f95-8a21-c7bb5b240f8d",
+  "person":{
+    "name":{
+      "firstName":"Hailey",
+      "lastName":"Ross"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fullerton",
+          "city":"Fullerton",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90631",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"La Habra Heights",
+      "street":"Powder Canyon Trail",
+      "house":"2101-2309"
+    },
+    "phoneNumber":"3734383408",
+    "gender":1,
+    "origin":0
+  },
+  "email":"jacksonberlin497@yahoo.com",
+  "passd":"7937cc5134"
+}

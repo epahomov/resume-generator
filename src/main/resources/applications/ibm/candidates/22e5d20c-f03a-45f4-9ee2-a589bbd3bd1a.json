@@ -1,0 +1,34 @@
+{
+  "id":"22e5d20c-f03a-45f4-9ee2-a589bbd3bd1a",
+  "person":{
+    "name":{
+      "firstName":"Abhinav",
+      "lastName":"Pal"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Cincinnati",
+          "city":"Cincinnati",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"45216",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Cincinnati",
+      "street":"Vine Street",
+      "house":"7118"
+    },
+    "phoneNumber":"1021535334",
+    "gender":0,
+    "origin":1
+  },
+  "email":"coontzdene@yahoo.com",
+  "passd":"2ddc1291a1"
+}

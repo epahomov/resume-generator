@@ -1,0 +1,44 @@
+{
+  "id":"3dc61a7f-46a6-4aed-a50b-68c36e236bc2",
+  "person":{
+    "name":{
+      "firstName":"Parth",
+      "lastName":"Aggarwal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Long Beach",
+          "city":"Long Beach",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"California State University - Long Beach",
+          "city":"Long Beach",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"90805",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Long Beach",
+      "street":"Linden Avenue",
+      "house":"5030"
+    },
+    "phoneNumber":"5567241130",
+    "gender":0,
+    "origin":1
+  },
+  "email":"carreemerullo@yahoo.com",
+  "passd":"dc8e23d399"
+}

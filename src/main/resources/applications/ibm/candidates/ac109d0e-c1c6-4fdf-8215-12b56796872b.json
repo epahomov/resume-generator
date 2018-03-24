@@ -1,0 +1,34 @@
+{
+  "id":"ac109d0e-c1c6-4fdf-8215-12b56796872b",
+  "person":{
+    "name":{
+      "firstName":"Samuel",
+      "lastName":"Mack"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Los Angeles",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90041",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Addison Way",
+      "house":"2109"
+    },
+    "phoneNumber":"1331656562",
+    "gender":0,
+    "origin":0
+  },
+  "email":"jaquelinspingel@yahoo.com",
+  "passd":"ed7e2d257b"
+}

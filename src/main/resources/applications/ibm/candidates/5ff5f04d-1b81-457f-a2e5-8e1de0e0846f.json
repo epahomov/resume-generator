@@ -1,0 +1,34 @@
+{
+  "id":"5ff5f04d-1b81-457f-a2e5-8e1de0e0846f",
+  "person":{
+    "name":{
+      "firstName":"Mary",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Texas Tech University",
+          "city":"Lubbock",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"79403",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Lubbock",
+      "street":"North Guava Avenue",
+      "house":"7907-8515"
+    },
+    "phoneNumber":"6307098173",
+    "gender":1,
+    "origin":1
+  },
+  "email":"carsonsalawitch@yahoo.com",
+  "passd":"250499fa7c"
+}

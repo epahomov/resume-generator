@@ -1,0 +1,44 @@
+{
+  "id":"db9efc36-f080-43f9-92b9-dde8e6e039c7",
+  "person":{
+    "name":{
+      "firstName":"Megan",
+      "lastName":"Walker"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Florida",
+          "city":"Gainesville",
+          "state":"FL"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Florida",
+          "city":"Gainesville",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"32609",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Gainesville",
+      "street":"Northeast 69th Avenue",
+      "house":"7804"
+    },
+    "phoneNumber":"5233966911",
+    "gender":1,
+    "origin":0
+  },
+  "email":"clydechurchill@yahoo.com",
+  "passd":"f986670d80"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"8b90122f-01b3-4da8-a646-f75e30513f9e",
+  "person":{
+    "name":{
+      "firstName":"Madeline",
+      "lastName":"Hull"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Northridge",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90032",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Valley Boulevard",
+      "house":"5557"
+    },
+    "phoneNumber":"1164136304",
+    "gender":1,
+    "origin":0
+  },
+  "email":"artur.brickman@yahoo.com",
+  "passd":"7a6f2efb20"
+}

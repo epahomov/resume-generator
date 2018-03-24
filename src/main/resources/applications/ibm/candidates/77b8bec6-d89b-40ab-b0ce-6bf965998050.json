@@ -1,0 +1,44 @@
+{
+  "id":"77b8bec6-d89b-40ab-b0ce-6bf965998050",
+  "person":{
+    "name":{
+      "firstName":"Katie",
+      "lastName":"Hughes"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"University of Connecticut",
+          "city":"Storrs",
+          "state":"CT"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"06278",
+      "stateShortName":"CT",
+      "stateFullName":"Connecticut",
+      "city":"Ashford",
+      "street":"Oakes Road",
+      "house":"144"
+    },
+    "phoneNumber":"2054657258",
+    "gender":1,
+    "origin":0
+  },
+  "email":"terrianne.harmel@yahoo.com",
+  "passd":"b647730862"
+}

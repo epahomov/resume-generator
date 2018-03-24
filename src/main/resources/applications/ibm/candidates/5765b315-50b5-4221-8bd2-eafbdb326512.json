@@ -1,0 +1,34 @@
+{
+  "id":"5765b315-50b5-4221-8bd2-eafbdb326512",
+  "person":{
+    "name":{
+      "firstName":"Isaiah",
+      "lastName":"Mcdaniel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32803",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Orlando",
+      "street":"Pinecrest Place",
+      "house":"1424"
+    },
+    "phoneNumber":"1026028605",
+    "gender":0,
+    "origin":0
+  },
+  "email":"shariklumpar@yahoo.com",
+  "passd":"98372c8aec"
+}

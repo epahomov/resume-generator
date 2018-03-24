@@ -1,0 +1,54 @@
+{
+  "id":"c48f5a03-2bc8-42e0-a5f5-ce7073753516",
+  "person":{
+    "name":{
+      "firstName":"Anil",
+      "lastName":"Nara"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Penn State",
+          "city":"State College",
+          "state":"PA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Oklahoma State University",
+          "city":"Stillwater",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"Oklahoma State University",
+          "city":"Stillwater",
+          "state":"OK"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"16803",
+      "stateShortName":"PA",
+      "stateFullName":"Pennsylvania",
+      "city":"State College",
+      "street":"Fox Hill Road",
+      "house":"2493"
+    },
+    "phoneNumber":"1562306705",
+    "gender":0,
+    "origin":1
+  },
+  "email":"biddiedowney@yahoo.com",
+  "passd":"4c3f3c874d"
+}

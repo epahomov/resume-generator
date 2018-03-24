@@ -1,0 +1,44 @@
+{
+  "id":"f836b5cb-3bd7-4f11-81d6-4b52cf9a2d75",
+  "person":{
+    "name":{
+      "firstName":"Shail",
+      "lastName":"Patel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"James Madison University",
+          "city":"Harrisonburg",
+          "state":"VA"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"James Madison University",
+          "city":"Harrisonburg",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"22802",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Harrisonburg",
+      "street":"Melrose Road",
+      "house":"1503"
+    },
+    "phoneNumber":"5063363865",
+    "gender":0,
+    "origin":1
+  },
+  "email":"strongroderigo@yahoo.com",
+  "passd":"1a02380a3b"
+}

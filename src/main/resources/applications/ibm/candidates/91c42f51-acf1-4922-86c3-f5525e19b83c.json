@@ -1,0 +1,44 @@
+{
+  "id":"91c42f51-acf1-4922-86c3-f5525e19b83c",
+  "person":{
+    "name":{
+      "firstName":"Shyam",
+      "lastName":"Shan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ivy Tech Community College - Central Indiana",
+          "city":"Indianapolis",
+          "state":"IN"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Ivy Tech Community College - Central Indiana",
+          "city":"Indianapolis",
+          "state":"IN"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"46205",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Indianapolis",
+      "street":"Fairfield Avenue",
+      "house":"1001-1015"
+    },
+    "phoneNumber":"5743464823",
+    "gender":0,
+    "origin":1
+  },
+  "email":"necipoglumelantha@yahoo.com",
+  "passd":"ed8f406fe0"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"e28830b5-f9c1-45d1-88c2-6ddd913f1a7b",
+  "person":{
+    "name":{
+      "firstName":"Varsha",
+      "lastName":"Suri"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ivy Tech Community College - Central Indiana",
+          "city":"Indianapolis",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"46202",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Indianapolis",
+      "street":"Interstate 65",
+      "house":"Interstate 65"
+    },
+    "phoneNumber":"1671749100",
+    "gender":1,
+    "origin":1
+  },
+  "email":"morduchfreeland@yahoo.com",
+  "passd":"dec982bc81"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"f17238b4-4514-4d89-a523-90ebd1029572",
+  "person":{
+    "name":{
+      "firstName":"Leah",
+      "lastName":"Dyer"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Long Beach",
+          "city":"Long Beach",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"90815",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Long Beach",
+      "street":"East Willow Street",
+      "house":"East Willow Street"
+    },
+    "phoneNumber":"3155013790",
+    "gender":1,
+    "origin":0
+  },
+  "email":"voigtbennet@yahoo.com",
+  "passd":"92bca22010"
+}

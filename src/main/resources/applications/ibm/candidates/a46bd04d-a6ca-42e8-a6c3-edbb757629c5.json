@@ -1,0 +1,44 @@
+{
+  "id":"a46bd04d-a6ca-42e8-a6c3-edbb757629c5",
+  "person":{
+    "name":{
+      "firstName":"Zachary",
+      "lastName":"Thornton"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Arizona State University",
+          "city":"Tempe",
+          "state":"AZ"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"Arizona State University",
+          "city":"Tempe",
+          "state":"AZ"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"85256",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Scottsdale",
+      "street":"East McDowell Road",
+      "house":"9791-9851"
+    },
+    "phoneNumber":"3745978917",
+    "gender":0,
+    "origin":0
+  },
+  "email":"kenyontorresi@yahoo.com",
+  "passd":"5354405a1b"
+}

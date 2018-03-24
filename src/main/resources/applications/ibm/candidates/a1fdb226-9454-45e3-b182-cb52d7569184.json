@@ -1,0 +1,44 @@
+{
+  "id":"a1fdb226-9454-45e3-b182-cb52d7569184",
+  "person":{
+    "name":{
+      "firstName":"Aaliyah",
+      "lastName":"Forbes"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Northern Arizona University",
+          "city":"Flagstaff",
+          "state":"AZ"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"86004",
+      "stateShortName":"AZ",
+      "stateFullName":"Arizona",
+      "city":"Flagstaff",
+      "street":"Interstate 40",
+      "house":"Interstate 40"
+    },
+    "phoneNumber":"3302902648",
+    "gender":1,
+    "origin":0
+  },
+  "email":"brandea.chicholm@yahoo.com",
+  "passd":"30e6706331"
+}

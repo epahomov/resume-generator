@@ -1,0 +1,34 @@
+{
+  "id":"da12f656-bd7b-4016-818d-1c14a61066ea",
+  "person":{
+    "name":{
+      "firstName":"Raj",
+      "lastName":"Goel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Kentucky",
+          "city":"Lexington",
+          "state":"KY"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"40505",
+      "stateShortName":"KY",
+      "stateFullName":"Kentucky",
+      "city":"Lexington",
+      "street":"Paris Pike",
+      "house":"2375"
+    },
+    "phoneNumber":"2462425305",
+    "gender":0,
+    "origin":1
+  },
+  "email":"anissahealy@yahoo.com",
+  "passd":"4648f9e72f"
+}

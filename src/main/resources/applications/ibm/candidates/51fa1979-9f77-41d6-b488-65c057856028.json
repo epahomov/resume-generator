@@ -1,0 +1,34 @@
+{
+  "id":"51fa1979-9f77-41d6-b488-65c057856028",
+  "person":{
+    "name":{
+      "firstName":"Vivek",
+      "lastName":"Roy"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Louisiana State University",
+          "city":"Baton Rouge",
+          "state":"LA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"70818",
+      "stateShortName":"LA",
+      "stateFullName":"Louisiana",
+      "city":"Baton Rouge",
+      "street":"Smith Lane",
+      "house":"9192-9298"
+    },
+    "phoneNumber":"1655345698",
+    "gender":0,
+    "origin":1
+  },
+  "email":"morettachane@yahoo.com",
+  "passd":"53af6cdf45"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"59c051f4-7fa2-40e1-baec-3892d7d6fdc0",
+  "person":{
+    "name":{
+      "firstName":"Trevor",
+      "lastName":"Davis"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Full Sail University",
+          "city":"Winter Park",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32707",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Casselberry",
+      "street":"Winter Park Drive",
+      "house":"950"
+    },
+    "phoneNumber":"4601092534",
+    "gender":0,
+    "origin":0
+  },
+  "email":"saymartinotti@yahoo.com",
+  "passd":"5853007208"
+}

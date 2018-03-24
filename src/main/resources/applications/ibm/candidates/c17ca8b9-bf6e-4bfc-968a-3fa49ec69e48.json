@@ -1,0 +1,34 @@
+{
+  "id":"c17ca8b9-bf6e-4bfc-968a-3fa49ec69e48",
+  "person":{
+    "name":{
+      "firstName":"Neeraj",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Virginia Commonwealth University",
+          "city":"Richmond",
+          "state":"VA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"23222",
+      "stateShortName":"VA",
+      "stateFullName":"Virginia",
+      "city":"Richmond",
+      "street":"Pensacola Avenue",
+      "house":"810"
+    },
+    "phoneNumber":"5657042912",
+    "gender":0,
+    "origin":1
+  },
+  "email":"neustadtgrange@yahoo.com",
+  "passd":"d7cb1c084f"
+}

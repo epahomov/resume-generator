@@ -1,0 +1,34 @@
+{
+  "id":"0de69b8f-c488-42fe-8ce0-1c4b2e3513cb",
+  "person":{
+    "name":{
+      "firstName":"Priya",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Davis",
+          "city":"Davis",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"95776",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Woodland",
+      "street":"County Road 103",
+      "house":"23898"
+    },
+    "phoneNumber":"6573371575",
+    "gender":1,
+    "origin":1
+  },
+  "email":"jeremiasmahjub@yahoo.com",
+  "passd":"84205ab944"
+}

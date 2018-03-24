@@ -1,0 +1,34 @@
+{
+  "id":"3d3c0bbb-b9b3-4ef6-94ec-9db8c544f08a",
+  "person":{
+    "name":{
+      "firstName":"Angela",
+      "lastName":"Figueroa"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Miami Dade College",
+          "city":"Miami",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"33141",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Miami Beach",
+      "street":"Highway A1A",
+      "house":"6424"
+    },
+    "phoneNumber":"1774053279",
+    "gender":1,
+    "origin":0
+  },
+  "email":"lindquistflin@yahoo.com",
+  "passd":"9dfccd6098"
+}

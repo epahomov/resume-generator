@@ -1,0 +1,34 @@
+{
+  "id":"9616ddf8-f52a-4cd4-9f07-9ecc063c52c6",
+  "person":{
+    "name":{
+      "firstName":"Pranav",
+      "lastName":"Krishnamurthy"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Ohio State University",
+          "city":"Columbus",
+          "state":"OH"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"43201",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Columbus",
+      "street":"Interstate 670",
+      "house":"Interstate 670"
+    },
+    "phoneNumber":"4631985647",
+    "gender":0,
+    "origin":1
+  },
+  "email":"jobeverley490@yahoo.com",
+  "passd":"4b3d9f3753"
+}

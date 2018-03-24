@@ -1,0 +1,34 @@
+{
+  "id":"4793407d-4a5f-49fb-ac33-e42bd6bd65dc",
+  "person":{
+    "name":{
+      "firstName":"Robert",
+      "lastName":"Kirk"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of Central Florida",
+          "city":"Orlando",
+          "state":"FL"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"32792",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Winter Park",
+      "street":"Will O the Green Street",
+      "house":"2761"
+    },
+    "phoneNumber":"7061377176",
+    "gender":0,
+    "origin":0
+  },
+  "email":"vikkiepascucci@yahoo.com",
+  "passd":"10fd36eb2b"
+}

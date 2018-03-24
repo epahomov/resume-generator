@@ -1,0 +1,34 @@
+{
+  "id":"35f61ffb-926d-4221-8870-394e7c947db7",
+  "person":{
+    "name":{
+      "firstName":"Camila",
+      "lastName":"Parker"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ivy Tech Community College - Central Indiana",
+          "city":"Indianapolis",
+          "state":"IN"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"46218",
+      "stateShortName":"IN",
+      "stateFullName":"Indiana",
+      "city":"Indianapolis",
+      "street":"Orchard Avenue",
+      "house":"3248"
+    },
+    "phoneNumber":"7644208482",
+    "gender":1,
+    "origin":0
+  },
+  "email":"doralinmelcher@yahoo.com",
+  "passd":"1dc25328e5"
+}

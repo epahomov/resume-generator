@@ -1,0 +1,34 @@
+{
+  "id":"012b2913-def7-4750-96b2-4a31a30aed76",
+  "person":{
+    "name":{
+      "firstName":"Carlos",
+      "lastName":"Hoover"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"Oklahoma State University",
+          "city":"Stillwater",
+          "state":"OK"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"74075",
+      "stateShortName":"OK",
+      "stateFullName":"Oklahoma",
+      "city":"Stillwater",
+      "street":"Enchanted Lane",
+      "house":"2501-2599"
+    },
+    "phoneNumber":"4344658358",
+    "gender":0,
+    "origin":0
+  },
+  "email":"brnabacoveney@yahoo.com",
+  "passd":"dabf9e5cb5"
+}

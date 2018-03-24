@@ -1,0 +1,34 @@
+{
+  "id":"1d5d9d3b-9bee-4f01-a87d-f100fef64dc8",
+  "person":{
+    "name":{
+      "firstName":"Rakesh",
+      "lastName":"Lal"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of North Carolina at Chapel Hill",
+          "city":"Chapel Hill",
+          "state":"NC"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"27514",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Chapel Hill",
+      "street":"Whitfield Road",
+      "house":"3918"
+    },
+    "phoneNumber":"2112044025",
+    "gender":0,
+    "origin":1
+  },
+  "email":"corinevalminuto@yahoo.com",
+  "passd":"c9b617e2a4"
+}

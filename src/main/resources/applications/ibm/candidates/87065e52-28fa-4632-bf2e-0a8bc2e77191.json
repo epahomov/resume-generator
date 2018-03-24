@@ -1,0 +1,34 @@
+{
+  "id":"87065e52-28fa-4632-bf2e-0a8bc2e77191",
+  "person":{
+    "name":{
+      "firstName":"Leah",
+      "lastName":"Patel"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Cincinnati",
+          "city":"Cincinnati",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"45208",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Cincinnati",
+      "street":"Erie Avenue",
+      "house":"3734"
+    },
+    "phoneNumber":"5604117229",
+    "gender":1,
+    "origin":1
+  },
+  "email":"artemiscolombi@yahoo.com",
+  "passd":"fe913050f6"
+}

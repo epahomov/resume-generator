@@ -1,0 +1,34 @@
+{
+  "id":"66d05422-4b2f-488d-b131-151c69b78519",
+  "person":{
+    "name":{
+      "firstName":"Grace",
+      "lastName":"Washington"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Florida",
+          "city":"Gainesville",
+          "state":"FL"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"32609",
+      "stateShortName":"FL",
+      "stateFullName":"Florida",
+      "city":"Gainesville",
+      "street":"Northeast 53rd Avenue",
+      "house":"Northeast 53rd Avenue"
+    },
+    "phoneNumber":"5734172396",
+    "gender":1,
+    "origin":0
+  },
+  "email":"crosbytrinder@yahoo.com",
+  "passd":"5d664b1ba6"
+}

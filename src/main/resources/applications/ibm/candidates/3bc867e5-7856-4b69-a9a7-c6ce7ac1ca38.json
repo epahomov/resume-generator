@@ -1,0 +1,34 @@
+{
+  "id":"3bc867e5-7856-4b69-a9a7-c6ce7ac1ca38",
+  "person":{
+    "name":{
+      "firstName":"Tanvi",
+      "lastName":"Kumar"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ashford University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"92115",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Lucille Drive",
+      "house":"4783"
+    },
+    "phoneNumber":"2601214464",
+    "gender":1,
+    "origin":1
+  },
+  "email":"saakwamantepeyton@yahoo.com",
+  "passd":"90812d0866"
+}

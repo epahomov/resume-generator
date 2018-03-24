@@ -1,0 +1,34 @@
+{
+  "id":"afe8c738-ee32-4071-926a-d60c36a60ae5",
+  "person":{
+    "name":{
+      "firstName":"Neha",
+      "lastName":"Chaudhary"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Long Beach",
+          "city":"Long Beach",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"90815",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Long Beach",
+      "street":"East Ferro Street",
+      "house":"4962-4968"
+    },
+    "phoneNumber":"5574687477",
+    "gender":1,
+    "origin":1
+  },
+  "email":"spangvikky@yahoo.com",
+  "passd":"7b6f486102"
+}

@@ -1,0 +1,34 @@
+{
+  "id":"322fc2c0-160d-441c-8372-d4de854ff4d2",
+  "person":{
+    "name":{
+      "firstName":"Jocelyn",
+      "lastName":"Sullivan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Fresno",
+          "city":"Fresno",
+          "state":"CA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"93710",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Fresno",
+      "street":"East Paul Avenue",
+      "house":"2537-2549"
+    },
+    "phoneNumber":"3704114153",
+    "gender":1,
+    "origin":0
+  },
+  "email":"massjocelyn@yahoo.com",
+  "passd":"b11667c1e0"
+}

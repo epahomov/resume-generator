@@ -1,0 +1,34 @@
+{
+  "id":"d647b742-2622-497e-b235-29baecf66bdc",
+  "person":{
+    "name":{
+      "firstName":"Jazmin",
+      "lastName":"Brown"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Sacramento",
+          "city":"Sacramento",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"95838",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Sacramento",
+      "street":"Montrose Street",
+      "house":"3435"
+    },
+    "phoneNumber":"5162994440",
+    "gender":1,
+    "origin":0
+  },
+  "email":"jaymee.nishimura@yahoo.com",
+  "passd":"63054aabd8"
+}

@@ -1,0 +1,44 @@
+{
+  "id":"215f033e-55e0-4bc7-aa54-1ba78572cf58",
+  "person":{
+    "name":{
+      "firstName":"Prachi",
+      "lastName":"Mehra"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Ashford University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"Ashford University",
+          "city":"San Diego",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"92102",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"San Diego",
+      "street":"Pershing Drive",
+      "house":"1773-2943"
+    },
+    "phoneNumber":"5253297614",
+    "gender":1,
+    "origin":1
+  },
+  "email":"schlachtercami@yahoo.com",
+  "passd":"c992fc8a89"
+}

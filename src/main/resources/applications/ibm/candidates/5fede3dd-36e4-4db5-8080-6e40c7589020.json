@@ -1,0 +1,34 @@
+{
+  "id":"5fede3dd-36e4-4db5-8080-6e40c7589020",
+  "person":{
+    "name":{
+      "firstName":"Ria",
+      "lastName":"Aggarwal"
+    },
+    "education":[
+      {
+        "startYear":2014,
+        "endYear":2018,
+        "university":{
+          "name":"University of California - Los Angeles",
+          "city":"Los Angeles",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"90032",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Los Angeles",
+      "street":"Barnett Road",
+      "house":"1904"
+    },
+    "phoneNumber":"4526449436",
+    "gender":1,
+    "origin":1
+  },
+  "email":"lemmymeszoly@yahoo.com",
+  "passd":"118103c844"
+}

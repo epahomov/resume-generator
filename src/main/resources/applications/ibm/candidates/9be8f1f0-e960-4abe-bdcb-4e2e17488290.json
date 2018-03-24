@@ -1,0 +1,54 @@
+{
+  "id":"9be8f1f0-e960-4abe-bdcb-4e2e17488290",
+  "person":{
+    "name":{
+      "firstName":"Abdul",
+      "lastName":"Malhotra"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"North Carolina State University",
+          "city":"Raleigh",
+          "state":"NC"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2014,
+        "endYear":2016,
+        "university":{
+          "name":"North Carolina State University",
+          "city":"Raleigh",
+          "state":"NC"
+        },
+        "degree":"Bachelor"
+      },
+      {
+        "startYear":2012,
+        "endYear":2014,
+        "university":{
+          "name":"North Carolina State University",
+          "city":"Raleigh",
+          "state":"NC"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"27604",
+      "stateShortName":"NC",
+      "stateFullName":"North Carolina",
+      "city":"Raleigh",
+      "street":"Heatherfield Way",
+      "house":"4800"
+    },
+    "phoneNumber":"5203685664",
+    "gender":0,
+    "origin":1
+  },
+  "email":"beniaminohareven@yahoo.com",
+  "passd":"1424f8815d"
+}

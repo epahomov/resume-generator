@@ -1,0 +1,34 @@
+{
+  "id":"e028d4be-ee53-48f3-a597-5ebe030fb8a6",
+  "person":{
+    "name":{
+      "firstName":"Rajeev",
+      "lastName":"Jai"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Iowa State University",
+          "city":"Ames",
+          "state":"IA"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"50010",
+      "stateShortName":"IA",
+      "stateFullName":"Iowa",
+      "city":"Ames",
+      "street":"200th Street",
+      "house":"57933"
+    },
+    "phoneNumber":"5272613279",
+    "gender":0,
+    "origin":1
+  },
+  "email":"conneyrandazzo@yahoo.com",
+  "passd":"58c9f57fe7"
+}

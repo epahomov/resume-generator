@@ -1,0 +1,44 @@
+{
+  "id":"0156208b-64d8-412f-b123-60dc9438d467",
+  "person":{
+    "name":{
+      "firstName":"Brandon",
+      "lastName":"Johnson"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"California State University - Long Beach",
+          "city":"Long Beach",
+          "state":"CA"
+        },
+        "degree":"Master"
+      },
+      {
+        "startYear":2012,
+        "endYear":2016,
+        "university":{
+          "name":"California State University - Long Beach",
+          "city":"Long Beach",
+          "state":"CA"
+        },
+        "degree":"Bachelor"
+      }
+    ],
+    "address":{
+      "zipCode":"90712",
+      "stateShortName":"CA",
+      "stateFullName":"California",
+      "city":"Lakewood",
+      "street":"Blackthorne Avenue",
+      "house":"5503"
+    },
+    "phoneNumber":"5476386202",
+    "gender":0,
+    "origin":0
+  },
+  "email":"starr_constance@yahoo.com",
+  "passd":"2f4317403d"
+}

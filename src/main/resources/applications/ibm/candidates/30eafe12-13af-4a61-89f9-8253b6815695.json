@@ -1,0 +1,34 @@
+{
+  "id":"30eafe12-13af-4a61-89f9-8253b6815695",
+  "person":{
+    "name":{
+      "firstName":"Richard",
+      "lastName":"Davis"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"Kent State University",
+          "city":"Kent",
+          "state":"OH"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"44266",
+      "stateShortName":"OH",
+      "stateFullName":"Ohio",
+      "city":"Ravenna",
+      "street":"Cleveland - East Liverpool Road",
+      "house":"7220-7308"
+    },
+    "phoneNumber":"6461056857",
+    "gender":0,
+    "origin":0
+  },
+  "email":"catrionahorowitz@yahoo.com",
+  "passd":"cd5db22add"
+}

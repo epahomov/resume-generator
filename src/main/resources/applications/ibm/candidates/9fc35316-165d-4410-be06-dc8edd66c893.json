@@ -1,0 +1,34 @@
+{
+  "id":"9fc35316-165d-4410-be06-dc8edd66c893",
+  "person":{
+    "name":{
+      "firstName":"Shekhar",
+      "lastName":"Narayan"
+    },
+    "education":[
+      {
+        "startYear":2016,
+        "endYear":2018,
+        "university":{
+          "name":"University of Texas - Austin",
+          "city":"Austin",
+          "state":"TX"
+        },
+        "degree":"Associate"
+      }
+    ],
+    "address":{
+      "zipCode":"78721",
+      "stateShortName":"TX",
+      "stateFullName":"Texas",
+      "city":"Austin",
+      "street":"E. M. Franklin Avenue",
+      "house":"1701"
+    },
+    "phoneNumber":"1635682634",
+    "gender":0,
+    "origin":1
+  },
+  "email":"eedenwynnie@yahoo.com",
+  "passd":"7cfcecc722"
+}
