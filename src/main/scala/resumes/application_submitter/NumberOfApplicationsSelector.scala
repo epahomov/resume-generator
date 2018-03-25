@@ -30,13 +30,4 @@ object NumberOfApplicationsSelector {
     }
   }
 
-  def main(args: Array[String]): Unit = {
-    println(getNumberOfApplications("ibm", formatter.parseDateTime("25/03/2018")))
-//    var total = 0
-//    (0 to 90).map(diff => {
-//      val applicationsNumber = getNumberOfApplications(diff)
-//      total += applicationsNumber
-//      println(s"$diff ${applicationsNumber} $total")
-//    })
-  }
 }

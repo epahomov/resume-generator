@@ -45,6 +45,7 @@ object PersonGenerator {
 
 
   def generateRandomPeople(num: Int): List[Person] = {
+    
     (1 to num).map(_ => generatePerson()).toList
   }
 

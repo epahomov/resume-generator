@@ -1,9 +1,10 @@
-package resumes.application_submitter.companies.ibm
+package resumes.application_submitter.submitters
 
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.{By, Keys}
-import resumes.application_submitter.{Application, Submitter}
+import resumes.application_submitter.ApplicationManager.Application
+import resumes.application_submitter.Submitter
 
 import scala.util.Random
 
@@ -12,7 +13,6 @@ object IBMApplicationSubmitter extends Submitter {
 
   def submit(application: Application) = {
     System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")
-   // System.setProperty("webdriver.chrome.driver", "/usr/local/Cellar/chromedriver/2.36/bin/chromedriver")
     val driver = new FirefoxDriver()
     driver.manage().window().maximize()
     driver.get(s"https://careers.ibm.com/ShowJob/Id/${application.positionId}")

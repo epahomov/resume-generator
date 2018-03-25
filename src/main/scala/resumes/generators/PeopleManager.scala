@@ -1,6 +1,6 @@
 package resumes.generators
 
-import com.mongodb.client.MongoDatabase
+import com.mongodb.client.{FindIterable, MongoDatabase}
 import resumes.MongoDB
 import resumes.generators.education.EducationGenerator.Education
 import resumes.generators.name.FirstNameGenerator.Gender.Gender
@@ -11,6 +11,9 @@ import resumes.generators.person.PersonGenerator.generateRandomPeople
 import resumes.generators.PeopleManager.{PEOPLE_COLLECTION, Person}
 import net.liftweb.json.parse
 import MongoDB.formats
+import com.mongodb.client.model.Filters
+import org.bson.Document
+
 
 object PeopleManager {
 
@@ -41,12 +44,24 @@ class PeopleManager(database: MongoDatabase) {
     MongoDB.insertIntoCollection(people, peopleCollection)
   }
 
+  def deletePerson(person: Person) = {
+    database.getCollection(PEOPLE_COLLECTION).deleteOne(Filters.eq("id", person.id))
+  }
+
+  def getPersonById(id: String): Option[Person] = {
+    val docs = database.getCollection(PEOPLE_COLLECTION).find(Filters.eq("id", id))
+    getPerson(docs)
+  }
+
   def getRandomPerson(): Option[Person] = {
-    val peopleCollection = database.getCollection(PEOPLE_COLLECTION)
-    peopleCollection.find().first() match {
+    val docs = database.getCollection(PEOPLE_COLLECTION).find()
+    getPerson(docs)
+  }
+
+  private def getPerson(docs: FindIterable[Document]) = {
+    docs.first() match {
       case null => None
       case doc => Some(parse(doc.toJson).extract[Person])
     }
   }
-
 }
