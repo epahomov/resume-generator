@@ -1,21 +1,21 @@
-package resumes.application_submitter.submitters
+package resumes.applications.submitters
 
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.{By, Keys}
-import resumes.application_submitter.ApplicationManager.Application
-import resumes.application_submitter.Submitter
+import resumes.applications.ApplicationManager.Application
+import resumes.applications.Submitter
 
-import scala.util.Random
+import scala.util.{Random, Try}
 
 object IBMApplicationSubmitter extends Submitter {
 
 
-  def submit(application: Application) = {
+  def submit(application: Application): Try[Unit] = {
     System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")
     val driver = new FirefoxDriver()
     driver.manage().window().maximize()
-    driver.get(s"https://careers.ibm.com/ShowJob/Id/${application.positionId}")
+    driver.get(s"https://careers.ibm.com/ShowJob/Id/${application.positionUrl}")
     Thread.sleep(5000)
     driver.findElementByClassName("applyBtnTopDiv").click()
     Thread.sleep(10000)

@@ -1,22 +1,15 @@
-package resumes.application_submitter
+package resumes.applications
 
 import org.joda.time.{DateTime, Days}
-import org.joda.time.format.DateTimeFormat
+import resumes.company.CompanyManager
 
-import scala.io.Source
 import scala.util.Random
 
 
-object NumberOfApplicationsSelector {
-
-  val formatter = DateTimeFormat.forPattern("dd/MM/yyyy")
+class NumberOfApplicationsSelector(companyManager: CompanyManager) {
 
   def getNumberOfApplications(company: String, current: DateTime = new DateTime()): Int = {
-    val startDateTxt = Source
-      .fromResource(s"applications/$company/start_date.txt")
-      .getLines()
-      .mkString("")
-    val start = formatter.parseDateTime(startDateTxt)
+    val start = new DateTime(companyManager.getCompany(company).startDate)
     getNumberOfApplications(Days.daysBetween(start, current).getDays)
 
   }

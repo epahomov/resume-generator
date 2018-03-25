@@ -27,6 +27,10 @@ class EmailsManager(database: MongoDatabase) {
     }).toList
   }
 
+  def getPassword(address: String): String = {
+    emails.find(Filters.eq("address", address)).first().getString("password")
+  }
+
   def getNotUsedEmail(company: String): Option[String] = {
     val iterator = emails.find(Filters.not(Filters.in(companiesInWhichBeenUsed, company)))
     iterator.first() match {
