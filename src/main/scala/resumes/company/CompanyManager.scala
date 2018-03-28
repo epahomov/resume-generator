@@ -32,7 +32,7 @@ class CompanyManager(database: MongoDatabase) {
   }
 
   def addCompany(company: Company) = {
-    MongoDB.insertIntoCollection(List(company), companies)
+    MongoDB.insertValueIntoCollection(company, companies)
   }
 
   def getCompany(name: String) = {

@@ -13,12 +13,17 @@ import scala.collection.JavaConverters._
 object MongoDB {
 
   def createCollectionIfNotExists(collectionName: String, mongoDatabase: MongoDatabase) = {
-    if (mongoDatabase.listCollectionNames().asScala.toSet.contains(collectionName)) {
+    if
+    (!mongoDatabase.listCollectionNames().asScala.toSet.contains(collectionName)) {
       mongoDatabase.createCollection(collectionName)
     }
   }
 
   implicit val formats = net.liftweb.json.DefaultFormats + new EnumSerializer(Gender)  + new EnumSerializer(Origin)
+
+  def insertValueIntoCollection[T](value: T, mongoCollection: MongoCollection[Document]) = {
+    insertIntoCollection(List(value), mongoCollection)
+  }
 
   def insertIntoCollection[T](values: Seq[T], mongoCollection: MongoCollection[Document]) = {
     val toInsert = values.map(x => {

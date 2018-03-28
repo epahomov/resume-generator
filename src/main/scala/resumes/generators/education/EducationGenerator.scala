@@ -22,7 +22,8 @@ object EducationGenerator {
                         startYear: Int,
                         endYear: Int,
                         university: University,
-                        degree: String
+                        degree: String,
+                        major: String = "Computer Science"
                       )
 
   lazy val highestDegreeGenerator = {
@@ -55,7 +56,7 @@ object EducationGenerator {
     val education = new ListBuffer[Education]
     val highestDegreeEarned = highestDegreeGenerator.sample()
 
-    val masterUniversity =  if (highestDegreeEarned.equals(Master)) {
+    val masterUniversity = if (highestDegreeEarned.equals(Master)) {
       val university = UniversityGenerator.generateRandomUniversity()
       education += Education(
         startYear = currentYear - 2,
@@ -85,7 +86,7 @@ object EducationGenerator {
       )
       if (earnedAssociatedSeparately) {
         currentYear = currentYear - 2
-        val associateUniversity  = if (changedUniversityGenerator.sample()) {
+        val associateUniversity = if (changedUniversityGenerator.sample()) {
           UniversityGenerator.generateRandomUniversity()
         } else {
           bachelorUniversity

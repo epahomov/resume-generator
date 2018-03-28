@@ -8,6 +8,9 @@ import resumes.emails.EmailsManagerUtils.Email
 
 import scala.collection.JavaConverters._
 import EmailsManagerUtils.formats
+import org.bson.Document
+
+import scala.util.Random
 
 class EmailsManager(database: MongoDatabase) {
 
@@ -32,10 +35,20 @@ class EmailsManager(database: MongoDatabase) {
   }
 
   def getNotUsedEmail(company: String): Option[String] = {
-    val iterator = emails.find(Filters.not(Filters.in(companiesInWhichBeenUsed, company)))
-    iterator.first() match {
-      case null => None
-      case doc => Some(doc.get("address").toString)
+    val notUsedEmails = emails
+      .find(Filters.not(Filters.in(companiesInWhichBeenUsed, company)))
+      .asScala
+      .toList
+
+    def getAddress(doc: Document) = {
+      doc.get("address").toString
+    }
+
+    if (notUsedEmails.size > 1) {
+      val doc = notUsedEmails(Random.nextInt(notUsedEmails.size - 1))
+      Some(getAddress(doc))
+    } else {
+      notUsedEmails.headOption.map(getAddress)
     }
   }
 
