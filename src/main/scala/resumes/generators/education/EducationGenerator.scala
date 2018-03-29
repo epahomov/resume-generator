@@ -23,7 +23,7 @@ object EducationGenerator {
                         endYear: Int,
                         university: University,
                         degree: String,
-                        major: String = "Computer Science"
+                        major: Option[String] = Some("Computer Science")
                       )
 
   lazy val highestDegreeGenerator = {

@@ -10,7 +10,7 @@ import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector, S
 import resumes.company.PositionManager
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 
-import scala.util.{Success, Try}
+import scala.util.{Failure, Success, Try}
 
 object IBMApplicationSubmitter {
 
@@ -34,9 +34,9 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
   val company = "ibm"
 
   def submit(application: Application): Try[Unit] = {
+    System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")
+    val driver = new FirefoxDriver()
     try {
-      System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")
-      val driver = new FirefoxDriver()
       driver.manage().window().maximize()
       val url = s"https://careers.ibm.com/ShowJob/Id/${application.positionUrl}"
       logger.info(s"Applying for position - ${url}")
@@ -93,7 +93,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
         }
         dropDown(education.university.name, s"education_0_0_schoolname_slt_0-input", driver)
         dropDown(education.degree, s"education_0_0_degree_slt_0-input", driver)
-        driver.findElementById(s"edumajor0").sendKeys(education.major)
+        driver.findElementById(s"edumajor0").sendKeys(education.major.getOrElse("Computer science"))
         Thread.sleep(3000)
       })
 
@@ -126,14 +126,21 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
       driver.findElementById(s"shownext").click()
       Thread.sleep(3000)
       driver.findElementById(s"checkbox-10885-Iagree").click()
-      Thread.sleep(2000)
+      Thread.sleep(4000)
       driver.findElementById(s"shownext").click()
-      //driver.findElementById(s"save").click()
-
+      Thread.sleep(2000)
+      driver.findElementById(s"save").click()
+      Thread.sleep(10000)
+      Success()
     } catch {
-      case e: Throwable => e.printStackTrace()
+      case e: Throwable => {
+        Failure(e)
+      }
+    } finally {
+      Try {
+        driver.close()
+      }
     }
-    Success()
   }
 
   private def dropDown(offset: Int, parameter: String, driver: FirefoxDriver): Unit = {
