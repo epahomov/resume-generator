@@ -2,10 +2,9 @@ package resumes
 
 import com.mongodb.client.{MongoCollection, MongoDatabase}
 import com.mongodb.{MongoClient, MongoClientURI}
-import net.liftweb.json.Extraction.decompose
-import net.liftweb.json.JsonAST.prettyRender
 import net.liftweb.json.ext.EnumSerializer
 import org.bson.Document
+import resumes.Utils._
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 
 import scala.collection.JavaConverters._
@@ -19,16 +18,14 @@ object MongoDB {
     }
   }
 
-  implicit val formats = net.liftweb.json.DefaultFormats + new EnumSerializer(Gender)  + new EnumSerializer(Origin)
+  implicit val formats = net.liftweb.json.DefaultFormats + new EnumSerializer(Gender) + new EnumSerializer(Origin)
 
   def insertValueIntoCollection[T](value: T, mongoCollection: MongoCollection[Document]) = {
     insertIntoCollection(List(value), mongoCollection)
   }
 
   def insertIntoCollection[T](values: Seq[T], mongoCollection: MongoCollection[Document]) = {
-    val toInsert = values.map(x => {
-      Document.parse(prettyRender(decompose(x)))
-    }).asJava
+    val toInsert = values.map(toDoc).asJava
     mongoCollection.insertMany(toInsert)
   }
 

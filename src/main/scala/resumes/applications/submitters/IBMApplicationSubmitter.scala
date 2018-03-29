@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.{By, Keys}
 import resumes.MongoDB
 import resumes.applications.ApplicationManager.Application
-import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector, Submitter}
+import resumes.applications.{ApplicationManager, DummyApplication, NumberOfApplicationsSelector}
 import resumes.company.PositionManager
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 
@@ -21,7 +21,7 @@ object IBMApplicationSubmitter {
 
     (0 to 15).foreach(_ => {
       val position = positionManager.getRandomPosition("ibm")
-      submitter.submit(ApplicationManager.veryPlainApplication("ibm", position.url))
+      submitter.submit(DummyApplication.veryPlainApplication("ibm", position.url))
     })
   }
 

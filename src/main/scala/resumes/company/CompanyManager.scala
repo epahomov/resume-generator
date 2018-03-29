@@ -14,6 +14,11 @@ import resumes.company.CompanyManager.Company
 
 object CompanyManager {
 
+  object Companies extends Enumeration {
+    type Degree = Value
+    val IBM = Value("ibm")
+  }
+
   case class Company(
                       name: String,
                       startDate: Date,

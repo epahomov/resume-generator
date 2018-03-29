@@ -1,10 +1,11 @@
-package resumes.applications
+package resumes.applications.submitters
 
 import net.liftweb.json.Extraction.decompose
 import net.liftweb.json.JsonAST.prettyRender
 import org.apache.logging.log4j.LogManager
-import resumes.applications.ApplicationManager.Application
 import resumes.MongoDB.formats
+import resumes.applications.ApplicationManager.Application
+import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
 
 import scala.util.{Failure, Success, Try}
 

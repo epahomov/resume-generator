@@ -1,5 +1,7 @@
 package resumes.emails
 
+import java.util.Date
+
 import com.mongodb.client.{MongoCollection, MongoDatabase}
 import net.liftweb.json.Extraction.decompose
 import net.liftweb.json.JsonAST.prettyRender
@@ -14,6 +16,9 @@ object EmailsManagerUtils {
                     address: String,
                     password: String,
                     companiesInWhichBeenUsed: List[String],
+                    lastTimeChecked: Option[Date] = None,
+                    numberOfFails: Option[Int] = None,
+                    active: Option[Boolean] = None
                   )
 
   implicit val formats = net.liftweb.json.DefaultFormats

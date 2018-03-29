@@ -1,5 +1,7 @@
 package resumes.emails
 
+import javax.mail.Folder
+
 import resumes.emails.EmailServerWrapper.Credentials
 
 import scala.io.Source
@@ -26,7 +28,7 @@ object Utils {
       .foreach(credential => {
         try {
 
-          val store = getYahooImapsStore(credential)
+          val store = getStore(credential)
           if (broken % 10 == 0) {
             log()
           }
@@ -42,21 +44,4 @@ object Utils {
     log()
   }
 
-
-
-  //    val credentials = Credentials("emmerybeighlie@yahoo.com", "090c6ad065")
-  //
-  //    val store = getYahooImapsStore(credentials)
-  //
-  //    store.isConnected
-  //
-  ////    val folders = store.getDefaultFolder.list()
-  ////    folders.foreach(folder => {
-  ////      println(folder.getName)
-  ////    })
-  //    val folder = store.getFolder("Inbox")
-  //    folder.open(Folder.READ_ONLY)
-  //
-  //    println(folder.getMessageCount)
-  //    println(folder.getMessages()(0).getFrom()(0))
 }
