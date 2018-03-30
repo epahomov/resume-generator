@@ -44,7 +44,7 @@ class PeopleManager(database: MongoDatabase) {
     MongoDB.insertIntoCollection(people, peopleCollection)
   }
 
-  def deletePerson(person: Person) = {
+  def deletePerson(person: Person): Unit = {
     database.getCollection(PEOPLE_COLLECTION).deleteOne(Filters.eq("id", person.id))
   }
 

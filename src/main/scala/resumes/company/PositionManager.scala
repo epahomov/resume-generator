@@ -64,7 +64,7 @@ class PositionManager(database: MongoDatabase) {
     }
   }
 
-  def successfullyAppliedForPosition(id: String) = {
+  def successfullyAppliedForPosition(id: String): Unit = {
     positions.updateOne(Filters.eq("id", id), set("failedAttemptsToApply", 0))
   }
 

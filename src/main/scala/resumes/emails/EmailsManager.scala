@@ -23,7 +23,7 @@ class EmailsManager(database: MongoDatabase) {
 
   private val MAX_EMAIL_CHECKED_ATTEMPTS = 3
 
-  def markEmailAsUsed(email: String, company: String): Long = {
+  def markEmailAsUsedForApplication(email: String, company: String): Long = {
     val filter = Filters.eq("address", email)
     val update = addToSet(companiesInWhichBeenUsed, company)
     emails.updateOne(filter, update).getModifiedCount
@@ -47,14 +47,14 @@ class EmailsManager(database: MongoDatabase) {
     fromDoc(emails.find(Filters.eq("address", address)).first())
   }
 
-  def usedSuccessfully(address: String) = {
+  def accessedSuccessfully(address: String) = {
     val filter = Filters.eq("address", address)
     val email: Email = fromDoc(emails.find(filter).first())
     val newEmail = email.copy(numberOfFails = Some(0))
     emails.replaceOne(filter, toDoc(newEmail))
   }
 
-  def failedToUse(address: String) = {
+  def failedToAccess(address: String) = {
     val filter = Filters.eq("address", address)
     val email: Email = fromDoc(emails.find(filter).first())
     val someTimeAgo = new Date(System.currentTimeMillis() - 7L * 24 * 3600 * 1000)

@@ -55,7 +55,7 @@ class ApplicationManager(emailsManager: EmailsManager,
     val filter = Filters.or(
       Filters.eq("response.decision", ResponseManager.UNKNOWN),
       Filters.not(Filters.exists("response.decision")))
-    applications.find().asScala.toList.map(_.toJson).map(parse(_).extract[Application])
+    applications.find(filter).asScala.toList.map(_.toJson).map(parse(_).extract[Application])
   }
 
   def updateResponse(applicationId: String, response: Response): Unit = {
@@ -69,9 +69,13 @@ class ApplicationManager(emailsManager: EmailsManager,
     MongoDB.insertValueIntoCollection(application, applications)
   }
 
+  def getApplication(id: String): Application = {
+    parse(applications.find(Filters.eq("id", id)).first().toJson()).extract[Application]
+  }
+
   def updateAllComponents(application: Application) = {
     logger.info(s"Updating all components for application ${application.id}")
-    emailsManager.markEmailAsUsed(email = application.email,
+    emailsManager.markEmailAsUsedForApplication(email = application.email,
       company = application.company)
     peopleManager.deletePerson(application.person)
     positionsManager.successfullyAppliedForPosition(application.positionId)

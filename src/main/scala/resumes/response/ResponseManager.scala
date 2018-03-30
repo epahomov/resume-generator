@@ -62,7 +62,7 @@ class ResponseManager(applicationManager: ApplicationManager) {
         }
         case Failure(e) => {
           logger.error(s"Could not get messages from email: ${application.email} for application ${application.id}", e)
-          emailsManager.failedToUse(application.email)
+          emailsManager.failedToAccess(application.email)
         }
       }
 

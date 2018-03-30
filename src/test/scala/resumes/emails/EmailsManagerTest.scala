@@ -24,12 +24,12 @@ class EmailsManagerTest extends MongoTest{
 
     (0 to 3).foreach(_ => {
       val email1 = emailsManager.getNotUsedEmail(company).get
-      emailsManager.markEmailAsUsed(email1, company)
+      emailsManager.markEmailAsUsedForApplication(email1, company)
     })
     assert(emailsManager.getNotUsedEmail(company) === None)
     (0 to 3).foreach(_ => {
       val email1 = emailsManager.getNotUsedEmail(otherCompany).get
-      emailsManager.markEmailAsUsed(email1, otherCompany)
+      emailsManager.markEmailAsUsedForApplication(email1, otherCompany)
     })
     assert(emailsManager.getNotUsedEmail(otherCompany) === None)
   }
@@ -40,7 +40,7 @@ class EmailsManagerTest extends MongoTest{
     val email = Email(address, "sdfasdas", List.empty, numberOfFails = Some(2))
     emailsManager.uploadEmail(email)
     assert(emailsManager.getEmail(address).numberOfFails.get === 2)
-    emailsManager.usedSuccessfully(address)
+    emailsManager.accessedSuccessfully(address)
     assert(emailsManager.getEmail(address).numberOfFails.getOrElse(0) === 0)
   }
 
@@ -54,12 +54,12 @@ class EmailsManagerTest extends MongoTest{
     assert(email.numberOfFails.getOrElse(0) === 0 )
     assert(email.active.getOrElse(true) === true )
 
-    emailsManager.failedToUse(address)
+    emailsManager.failedToAccess(address)
 
     assert(email.numberOfFails.get === 1 )
     assert(email.active.getOrElse(true) === true )
 
-    emailsManager.failedToUse(address)
+    emailsManager.failedToAccess(address)
 
     assert(email.numberOfFails.get === 1 )
     assert(email.active.getOrElse(true) === true )
@@ -68,14 +68,14 @@ class EmailsManagerTest extends MongoTest{
       override def today() = (new DateTime()).plusDays(2)
     }
 
-    newEmailsManager.failedToUse(address)
+    newEmailsManager.failedToAccess(address)
 
     assert(email.numberOfFails.get === 2 )
     assert(email.active.getOrElse(true) === true )
 
-    newEmailsManager.failedToUse(address)
-    newEmailsManager.failedToUse(address)
-    newEmailsManager.failedToUse(address)
+    newEmailsManager.failedToAccess(address)
+    newEmailsManager.failedToAccess(address)
+    newEmailsManager.failedToAccess(address)
 
     assert(email.numberOfFails.get === 2 )
     assert(email.active.getOrElse(true) === true )
@@ -84,7 +84,7 @@ class EmailsManagerTest extends MongoTest{
       override def today() = (new DateTime()).plusDays(4)
     }
 
-    newEmailsManager.failedToUse(address)
+    newEmailsManager.failedToAccess(address)
 
     assert(email.numberOfFails.get === 3 )
     assert(email.active.getOrElse(true) === true )
@@ -93,7 +93,7 @@ class EmailsManagerTest extends MongoTest{
       override protected def today() = (new DateTime()).plusDays(6)
     }
 
-    newEmailsManager.failedToUse(address)
+    newEmailsManager.failedToAccess(address)
 
     assert(email.numberOfFails.get === 4 )
     assert(email.active.get === false )
