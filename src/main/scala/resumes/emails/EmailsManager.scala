@@ -6,23 +6,22 @@ import com.mongodb.client.MongoDatabase
 import com.mongodb.client.model.Filters
 import com.mongodb.client.model.Updates._
 import net.liftweb.json.parse
-import resumes.emails.EmailsManagerUtils.Email
-
-import scala.collection.JavaConverters._
-import EmailsManagerUtils.formats
 import org.bson.Document
 import org.joda.time.{DateTime, Days}
+import resumes.MongoDB
+import resumes.emails.EmailsManagerUtils.{Email, formats}
 import resumes.Utils._
 
+import scala.collection.JavaConverters._
 import scala.util.Random
 
 class EmailsManager(database: MongoDatabase) {
 
-  lazy val emails = database.getCollection(EmailsManagerUtils.EMAILS_COLLECTION_NAME)
+  private lazy val emails = database.getCollection(EmailsManagerUtils.EMAILS_COLLECTION_NAME)
 
   private val companiesInWhichBeenUsed = "companiesInWhichBeenUsed"
 
-  val MAX_EMAIL_CHECKED_ATTEMPTS = 3
+  private val MAX_EMAIL_CHECKED_ATTEMPTS = 3
 
   def markEmailAsUsed(email: String, company: String): Long = {
     val filter = Filters.eq("address", email)
@@ -36,29 +35,53 @@ class EmailsManager(database: MongoDatabase) {
     }).toList
   }
 
+  def uploadEmail(email: Email) = {
+    MongoDB.insertValueIntoCollection(email, emails)
+  }
+
   def getPassword(address: String): String = {
     emails.find(Filters.eq("address", address)).first().getString("password")
+  }
+
+  def getEmail(address: String): Email = {
+    fromDoc(emails.find(Filters.eq("address", address)).first())
+  }
+
+  def usedSuccessfully(address: String) = {
+    val filter = Filters.eq("address", address)
+    val email: Email = fromDoc(emails.find(filter).first())
+    val newEmail = email.copy(numberOfFails = Some(0))
+    emails.replaceOne(filter, toDoc(newEmail))
   }
 
   def failedToUse(address: String) = {
     val filter = Filters.eq("address", address)
     val email: Email = fromDoc(emails.find(filter).first())
-    val lastTimeChecked = new DateTime(email.lastTimeChecked.getOrElse(new Date))
-    val amendedLastTimeCheckedEmail = if (Days.daysBetween(lastTimeChecked, new DateTime()).getDays > 0) {
-      email.copy(numberOfFails = {
-        Some(email.numberOfFails match {
-          case Some(currentNumber) => currentNumber + 1
-          case None => 0
-        })
-      })
+    val someTimeAgo = new Date(System.currentTimeMillis() - 7L * 24 * 3600 * 1000)
+    val oldLastTimeChecked = new DateTime(email.lastTimeChecked.getOrElse(someTimeAgo))
+
+    val newNumberOfFails = if (Days.daysBetween(oldLastTimeChecked, today).getDays > 0) {
+      email.numberOfFails match {
+        case Some(currentNumber) => currentNumber + 1
+        case None => 1
+      }
     } else {
-      email
+      email.numberOfFails.getOrElse(0)
     }
-    val newEmail = if (amendedLastTimeCheckedEmail.numberOfFails.getOrElse(0) > MAX_EMAIL_CHECKED_ATTEMPTS) {
-      amendedLastTimeCheckedEmail.copy(active = Some(false))
+    val newActive = if (newNumberOfFails > MAX_EMAIL_CHECKED_ATTEMPTS) {
+      Some(false)
+    } else {
+      email.active
     }
-    //emails.replaceOne()
+    val newLastTimeChecked = today.toDate
+    val newEmail = email
+      .copy(numberOfFails = Some(newNumberOfFails))
+      .copy(active = newActive)
+      .copy(lastTimeChecked = Some(newLastTimeChecked))
+    emails.replaceOne(filter, toDoc(newEmail))
   }
+
+  protected def today() = new DateTime()
 
   def getNotUsedEmail(company: String): Option[String] = {
     val filter = Filters.and(Filters.not(Filters.in(companiesInWhichBeenUsed, company)),
@@ -81,6 +104,10 @@ class EmailsManager(database: MongoDatabase) {
     } else {
       notUsedEmails.headOption.map(getAddress)
     }
+  }
+
+  private def fromDoc(document: Document): Email = {
+    parse(document.toJson()).extract[Email]
   }
 
 }
