@@ -18,12 +18,42 @@ object EducationGenerator {
     val Master = Value("Master")
   }
 
+  object Major extends Enumeration {
+    type Major = Value
+    val Computer_Science = Value("Computer Science")
+    val Design = Value("Design")
+    val Information_Technology = Value("Information Technology")
+    val Communications = Value("Communications")
+    val Political_Science = Value("Political Science")
+    val Business = Value("Business administration and management")
+    val English_Language_and_Literature = Value("English Language and Literature")
+    val Psychology = Value("Psychology")
+    val Nursing = Value("Nursing")
+    val Chemical_Engineering = Value("Chemical Engineering")
+    val Biology = Value("Biology")
+    val Engineering = Value("Engineering")
+    val Social_sciences_and_history = Value("Social sciences and history")
+    val History = Value("History")
+    val Accounting = Value("Accounting")
+    val Health_Professions = Value("Health Professions")
+    val Trades_and_Personal_Services = Value("Trades and Personal Services")
+    val Education = Value("Education")
+    val Journalism = Value("Journalism")
+    val Building_and_Construction = Value("Building and Construction")
+    val Mathematics = Value("Mathematics")
+  }
+
+//  object Area extends Enumeration {
+//    type Area = Value
+//    val Sales = Value("Sales")
+//  }
+
   case class Education(
                         startYear: Int,
                         endYear: Int,
                         university: University,
                         degree: String,
-                        major: Option[String] = Some("Computer Science")
+                        major: Option[String] = Some(Major.Computer_Science.toString)
                       )
 
   lazy val highestDegreeGenerator = {

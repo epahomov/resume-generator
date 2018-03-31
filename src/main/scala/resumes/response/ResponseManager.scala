@@ -28,28 +28,34 @@ object ResponseManager {
 
 }
 
-class ResponseManager(applicationManager: ApplicationManager) {
+class ResponseManager(applicationManager: ApplicationManager,
+                      emailServerWrapper: EmailServerWrapper
+                     ) {
 
-  val companyToIdentifier = Map(
-    Companies.IBM -> IBMRelevanceIdentifier
+  private val companyToIdentifier = Map(
+    Companies.IBM.toString -> IBMRelevanceIdentifier
   )
 
-  val logger = LogManager.getLogger(this.getClass)
+  private val logger = LogManager.getLogger(this.getClass)
 
-  val emailsManager = applicationManager.getEmailsManager
+  private val emailsManager = applicationManager.getEmailsManager
 
   def collectResponses() = {
     val applications = applicationManager.getAllApplicationsWithUnknownResponse()
     applications.foreach(application => {
       val emailPassword = emailsManager.getPassword(application.email)
       val credentials = Credentials(application.email, emailPassword)
-      EmailServerWrapper.getAllMessages(credentials) match {
+      emailServerWrapper.getAllMessages(credentials) match {
         case Success(retrievedMessages) => {
+          emailsManager.accessedSuccessfully(application.email)
           val existingMessages = application.response match {
             case None => List.empty[Message]
             case Some(response) => response.messages
           }
-          val resultMessages = mergeMessagesLists(existingMessages, retrievedMessages)
+          val filteredMessages = retrievedMessages.filter(message => {
+            companyToIdentifier.get(application.company).get.isRelevant(application, message)
+          })
+          val resultMessages = mergeMessagesLists(existingMessages, filteredMessages)
           val newResponse = application.response match {
             case None => {
               Response(messages = resultMessages)
@@ -65,11 +71,10 @@ class ResponseManager(applicationManager: ApplicationManager) {
           emailsManager.failedToAccess(application.email)
         }
       }
-
     })
   }
 
-  def mergeMessagesLists(firstList: List[Message], secondList: List[Message]) = {
+  private def mergeMessagesLists(firstList: List[Message], secondList: List[Message]) = {
     (firstList.toSet ++ secondList.toSet).toList
   }
 

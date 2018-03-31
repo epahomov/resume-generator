@@ -5,6 +5,6 @@ import resumes.emails.MessageParser.Message
 
 abstract class RelevancyIdentifier {
 
-  def isRelevant(application: Application, message: Message)
+  def isRelevant(application: Application, message: Message): Boolean
 
 }

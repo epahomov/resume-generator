@@ -47,10 +47,10 @@ class EmailsManager(database: MongoDatabase) {
     fromDoc(emails.find(Filters.eq("address", address)).first())
   }
 
-  def accessedSuccessfully(address: String) = {
+  def accessedSuccessfully(address: String): Unit = {
     val filter = Filters.eq("address", address)
     val email: Email = fromDoc(emails.find(filter).first())
-    val newEmail = email.copy(numberOfFails = Some(0))
+    val newEmail = email.copy(numberOfFails = Some(0), lastTimeChecked = Some(today().toDate))
     emails.replaceOne(filter, toDoc(newEmail))
   }
 

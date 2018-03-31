@@ -1,18 +1,16 @@
 package resumes.emails
 
-import javax.mail.Folder
-
 import resumes.emails.EmailServerWrapper.Credentials
 
 import scala.io.Source
-import EmailServerWrapper._
 
 object Utils {
+
 
   def verifyAccounts(path: String) = {
     var valid = 0
     var broken = 0
-
+    val emailServerWrapper = new EmailServerWrapper
     def log(): Unit = {
       println(s"Broken = $broken")
       println(s"valid = $valid")
@@ -28,7 +26,7 @@ object Utils {
       .foreach(credential => {
         try {
 
-          val store = getStore(credential)
+          val store = emailServerWrapper.getStore(credential)
           if (broken % 10 == 0) {
             log()
           }

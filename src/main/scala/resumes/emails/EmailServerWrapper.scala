@@ -4,12 +4,25 @@ import java.util.Properties
 import javax.mail.{Folder, Session, Store}
 
 import resumes.MongoDB
+import resumes.emails.EmailServerWrapper.Credentials
 
 import scala.util.Try
-
 object EmailServerWrapper {
 
   case class Credentials(login: String, psswd: String)
+
+  def main(args: Array[String]): Unit = {
+    val emailServerWrapper = new EmailServerWrapper
+    val email = "josephaulam@yahoo.com"
+    val password = new EmailsManager(MongoDB.database).getPassword(email)
+    val messages = emailServerWrapper.getAllMessages(Credentials(email, password)).get
+    val jsons = resumes.Utils.toJsons(messages)
+    println(jsons.mkString("\n"))
+  }
+
+}
+
+class EmailServerWrapper {
 
   private def getImapsStore(credentials: Credentials, host: String) = {
     val port = "993"
@@ -62,15 +75,5 @@ object EmailServerWrapper {
     }
     result
   }
-
-  def main(args: Array[String]): Unit = {
-
-    val email = "josephaulam@yahoo.com"
-    val password = new EmailsManager(MongoDB.database).getPassword(email)
-    val messages = getAllMessages(Credentials(email, password)).get
-    val jsons = resumes.Utils.toJsons(messages)
-    println(jsons.mkString("\n"))
-  }
-
 
 }

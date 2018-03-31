@@ -5,10 +5,10 @@ import resumes.emails.MessageParser.Message
 
 abstract class SimpleRelevanceIdentifier extends RelevancyIdentifier {
 
-  def isRelevant(application: Application, message: Message) = {
+  def isRelevant(application: Application, message: Message): Boolean = {
     message.senders.find(sender => {
       sender.endsWith(suffix)
-    })
+    }).isDefined
   }
 
   val suffix: String
