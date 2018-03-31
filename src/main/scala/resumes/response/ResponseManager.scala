@@ -43,10 +43,13 @@ class ResponseManager(applicationManager: ApplicationManager,
   def collectResponses() = {
     val applications = applicationManager.getAllApplicationsWithUnknownResponse()
     applications.foreach(application => {
+      logger.info(s"Working with application ${application.id}")
       val emailPassword = emailsManager.getPassword(application.email)
       val credentials = Credentials(application.email, emailPassword)
       emailServerWrapper.getAllMessages(credentials) match {
         case Success(retrievedMessages) => {
+          logger.info(s"Successfully retrieved messages for ${application.email}." +
+            s" Number of retrieved messages ${retrievedMessages.size}")
           emailsManager.accessedSuccessfully(application.email)
           val existingMessages = application.response match {
             case None => List.empty[Message]
@@ -55,6 +58,7 @@ class ResponseManager(applicationManager: ApplicationManager,
           val filteredMessages = retrievedMessages.filter(message => {
             companyToIdentifier.get(application.company).get.isRelevant(application, message)
           })
+          logger.info(s"Number of messages, which passed filter is ${filteredMessages.size}")
           val resultMessages = mergeMessagesLists(existingMessages, filteredMessages)
           val newResponse = application.response match {
             case None => {

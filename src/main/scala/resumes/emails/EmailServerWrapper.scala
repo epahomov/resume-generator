@@ -7,6 +7,7 @@ import resumes.MongoDB
 import resumes.emails.EmailServerWrapper.Credentials
 
 import scala.util.Try
+
 object EmailServerWrapper {
 
   case class Credentials(login: String, psswd: String)
@@ -56,12 +57,12 @@ class EmailServerWrapper {
     val messages = folders.flatMap(folderName => {
       val folder = store.getFolder(folderName)
       folder.open(Folder.READ_ONLY)
-      val m = folder.getMessages
+      val m = folder.getMessages.map(MessageParser.parse)
       folder.close(false)
       m
     })
     store.close()
-    messages.map(MessageParser.parse)
+    messages
   }
 
   def getAllMessages(credentials: Credentials, tryAttempts: Int = 3): Try[List[MessageParser.Message]] = {

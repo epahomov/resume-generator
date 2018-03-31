@@ -7,7 +7,7 @@ abstract class SimpleRelevanceIdentifier extends RelevancyIdentifier {
 
   def isRelevant(application: Application, message: Message): Boolean = {
     message.senders.find(sender => {
-      sender.endsWith(suffix)
+      sender.contains(suffix)
     }).isDefined
   }
 
