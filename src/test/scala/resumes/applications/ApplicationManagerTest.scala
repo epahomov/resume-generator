@@ -2,7 +2,7 @@ package resumes.applications
 
 import org.junit.{Before, Test}
 import resumes.MongoTest
-import resumes.company.PositionManager
+import resumes.company.{CompanyManager, PositionManager}
 import resumes.emails.{EmailsManager, EmailsManagerUtils}
 import resumes.response.ResponseManager._
 
@@ -14,6 +14,7 @@ class ApplicationManagerTest extends MongoTest {
   val applicationCompany = "ibm"
   var updatedEmailManager = false
   var updatedPositionManager = false
+  var incremenentedCompany = false
 
   @Before
   def setUpEmailsCollection = {
@@ -31,8 +32,15 @@ class ApplicationManagerTest extends MongoTest {
         updatedPositionManager = true
       }
     }
+    val companyManager = new CompanyManager(_mongo_database) {
+      override def incrementNumberOfApplications(companyName: String): Unit = {
+        assert(companyName === applicationCompany)
+        incremenentedCompany = true
+      }
+    }
     applicationManager = new ApplicationManager(emailsManager,
       positionsManager,
+      companyManager,
       _mongo_database
     )
   }
@@ -73,5 +81,6 @@ class ApplicationManagerTest extends MongoTest {
     applicationManager.updateAllComponents(dummyApplication)
     assert(updatedEmailManager === true)
     assert(updatedPositionManager === true)
+    assert(incremenentedCompany === true)
   }
 }

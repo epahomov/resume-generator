@@ -16,7 +16,7 @@ class NumberOfApplicationsSelector(companyManager: CompanyManager) {
 
   private def getNumberOfApplications(differenceInDays: Int): Int = {
     if (differenceInDays < 4) {
-      6
+      10
     } else {
       val applications = Math.log(Math.pow(differenceInDays, 5)).round.toInt
       applications + Random.nextInt(Math.max(applications / 3, 1))

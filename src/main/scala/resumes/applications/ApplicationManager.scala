@@ -9,7 +9,7 @@ import org.apache.commons.lang3.RandomStringUtils
 import org.apache.logging.log4j.LogManager
 import resumes.MongoDB
 import resumes.applications.ApplicationManager.Application
-import resumes.company.PositionManager
+import resumes.company.{CompanyManager, PositionManager}
 import resumes.emails.EmailsManager
 import resumes.response.ResponseManager
 import resumes.response.ResponseManager.Response
@@ -36,6 +36,7 @@ object ApplicationManager {
 
 class ApplicationManager(emailsManager: EmailsManager,
                          positionsManager: PositionManager,
+                         companyManager: CompanyManager,
                          database: MongoDatabase,
                         ) {
 
@@ -78,6 +79,7 @@ class ApplicationManager(emailsManager: EmailsManager,
     emailsManager.markEmailAsUsedForApplication(email = application.email,
       company = application.company)
     positionsManager.successfullyAppliedForPosition(application.positionId)
+    companyManager.incrementNumberOfApplications(application.company)
   }
 
   def failApplication(application: Application) = {

@@ -74,7 +74,7 @@ class ResponseManagerTest extends JUnitSuite {
 
     }
 
-    val applicationManager = new ApplicationManager(emailsManager, null, null) {
+    val applicationManager = new ApplicationManager(emailsManager, null, null, null) {
 
       override def getAllApplicationsWithUnknownResponse(): List[Application] = {
         methodsInvocation += 1
