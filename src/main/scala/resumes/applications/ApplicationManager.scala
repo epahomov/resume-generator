@@ -11,13 +11,14 @@ import resumes.MongoDB
 import resumes.applications.ApplicationManager.Application
 import resumes.company.PositionManager
 import resumes.emails.EmailsManager
-import resumes.generators.PeopleManager
-import resumes.generators.PeopleManager.Person
 import resumes.response.ResponseManager
 import resumes.response.ResponseManager.Response
 import resumes.Utils._
+
 import scala.collection.JavaConverters._
 import MongoDB.formats
+import resumes.generators.person.PersonGenerator
+import resumes.generators.person.PersonGenerator.Person
 
 object ApplicationManager {
 
@@ -34,7 +35,6 @@ object ApplicationManager {
 }
 
 class ApplicationManager(emailsManager: EmailsManager,
-                         peopleManager: PeopleManager,
                          positionsManager: PositionManager,
                          database: MongoDatabase,
                         ) {
@@ -77,7 +77,6 @@ class ApplicationManager(emailsManager: EmailsManager,
     logger.info(s"Updating all components for application ${application.id}")
     emailsManager.markEmailAsUsedForApplication(email = application.email,
       company = application.company)
-    peopleManager.deletePerson(application.person)
     positionsManager.successfullyAppliedForPosition(application.positionId)
   }
 
@@ -87,9 +86,9 @@ class ApplicationManager(emailsManager: EmailsManager,
   }
 
   def createApplication(company: String): Application = {
-    val person = peopleManager.getRandomPerson().get
-    val email = emailsManager.getNotUsedEmail(company).get
     val position = positionsManager.getRandomPosition(company)
+    val person = PersonGenerator.generatePerson(position)
+    val email = emailsManager.getNotUsedEmail(company).get
     Application(
       person = person,
       company = company,

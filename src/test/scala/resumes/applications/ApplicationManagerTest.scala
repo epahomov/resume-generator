@@ -4,8 +4,6 @@ import org.junit.{Before, Test}
 import resumes.MongoTest
 import resumes.company.PositionManager
 import resumes.emails.{EmailsManager, EmailsManagerUtils}
-import resumes.generators.PeopleManager
-import resumes.generators.PeopleManager.Person
 import resumes.response.ResponseManager._
 
 import scala.util.Random
@@ -15,7 +13,6 @@ class ApplicationManagerTest extends MongoTest {
   var applicationManager: ApplicationManager = null
   val applicationCompany = "ibm"
   var updatedEmailManager = false
-  var updatedPeopleManager = false
   var updatedPositionManager = false
 
   @Before
@@ -29,18 +26,12 @@ class ApplicationManagerTest extends MongoTest {
         0L
       }
     }
-    val peopleManager = new PeopleManager(_mongo_database) {
-      override def deletePerson(person: Person) = {
-        updatedPeopleManager = true
-      }
-    }
     val positionsManager = new PositionManager(_mongo_database) {
       override def successfullyAppliedForPosition(id: String) = {
         updatedPositionManager = true
       }
     }
     applicationManager = new ApplicationManager(emailsManager,
-      peopleManager,
       positionsManager,
       _mongo_database
     )
@@ -81,7 +72,6 @@ class ApplicationManagerTest extends MongoTest {
     val dummyApplication = DummyApplication.veryPlainApplication(applicationCompany, "123")
     applicationManager.updateAllComponents(dummyApplication)
     assert(updatedEmailManager === true)
-    assert(updatedPeopleManager === true)
     assert(updatedPositionManager === true)
   }
 }

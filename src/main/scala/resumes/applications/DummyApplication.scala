@@ -1,12 +1,12 @@
 package resumes.applications
 
 import resumes.applications.ApplicationManager.Application
-import resumes.generators.PeopleManager.Person
 import resumes.generators.education.EducationGenerator.{Degree, Education}
 import resumes.generators.education.UniversityGenerator.University
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 import resumes.generators.name.NameGenerator.Name
 import resumes.generators.person.AddressGenerator.Address
+import resumes.generators.person.PersonGenerator.Person
 import resumes.generators.person.PhoneNumberGenerator
 
 import scala.util.Random
