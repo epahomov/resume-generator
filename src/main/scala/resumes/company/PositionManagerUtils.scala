@@ -15,7 +15,7 @@ object PositionManagerUtils {
       .map(line => {
         Position(company = company,
           url = line,
-          area = Some(Area.Finance),
+          area = Some(Area.PR),
           experienceLevel = Some(ExperienceLevel.Freshly_Graduate)
         )
       }).toList

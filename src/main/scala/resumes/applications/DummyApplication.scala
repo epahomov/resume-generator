@@ -1,7 +1,8 @@
 package resumes.applications
 
 import resumes.applications.ApplicationManager.Application
-import resumes.generators.education.EducationGenerator.{Degree, Education}
+import resumes.generators.education.EducationGenerator.Education
+import resumes.generators.education.Enums.Degree
 import resumes.generators.education.UniversityGenerator.University
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 import resumes.generators.name.NameGenerator.Name

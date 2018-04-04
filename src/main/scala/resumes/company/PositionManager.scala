@@ -11,7 +11,7 @@ import resumes.MongoDB.formats
 import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.Position
-import resumes.generators.education.EducationGenerator.Major.Major
+import resumes.generators.education.Enums.Major.Major
 
 import scala.collection.JavaConverters._
 import scala.util.Random
@@ -36,6 +36,7 @@ object PositionManager {
     val Hardware = Value("Hardware")
     val Design = Value("Design")
     val Finance = Value("Finance")
+    val PR = Value("PR")
   }
 
   object ExperienceLevel extends Enumeration {

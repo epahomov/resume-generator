@@ -1,7 +1,7 @@
 package resumes.generators.education
 
 import resumes.generators.Utils
-import resumes.generators.education.EducationGenerator.Major._
+import resumes.generators.education.Enums.Major._
 import resumes.company.PositionManager.Area
 object EducationUtils {
 
@@ -51,6 +51,21 @@ object EducationUtils {
     Utils.getGeneratorFrequency(distribution)
   }
 
+  lazy val PRAreaMajorGenerator = {
+    val distribution = List(
+      (English_Language_and_Literature, 1),
+      (Media_Production, 1),
+      (Media_Studies, 1),
+      (Political_Science, 1),
+      (Psychology, 1),
+      (Advertising, 1),
+      (Journalism, 1),
+      (Social_sciences_and_history, 1),
+      (Communications, 1)
+    )
+    Utils.getGeneratorFrequency(distribution)
+  }
+
   lazy val MajorToArea = Map (
     Computer_Science -> Area.Computer_Science,
     Information_Technology -> Area.Computer_Science,
@@ -69,7 +84,16 @@ object EducationUtils {
     Finance -> Area.Finance,
     Business -> Area.Finance,
     Economics -> Area.Finance,
-    Accounting -> Area.Finance
+    Accounting -> Area.Finance,
+    English_Language_and_Literature -> Area.PR,
+    Media_Production -> Area.PR,
+    Media_Studies -> Area.PR,
+    Political_Science -> Area.PR,
+    Psychology -> Area.PR,
+    Advertising -> Area.PR,
+    Journalism -> Area.PR,
+    Social_sciences_and_history -> Area.PR,
+    Communications -> Area.PR
   )
 
 
