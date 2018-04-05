@@ -2,13 +2,14 @@ package resumes.applications
 
 import org.joda.time.{DateTime, Days}
 import resumes.company.CompanyManager
+import resumes.company.CompanyManager.Companies
 
 import scala.util.Random
 
 
 class NumberOfApplicationsSelector(companyManager: CompanyManager) {
 
-  def getNumberOfApplications(company: String, current: DateTime = new DateTime()): Int = {
+  def getNumberOfApplications(company: Companies.Value, current: DateTime = new DateTime()): Int = {
     val start = new DateTime(companyManager.getCompany(company).startDate)
     getNumberOfApplications(Days.daysBetween(start, current).getDays)
 

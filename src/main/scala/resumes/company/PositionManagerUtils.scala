@@ -15,7 +15,7 @@ object PositionManagerUtils {
       .map(line => {
         Position(company = company,
           url = line,
-          area = Some(Area.PR),
+          area = Some(Area.Computer_Science),
           experienceLevel = Some(ExperienceLevel.Freshly_Graduate)
         )
       }).toList
@@ -23,7 +23,7 @@ object PositionManagerUtils {
   }
 
   def main(args: Array[String]): Unit = {
-    val company = Companies.IBM.toString
+    val company = Companies.SalesForce.toString
     val path = "positions"
     val manager = new PositionManager(MongoDB.database)
     uploadPositions(company, path, manager)

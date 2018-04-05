@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager
 import resumes.MongoDB.formats
 import resumes.applications.ApplicationManager.Application
 import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
+import resumes.company.CompanyManager.Companies
 
 import scala.util.{Failure, Success, Try}
 
@@ -15,7 +16,7 @@ abstract class Submitter(applicationManager: ApplicationManager,
 
   def submit(application: Application): Try[Unit]
 
-  val company: String
+  val company: Companies.Value
 
   val logger = LogManager.getLogger(this.getClass)
 

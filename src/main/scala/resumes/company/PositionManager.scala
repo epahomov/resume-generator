@@ -8,6 +8,7 @@ import com.mongodb.client.model.Updates._
 import net.liftweb.json.parse
 import resumes.MongoDB
 import resumes.MongoDB.formats
+import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.Position
@@ -61,8 +62,8 @@ class PositionManager(database: MongoDatabase) {
   }
 
 
-  def getRandomPosition(company: String): Position = {
-    val filter = Filters.and(Filters.eq("company", company), Filters.eq("active", true))
+  def getRandomPosition(company: Companies.Value): Position = {
+    val filter = Filters.and(Filters.eq("company", company.toString), Filters.eq("active", true))
     val positionsSnapshot = positions.find(filter).asScala.map(doc => {
       parse(doc.toJson).extract[Position]
     }).toArray

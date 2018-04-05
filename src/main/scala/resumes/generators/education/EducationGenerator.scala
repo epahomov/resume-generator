@@ -20,9 +20,25 @@ object EducationGenerator {
                         endYear: Int,
                         university: University,
                         degree: String,
-                        major: Option[String] = Some(Major.Computer_Science.toString)
+                        major: Option[String] = Some(Major.Computer_Science.toString),
+                        GPA: Option[Double] = Some(gpaGenerator.sample())
                       )
   import Enums.Major._
+
+  lazy val gpaGenerator = {
+    val distribution = List(
+      (4.0, 1),
+      (3.9, 2),
+      (3.8, 3),
+      (3.7, 4),
+      (3.6, 10),
+      (3.5, 6),
+      (3.4, 4),
+      (3.3, 3),
+      (3.2, 2)
+    )
+    Utils.getGeneratorFrequency(distribution)
+  }
 
   lazy val highestDegreeGenerator = {
     val distribution = List(

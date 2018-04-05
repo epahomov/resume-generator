@@ -7,6 +7,7 @@ import org.openqa.selenium.{By, Keys}
 import resumes.MongoDB
 import resumes.applications.ApplicationManager.Application
 import resumes.applications.{ApplicationManager, DummyApplication, NumberOfApplicationsSelector}
+import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 
@@ -20,7 +21,7 @@ object IBMApplicationSubmitter {
     val positionManager = new PositionManager(MongoDB.database)
 
     (0 to 15).foreach(_ => {
-      val position = positionManager.getRandomPosition("ibm")
+      val position = positionManager.getRandomPosition(Companies.IBM)
       submitter.submit(DummyApplication.veryPlainApplication("ibm", position.url))
     })
   }
@@ -31,7 +32,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
                               numberOfApplicationsSelector: NumberOfApplicationsSelector
                              ) extends Submitter(applicationManager, numberOfApplicationsSelector) {
 
-  val company = "ibm"
+  val company = Companies.IBM
 
   def submit(application: Application): Try[Unit] = {
     System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")

@@ -3,6 +3,7 @@ package resumes.emails
 import org.joda.time.DateTime
 import org.junit.{Before, Test}
 import resumes.MongoTest
+import resumes.company.CompanyManager.Companies
 import resumes.emails.EmailsManagerUtils.Email
 
 class EmailsManagerTest extends MongoTest{
@@ -10,8 +11,8 @@ class EmailsManagerTest extends MongoTest{
 
   var emailsManager: EmailsManager = null
 
-  val company = "ibm"
-  val otherCompany = "google"
+  val company = Companies.IBM
+  val otherCompany = Companies.SalesForce
 
   @Before
   def setUpEmailsCollection = {

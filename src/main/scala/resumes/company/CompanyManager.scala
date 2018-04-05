@@ -11,13 +11,14 @@ import net.liftweb.json.parse
 import org.bson.Document
 import resumes.MongoDB
 import resumes.MongoDB.formats
-import resumes.company.CompanyManager.Company
+import resumes.company.CompanyManager.{Companies, Company}
 
 object CompanyManager {
 
   object Companies extends Enumeration {
     type Degree = Value
     val IBM = Value("ibm")
+    val SalesForce = Value("salesforce")
   }
 
   case class Company(
@@ -29,7 +30,7 @@ object CompanyManager {
   def main(args: Array[String]): Unit = {
     val companyManager = new CompanyManager(MongoDB.database)
     val company = Company(
-      Companies.IBM.toString,
+      Companies.SalesForce.toString,
       startDate = new Date()
     )
     companyManager.addCompany(company)
@@ -50,8 +51,8 @@ class CompanyManager(database: MongoDatabase) {
     MongoDB.insertValueIntoCollection(company, companies)
   }
 
-  def getCompany(name: String) = {
-    val doc = companies.find(Filters.eq("name", name)).first()
+  def getCompany(name: Companies.Value) = {
+    val doc = companies.find(Filters.eq("name", name.toString)).first()
     parse(doc.toJson).extract[Company]
   }
 

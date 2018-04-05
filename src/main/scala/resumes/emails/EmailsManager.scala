@@ -11,6 +11,7 @@ import org.joda.time.{DateTime, Days}
 import resumes.MongoDB
 import resumes.emails.EmailsManagerUtils.{Email, formats}
 import resumes.Utils._
+import resumes.company.CompanyManager.Companies
 
 import scala.collection.JavaConverters._
 import scala.util.Random
@@ -23,9 +24,9 @@ class EmailsManager(database: MongoDatabase) {
 
   private val MAX_EMAIL_CHECKED_ATTEMPTS = 3
 
-  def markEmailAsUsedForApplication(email: String, company: String): Long = {
+  def markEmailAsUsedForApplication(email: String, company: Companies.Value): Long = {
     val filter = Filters.eq("address", email)
-    val update = addToSet(companiesInWhichBeenUsed, company)
+    val update = addToSet(companiesInWhichBeenUsed, company.toString)
     emails.updateOne(filter, update).getModifiedCount
   }
 
@@ -83,8 +84,8 @@ class EmailsManager(database: MongoDatabase) {
 
   protected def today() = new DateTime()
 
-  def getNotUsedEmail(company: String): Option[String] = {
-    val filter = Filters.and(Filters.not(Filters.in(companiesInWhichBeenUsed, company)),
+  def getNotUsedEmail(company: Companies.Value): Option[String] = {
+    val filter = Filters.and(Filters.not(Filters.in(companiesInWhichBeenUsed, company.toString)),
       Filters.or(
         Filters.not(Filters.exists("active")),
         Filters.eq("active", true)

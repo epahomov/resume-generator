@@ -2,6 +2,7 @@ package resumes.company
 
 import org.junit.Test
 import resumes.MongoTest
+import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager.Position
 
 class PositionManagerTest extends MongoTest {
@@ -21,7 +22,7 @@ class PositionManagerTest extends MongoTest {
 
     manager.uploadPositions(positions)
     assert(manager.getPositionById(id(0)).get.url === positions(0).url)
-    assert(manager.getRandomPosition("ibm").company === "ibm")
+    assert(manager.getRandomPosition(Companies.IBM).company === "ibm")
     assert(manager.getPositionById(id(1)).get.active === true)
     for (i <- 0 to 3) {
       manager.failedToApplyToPosition(id(1))
@@ -31,7 +32,7 @@ class PositionManagerTest extends MongoTest {
       manager.failedToApplyToPosition(id(0))
     }
     for (i <- 0 to 3) {
-      assert(manager.getRandomPosition("ibm").id === id(2))
+      assert(manager.getRandomPosition(Companies.IBM).id === id(2))
     }
     manager.successfullyAppliedForPosition(id(0))
     assert(manager.getPositionById(id(0)).get.failedAttemptsToApply === 0)

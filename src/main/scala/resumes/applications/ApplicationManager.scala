@@ -17,6 +17,7 @@ import resumes.Utils._
 
 import scala.collection.JavaConverters._
 import MongoDB.formats
+import resumes.company.CompanyManager.Companies
 import resumes.generators.person.PersonGenerator
 import resumes.generators.person.PersonGenerator.Person
 
@@ -28,7 +29,7 @@ object ApplicationManager {
                          positionId: String,
                          email: String,
                          id: String = UUID.randomUUID().toString,
-                         passwordToAccount: String = RandomStringUtils.randomAlphanumeric(8, 12) + "!",
+                         passwordToAccount: String = RandomStringUtils.randomAlphanumeric(8, 12) + "a5A!",
                          response: Option[Response] = None,
                          date: Date = new Date()
                         )
@@ -77,7 +78,7 @@ class ApplicationManager(emailsManager: EmailsManager,
   def updateAllComponents(application: Application) = {
     logger.info(s"Updating all components for application ${application.id}")
     emailsManager.markEmailAsUsedForApplication(email = application.email,
-      company = application.company)
+      company = Companies.withName(application.company))
     positionsManager.successfullyAppliedForPosition(application.positionId)
     companyManager.incrementNumberOfApplications(application.company)
   }
@@ -87,13 +88,13 @@ class ApplicationManager(emailsManager: EmailsManager,
     positionsManager.failedToApplyToPosition(application.positionId)
   }
 
-  def createApplication(company: String): Application = {
+  def createApplication(company: Companies.Value): Application = {
     val position = positionsManager.getRandomPosition(company)
     val person = PersonGenerator.generatePerson(position)
     val email = emailsManager.getNotUsedEmail(company).get
     Application(
       person = person,
-      company = company,
+      company = company.toString,
       positionUrl = position.url,
       positionId = position.id,
       email = email

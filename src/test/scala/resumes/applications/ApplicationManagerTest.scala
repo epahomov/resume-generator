@@ -2,6 +2,7 @@ package resumes.applications
 
 import org.junit.{Before, Test}
 import resumes.MongoTest
+import resumes.company.CompanyManager.Companies
 import resumes.company.{CompanyManager, PositionManager}
 import resumes.emails.{EmailsManager, EmailsManagerUtils}
 import resumes.response.ResponseManager._
@@ -21,9 +22,9 @@ class ApplicationManagerTest extends MongoTest {
 
     EmailsManagerUtils.uploadEmails("emails_test.txt", _mongo_database)
     val emailsManager = new EmailsManager(_mongo_database) {
-      override def markEmailAsUsedForApplication(email: String, company: String): Long = {
+      override def markEmailAsUsedForApplication(email: String,  company: Companies.Value): Long = {
         updatedEmailManager = true
-        assert(company === applicationCompany)
+        assert(company.toString === applicationCompany)
         0L
       }
     }
