@@ -1,0 +1,50 @@
+3. Apple
+10. AT&T
+13. Verizon Communications
+173. Micron Technology
+187. DISH Network
+194. Western Digital
+219. Texas Instruments
+220. CDW
+230. Cognizant Technology Solutions
+233. Computer Sciences
+284. Liberty Interactive
+292. Charter Communications
+295. Applied Materials
+300. eBay
+308. Priceline Group
+313. Corning
+331. Broadcom
+333. Level 3 Communications
+385. Expedia
+386. salesforce.com
+399. Cablevision Systems
+400. Symantec
+408. Sanmina
+409. NCR
+422. NetApp
+443. Windstream Holdings
+451. Motorola Solutions
+461. Frontier Communications
+462. Amphenol
+464. SanDisk
+487. Booz Allen Hamilton Holding
+491. Lam Research
+496. Telephone & Data Systems
+18. Amazon.com
+20. HP
+25. Microsoft
+31. IBM
+36. Alphabet
+37. Comcast
+51. Intel
+54. Cisco Systems
+77. Oracle
+110. Qualcomm
+113. EMC
+116. Time Warner Cable
+133. Danaher
+150. Xerox
+157. Facebook
+158. Jabil Circuit
+159. CenturyLink

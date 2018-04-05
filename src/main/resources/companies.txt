@@ -1,0 +1,1000 @@
+1Walmart$485,873
+2Berkshire Hathaway$223,604
+3Apple$215,639
+4Exxon Mobil$205,004
+5McKesson$192,487
+6UnitedHealth Group$184,840
+7CVS Health$177,526
+8General Motors$166,380
+9AT&T$163,786
+10Ford Motor$151,800
+11AmerisourceBergen$146,850
+12Amazon.com$135,987
+13General Electric$126,661
+14Verizon Communications$125,980
+15Cardinal Health$121,546
+16Costco$118,719
+17Walgreens Boots Alliance$117,351
+18Kroger$115,337
+19Chevron$107,567
+20Fannie Mae$107,162
+21J.P. Morgan Chase$105,486
+22Express Scripts Holding$100,288
+23Home Depot$94,595
+24Boeing$94,571
+25Wells Fargo$94,176
+26Bank of America Corp.$93,662
+27Alphabet$90,272
+28Microsoft$85,320
+29Anthem$84,863
+30Citigroup$82,386
+31Comcast$80,403
+32IBM$79,919
+33State Farm Insurance Cos.$76,132
+34Phillips 66$72,396
+35Johnson & Johnson$71,890
+36Procter & Gamble$71,726
+37Valero Energy$70,166
+38Target$69,495
+39Freddie Mac$65,665
+40Lowe’s$65,017
+41Dell Technologies$64,806
+42MetLife$63,476
+43Aetna$63,155
+44PepsiCo$62,799
+45Archer Daniels Midland$62,346
+46UPS$60,906
+47Intel$59,387
+48Prudential Financial$58,779
+49Albertsons Cos.$58,734
+50United Technologies$57,244
+51Marathon Petroleum$55,858
+52Disney$55,632
+53Humana$54,379
+54Pfizer$52,824
+55AIG$52,367
+56Lockheed Martin$50,658
+57Sysco$50,367
+58FedEx$50,365
+59Hewlett Packard Enterprise$50,123
+60Cisco Systems$49,247
+61HP$48,238
+62Dow Chemical$48,158
+63HCA Holdings$44,747
+64Coca-Cola$41,863
+65New York Life Insurance$40,787
+66Centene$40,721
+67American Airlines Group$40,180
+68Nationwide$40,074
+69Merck$39,807
+70Cigna$39,668
+71Delta Air Lines$39,639
+72Best Buy$39,403
+73Honeywell International$39,302
+74Caterpillar$38,537
+75Liberty Mutual Insurance Group$38,308
+76Morgan Stanley$37,949
+77Massachusetts Mutual Life Insurance$37,788
+78Goldman Sachs Group$37,712
+79Energy Transfer Equity$37,504
+80TIAA$37,105
+81Oracle$37,047
+82Tyson Foods$36,881
+83United Continental Holdings$36,556
+84Allstate$36,534
+85Publix Super Markets$34,274
+86American Express$33,823
+87TJX$33,184
+88Nike$32,376
+89Exelon$31,360
+90General Dynamics$31,353
+91Rite Aid$30,737
+92Gilead Sciences$30,390
+93CHS$30,347
+943M$30,109
+95Time Warner$29,318
+96Charter Communications$29,003
+97Northwestern Mutual$28,799
+98Facebook$27,638
+99Travelers Cos.$27,625
+100Capital One Financial$27,519
+101Twenty-First Century Fox$27,326
+102USAA$27,131
+103World Fuel Services$27,016
+104Philip Morris International$26,685
+105Deere$26,644
+106Kraft Heinz$26,487
+107Tech Data$26,235
+108Avnet$26,219
+109Mondelez International$25,923
+110Macy’s$25,778
+111AbbVie$25,638
+112McDonald’s$24,622
+113DuPont$24,594
+114Northrop Grumman$24,508
+115ConocoPhillips$24,360
+116Raytheon$24,069
+117Andeavor$24,005
+118Arrow Electronics$23,825
+119Qualcomm$23,554
+120Progressive$23,441
+121Duke Energy$23,369
+122Enterprise Products Partners$23,022
+123Amgen$22,991
+124US Foods Holding$22,919
+125U.S. Bancorp$22,744
+126Aflac$22,559
+127Sears Holdings$22,138
+128Dollar General$21,987
+129AutoNation$21,609
+130Community Health Systems$21,374
+131Starbucks$21,316
+132Eli Lilly$21,222
+133International Paper$21,079
+134Tenet Healthcare$21,070
+135Abbott Laboratories$20,853
+136Dollar Tree$20,719
+137Whirlpool$20,718
+138Southwest Airlines$20,425
+139Emerson Electric$20,268
+140Staples$20,217
+141Plains GP Holdings$20,182
+142Penske Automotive Group$20,143
+143Union Pacific$19,941
+144Danaher$19,912
+145Southern$19,896
+146ManpowerGroup$19,654
+147Bristol-Myers Squibb$19,427
+148Altria Group$19,337
+149Fluor$19,037
+150Kohl’s$18,686
+151Lear$18,558
+152Jabil$18,353
+153Hartford Financial Services Group$18,300
+154Thermo Fisher Scientific$18,274
+155Kimberly-Clark$18,202
+156Molina Healthcare$17,782
+157PG&E Corp.$17,666
+158Supervalu$17,529
+159Cummins$17,509
+160CenturyLink$17,470
+161AECOM$17,411
+162Xerox$17,126
+163Marriott International$17,072
+164Paccar$17,033
+165General Mills$16,563
+166PNC Financial Services Group$16,423
+167American Electric Power$16,380
+168Icahn Enterprises$16,348
+169Nucor$16,208
+170NextEra Energy$16,155
+171Performance Food Group$16,105
+172PBF Energy$15,920
+173Halliburton$15,887
+174CarMax$15,833
+175Freeport-McMoRan$15,789
+176Whole Foods Market$15,724
+177Bank of New York Mellon$15,683
+178Gap$15,516
+179Omnicom Group$15,417
+180Genuine Parts$15,340
+181DaVita$15,197
+182Colgate-Palmolive$15,195
+183PPG Industries$15,178
+184Goodyear Tire & Rubber$15,158
+185Synchrony Financial$15,122
+186DISH Network$15,095
+187Visa$15,082
+188Nordstrom$14,757
+189INTL FCStone$14,755
+190WestRock$14,706
+191XPO Logistics$14,619
+192Aramark$14,416
+193CBS$14,386
+194AES$14,287
+195WellCare Health Plans$14,237
+196FirstEnergy$14,156
+197Conagra Brands$14,134
+198Synnex$14,062
+199CDW$13,982
+200Textron$13,788
+201Waste Management$13,609
+202Illinois Tool Works$13,599
+203Office Depot$13,585
+204Monsanto$13,502
+205Cognizant Technology Solutions$13,487
+206Texas Instruments$13,370
+207Lincoln National$13,330
+208Newell Brands$13,264
+209Land O’Lakes$13,233
+210Marsh & McLennan$13,211
+211Ecolab$13,153
+212C.H. Robinson Worldwide$13,144
+213Loews$13,105
+214CBRE Group$13,072
+215Kinder Morgan$13,058
+216Kellogg$13,014
+217Western Digital$12,994
+218Guardian Life Ins. Co. of America$12,919
+219Ross Stores$12,867
+220L Brands$12,574
+221J.C. Penney$12,547
+222Farmers Insurance Exchange$12,513
+223Reynolds American$12,503
+224Viacom$12,488
+225Becton Dickinson$12,483
+226Micron Technology$12,399
+227Principal Financial$12,394
+228Arconic$12,394
+229NRG Energy$12,351
+230VF$12,207
+231Devon Energy$12,197
+232D.R. Horton$12,157
+233Bed Bath & Beyond$12,104
+234Consolidated Edison$12,075
+235Edison International$11,869
+236Sherwin-Williams$11,856
+237NGL Energy Partners$11,742
+238Dominion Energy$11,737
+239Ameriprise Financial$11,735
+240ADP$11,668
+241Hilton Worldwide Holdings$11,663
+242First Data$11,584
+243Henry Schein$11,572
+244Toys “R” Us$11,540
+245BB&T Corp.$11,538
+246Reinsurance Group of America$11,522
+247Core-Mark Holding$11,507
+248Biogen$11,449
+249Las Vegas Sands$11,410
+250Stanley Black & Decker$11,407
+251Parker-Hannifin$11,361
+252Stryker$11,325
+253Estee Lauder$11,262
+254Celgene$11,229
+255BlackRock$11,155
+256Xcel Energy$11,107
+257CSX$11,069
+258Unum Group$11,047
+259Jacobs Engineering Group$10,964
+260Lennar$10,950
+261Group 1 Automotive$10,888
+262Leucadia National$10,875
+263Entergy$10,846
+264PayPal Holdings$10,842
+265Applied Materials$10,825
+266Voya Financial$10,782
+267Mastercard$10,776
+268Priceline Group$10,743
+269Liberty Interactive$10,647
+270AutoZone$10,636
+271State Street Corp.$10,635
+272DTE Energy$10,630
+273L3 Technologies$10,597
+274HollyFrontier$10,536
+275Praxair$10,534
+276Universal Health Services$10,508
+277Discover Financial Services$10,497
+278Occidental Petroleum$10,398
+279United States Steel$10,261
+280Sempra Energy$10,183
+281Baxter International$10,163
+282W.W. Grainger$10,137
+283Autoliv$10,074
+284Norfolk Southern$9,888
+285Baker Hughes$9,841
+286Ally Financial$9,835
+287Sonic Automotive$9,732
+288Owens & Minor$9,723
+289Huntsman$9,657
+290Laboratory Corp. of America$9,642
+291Murphy USA$9,633
+292Advance Auto Parts$9,568
+293Fidelity National Financial$9,554
+294Air Products & Chemicals$9,524
+295Hormel Foods$9,523
+296Hertz Global Holdings$9,480
+297MGM Resorts International$9,455
+298Corning$9,390
+299Republic Services$9,388
+300Alcoa$9,318
+301Fidelity National Information Services$9,241
+302Pacific Life$9,169
+303SunTrust Banks$9,161
+304LKQ$9,082
+305BorgWarner$9,071
+306Ball$9,061
+306CST Brands$9,061
+306Public Service Enterprise Group$9,061
+309Eastman Chemical$9,008
+310eBay$8,979
+311Mohawk Industries$8,959
+312Oneok$8,921
+313Frontier Communications$8,896
+314Netflix$8,831
+315American Family Insurance Group$8,829
+316Thrivent Financial for Lutherans$8,777
+317Expedia$8,774
+318Lithia Motors$8,678
+319Avis Budget Group$8,659
+320Reliance Steel & Aluminum$8,613
+321GameStop$8,608
+322Tenneco$8,599
+323O’Reilly Automotive$8,593
+324Peter Kiewit Sons’$8,573
+325United Natural Foods$8,470
+326salesforce.com$8,392
+327Boston Scientific$8,386
+328Newmont Mining$8,379
+329Genworth Financial$8,369
+330Live Nation Entertainment$8,355
+331Veritiv$8,327
+332News Corp.$8,319
+333Crown Holdings$8,284
+334Global Partners$8,240
+335PVH$8,203
+336Level 3 Communications$8,172
+337Navistar International$8,111
+338Univar$8,074
+339Campbell Soup$7,961
+340Dick’s Sporting Goods$7,922
+341Weyerhaeuser$7,902
+342Mutual of Omaha Insurance$7,899
+343Chesapeake Energy$7,872
+344Anadarko Petroleum$7,869
+345Interpublic Group$7,847
+346J.M. Smucker$7,811
+347Steel Dynamics$7,777
+348Foot Locker$7,766
+349Western Refining$7,743
+350SpartanNash$7,735
+351Dean Foods$7,710
+352Zimmer Biomet Holdings$7,684
+353PulteGroup$7,669
+354W.R. Berkley$7,654
+355Quanta Services$7,651
+356EOG Resources$7,651
+357Charles Schwab$7,644
+358Eversource Energy$7,639
+359Anixter International$7,625
+360EMCOR Group$7,552
+361Assurant$7,532
+362CenterPoint Energy$7,528
+363Harris$7,527
+364HD Supply Holdings$7,524
+365PPL$7,517
+366Quest Diagnostics$7,515
+367Williams$7,499
+368WEC Energy Group$7,472
+369Hershey$7,440
+370AGCO$7,411
+371Ralph Lauren$7,405
+372Masco$7,357
+373WESCO International$7,336
+374LifePoint Health$7,274
+375National Oilwell Varco$7,251
+376Kindred Healthcare$7,227
+377Mosaic$7,163
+378Alliance Data Systems$7,138
+379Computer Sciences$7,106
+380Huntington Ingalls Industries$7,068
+381Leidos Holdings$7,043
+382Erie Insurance Group$7,016
+383Tesla$7,000
+384Ascena Retail Group$6,995
+385Darden Restaurants$6,934
+386Harman International Industries$6,912
+387Nvidia$6,910
+388R.R. Donnelley & Sons$6,896
+389Fifth Third Bancorp$6,889
+390Quintiles IMS Holdings$6,878
+391Jones Lang LaSalle$6,804
+392Dover$6,794
+393Spirit AeroSystems Holdings$6,793
+394Ryder System$6,787
+395A-Mark Precious Metals$6,784
+396Tractor Supply$6,780
+397Sealed Air$6,778
+398Auto-Owners Insurance$6,775
+399Yum China Holdings$6,752
+400Calpine$6,716
+401Owens-Illinois$6,702
+402Targa Resources$6,691
+403JetBlue Airways$6,632
+403Jones Financial (Edward Jones)$6,632
+405Franklin Resources$6,618
+406Activision Blizzard$6,608
+407J.B. Hunt Transport Services$6,556
+408Constellation Brands$6,548
+409NCR$6,543
+410Asbury Automotive Group$6,528
+411American Financial Group$6,498
+412Discovery Communications$6,497
+413Berry Global Group$6,489
+414Sanmina$6,481
+415CalAtlantic Group$6,477
+416Dr Pepper Snapple Group$6,440
+417Dillard’s$6,418
+418HRG Group$6,403
+419CMS Energy$6,399
+420Graybar Electric$6,385
+421Builders FirstSource$6,367
+422Yum Brands$6,366
+423Casey’s General Stores$6,304
+424Amphenol$6,286
+425Oshkosh$6,279
+426iHeartMedia$6,274
+427TreeHouse Foods$6,175
+428Alleghany$6,131
+429Expeditors International of Washington$6,098
+430Avery Dennison$6,087
+431Ameren$6,076
+432Hanesbrands$6,063
+433Motorola Solutions$6,038
+434St. Jude Medical$6,004
+435Harley-Davidson$5,997
+436Regions Financial$5,967
+437Intercontinental Exchange$5,958
+438Alaska Air Group$5,931
+439Old Republic International$5,901
+440Lam Research$5,886
+441AK Steel Holding$5,883
+442Rockwell Automation$5,880
+443Adobe Systems$5,854
+444Avon Products$5,853
+445Terex$5,841
+446NVR$5,835
+447Dana$5,826
+448Realogy Holdings$5,810
+449American Tower$5,786
+450Packaging Corp. of America$5,779
+451Citizens Financial Group$5,763
+452United Rentals$5,762
+453Clorox$5,761
+454Genesis Healthcare$5,733
+455M&T Bank Corp.$5,722
+456Ingredion$5,704
+457UGI$5,686
+458Owens Corning$5,677
+459S&P Global$5,661
+460Markel$5,612
+461Wyndham Worldwide$5,599
+462Arthur J. Gallagher$5,595
+463Burlington Stores$5,591
+464First American Financial$5,576
+465Symantec$5,568
+466Patterson$5,555
+467Olin$5,551
+468NetApp$5,546
+469Raymond James Financial$5,520
+470TravelCenters of America$5,511
+471Fiserv$5,505
+472Host Hotels & Resorts$5,488
+473Insight Enterprises$5,486
+474Mattel$5,457
+475AmTrust Financial Services$5,451
+476Cincinnati Financial$5,449
+477Simon Property Group$5,435
+478Western Union$5,423
+479KeyCorp$5,422
+480Delek US Holdings$5,414
+481Booz Allen Hamilton Holding$5,406
+482Chemours$5,400
+483Western & Southern Financial Group$5,398
+484Celanese$5,389
+485Windstream Holdings$5,387
+486Seaboard$5,379
+487Essendant$5,369
+488Apache$5,354
+489Airgas$5,314
+490Kelly Services$5,277
+491Liberty Media$5,276
+492Rockwell Collins$5,259
+493Robert Half International$5,250
+494CH2M Hill$5,236
+495Big Lots$5,200
+496Michaels Cos.$5,197
+497Toll Brothers$5,170
+498Yahoo$5,169
+499Vistra Energy$5,164
+500ABM Industries$5,145
+501Northern Trust$5,144
+502MasTec$5,135
+503Blackstone Group$5,126
+504Telephone & Data Systems$5,104
+505Domtar$5,098
+506Williams-Sonoma$5,084
+507Westlake Chemical$5,076
+508Post Holdings$5,027
+509Hasbro$5,020
+510Juniper Networks$4,990
+511Fortune Brands Home & Security$4,985
+512Brookdale Senior Living$4,977
+513Tutor Perini$4,973
+514Navient$4,965
+515Neiman Marcus Group$4,950
+516Ashland Global Holdings$4,948
+517Hanover Insurance Group$4,946
+518CommScope Holding$4,924
+519Spectra Energy$4,916
+520Cintas$4,906
+521Zoetis$4,888
+522Molson Coors Brewing$4,885
+523Regeneron Pharmaceuticals$4,860
+524Ulta Beauty$4,855
+525Hess$4,844
+526Magellan Health$4,837
+527Intuit$4,831
+528Under Armour$4,825
+529RPM International$4,814
+530Cerner$4,797
+531Sonoco Products$4,783
+532Securian Financial Group$4,777
+533Peabody Energy$4,715
+534YRC Worldwide$4,698
+535Commercial Metals$4,652
+536Marathon Oil$4,650
+537Polaris Industries$4,595
+538Envision Healthcare$4,589
+539Trinity Industries$4,588
+540Thor Industries$4,582
+541Caesars Entertainment$4,555
+542Levi Strauss$4,553
+543FMC Technologies$4,542
+544VWR$4,514
+545NiSource$4,493
+546Coach$4,492
+547Brunswick$4,489
+548Wynn Resorts$4,466
+549Orbital ATK$4,455
+550CIT Group$4,453
+551Science Applications International$4,450
+552Hyatt Hotels$4,429
+553McCormick$4,412
+554Diplomat Pharmacy$4,410
+555Barnes & Noble$4,403
+556Electronic Arts$4,396
+557FM Global$4,374
+558Coty$4,349
+559Smart & Final Stores$4,342
+560Quad/Graphics$4,330
+561Dynegy$4,318
+562Graphic Packaging Holding$4,298
+563Select Medical Holdings$4,286
+564Welltower$4,281
+565Advanced Micro Devices$4,272
+566USG$4,269
+567KBR$4,268
+568Bloomin’ Brands$4,252
+569MDU Resources Group$4,252
+570CSRA$4,250
+571Laureate Education$4,244
+572SCANA$4,227
+573T. Rowe Price$4,223
+574Watsco$4,221
+575Rush Enterprises$4,215
+576Agilent Technologies$4,202
+577WhiteWave Foods$4,198
+578Valspar$4,191
+579Total System Services$4,170
+580Torchmark$4,158
+581Cabela’s$4,129
+582Beacon Roofing Supply$4,127
+583CA$4,052
+584LPL Financial Holdings$4,049
+585Sprouts Farmers Market$4,046
+586Swift Transportation$4,032
+587Bemis$4,004
+588Tiffany$4,002
+589Flowserve$3,992
+590CNO Financial Group$3,985
+591Fastenal$3,962
+592Sally Beauty Holdings$3,953
+593American Axle & Manufacturing$3,948
+594Flowers Foods$3,927
+595Andersons$3,925
+596Crown Castle International$3,921
+597Boise Cascade$3,911
+598ON Semiconductor$3,907
+599Chipotle Mexican Grill$3,904
+600Amkor Technology$3,894
+601Triumph Group$3,886
+602OneMain Holdings$3,883
+603General Cable$3,858
+604Ametek$3,840
+605Alon USA Energy$3,832
+606Pioneer Natural Resources$3,824
+607Martin Marietta Materials$3,819
+608Ingles Markets$3,795
+609Roper Technologies$3,790
+610Huntington Bancshares$3,782
+611Xylem$3,771
+612Unified Grocers$3,762
+613Leggett & Platt$3,750
+614Dentsply Sirona$3,745
+615CACI International$3,744
+616Mead Johnson Nutrition$3,743
+617C.R. Bard$3,714
+618Snap-on$3,712
+619HealthSouth$3,707
+620Nasdaq$3,705
+621Avaya$3,702
+622CF Industries Holdings$3,685
+623Carlisle$3,675
+624Equinix$3,661
+625LSC Communications$3,654
+626Colfax$3,647
+627Lennox International$3,642
+628Iasis Healthcare$3,638
+629Silgan Holdings$3,613
+630American Eagle Outfitters$3,610
+631Moody’s$3,604
+632Calumet Specialty Products Partners$3,599
+633CME Group$3,595
+634KB Home$3,595
+635Vulcan Materials$3,593
+636Platform Specialty Products$3,586
+637Vantiv$3,579
+638Skechers U.S.A.$3,577
+639Zebra Technologies$3,574
+640Hub Group$3,573
+641HSN$3,568
+642Stericycle$3,562
+643National General Holdings$3,550
+644Taylor Morrison Home$3,550
+645Urban Outfitters$3,546
+646Resolute Forest Products$3,545
+647ScanSource$3,540
+648Camping World Holdings$3,527
+649Iron Mountain$3,525
+650Hubbell$3,505
+651Pinnacle West Capital$3,499
+652Church & Dwight$3,493
+653Noble Energy$3,491
+654Albemarle$3,491
+655Cooper-Standard Holdings$3,473
+656KKR$3,461
+657Country Financial$3,458
+658Ventas$3,444
+659Hexion$3,438
+660Analog Devices$3,421
+661Citrix Systems$3,418
+662Green Plains$3,411
+663Pitney Bowes$3,407
+664Scripps Networks Interactive$3,401
+665Darling Ingredients$3,398
+666Wayfair$3,380
+667Tailored Brands$3,379
+668Sabre$3,373
+669Global Payments$3,371
+670Atmos Energy$3,350
+671TEGNA$3,341
+672Diebold Nixdorf$3,341
+673PolyOne$3,340
+674TD Ameritrade Holding$3,334
+675Abercrombie & Fitch$3,327
+676Greif$3,324
+677Alliant Energy$3,320
+678American Water Works$3,302
+679Acuity Brands$3,291
+680Skyworks Solutions$3,289
+681FMC$3,282
+682Amerco$3,276
+683CUNA Mutual Group$3,272
+684Brinker International$3,258
+685Buckeye Partners$3,248
+686Warner Music Group$3,246
+687Universal Forest Products$3,241
+688American National Insurance$3,228
+689Mercury General$3,228
+690Regal Beloit$3,225
+691Varian Medical Systems$3,218
+692Aaron’s$3,208
+693Visteon$3,206
+694Carter’s$3,199
+695Meritor$3,199
+696Regal Entertainment Group$3,197
+697Mednax$3,183
+698TransDigm Group$3,171
+699Landstar System$3,168
+700Puget Energy$3,164
+701Coca-Cola Bottling$3,156
+702Kar Auction Services$3,150
+703Equifax$3,145
+704Groupon$3,143
+705IAC/InterActiveCorp$3,140
+706Weis Markets$3,137
+707Allegheny Technologies$3,135
+708Pinnacle Foods$3,128
+709Tempur Sealy International$3,127
+710SkyWest$3,121
+711International Flavors & Fragrances$3,116
+712BMC Stock Holdings$3,094
+713Brown-Forman$3,089
+714Alexion Pharmaceuticals$3,084
+715KapStone Paper & Packaging$3,077
+716Time$3,076
+717TriNet Group$3,060
+718Steelcase$3,060
+719EchoStar$3,057
+720Sentry Insurance Group$3,053
+721Monster Beverage$3,049
+722Gannett$3,048
+723Fossil Group$3,042
+724Univision Communications$3,042
+725Meritage Homes$3,042
+726MRC Global$3,041
+727H&R Block$3,038
+728Penn National Gaming$3,034
+729Service Corp. International$3,031
+730Brink’s$3,021
+731Old Dominion Freight Line$2,992
+732Triple-S Management$2,985
+733KLA-Tencor$2,985
+734Edwards Lifesciences$2,964
+735Rent-A-Center$2,963
+736Comerica$2,960
+737Paychex$2,952
+738First Solar$2,951
+739Insperity$2,941
+740Scotts Miracle-Gro$2,937
+741B/E Aerospace$2,933
+742Westinghouse Air Brake Technologies$2,931
+743Cooper Tire & Rubber$2,925
+744Cinemark Holdings$2,919
+745Keysight Technologies$2,918
+746Convergys$2,914
+747Cracker Barrel Old Country Store$2,912
+748PriceSmart$2,905
+749Broadridge Financial Solutions$2,897
+750Scientific Games$2,883
+751Genesco$2,868
+752MSC Industrial Direct$2,864
+753Ryerson Holding$2,860
+754Acadia Healthcare$2,853
+755Hologic$2,833
+756Unisys$2,821
+757Worthington Industries$2,820
+758Sanderson Farms$2,816
+759WABCO Holdings$2,810
+760Panera Bread$2,795
+761Metaldyne Performance Group$2,791
+762Medical Mutual of Ohio$2,757
+763AMC Networks$2,756
+764Clean Harbors$2,755
+765Hovnanian Enterprises$2,752
+766TrueBlue$2,751
+767Crane$2,748
+768ServiceMaster Global Holdings$2,746
+769Sinclair Broadcast Group$2,737
+770Mutual of America Life Insurance$2,725
+771BGC Partners$2,721
+772DSW$2,711
+773Intuitive Surgical$2,704
+774ArcBest$2,700
+775PC Connection$2,693
+776A.O. Smith$2,686
+777Greenbrier Cos.$2,680
+778Great Plains Energy$2,676
+779Bon-Ton Stores$2,674
+780Dycom Industries$2,673
+781Timken$2,670
+782Aleris$2,664
+783Legg Mason$2,661
+784Hill-Rom Holdings$2,655
+785Stifel Financial$2,642
+786Verso$2,641
+787Qorvo$2,611
+788Ciena$2,601
+789Tetra Tech$2,584
+790Caleres$2,579
+791Pool$2,571
+792Hyster-Yale Materials Handling$2,570
+793Westar Energy$2,562
+794Public Storage$2,561
+795Plexus$2,556
+796Boston Properties$2,551
+797GNC Holdings$2,540
+798HCP$2,538
+799Penn Mutual Life Insurance$2,537
+800TTM Technologies$2,533
+801Prologis$2,533
+802Twitter$2,530
+803Kemper$2,522
+804Valmont Industries$2,522
+805Crestwood Equity Partners$2,521
+806Applied Industrial Technologies$2,519
+807VCA$2,517
+808Granite Construction$2,515
+809Vornado Realty Trust$2,510
+810Mettler-Toledo International$2,508
+811A. Schulman$2,496
+812Wolverine World Wide$2,495
+813Graham Holdings$2,482
+814Chico’s FAS$2,476
+815Domino’s Pizza$2,473
+816Zions Bancorp.$2,470
+817Southwest Gas Holdings$2,461
+818Tops Holding$2,457
+819Hawaiian Holdings$2,451
+820Vectren$2,448
+821Gartner$2,445
+822On Assignment$2,440
+823Southwestern Energy$2,436
+824Parexel International$2,426
+825Equity Residential$2,426
+826J.Crew Group$2,426
+827Synopsys$2,423
+828Moog$2,412
+829Cabot$2,411
+830ITT$2,405
+831TRI Pointe Group$2,405
+832Maximus$2,403
+833Illumina$2,398
+834Amica Mutual Insurance$2,397
+835Alere$2,395
+836Toro$2,392
+837Sprague Resources$2,390
+838G-III Apparel Group$2,386
+839Hawaiian Electric Industries$2,381
+840Pinnacle Entertainment$2,379
+841Columbia Sportswear$2,377
+842First Republic Bank$2,376
+843Komatsu Mining$2,371
+844Trimble$2,362
+845Edgewell Personal Care$2,362
+846Belden$2,357
+847DST Systems$2,355
+848WGL Holdings$2,350
+849GGP$2,346
+850Brocade Communications Systems$2,346
+851Akamai Technologies$2,340
+852Nationstar Mortgage Holdings$2,340
+853Annaly Capital Management$2,339
+854Kansas City Southern$2,334
+855Revlon$2,334
+856AptarGroup$2,331
+857MDC Holdings$2,327
+858Vishay Intertechnology$2,323
+859Teradata$2,322
+860Spirit Airlines$2,322
+861EnerSys$2,316
+862Snyder’s-Lance$2,314
+863Benchmark Electronics$2,310
+864West$2,292
+865Selective Insurance Group$2,284
+866Party City Holdco$2,283
+867Cheesecake Factory$2,276
+868Lincoln Electric Holdings$2,275
+869Carlyle Group$2,274
+870Enable Midstream Partners$2,272
+871Oceaneering International$2,272
+872Vista Outdoor$2,271
+873Middleby$2,268
+874Herman Miller$2,265
+875PerkinElmer$2,262
+876OGE Energy$2,259
+877PCM$2,251
+878Louisiana-Pacific$2,233
+879MPM Holdings$2,233
+880Knights of Columbus$2,228
+881Apollo Global Management$2,222
+882Donaldson$2,220
+883American Equity Investment Life Holding$2,220
+884Super Micro Computer$2,216
+885Xilinx$2,214
+886Tupperware Brands$2,213
+887Guess$2,209
+888Nu Skin Enterprises$2,208
+889Magellan Midstream Partners$2,205
+890HNI$2,204
+891Maxim Integrated Products$2,195
+892Affiliated Managers Group$2,195
+893Express$2,193
+894Boyd Gaming$2,184
+895GEO Group$2,180
+896Tribune Media$2,174
+897Microchip Technology$2,173
+898Fitbit$2,170
+899Waters$2,167
+900Teledyne Technologies$2,150
+901Digital Realty Trust$2,142
+902RH$2,135
+903Fred’s$2,125
+904Universal$2,120
+905CDK Global$2,115
+906IDEX$2,113
+907Cliffs Natural Resources$2,109
+908Curtiss-Wright$2,109
+909Verisk Analytics$2,108
+910NOW$2,107
+911Apollo Education Group$2,105
+912Kennametal$2,098
+913H.B. Fuller$2,095
+914PharMerica$2,091
+915Engility Holdings$2,076
+916Sears Hometown & Outlet Stores$2,070
+917Bio-Rad Laboratories$2,068
+918Federated Mutual Insurance$2,062
+919Mueller Industries$2,056
+920Red Hat$2,052
+921NewMarket$2,050
+922Hospitality Properties Trust$2,047
+923AvalonBay Communities$2,045
+924Renewable Energy Group$2,041
+925Consol Energy$2,040
+926Ferrellgas Partners$2,039
+927Tower International$2,033
+928Autodesk$2,031
+92999 Cents Only Stores$2,027
+930E*Trade Financial$2,026
+931Woodward$2,023
+932Esterline Technologies$2,015
+933Itron$2,013
+934Werner Enterprises$2,009
+935Stewart Information Services$2,007
+936Hexcel$2,004
+937Genesee & Wyoming$2,002
+938Primoris Services$1,997
+939SPX FLOW$1,996
+940F5 Networks$1,995
+941VeriFone Systems$1,992
+942Texas Roadhouse$1,991
+943NLV Financial$1,989
+944Buffalo Wild Wings$1,987
+945Continental Resources$1,980
+946Arch Coal$1,974
+947Roadrunner Transportation Systems$1,972
+948Cooper Cos.$1,967
+949hhgregg$1,960
+950Euronet Worldwide$1,959
+951Griffon$1,957
+952CoreLogic$1,953
+953Nuance Communications$1,949
+954Matson$1,942
+955Popular$1,933
+956Alliance Holdings$1,931
+957REV Group$1,926
+958Rexnord$1,924
+959Cypress Semiconductor$1,923
+960Portland General Electric$1,923
+961Ply Gem Holdings$1,912
+962Cal-Maine Foods$1,909
+963Alliance One International$1,905
+964AMN Healthcare Services$1,902
+965American Greetings$1,901
+966Blackhawk Network Holdings$1,900
+967Pier 1 Imports$1,892
+968Finish Line$1,889
+969BlueLinx Holdings$1,881
+970New Jersey Resources$1,881
+971Deckers Outdoor$1,875
+972Murphy Oil$1,874
+973Teleflex$1,868
+974Par Pacific Holdings$1,865
+975SL Green Realty$1,864
+976GMS$1,858
+977CoreCivic$1,850
+978Deluxe$1,849
+979Catalent$1,848
+980GoDaddy$1,848
+981Wabash National$1,845
+982Adtalem Global Education$1,844
+983United Refining$1,841
+984Allison Transmission Holdings$1,840
+985Atlas Air Worldwide Holdings$1,840
+986ResMed$1,839
+987Delta Tucker Holdings$1,836
+988FleetCor Technologies$1,832
+989Central Garden & Pet$1,829
+990Beazer Homes USA$1,822
+991New York Community Bancorp$1,820
+992Cadence Design Systems$1,816
+993Carpenter Technology$1,813
+994Marriott Vacations Worldwide$1,811
+995FTI Consulting$1,810
+996Nordson$1,809
+997Briggs & Stratton$1,809
+998Kaman$1,808
+999Overstock.com$1,800
+1000Regis$1,791
