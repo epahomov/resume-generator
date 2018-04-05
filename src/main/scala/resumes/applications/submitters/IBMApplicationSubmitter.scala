@@ -11,7 +11,7 @@ import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 
-import scala.util.{Failure, Success, Try}
+import scala.util.{Failure, Random, Success, Try}
 
 object IBMApplicationSubmitter {
 
@@ -124,6 +124,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
       driver.findElementById(s"radio-6629-N").click()
       driver.findElementById(s"custom_6630_33_fname_txt_0").sendKeys(application.person.name.firstName + " " + application.person.name.lastName)
       driver.findElementById(s"buildResume").click()
+      dropDown(Random.nextInt(6) + 1, "custom_6148_32_fname_slt_0_6148-button", driver)
       driver.findElementById(s"shownext").click()
       Thread.sleep(3000)
       driver.findElementById(s"checkbox-10885-Iagree").click()

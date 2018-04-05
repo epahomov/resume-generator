@@ -9,7 +9,7 @@ import resumes.emails.EmailServerWrapper
 import resumes.emails.EmailServerWrapper.Credentials
 import resumes.emails.MessageParser.Message
 import resumes.response.ResponseManager.Response
-import resumes.response.relevance.identifiers.IBMRelevanceIdentifier
+import resumes.response.relevance.identifiers.{IBMRelevanceIdentifier, SalesForceIdentifier}
 
 import scala.util.{Failure, Success}
 
@@ -33,7 +33,8 @@ class ResponseManager(applicationManager: ApplicationManager,
                      ) {
 
   private val companyToIdentifier = Map(
-    Companies.IBM.toString -> IBMRelevanceIdentifier
+    Companies.IBM.toString -> IBMRelevanceIdentifier,
+    Companies.SalesForce.toString -> SalesForceIdentifier
   )
 
   private val logger = LogManager.getLogger(this.getClass)

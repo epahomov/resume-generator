@@ -2,13 +2,18 @@ package resumes.run
 
 import resumes.applications.NumberOfApplicationsSelector
 import Instances._
-import resumes.applications.submitters.IBMApplicationSubmitter
+import resumes.applications.submitters.{IBMApplicationSubmitter, SalesForceApplicationSubmitter}
 
 object Submit {
   def main(args: Array[String]): Unit = {
     val numberOfApplicationsSelector = new NumberOfApplicationsSelector(companyManager)
-    val submitter = new IBMApplicationSubmitter(applicationManager, numberOfApplicationsSelector)
-    submitter.submitAllNecessaryApplicationsForToday()
+    val submitters = List(
+      new IBMApplicationSubmitter(applicationManager, numberOfApplicationsSelector),
+      new SalesForceApplicationSubmitter(applicationManager, numberOfApplicationsSelector)
+    )
+    submitters.foreach(submitter => {
+      submitter.submitAllNecessaryApplicationsForToday()
+    })
   }
 
 }
