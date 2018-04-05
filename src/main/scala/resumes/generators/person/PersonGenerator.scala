@@ -11,6 +11,8 @@ import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 import resumes.generators.name.NameGenerator
 import resumes.generators.name.NameGenerator.Name
 import resumes.generators.person.AddressGenerator.Address
+import resumes.generators.work.EmploymentGenerator.Employment
+import resumes.generators.work.InternshipGenerator
 
 import scala.util.Random
 
@@ -22,7 +24,8 @@ object PersonGenerator {
                     address: Address,
                     phoneNumber: String,
                     gender: Gender,
-                    origin: Origin
+                    origin: Origin,
+                    workExperience: List[Employment]
                    )
 
   def generatePerson(gender: Gender, origin: Origin, position: Position) = {
@@ -30,6 +33,7 @@ object PersonGenerator {
     val education = EducationGenerator.generateEducation(position)
     val address = AddressGenerator.generateAddress(education(0).university.city + ", " + education(0).university.state)
     val phoneNumber = PhoneNumberGenerator.generateRandomNumber()
+    val workExperience = InternshipGenerator.generateInternships(education, position.area)
     Person(
       id = UUID.randomUUID().toString,
       name = name,
@@ -37,7 +41,8 @@ object PersonGenerator {
       address = address,
       phoneNumber = phoneNumber,
       gender = gender,
-      origin = origin
+      origin = origin,
+      workExperience = workExperience
     )
   }
 
