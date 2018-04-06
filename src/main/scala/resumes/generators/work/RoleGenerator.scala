@@ -1,72 +1,54 @@
 package resumes.generators.work
 
 import resumes.company.PositionManager.Area.Area
-import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.{Area, ExperienceLevel}
-import resumes.generators.Utils
-
-import scala.util.Random
+import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
+import resumes.generators.Utils._
 
 object RoleGenerator {
 
-  object Role extends Enumeration {
-    type Role = Value
-    val Intern = Value("Intern")
-    val Software_developer = Value("Software developer")
-    val Software_engineer = Value("Software engineer")
-    val Engineering_intern = Value("Engineering intern")
-    val QA = Value("QA")
-    val QualityAssurance = Value("Quality assurance")
-    val Computer_Systems_Analyst = Value("Computer Systems Analyst")
-    val Computer_Systems_Administrator = Value("Computer_Systems_Administrator")
-    val DataEngineer = Value("Data Engineer")
-    val Database_Administrator = Value("Database Administrator")
-    val Web_Developer = Value("Web Developer")
-  }
+  private lazy val isLevelPrefix = trueFalseDistribution(1, 5)
 
-  val computerScienceFreshlyGraduatePositions = List(
-    Role.Software_developer,
-    Role.Software_engineer,
-    Role.Engineering_intern,
-    Role.QA,
-    Role.QualityAssurance,
-    Role.Computer_Systems_Analyst,
-    Role.DataEngineer,
-    Role.Computer_Systems_Administrator,
-    Role.Database_Administrator,
-    Role.Web_Developer
-  )
-
-  lazy val isJunior = {
-    val distribution = List(
-      (true, 5),
-      (false, 3)
-    )
-    Utils.getGeneratorFrequency(distribution)
-  }
+  private lazy val levelSpecificPosition = trueFalseDistribution(1, 5)
 
   def generateRole(area: Option[Area], experienceLevel: ExperienceLevel): String = {
-    experienceLevel match {
-      case ExperienceLevel.Freshly_Graduate => {
-        area match {
-          case Some(someArea) => {
-            val role =
-              someArea match {
-                case Area.Computer_Science => {
-                  computerScienceFreshlyGraduatePositions(
-                    Random.nextInt(computerScienceFreshlyGraduatePositions.size) - 1
-                  )
-                }
-              }
-            if (isJunior.sample()) {
-              "Junior " + role.toString
-            } else {
-              role.toString
-            }
-          }
-          case None => Role.Intern.toString
+    val fileName = levelSpecificPosition.sample() match {
+      case true => {
+        experienceLevel match {
+          case ExperienceLevel.Freshly_Graduate => "freshly_graduate.txt"
+          case ExperienceLevel.Beginner => "all.txt"
+          case ExperienceLevel.Middle => "all.txt"
+          case ExperienceLevel.Senior => "all.txt" // to do
         }
       }
+      case false => {
+        "all.txt"
+      }
+    }
+
+    val areaDirectory = area match {
+      case Some(someArea) => {
+        someArea match {
+          case Area.Computer_Science => "computer_science"
+          case Area.Hardware => "hardware"
+          case Area.Design => "design"
+          case Area.PR => "pr"
+          case Area.Finance => "finance"
+        }
+      }
+      case None => "default"
+    }
+    val path = s"roles/$areaDirectory/$fileName"
+    val role = generatorFromFile(path).sample()
+    if (isLevelPrefix.sample()) {
+      experienceLevel match {
+        case ExperienceLevel.Freshly_Graduate => "Junior " + role
+        case ExperienceLevel.Beginner => "Junior " + role
+        case ExperienceLevel.Middle => role
+        case ExperienceLevel.Senior => "Senior " + role
+      }
+    } else {
+      role
     }
   }
 

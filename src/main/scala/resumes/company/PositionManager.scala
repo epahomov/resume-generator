@@ -43,6 +43,9 @@ object PositionManager {
   object ExperienceLevel extends Enumeration {
     type ExperienceLevel = Value
     val Freshly_Graduate = Value("Freshly graduate")
+    val Beginner = Value("Beginner")
+    val Middle = Value("Middle")
+    val Senior = Value("Senior")
   }
 
 }
