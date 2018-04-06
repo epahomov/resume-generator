@@ -38,12 +38,11 @@ object SeleniumUtils {
       new Actions(driver)
         .moveToElement(dropDown)
         .click()
-        .pause(300)
+        .pause(700)
         .sendKeys(keys)
-        .pause(300)
+        .pause(700)
         .sendKeys(Keys.ENTER)
         .perform()
-
     })
     smallPause
   }
@@ -54,12 +53,12 @@ object SeleniumUtils {
       var action = new Actions(driver)
         .moveToElement(element)
         .click()
-        .pause(1000)
+        .pause(700)
 
       (0 to offset - 1).foreach(_ => {
         action = action.sendKeys(Keys.DOWN).pause(200)
       })
-      action.sendKeys(Keys.ENTER).pause(1000).perform()
+      action.sendKeys(Keys.ENTER).pause(700).perform()
     })
     smallPause
   }
