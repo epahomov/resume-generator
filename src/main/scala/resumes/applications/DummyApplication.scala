@@ -24,15 +24,15 @@ object DummyApplication {
     val masters = Education(startYear = 2016, endYear = 2018, university = University("Stanford", "Palo Alto", "CA"), degree = Degree.Master.toString)
     val education = List(masters, bachelor, associate)
     val workExperience = List(Employment(
-      start = new Date(2013, 5, 1),
-      end = new Date(2013, 5, 1),
+      start = new Date(2013 - 1900, 5, 1),
+      end = new Date(2013 - 1900, 5, 1),
       company = "Amazon",
       description = "",
       role = "Intern"
     ),
       Employment(
-        start = new Date(2014, 5, 1),
-        end = new Date(2014, 5, 1),
+        start = new Date(2014 - 1900, 5, 1),
+        end = new Date(2014 - 1900, 5, 1),
         company = "Apple",
         description = "",
         role = "Intern"

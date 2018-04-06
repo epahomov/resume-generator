@@ -1,7 +1,7 @@
 package resumes.generators.work
 
 import org.junit.Test
-import resumes.company.PositionManager.{Area, Position}
+import resumes.company.PositionManager.Position
 import resumes.generators.GeneratorsTest
 import resumes.generators.education.EducationGenerator
 import resumes.generators.work.InternshipGenerator.generateInternships

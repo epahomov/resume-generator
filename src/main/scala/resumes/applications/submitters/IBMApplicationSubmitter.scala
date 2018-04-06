@@ -1,29 +1,23 @@
 package resumes.applications.submitters
 
 import org.apache.commons.lang3.RandomStringUtils
-import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.interactions.Actions
-import org.openqa.selenium.{By, Keys}
-import resumes.MongoDB
+import org.openqa.selenium.remote.RemoteWebDriver
+import org.openqa.selenium.{By, JavascriptExecutor, Keys}
 import resumes.applications.ApplicationManager.Application
-import resumes.applications.{ApplicationManager, DummyApplication, NumberOfApplicationsSelector}
+import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
 import resumes.company.CompanyManager.Companies
-import resumes.company.PositionManager
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
 
-import scala.util.{Failure, Random, Success, Try}
+import scala.util.Random
 
-object IBMApplicationSubmitter {
+object IBMApplicationSubmitter extends SubmitterHelper {
+
+  val submitter = new IBMApplicationSubmitter(null, null)
 
   def main(args: Array[String]): Unit = {
-    val submitter = new IBMApplicationSubmitter(null, null)
-
-    val positionManager = new PositionManager(MongoDB.database)
-
-    (0 to 15).foreach(_ => {
-      val position = positionManager.getRandomPosition(Companies.IBM)
-      submitter.submit(DummyApplication.veryPlainApplication("ibm", position.url))
-    })
+    //almostSubmitOneDummyApplication
+    almostSubmitNotSoDummyApplication
   }
 
 }
@@ -34,11 +28,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
 
   val company = Companies.IBM
 
-  def submit(application: Application): Try[Unit] = {
-    System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")
-    val driver = new FirefoxDriver()
-    try {
-      driver.manage().window().maximize()
+  def submitImpl(driver: RemoteWebDriver, application: Application, reallySubmit: Boolean = false): Unit = {
       val url = s"https://careers.ibm.com/ShowJob/Id/${application.positionUrl}"
       logger.info(s"Applying for position - ${url}")
       driver.get(url)
@@ -97,6 +87,20 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
         driver.findElementById(s"edumajor0").sendKeys(education.major.getOrElse("Computer science"))
         Thread.sleep(3000)
       })
+      var firstExp = true
+      application.person.workExperience.map(workExperience => {
+        driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", driver.findElementById("addExp"))
+        driver.findElementById("addExp").click()
+        driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", driver.findElementById("empname0"))
+        driver.findElementById("empname0").sendKeys(workExperience.company)
+        driver.findElementById("jobtitle0").sendKeys(workExperience.role)
+        driver.findElementById("startyear0").sendKeys((workExperience.start.getYear + 1900).toString)
+        driver.findElementById("endyear0").sendKeys((workExperience.end.getYear + 1900).toString)
+        if (firstExp) {
+          firstExp = false
+          driver.findElementById("chkexprecent0").click()
+        }
+      })
 
       Thread.sleep(1000)
       driver.findElementById(s"shownext").click()
@@ -131,21 +135,13 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
       Thread.sleep(4000)
       driver.findElementById(s"shownext").click()
       Thread.sleep(2000)
-      driver.findElementById(s"save").click()
+      if (reallySubmit) {
+        driver.findElementById(s"save").click()
+      }
       Thread.sleep(10000)
-      Success()
-    } catch {
-      case e: Throwable => {
-        Failure(e)
-      }
-    } finally {
-      Try {
-        driver.close()
-      }
-    }
   }
 
-  private def dropDown(offset: Int, parameter: String, driver: FirefoxDriver): Unit = {
+  private def dropDown(offset: Int, parameter: String, driver: RemoteWebDriver): Unit = {
     val element = driver.findElementById(parameter)
     import org.openqa.selenium.JavascriptExecutor
     driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
@@ -161,7 +157,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     Thread.sleep(2000)
   }
 
-  private def dropDown(value: String, parameter: String, driver: FirefoxDriver) = {
+  private def dropDown(value: String, parameter: String, driver: RemoteWebDriver) = {
     val element = driver.findElementById(parameter)
     import org.openqa.selenium.JavascriptExecutor
     driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
@@ -175,7 +171,9 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     new Actions(driver)
       .moveToElement(element)
       .sendKeys(Keys.ENTER)
+      .pause(300)
       .sendKeys(Keys.DOWN)
+      .pause(300)
       .sendKeys(Keys.ENTER)
       .perform()
     Thread.sleep(2000)
