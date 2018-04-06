@@ -16,8 +16,8 @@ object IBMApplicationSubmitter extends SubmitterHelper {
   val submitter = new IBMApplicationSubmitter(null, null)
 
   def main(args: Array[String]): Unit = {
-    //almostSubmitOneDummyApplication
-    almostSubmitNotSoDummyApplication
+    almostSubmitOneDummyApplication
+    //almostSubmitNotSoDummyApplication
   }
 
 }
@@ -75,107 +75,112 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
       driver.findElementById("profile_13_0_cellphone_txt_0").sendKeys(application.person.phoneNumber)
       driver.findElementById("profile_4_0_email_eml_0").sendKeys(application.email)
 
-      var first = true
-      application.person.education.map(education => {
-        driver.findElementById("addEdu").click()
-        if (first) {
-          first = false
-          driver.findElementById("chkrecent0").click()
-        }
-        dropDown(education.university.name, s"education_0_0_schoolname_slt_0-input", driver)
-        dropDown(education.degree, s"education_0_0_degree_slt_0-input", driver)
-        driver.findElementById(s"edumajor0").sendKeys(education.major.getOrElse("Computer science"))
-        Thread.sleep(3000)
-      })
-      var firstExp = true
-      application.person.workExperience.map(workExperience => {
-        driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", driver.findElementById("addExp"))
-        driver.findElementById("addExp").click()
-        driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", driver.findElementById("empname0"))
-        driver.findElementById("empname0").sendKeys(workExperience.company)
-        driver.findElementById("jobtitle0").sendKeys(workExperience.role)
-        driver.findElementById("startyear0").sendKeys((workExperience.start.getYear + 1900).toString)
-        driver.findElementById("endyear0").sendKeys((workExperience.end.getYear + 1900).toString)
-        if (firstExp) {
-          firstExp = false
-          driver.findElementById("chkexprecent0").click()
-        }
-      })
-
-      Thread.sleep(1000)
-      driver.findElementById(s"shownext").click()
-      Thread.sleep(5000)
-      dropDown("United Stat", s"custom_6140_32_fname_slt_0_6140-input", driver)
-      Thread.sleep(1000)
-      driver.findElementById(s"radio-7384-Yes").click()
-      driver.findElementById(s"radio-7385-No").click()
-      if (application.person.gender.equals(Gender.Male)) {
-        driver.findElementById(s"radio-6306-OptFemale").click()
-      } else {
-        driver.findElementById(s"radio-6306-OptMale").click()
+    var first = true
+    application.person.education.map(education => {
+      driver.findElementById("addEdu").click()
+      if (first) {
+        first = false
+        driver.findElementById("chkrecent0").click()
       }
-      dropDown("Non", s"custom_6307_33_fname_slt_0_6307-button_text", driver)
-
-
-      if (application.person.origin.equals(Origin.US)) {
-        dropDown(7, "custom_6561_33_fname_slt_0_6561-button_text", driver)
-      } else {
-        dropDown(2, "custom_6561_33_fname_slt_0_6561-button_text", driver)
-      }
-
-      dropDown(1, "custom_6582_33_fname_slt_0_6582-button_text", driver)
-      dropDown(1, "custom_6554_33_fname_slt_0_6554-button_text", driver)
-      driver.findElementById(s"radio-6629-N").click()
-      driver.findElementById(s"custom_6630_33_fname_txt_0").sendKeys(application.person.name.firstName + " " + application.person.name.lastName)
-      driver.findElementById(s"buildResume").click()
-      dropDown(Random.nextInt(6) + 1, "custom_6148_32_fname_slt_0_6148-button", driver)
-      driver.findElementById(s"shownext").click()
+      dropDown(education.university.name, s"education_0_0_schoolname_slt_0-input", driver)
+      dropDown(education.degree, s"education_0_0_degree_slt_0-input", driver)
+      driver.findElementById(s"edumajor0").sendKeys(education.major.getOrElse("Computer science"))
       Thread.sleep(3000)
-      driver.findElementById(s"checkbox-10885-Iagree").click()
-      Thread.sleep(4000)
-      driver.findElementById(s"shownext").click()
-      Thread.sleep(2000)
-      if (reallySubmit) {
-        driver.findElementById(s"save").click()
+    })
+    var firstExp = true
+    application.person.workExperience.map(workExperience => {
+      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", driver.findElementById("addExp"))
+      driver.findElementById("addExp").click()
+      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", driver.findElementById("empname0"))
+      driver.findElementById("empname0").sendKeys(workExperience.company)
+      driver.findElementById("jobtitle0").sendKeys(workExperience.role)
+      driver.findElementById("startyear0").sendKeys((workExperience.start.getYear + 1900).toString)
+      driver.findElementById("endyear0").sendKeys((workExperience.end.getYear + 1900).toString)
+      if (firstExp) {
+        firstExp = false
+        driver.findElementById("chkexprecent0").click()
       }
-      Thread.sleep(10000)
+    })
+
+    Thread.sleep(1000)
+    driver.findElementById(s"shownext").click()
+    Thread.sleep(5000)
+    dropDown("United Stat", s"custom_6140_32_fname_slt_0_6140-input", driver)
+    Thread.sleep(1000)
+    driver.findElementById(s"radio-7384-Yes").click()
+    driver.findElementById(s"radio-7385-No").click()
+    if (application.person.gender.equals(Gender.Male)) {
+      driver.findElementById(s"radio-6306-OptFemale").click()
+    } else {
+      driver.findElementById(s"radio-6306-OptMale").click()
+    }
+    dropDown("Non", s"custom_6307_33_fname_slt_0_6307-button_text", driver)
+
+
+    if (application.person.origin.equals(Origin.US)) {
+      dropDown(7, "custom_6561_33_fname_slt_0_6561-button_text", driver)
+    } else {
+      dropDown(2, "custom_6561_33_fname_slt_0_6561-button_text", driver)
+    }
+
+    dropDown(1, "custom_6582_33_fname_slt_0_6582-button_text", driver)
+    dropDown(1, "custom_6554_33_fname_slt_0_6554-button_text", driver)
+    driver.findElementById(s"radio-6629-N").click()
+    driver.findElementById(s"custom_6630_33_fname_txt_0").sendKeys(application.person.name.firstName + " " + application.person.name.lastName)
+    driver.findElementById(s"buildResume").click()
+    dropDown(Random.nextInt(6) + 1, "custom_6148_32_fname_slt_0_6148-button", driver)
+    driver.findElementById(s"shownext").click()
+    Thread.sleep(3000)
+    driver.findElementById(s"checkbox-10885-Iagree").click()
+    Thread.sleep(4000)
+    driver.findElementById(s"shownext").click()
+    Thread.sleep(2000)
+    if (reallySubmit) {
+      getScreenShot(driver, application.id)
+      driver.findElementById(s"save").click()
+    }
+    Thread.sleep(10000)
   }
 
   private def dropDown(offset: Int, parameter: String, driver: RemoteWebDriver): Unit = {
-    val element = driver.findElementById(parameter)
-    import org.openqa.selenium.JavascriptExecutor
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
-    Thread.sleep(500)
-    var action = new Actions(driver)
-      .moveToElement(element)
-      .click()
-    (0 to offset - 1).foreach(_ => {
-      action = action.sendKeys(Keys.DOWN)
+    runWithTimeout(() => {
+      val element = driver.findElementById(parameter)
+      import org.openqa.selenium.JavascriptExecutor
+      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
+      Thread.sleep(500)
+      var action = new Actions(driver)
+        .moveToElement(element)
+        .click()
+      (0 to offset - 1).foreach(_ => {
+        action = action.sendKeys(Keys.DOWN)
+      })
+      action.sendKeys(Keys.ENTER)
+        .perform()
     })
-    action.sendKeys(Keys.ENTER)
-      .perform()
     Thread.sleep(2000)
   }
 
   private def dropDown(value: String, parameter: String, driver: RemoteWebDriver) = {
-    val element = driver.findElementById(parameter)
-    import org.openqa.selenium.JavascriptExecutor
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
-    Thread.sleep(500)
-    new Actions(driver)
-      .moveToElement(element)
-      .click()
-      .sendKeys(value)
-      .perform()
-    Thread.sleep(1500)
-    new Actions(driver)
-      .moveToElement(element)
-      .sendKeys(Keys.ENTER)
-      .pause(300)
-      .sendKeys(Keys.DOWN)
-      .pause(300)
-      .sendKeys(Keys.ENTER)
-      .perform()
+    runWithTimeout(() => {
+      val element = driver.findElementById(parameter)
+      import org.openqa.selenium.JavascriptExecutor
+      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
+      Thread.sleep(500)
+      new Actions(driver)
+        .moveToElement(element)
+        .click()
+        .sendKeys(value)
+        .perform()
+      Thread.sleep(1500)
+      new Actions(driver)
+        .moveToElement(element)
+        .sendKeys(Keys.ENTER)
+        .pause(300)
+        .sendKeys(Keys.DOWN)
+        .pause(300)
+        .sendKeys(Keys.ENTER)
+        .perform()
+    })
     Thread.sleep(2000)
   }
 }

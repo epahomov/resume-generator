@@ -1,20 +1,34 @@
 package resumes.applications.submitters
 
+import java.io.File
+import java.util.concurrent.TimeUnit
+import javax.imageio.ImageIO
+
 import net.liftweb.json.Extraction.decompose
 import net.liftweb.json.JsonAST.prettyRender
+import org.apache.commons.io.FileUtils
 import org.apache.logging.log4j.LogManager
+import org.joda.time.DateTime
+import org.joda.time.format.DateTimeFormat
+import org.openqa.selenium.{By, Keys, OutputType, TakesScreenshot}
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.remote.RemoteWebDriver
 import resumes.MongoDB.formats
 import resumes.applications.ApplicationManager.Application
 import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
 import resumes.company.CompanyManager.Companies
+import ru.yandex.qatools.ashot.AShot
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies
 
+import scala.concurrent.{Await, Future}
+import scala.concurrent.duration.Duration
 import scala.util.{Failure, Success, Try}
 
 abstract class Submitter(applicationManager: ApplicationManager,
                          numberOfApplicationsSelector: NumberOfApplicationsSelector
                         ) {
+
+  protected val logger = LogManager.getLogger(this.getClass)
 
   def submit(application: Application, reallySubmit: Boolean = false): Try[Unit] = {
     System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")
@@ -37,11 +51,41 @@ abstract class Submitter(applicationManager: ApplicationManager,
     }
   }
 
+  def runWithTimeout[T](f: () => Unit) {
+    import scala.concurrent.ExecutionContext.Implicits.global
+    try {
+      Await.result(Future {
+        f()
+      }, Duration.apply(100, TimeUnit.SECONDS))
+    } catch {
+      case e: Exception => Await.result(Future {
+        f()
+      }, Duration.apply(200, TimeUnit.SECONDS))
+    }
+  }
+
+  def getScreenShot(driver: RemoteWebDriver, applicationId: String): Unit = {
+    try{
+
+      val rootFolder="/Users/macbook"
+      val screenshotsDirectory = new File(s"$rootFolder/screenshots")
+      if (!screenshotsDirectory.exists()) {
+        screenshotsDirectory.mkdir()
+      }
+      val today = DateTimeFormat.forPattern("MMddyyyy").print(new DateTime)
+      val screenShotFileName = s"$screenshotsDirectory/${applicationId}_$today.png"
+      val screenshot = new AShot()
+        .shootingStrategy(ShootingStrategies.viewportPasting(100))
+        .takeScreenshot(driver)
+      ImageIO.write(screenshot.getImage, "png", new File(screenShotFileName))
+    } catch {
+      case e: Exception => logger.error(s"Could not save screenshot for application - $applicationId",e)
+    }
+  }
+
   def submitImpl(driver: RemoteWebDriver, application: Application, reallySubmit: Boolean = false): Unit
 
   val company: Companies.Value
-
-  val logger = LogManager.getLogger(this.getClass)
 
   def submitAllNecessaryApplicationsForToday() = {
     val numberOfApplications = numberOfApplicationsSelector.getNumberOfApplications(company)
