@@ -8,7 +8,7 @@ import resumes.applications.ApplicationManager.Application
 import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
 import resumes.company.CompanyManager.Companies
 import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
-
+import SeleniumUtils._
 import scala.util.Random
 
 object IBMApplicationSubmitter extends SubmitterHelper {

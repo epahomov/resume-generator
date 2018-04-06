@@ -2,10 +2,10 @@ package resumes.applications.submitters
 
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
-import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.remote.RemoteWebDriver
-import org.openqa.selenium.{By, Keys, WebElement}
+import org.openqa.selenium.{By, JavascriptExecutor, WebElement}
 import resumes.applications.ApplicationManager.Application
+import resumes.applications.submitters.SeleniumUtils._
 import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
 import resumes.company.CompanyManager.Companies
 import resumes.generators.name.FirstNameGenerator.Origin
@@ -33,20 +33,20 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     val url = application.positionUrl
     logger.info(s"Applying for position - ${url}")
     driver.get(url)
-    Thread.sleep(5000)
+    bigPause
     driver.findElementById("wd-DropDownCommandButton-commandButton.siteLabels['POSTING.Apply_Button']").click()
-    Thread.sleep(5000)
+    bigPause
     driver.findElementByClassName("WPIU").click()
-    Thread.sleep(5000)
+    bigPause
     driver.findElementByClassName("WJ2L").findElement(By.tagName("input")).sendKeys(application.email)
-    Thread.sleep(1000)
+    smallPause
     driver.findElementsByClassName("WJ2L").get(1).findElement(By.tagName("input")).sendKeys(application.passwordToAccount)
-    Thread.sleep(5000)
+    smallPause
     driver.findElementsByClassName("WJ2L").get(2).findElement(By.tagName("input")).sendKeys(application.passwordToAccount)
+    smallPause
     driver.findElementByClassName("WP-S").click()
-    Thread.sleep(5000)
-    driver.findElementByClassName("WHJI").click()
-    Thread.sleep(5000)
+    bigPause
+    nextPage(driver)
     driver.findElementById("textInput.nameComponent--uid43-input").sendKeys(application.person.name.firstName)
     driver.findElementById("textInput.nameComponent--uid44-input").sendKeys(application.person.name.lastName)
     driver.findElementById("textInput.addressComponentsDeferred[i]--uid46-input")
@@ -61,179 +61,91 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     val element = driver.findElementById("dropDownSelectList.sources-input--uid54-input")
     val source = getSource()
     logger.info(s"Source - $source")
-    import org.openqa.selenium.JavascriptExecutor
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
-    new Actions(driver)
-      .moveToElement(element)
-      .click()
-      .pause(1000)
-      .sendKeys(source)
-      .pause(1000)
-      .sendKeys(Keys.ENTER)
-      .perform()
+    dropDown(driver, element, source)
 
-    driver.findElementByClassName("WHJI").findElements(By.tagName("div")).get(1).click()
-    Thread.sleep(10000)
+    nextPage(driver)
 
     var index = 0
     application.person.education.foreach(education => {
-      Thread.sleep(5000)
-      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", driver.findElementsByCssSelector("[title=Add]").get(1))
-      driver.asInstanceOf[JavascriptExecutor].executeScript("return arguments[0].parentNode;", driver.findElementsByCssSelector("[title=Add]").get(1)).asInstanceOf[WebElement].click()
-      Thread.sleep(5000)
+      def addEducation(): WebElement = {
+        driver.findElementsByCssSelector("[title=Add]").get(1)
+      }
+      scrollTo(driver, addEducation())
+      getParentNode(driver, addEducation()).click()
+      averagePause
       driver.findElements(By.cssSelector("""[id^=textInput\.schoolName]""")).get(2 + index * 3).sendKeys(education.university.name)
-      val degree = driver.findElements(By.cssSelector("""[id^=dropDownSelectList\.schoolDegrees""")).get(1 + index * 2)
-      val key = education.degree.head
-      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", degree)
-      new Actions(driver)
-        .moveToElement(degree)
-        .click()
-        .pause(200)
-        .sendKeys(key + "")
-        .pause(200)
-        .sendKeys(Keys.ENTER)
-        .perform()
-      val major = driver.findElementsByClassName("WGKX").get(0 + index)
-      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", major)
-      Thread.sleep(1000)
-      new Actions(driver)
-        .moveToElement(major)
-        .click()
-        .pause(200)
-        .sendKeys(education.major.get)
-        .pause(200)
-        .sendKeys(Keys.ENTER)
-        .perform()
+      val degreeElement = driver.findElements(By.cssSelector("""[id^=dropDownSelectList\.schoolDegrees""")).get(1 + index * 2)
+      val firstLetterOfDegree = education.degree.head
+      dropDown(driver, degreeElement, firstLetterOfDegree.toString)
+      val majorElement = driver.findElementsByClassName("WGKX").get(0 + index)
+      dropDown(driver, majorElement, education.major.get)
 
       driver.findElements(By.cssSelector("""[id^=textInput\.schoolGpa""")).get(2 + index * 3).sendKeys(education.GPA.get.toString)
       driver.findElements(By.cssSelector("""[id^=dateInput\.educationStartDate""")).get(2 + index * 3).sendKeys(education.startYear.toString)
       driver.findElements(By.cssSelector("""[id^=dateInput\.educationEndDate""")).get(2 + index * 3).sendKeys(education.endYear.toString)
       index += 1
+      smallPause
     })
 
-    Thread.sleep(5000)
-    driver.findElementsByCssSelector("[title=Next]").get(1).click()
-    Thread.sleep(5000)
+    nextPage(driver)
 
     var drops = driver.findElements(By.cssSelector("""[id^=dropDownSelectList"""))
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", drops.get(1))
-    Thread.sleep(5000)
-    new Actions(driver)
-      .moveToElement(drops.get(1))
-      .click()
-      .pause(200)
-      .sendKeys("y")
-      .pause(200)
-      .sendKeys(Keys.ENTER)
-      .perform()
+    dropDown(driver, drops.get(1), "y")
+    dropDown(driver, drops.get(3), "y")
+    dropDown(driver, drops.get(5), "n")
+    dropDown(driver, drops.get(7), "n")
 
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", drops.get(3))
-    new Actions(driver)
-      .moveToElement(drops.get(3))
-      .click()
-      .pause(200)
-      .sendKeys("y")
-      .pause(200)
-      .sendKeys(Keys.ENTER)
-      .perform()
-
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", drops.get(5))
-    new Actions(driver)
-      .moveToElement(drops.get(5))
-      .click()
-      .pause(200)
-      .sendKeys("n")
-      .pause(200)
-      .sendKeys(Keys.ENTER)
-      .perform()
-
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", drops.get(7))
-    new Actions(driver)
-      .moveToElement(drops.get(7))
-      .click()
-      .pause(200)
-      .sendKeys("n")
-      .pause(200)
-      .sendKeys(Keys.ENTER)
-      .perform()
-
-    Thread.sleep(5000)
-
-    driver.findElementsByCssSelector("[title=Next]").get(1).click()
-
-    Thread.sleep(5000)
+    nextPage(driver)
 
     drops = driver.findElements(By.cssSelector("""[id^=dropDownSelectList"""))
 
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", drops.get(1))
-    new Actions(driver)
-      .moveToElement(drops.get(1))
-      .click()
-      .pause(200)
-      .sendKeys(application.person.gender.toString.head + "")
-      .pause(200)
-      .sendKeys(Keys.ENTER)
-      .perform()
+    dropDown(driver, drops.get(1), application.person.gender.toString.head.toString)
 
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", drops.get(3))
-    new Actions(driver)
-      .moveToElement(drops.get(3))
-      .click()
-      .pause(200)
-      .sendKeys(Keys.DOWN)
-      .sendKeys(Keys.DOWN)
-      .sendKeys(Keys.DOWN)
-      .sendKeys(Keys.ENTER)
-      .perform()
+    dropDownOffset(driver, drops.get(3), 3)
 
-    Thread.sleep(1000)
+    smallPause
     val offset = application.person.origin match {
       case Origin.US => 8
       case Origin.India => 2
     }
-
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", drops.get(5))
-    var enthicity = new Actions(driver)
-      .moveToElement(drops.get(5))
-      .click()
-      .pause(1000)
-
-    (0 to offset - 1).foreach(_ => {
-      enthicity = enthicity.sendKeys(Keys.DOWN).pause(200)
-    })
-    enthicity.sendKeys(Keys.ENTER).pause(1000).perform()
+    dropDownOffset(driver, drops.get(5), offset)
 
     val checkbox = driver.findElements(By.cssSelector("""[id^=checkBoxInput""")).get(0)
-    driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", checkbox)
+    scrollTo(driver, checkbox)
     checkbox.click()
 
-    Thread.sleep(5000)
-
-    driver.findElementsByCssSelector("[title=Next]").get(1).click()
-
-    Thread.sleep(5000)
+    nextPage(driver)
 
     driver.findElements(By.cssSelector("""[id^=textInput\.nameEnglish""")).get(2).sendKeys(application.person.name.firstName + " " + application.person.name.lastName)
     val today = DateTimeFormat.forPattern("MMddyyyy").print(new DateTime)
     logger.info("Today is = " + today)
     driver.findElements(By.cssSelector("""[id^=dateInput\.todaysDateEnglish""")).get(2).sendKeys(today)
-    Thread.sleep(5000)
+    averagePause
 
     driver.findElementsByClassName("WJGF").get(1).click()
-    Thread.sleep(5000)
 
-    driver.findElementsByCssSelector("[title=Next]").get(1).click()
+    nextPage(driver)
 
-    Thread.sleep(5000)
     if (reallySubmit) {
+      getScreenShot(driver, application.id)
       driver.findElementsByCssSelector("[title=Submit]").get(1).click()
     }
-    Thread.sleep(5000)
+    bigPause
   }
+
+
+
+
+  private def nextPage(driver: RemoteWebDriver) = {
+    smallPause
+    driver.findElementsByCssSelector("[title=Next]").get(1).click()
+    bigPause
+  }
+
 
   def getSource() = {
     val options = List("s", "t", "u", "v", "x", "j", "l", "i")
-    options(Random.nextInt(options.size - 1))
+    options(Random.nextInt(options.size) - 1)
   }
 
 }
