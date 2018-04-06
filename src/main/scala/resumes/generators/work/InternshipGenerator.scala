@@ -12,24 +12,12 @@ import scala.util.Random
 
 object InternshipGenerator {
 
-  lazy val hadInternship = {
+  private lazy val hadInternship = {
     val distribution = List(
       (true, 1),
       (false, 4)
     )
     Utils.getGeneratorFrequency(distribution)
-  }
-
-  def main(args: Array[String]): Unit = {
-    val position = new Position(company = null, url = null, area = Some(Area.Computer_Science))
-    var education = EducationGenerator.generateEducation(position)
-    while (education.size < 3) {
-      education = EducationGenerator.generateEducation(position)
-    }
-
-    (0 to 10).foreach(_ => {
-      println(generateInternships(education, Some(Area.Computer_Science)))
-    })
   }
 
   def generateInternships(educations: List[Education],

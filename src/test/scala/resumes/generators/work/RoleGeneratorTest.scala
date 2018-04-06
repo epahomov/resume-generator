@@ -1,13 +1,10 @@
 package resumes.generators.work
 
 import org.junit.Test
-import org.scalatest.junit.JUnitSuite
-import resumes.company.PositionManager.Area.Area
-import resumes.company.PositionManager.{Area, ExperienceLevel}
-import resumes.generators.Utils
-import resumes.generators.Utils.trueFalseDistribution
+import resumes.company.PositionManager.ExperienceLevel
+import resumes.generators.{GeneratorsTest, Utils}
 
-class RoleGeneratorTest extends JUnitSuite {
+class RoleGeneratorTest extends GeneratorsTest {
 
   lazy val experienceLevelGenerator = {
     val data = ExperienceLevel
@@ -17,22 +14,6 @@ class RoleGeneratorTest extends JUnitSuite {
     Utils.getGeneratorFrequency(data)
   }
 
-  lazy val areaGenerator = {
-    val data = Area
-      .values
-      .map(area => (area, 1))
-      .toList
-    Utils.getGeneratorFrequency(data)
-  }
-
-  lazy val areaDefined = trueFalseDistribution(1, 1)
-
-  def getArea(): Option[Area] = {
-    areaDefined.sample() match {
-      case true => Some(areaGenerator.sample())
-      case false => None
-    }
-  }
 
   @Test
   def testGenerateRole(): Unit = {
