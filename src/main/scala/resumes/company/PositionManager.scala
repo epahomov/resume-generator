@@ -9,10 +9,10 @@ import net.liftweb.json.parse
 import resumes.MongoDB
 import resumes.MongoDB.formats
 import resumes.company.CompanyManager.Companies
-import resumes.company.CompanyManager.Companies.Degree
 import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.Position
+import resumes.generators.education.Enums.Degree.Degree
 import resumes.generators.education.Enums.Major
 
 import scala.collection.JavaConverters._

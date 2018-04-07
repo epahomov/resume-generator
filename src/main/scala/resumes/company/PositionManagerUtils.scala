@@ -1,8 +1,9 @@
 package resumes.company
 
 import resumes.MongoDB
-import resumes.company.CompanyManager.{Companies, Company}
+import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager.{Area, ExperienceLevel, Position}
+import resumes.generators.education.Enums.Degree
 
 import scala.io.Source
 
@@ -26,6 +27,15 @@ object PositionManagerUtils {
     val company = Companies.SalesForce.toString
     val path = "positions"
     val manager = new PositionManager(MongoDB.database)
-    uploadPositions(company, path, manager)
+    val position = Position(
+      company = Companies.Amazon.toString,
+      url = "560708",
+      requiredMajor = None,
+      area = Some(Area.Computer_Science),
+      experienceLevel = Some(ExperienceLevel.Freshly_Graduate),
+      minimumDegreeNecessary = Some(Degree.Master)
+    )
+    manager.uploadPositions(List(position))
+    //uploadPositions(company, path, manager)
   }
 }
