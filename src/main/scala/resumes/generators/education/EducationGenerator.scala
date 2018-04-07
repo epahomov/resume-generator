@@ -53,7 +53,7 @@ object EducationGenerator {
   def generateEducation(position: Position): List[Education] = {
     var currentYear = Calendar.getInstance().get(Calendar.YEAR)
     val education = new ListBuffer[Education]
-    val highestDegreeEarned = highestDegreeGenerator.sample()
+    val highestDegreeEarned = position.minimumDegreeNecessary.getOrElse(highestDegreeGenerator.sample())
     val requiredMajor = position.requiredMajor.getOrElse(getRandomMajorByArea(position.area.get))
     val masterUniversity = if (highestDegreeEarned.equals(Master)) {
       val university = UniversityGenerator.generateRandomUniversity()

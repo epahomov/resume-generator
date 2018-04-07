@@ -9,6 +9,7 @@ import net.liftweb.json.parse
 import resumes.MongoDB
 import resumes.MongoDB.formats
 import resumes.company.CompanyManager.Companies
+import resumes.company.CompanyManager.Companies.Degree
 import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.Position
@@ -28,7 +29,8 @@ object PositionManager {
                        failedAttemptsToApply: Int = 0,
                        requiredMajor: Option[Major] = None,
                        area: Option[Area] = None,
-                       experienceLevel: Option[ExperienceLevel] = None
+                       experienceLevel: Option[ExperienceLevel] = None,
+                       minimumDegreeNecessary: Option[Degree] = None
                      )
 
   object Area extends Enumeration {
