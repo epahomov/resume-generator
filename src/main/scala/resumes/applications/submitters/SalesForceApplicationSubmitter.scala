@@ -9,6 +9,7 @@ import resumes.applications.submitters.SeleniumUtils._
 import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
 import resumes.company.CompanyManager.Companies
 import resumes.generators.name.FirstNameGenerator.Origin
+import resumes.generators.work.EmploymentGenerator.Employment
 
 import scala.util.Random
 
@@ -66,12 +67,13 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     nextPage(driver)
 
     var index = 0
+    def add(index: Int): WebElement = {
+      driver.findElementsByCssSelector("[title=Add]").get(index)
+    }
     application.person.education.foreach(education => {
-      def addEducation(): WebElement = {
-        driver.findElementsByCssSelector("[title=Add]").get(1)
-      }
-      scrollTo(driver, addEducation())
-      getParentNode(driver, addEducation()).click()
+
+      scrollTo(driver, add(1))
+      getParentNode(driver, add(1)).click()
       averagePause
       driver.findElements(By.cssSelector("""[id^=textInput\.schoolName]""")).get(2 + index * 3).sendKeys(education.university.name)
       val degreeElement = driver.findElements(By.cssSelector("""[id^=dropDownSelectList\.schoolDegrees""")).get(1 + index * 2)
@@ -85,6 +87,18 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
       driver.findElements(By.cssSelector("""[id^=dateInput\.educationEndDate""")).get(2 + index * 3).sendKeys(education.endYear.toString)
       index += 1
       smallPause
+    })
+
+    index = 0
+    application.person.workExperience.foreach(employment => {
+      scrollTo(driver, add(0))
+      getParentNode(driver, add(0)).click()
+      averagePause
+      driver.findElements(By.cssSelector("""[id^=textInput\.jobHistoryTitle]""")).get(2 + index * 3).sendKeys(employment.role)
+      driver.findElements(By.cssSelector("""[id^=textInput\.jobHistoryCompany]""")).get(2 + index * 3).sendKeys(employment.company)
+      driver.findElements(By.cssSelector("""[id^=dateInput\.jobStartDate]""")).get(2 + index * 3).sendKeys(DateTimeFormat.forPattern("MMyyyy").print(new DateTime(employment.start)))
+      driver.findElements(By.cssSelector("""[id^=dateInput\.jobEndDate]""")).get(2 + index * 3).sendKeys(DateTimeFormat.forPattern("MMyyyy").print(new DateTime(employment.end)))
+      index += 1
     })
 
     nextPage(driver)
