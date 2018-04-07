@@ -2,6 +2,7 @@ package resumes.generators
 
 import org.apache.commons.math3.distribution.EnumeratedDistribution
 import org.apache.commons.math3.util.Pair
+import resumes.company.PositionManager.Area
 
 import scala.collection.JavaConverters._
 import scala.io.Source
@@ -50,6 +51,17 @@ object Utils {
       )
       Utils.getGeneratorFrequency(distribution)
     }
+  }
+
+
+  val areaToFileSystemName = {
+    Map(
+      Area.Computer_Science -> "computer_science",
+      Area.Hardware -> "hardware",
+      Area.Design -> "design",
+      Area.PR -> "pr",
+      Area.Finance -> "finance"
+    )
   }
 
 }

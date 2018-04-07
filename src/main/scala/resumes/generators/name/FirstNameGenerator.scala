@@ -27,7 +27,7 @@ object FirstNameGenerator {
   lazy val (usMaleNamesGenerator, usFemaleNamesGenerator) = {
 
     val all = Source
-      .fromResource("us_first_names.txt")
+      .fromResource("generators/names/us_first_names.txt")
       .getLines()
       .toList
       .tail
@@ -59,7 +59,7 @@ object FirstNameGenerator {
   lazy val (indiaMaleNamesGenerator, indiaFemaleNamesGenerator) = {
 
     val rawData = Source
-      .fromResource("india_first_names.txt")
+      .fromResource("generators/names/india_first_names.txt")
       .getLines()
       .toArray
 

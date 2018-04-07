@@ -12,7 +12,7 @@ import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.Position
-import resumes.generators.education.Enums.Major.Major
+import resumes.generators.education.Enums.Major
 
 import scala.collection.JavaConverters._
 import scala.util.Random

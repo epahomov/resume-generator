@@ -2,17 +2,16 @@ package resumes.generators.education
 
 import java.util.Calendar
 
-import resumes.generators.Utils
-import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.{Area, Position}
+import resumes.generators.Utils
+import resumes.generators.education.EducationUtils._
 import resumes.generators.education.Enums.Degree.{Associate, Bachelor, Master}
+import resumes.generators.education.Enums._
 import resumes.generators.education.UniversityGenerator.University
-import EducationUtils._
+
 import scala.collection.mutable.ListBuffer
-import Enums._
 
 object EducationGenerator {
-
 
 
   case class Education(
@@ -20,10 +19,9 @@ object EducationGenerator {
                         endYear: Int,
                         university: University,
                         degree: String,
-                        major: Option[String] = Some(Major.Computer_Science.toString),
+                        major: Option[String] = Some("Computer Science"),
                         GPA: Option[Double] = Some(gpaGenerator.sample())
                       )
-  import Enums.Major._
 
   lazy val gpaGenerator = {
     val distribution = List(
@@ -49,27 +47,14 @@ object EducationGenerator {
     Utils.getGeneratorFrequency(distribution)
   }
 
-  lazy val earnedAssociateDegreeSeparatelyGenerator = {
-    val distribution = List(
-      (true, 2),
-      (false, 5)
-    )
-    Utils.getGeneratorFrequency(distribution)
-  }
-
-  lazy val changedUniversityGenerator = {
-    val distribution = List(
-      (true, 1),
-      (false, 8)
-    )
-    Utils.getGeneratorFrequency(distribution)
-  }
+  lazy val earnedAssociateDegreeSeparatelyGenerator = Utils.trueFalseDistribution(forTrue = 2, forFalse = 5)
+  lazy val changedUniversityGenerator = Utils.trueFalseDistribution(forTrue = 1, forFalse = 8)
 
   def generateEducation(position: Position): List[Education] = {
     var currentYear = Calendar.getInstance().get(Calendar.YEAR)
     val education = new ListBuffer[Education]
     val highestDegreeEarned = highestDegreeGenerator.sample()
-    val requiredMajor = position.requiredMajor.getOrElse(getMajorByArea(position.area.get))
+    val requiredMajor = position.requiredMajor.getOrElse(getRandomMajorByArea(position.area.get))
     val masterUniversity = if (highestDegreeEarned.equals(Master)) {
       val university = UniversityGenerator.generateRandomUniversity()
       education += Education(
@@ -133,9 +118,9 @@ object EducationGenerator {
       requiredMajor
     } else {
       if (closeMajor.sample()) {
-        getMajorByArea(position.area.getOrElse(MajorToArea.get(requiredMajor).get))
+        getRandomMajorByArea(position.area.getOrElse(getAreaByMajor(requiredMajor)))
       } else {
-        totallyRandomMajorGenerator.sample()
+        getRandomMajor()
       }
     }
   }
@@ -154,16 +139,6 @@ object EducationGenerator {
       (false, 1)
     )
     Utils.getGeneratorFrequency(distribution)
-  }
-
-  def getMajorByArea(area: Area): Major = {
-    area match {
-      case Area.Computer_Science => computerScienceAreaMajorGenerator.sample()
-      case Area.Hardware => hardwareAreaMajorGenerator.sample()
-      case Area.Design => designAreaMajorGenerator.sample()
-      case Area.Finance => financeAreaMajorGenerator.sample()
-      case Area.PR => PRAreaMajorGenerator.sample()
-    }
   }
 
   def main(args: Array[String]): Unit = {

@@ -1,0 +1,29 @@
+Computer_Science,Computer_Science
+Information_Technology,Computer_Science
+Engineering,Hardware
+Mathematics,Computer_Science
+Computer_Engineering,Hardware
+Computer_Engineering_Technology,Hardware
+Graphic_Design,Design
+Interior_Design,Design
+Fashion_Design,Design
+Industrial_Design,Design
+Art,Design
+Fine_Arts,Design
+Media_Production,Design
+Landscape_Architecture,Design
+Finance,Finance
+Business,Finance
+Economics,Finance
+Accounting,Finance
+English_Language_and_Literature,PR
+Media_Production,PR
+Media_Studies,PR
+Political_Science,PR
+Psychology,PR
+Advertising,PR
+Journalism,PR
+Social_sciences_and_history,PR
+Communications,PR
+Computer Engineering and Technology,Hardware
+Business administration and management,Finance

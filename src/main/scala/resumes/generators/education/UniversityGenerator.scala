@@ -23,7 +23,7 @@ object UniversityGenerator {
   private lazy val generator = {
 
     val rawData = Source
-      .fromResource("us_universities.txt")
+      .fromResource("generators/education/us_universities.txt")
       .getLines()
       .toArray
 

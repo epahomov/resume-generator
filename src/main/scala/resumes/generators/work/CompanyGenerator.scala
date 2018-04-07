@@ -10,7 +10,7 @@ object CompanyGenerator {
 
   lazy val anyCompanyGenerator = {
     val data = Source
-      .fromResource("companies.txt")
+      .fromResource("generators/work/companies.txt")
       .getLines()
       .map(line => {
         val pair = line.split("\\$")
@@ -23,7 +23,7 @@ object CompanyGenerator {
 
   lazy val itCompaniesGenerator = {
     val data = Source
-      .fromResource("it_companies.txt")
+      .fromResource("generators/work/it_companies.txt")
       .getLines()
       .map(line => {
         val pair = line.split(" ")

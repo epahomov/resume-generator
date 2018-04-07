@@ -1,0 +1,4 @@
+Computer Science,10
+Information Technology,2
+Engineering,1
+Mathematics,1

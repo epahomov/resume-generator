@@ -10,7 +10,7 @@ object LastNameGenerator {
 
   lazy val indiaGenerator = {
     val data = Source
-      .fromResource("india_last_names.txt")
+      .fromResource("generators/names/india_last_names.txt")
       .getLines()
       .toList
       .map(_.split(" ").flatMap(_.split("\t")).filter(_.size > 0))
@@ -28,7 +28,7 @@ object LastNameGenerator {
     //  3.	  Williams	0.70%
     //  4.	  Jones	0.62%
     val data = Source
-      .fromResource("us_last_names.txt")
+      .fromResource("generators/names/us_last_names.txt")
       .getLines()
       .toList
       .map(_.split(" ")(2).split("\t"))

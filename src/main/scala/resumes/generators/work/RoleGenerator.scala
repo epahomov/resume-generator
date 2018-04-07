@@ -3,6 +3,7 @@ package resumes.generators.work
 import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.{Area, ExperienceLevel}
 import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
+import resumes.generators.Utils
 import resumes.generators.Utils._
 
 object RoleGenerator {
@@ -28,17 +29,11 @@ object RoleGenerator {
 
     val areaDirectory = area match {
       case Some(someArea) => {
-        someArea match {
-          case Area.Computer_Science => "computer_science"
-          case Area.Hardware => "hardware"
-          case Area.Design => "design"
-          case Area.PR => "pr"
-          case Area.Finance => "finance"
-        }
+        Utils.areaToFileSystemName.get(someArea).get
       }
       case None => "default"
     }
-    val path = s"roles/$areaDirectory/$fileName"
+    val path = s"generators/work/roles/$areaDirectory/$fileName"
     val role = generatorFromFile(path).sample()
     if (isLevelPrefix.sample()) {
       experienceLevel match {

@@ -23,7 +23,6 @@ object MongoDB {
   implicit val formats = net.liftweb.json.DefaultFormats +
     new EnumSerializer(Gender) +
     new EnumSerializer(Origin) +
-    new EnumSerializer(Major) +
     new EnumSerializer(ExperienceLevel) +
     new EnumSerializer(Area)
 

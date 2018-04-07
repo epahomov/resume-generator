@@ -3,7 +3,7 @@ package resumes.generators.work
 import org.junit.Test
 import resumes.company.PositionManager.Position
 import resumes.generators.GeneratorsTest
-import resumes.generators.education.EducationGenerator
+import resumes.generators.education.{EducationGenerator, EducationUtils}
 import resumes.generators.work.InternshipGenerator.generateInternships
 
 class InternshipGeneratorTest extends GeneratorsTest {
@@ -12,7 +12,7 @@ class InternshipGeneratorTest extends GeneratorsTest {
   def testGenerateInternships(): Unit = {
     var sum = 0
     (0 to 100).foreach(_ => {
-      val area = Some(areaGenerator.sample())
+      val area = Some(EducationUtils.randomAreaGenerator.sample())
       val position = new Position(company = null, url = null, area = area)
       val education = EducationGenerator.generateEducation(position)
       println(s"Area: $area, position: $position, education: $education")
