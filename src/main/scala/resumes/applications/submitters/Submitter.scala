@@ -1,7 +1,6 @@
 package resumes.applications.submitters
 
 import java.io.File
-import java.util.concurrent.TimeUnit
 import javax.imageio.ImageIO
 
 import net.liftweb.json.Extraction.decompose
@@ -18,8 +17,6 @@ import resumes.company.CompanyManager.Companies
 import ru.yandex.qatools.ashot.AShot
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies
 
-import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, Future}
 import scala.util.{Failure, Success, Try}
 
 abstract class Submitter(applicationManager: ApplicationManager,
@@ -29,7 +26,7 @@ abstract class Submitter(applicationManager: ApplicationManager,
   protected val logger = LogManager.getLogger(this.getClass)
 
   def submit(application: Application, reallySubmit: Boolean = false): Try[Unit] = {
-    System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver")
+    System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver_firefox")
     val driver = new FirefoxDriver()
     driver.manage().window().maximize()
     Thread.sleep(2000)

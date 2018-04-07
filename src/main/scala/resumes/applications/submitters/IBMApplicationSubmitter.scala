@@ -123,7 +123,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     } else {
       driver.findElementById(s"radio-6306-OptMale").click()
     }
-    dropDown("Non", s"custom_6307_33_fname_slt_0_6307-button_text", driver)
+    dropDown("N", s"custom_6307_33_fname_slt_0_6307-button_text", driver)
 
 
     if (application.person.origin.equals(Origin.US)) {
