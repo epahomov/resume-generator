@@ -14,7 +14,7 @@ object EmailServerWrapper {
 
   def main(args: Array[String]): Unit = {
     val emailServerWrapper = new EmailServerWrapper
-    val email = "josephaulam@yahoo.com"
+    val email = "vierrarobena@yahoo.com"
     val password = new EmailsManager(MongoDB.database).getPassword(email)
     val messages = emailServerWrapper.getAllMessages(Credentials(email, password)).get
     val jsons = resumes.Utils.toJsons(messages)

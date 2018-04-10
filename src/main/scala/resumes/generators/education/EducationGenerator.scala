@@ -50,8 +50,8 @@ object EducationGenerator {
   lazy val earnedAssociateDegreeSeparatelyGenerator = Utils.trueFalseDistribution(forTrue = 2, forFalse = 5)
   lazy val changedUniversityGenerator = Utils.trueFalseDistribution(forTrue = 1, forFalse = 8)
 
-  def generateEducation(position: Position): List[Education] = {
-    var currentYear = Calendar.getInstance().get(Calendar.YEAR)
+  def generateEducation(position: Position, yearEnd: Int = Calendar.getInstance().get(Calendar.YEAR)): List[Education] = {
+    var currentYear = yearEnd
     val education = new ListBuffer[Education]
     val highestDegreeEarned = position.minimumDegreeNecessary.getOrElse(highestDegreeGenerator.sample())
     val requiredMajor = position.requiredMajor.getOrElse(getRandomMajorByArea(position.area.get))

@@ -1,8 +1,7 @@
-Software developer
-Software engineer
-QA
-Quality assurance
-Computer Systems Analyst
-Data Engineer
-Database Administrator
-Web Developer
+Software developer,50
+Software engineer,50
+Quality assurance,30
+Computer Systems Analyst,10
+Data Engineer,10
+Database Administrator,5
+Web Developer,3

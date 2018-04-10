@@ -11,6 +11,7 @@ import resumes.emails.MessageParser.Message
 import resumes.response.ResponseManager.Response
 import resumes.response.relevance.identifiers.{IBMRelevanceIdentifier, SalesForceIdentifier}
 
+import scala.collection.parallel.ForkJoinTaskSupport
 import scala.util.{Failure, Success}
 
 object ResponseManager {
@@ -42,7 +43,8 @@ class ResponseManager(applicationManager: ApplicationManager,
   private val emailsManager = applicationManager.getEmailsManager
 
   def collectResponses() = {
-    val applications = applicationManager.getAllApplicationsWithUnknownResponse()
+    val applications = applicationManager.getAllApplicationsWithUnknownResponse().par
+    applications.tasksupport =  new ForkJoinTaskSupport(new scala.concurrent.forkjoin.ForkJoinPool(10))
     applications.foreach(application => {
       logger.info(s"Working with application ${application.id}")
       val emailPassword = emailsManager.getPassword(application.email)
@@ -59,7 +61,7 @@ class ResponseManager(applicationManager: ApplicationManager,
           val filteredMessages = retrievedMessages.filter(message => {
             companyToIdentifier.get(application.company).get.isRelevant(application, message)
           })
-          logger.info(s"Number of messages, which passed filter is ${filteredMessages.size}")
+          logger.info(s"${application.id} :Number of messages, which passed filter is ${filteredMessages.size}")
           val resultMessages = mergeMessagesLists(existingMessages, filteredMessages)
           val newResponse = application.response match {
             case None => {

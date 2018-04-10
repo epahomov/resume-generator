@@ -35,9 +35,10 @@ object CompanyGenerator {
   }
 
   type CompanyName = String
+  val areaMatch = Utils.trueFalseDistribution(forTrue = 3, forFalse = 1)
 
   def generateCompany(area: Option[Area]): CompanyName = {
-    if (area.isDefined && area.get.equals(Area.Computer_Science)) {
+    if (area.isDefined && area.get.equals(Area.Computer_Science) && areaMatch.sample()) {
       itCompaniesGenerator.sample()
     } else {
       anyCompanyGenerator.sample()
