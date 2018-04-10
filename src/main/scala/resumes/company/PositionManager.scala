@@ -82,6 +82,13 @@ class PositionManager(database: MongoDatabase) {
     }
   }
 
+  def getPositionByUrl(url: String): Option[Position] = {
+    positions.find(Filters.eq("url", url)).first() match {
+      case null => None
+      case doc => Some(parse(doc.toJson()).extract[Position])
+    }
+  }
+
 
   def failedToApplyToPosition(id: String) = {
     positions.updateOne(Filters.eq("id", id), inc("failedAttemptsToApply", 1))
