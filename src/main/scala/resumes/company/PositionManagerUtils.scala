@@ -16,8 +16,8 @@ object PositionManagerUtils {
       .map(line => {
         Position(company = company,
           url = line,
-          area = Some(Area.Computer_Science),
-          experienceLevel = Some(ExperienceLevel.Freshly_Graduate)
+          area = Some(Area.Computer_Science.toString),
+          experienceLevel = Some(ExperienceLevel.Freshly_Graduate.toString)
         )
       }).toList
     manager.uploadPositions(positions)
@@ -31,9 +31,9 @@ object PositionManagerUtils {
       company = Companies.Amazon.toString,
       url = "560708",
       requiredMajor = None,
-      area = Some(Area.Computer_Science),
-      experienceLevel = Some(ExperienceLevel.Freshly_Graduate),
-      minimumDegreeNecessary = Some(Degree.Master)
+      area = Some(Area.Computer_Science.toString),
+      experienceLevel = Some(ExperienceLevel.Freshly_Graduate.toString),
+      minimumDegreeNecessary = Some(Degree.Master.toString)
     )
     manager.uploadPositions(List(position))
     //uploadPositions(company, path, manager)

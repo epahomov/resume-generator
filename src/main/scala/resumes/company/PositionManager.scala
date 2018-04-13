@@ -9,11 +9,7 @@ import net.liftweb.json.parse
 import resumes.MongoDB
 import resumes.MongoDB.formats
 import resumes.company.CompanyManager.Companies
-import resumes.company.PositionManager.Area.Area
-import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.Position
-import resumes.generators.education.Enums.Degree.Degree
-import resumes.generators.education.Enums.Major
 
 import scala.collection.JavaConverters._
 import scala.util.Random
@@ -27,10 +23,10 @@ object PositionManager {
                        id: String = UUID.randomUUID().toString,
                        active: Boolean = true,
                        failedAttemptsToApply: Int = 0,
-                       requiredMajor: Option[Major] = None,
-                       area: Option[Area] = None,
-                       experienceLevel: Option[ExperienceLevel] = None,
-                       minimumDegreeNecessary: Option[Degree] = None
+                       requiredMajor: Option[String] = None,
+                       area: Option[String] = None,
+                       experienceLevel: Option[String] = None,
+                       minimumDegreeNecessary: Option[String] = None
                      )
 
   object Area extends Enumeration {

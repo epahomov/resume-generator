@@ -5,9 +5,7 @@ import com.mongodb.{MongoClient, MongoClientURI}
 import net.liftweb.json.ext.EnumSerializer
 import org.bson.Document
 import resumes.Utils._
-import resumes.company.PositionManager.{Area, ExperienceLevel}
-import resumes.generators.education.Enums.Major
-import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
+import resumes.generators.name.FirstNameGenerator.Gender
 
 import scala.collection.JavaConverters._
 
@@ -20,11 +18,7 @@ object MongoDB {
     }
   }
 
-  implicit val formats = net.liftweb.json.DefaultFormats +
-    new EnumSerializer(Gender) +
-    new EnumSerializer(Origin) +
-    new EnumSerializer(ExperienceLevel) +
-    new EnumSerializer(Area)
+  implicit val formats = net.liftweb.json.DefaultFormats + new EnumSerializer(Gender)
 
   def insertValueIntoCollection[T](value: T, mongoCollection: MongoCollection[Document]) = {
     insertIntoCollection(List(value), mongoCollection)

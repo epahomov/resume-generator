@@ -12,8 +12,8 @@ class PersonGeneratorTest extends JUnitSuite {
       val position = Position (
         company = null,
         url = null,
-        area = Some(Area.Computer_Science),
-        experienceLevel = Some(ExperienceLevel.Senior)
+        area = Some(Area.Computer_Science.toString),
+        experienceLevel = Some(ExperienceLevel.Senior.toString)
       )
       val person = PersonGenerator.generatePerson(position)
       println("--------------")

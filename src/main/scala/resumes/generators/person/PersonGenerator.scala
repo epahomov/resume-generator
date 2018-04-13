@@ -2,7 +2,7 @@ package resumes.generators.person
 
 import java.util.UUID
 
-import resumes.company.PositionManager.{ExperienceLevel, Position}
+import resumes.company.PositionManager.{Area, ExperienceLevel, Position}
 import resumes.generators.education.EducationGenerator
 import resumes.generators.education.EducationGenerator.Education
 import resumes.generators.name.FirstNameGenerator.Gender.Gender
@@ -29,15 +29,16 @@ object PersonGenerator {
                    )
 
   private def generatePerson(gender: Gender, origin: Origin, position: Position) = {
-    val experienceLevel = position.experienceLevel.getOrElse(ExperienceLevel.Freshly_Graduate)
+    val experienceLevel = position.experienceLevel.map(ExperienceLevel.withName(_)).getOrElse(ExperienceLevel.Freshly_Graduate)
     val graduationYear = EmploymentGenerator.getGraduationYear(experienceLevel)
     val name = NameGenerator.generateRandomName(gender, origin)
     val education = EducationGenerator.generateEducation(position, graduationYear)
     val address = AddressGenerator.generateAddress(education(0).university.city + ", " + education(0).university.state)
     val phoneNumber = PhoneNumberGenerator.generateRandomNumber()
-    var workExperience = InternshipGenerator.generateInternships(education, position.area)
+    val area = position.area.map(Area.withName(_))
+    var workExperience = InternshipGenerator.generateInternships(education, area)
     if (!experienceLevel.equals(ExperienceLevel.Freshly_Graduate)) {
-      workExperience = workExperience ++ EmploymentGenerator.generateEmployment(position.area.get, graduationYear)
+      workExperience = workExperience ++ EmploymentGenerator.generateEmployment(area.get, graduationYear)
     }
     Person(
       id = UUID.randomUUID().toString,

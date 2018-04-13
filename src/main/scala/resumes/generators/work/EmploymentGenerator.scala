@@ -18,7 +18,7 @@ object EmploymentGenerator {
                         description: String,
                         role: String,
                         current: Option[Boolean] = Some(false),
-                        experienceLevel: Option[ExperienceLevel] = None
+                        experienceLevel: Option[String] = None
                        )
 
   def getGraduationYear(experienceLevel: ExperienceLevel): Int = {
@@ -62,7 +62,7 @@ object EmploymentGenerator {
         description = description,
         role = role,
         current = Some(current),
-        experienceLevel = Some(experienceLevel)
+        experienceLevel = Some(experienceLevel.toString)
       )
       result += employment
       current = false

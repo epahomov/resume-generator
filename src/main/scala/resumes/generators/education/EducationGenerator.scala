@@ -54,7 +54,7 @@ object EducationGenerator {
     var currentYear = yearEnd
     val education = new ListBuffer[Education]
     val highestDegreeEarned = position.minimumDegreeNecessary.getOrElse(highestDegreeGenerator.sample())
-    val requiredMajor = position.requiredMajor.getOrElse(getRandomMajorByArea(position.area.get))
+    val requiredMajor = position.requiredMajor.getOrElse(getRandomMajorByArea(Area.withName(position.area.get)))
     val masterUniversity = if (highestDegreeEarned.equals(Master)) {
       val university = UniversityGenerator.generateRandomUniversity()
       education += Education(
@@ -118,7 +118,7 @@ object EducationGenerator {
       requiredMajor
     } else {
       if (closeMajor.sample()) {
-        getRandomMajorByArea(position.area.getOrElse(getAreaByMajor(requiredMajor)))
+        getRandomMajorByArea(position.area.map(Area.withName(_)).getOrElse(getAreaByMajor(requiredMajor)))
       } else {
         getRandomMajor()
       }
@@ -145,7 +145,7 @@ object EducationGenerator {
     println("Education generator:")
     (0 to 100).foreach(_ => {
       println("---------------------------")
-      val position = Position(null, null, area = Some(Area.PR))
+      val position = Position(null, null, area = Some(Area.PR.toString))
       val education = generateEducation(position)
       println(education.mkString("\n"))
     })
