@@ -25,18 +25,12 @@ object PositionManagerUtils {
   }
 
   def main(args: Array[String]): Unit = {
-    val manager = new PositionManager(MongoDB.database)
-    val position = Position(
-      company = Companies.IBM.toString,
-      url = "560708",
-      requiredMajor = None,
-      area = Some(Area.Computer_Science.toString),
-      experienceLevel = Some(ExperienceLevel.Freshly_Graduate.toString),
-      previousPosition = None,
-      popularity = Some(100),
-      minimumDegreeNecessary = Some(Degree.Master.toString)
-    )
-    manager.uploadPositions(List(position))
-    //uploadPositions(company, path, manager)
+    Instances.positionManager.updateSkillsByUrl("81538", skills = List(
+      "Python",
+      "Go",
+      "Swift",
+      "Ruby",
+      "ASP.NET"
+    ))
   }
 }

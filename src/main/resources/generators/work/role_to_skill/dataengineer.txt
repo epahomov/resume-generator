@@ -1,0 +1,7 @@
+java
+docker
+hadoop
+hive
+oracle
+posgres
+spark

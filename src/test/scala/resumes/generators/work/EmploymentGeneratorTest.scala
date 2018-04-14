@@ -10,7 +10,7 @@ class EmploymentGeneratorTest extends GeneratorsTest {
   @Test
   def testGenerateEmployment() = {
     (0 to 100).foreach(_ => {
-      val (employment, _) = EmploymentGenerator.generateEmployment(Area.Computer_Science, 2010, None)
+      val (employment, _) = EmploymentGenerator.generateEmployment(Area.Computer_Science, 2010, None, None)
       println("--------")
       employment.foreach(e => {
         println(e)

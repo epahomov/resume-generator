@@ -29,7 +29,8 @@ object PositionManager {
                        previousPosition: Option[String] = None,
                        popularity: Option[Int] = Some(10),
                        minimumDegreeNecessary: Option[String] = None,
-                       address: Option[String] = None
+                       address: Option[String] = None,
+                       skills: Option[List[String]] = None
                      )
 
   object Area extends Enumeration {
@@ -100,6 +101,15 @@ class PositionManager(database: MongoDatabase) {
 
   def updateAddressByUrl(url: String, address: String): Unit = {
     positions.updateOne(Filters.eq("url", url), set("address", address))
+  }
+
+  def updateSkillsByUrl(url: String, skills: List[String]): Unit = {
+    val position = getPositionByUrl(url).get.copy(skills = Some(skills))
+    positions.replaceOne(Filters.eq("url", url), resumes.Utils.toDoc(position))
+  }
+
+  def removeByUrl(url: String): Unit = {
+    positions.deleteOne(Filters.eq("url", url))
   }
 
   def failedToApplyToPosition(id: String) = {

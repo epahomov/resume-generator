@@ -20,7 +20,7 @@ object EducationUtils {
       }).toMap
   }
 
-  private def normalize(string: String) = string.filter(_.isLetter).toLowerCase
+  def normalize(string: String) = string.filter(_.isLetter).toLowerCase
 
   private lazy val normalizesAreaToArea: Map[String, Area] = {
     Area

@@ -2,10 +2,10 @@ package resumes.generators.work
 
 import org.joda.time.DateTime
 import resumes.company.PositionManager.Area.Area
-import resumes.company.PositionManager.{Area, ExperienceLevel, Position}
+import resumes.company.PositionManager.ExperienceLevel
 import resumes.generators.Utils
-import resumes.generators.education.EducationGenerator
 import resumes.generators.education.EducationGenerator.Education
+import resumes.generators.person.SkillsGenerator
 import resumes.generators.work.EmploymentGenerator.Employment
 
 import scala.util.Random
@@ -20,7 +20,7 @@ object InternshipGenerator {
 
     val educationStartYear = educations.map(_.startYear).min
     val educationEndYear = educations.map(_.endYear).max
-
+    val formatter =  SkillsGenerator.skillsFomatter()
     (educationStartYear + 1 to educationEndYear - 1).flatMap(summer => {
       if (hadInternship.sample()) {
         val company = CompanyGenerator.generateCompany(area)
@@ -28,6 +28,8 @@ object InternshipGenerator {
         val start = new DateTime(summer, 5 + Random.nextInt(2), 1, 1, 1).toDate
         val end = new DateTime(summer, 8 + Random.nextInt(2), 1, 1, 1).toDate
         val description = ""
+        val skills = SkillsGenerator.getSkillsList(role, None, false)
+        val skillsFormatted = formatter(skills)
         Some(
           Employment(
             company = company,
@@ -35,7 +37,9 @@ object InternshipGenerator {
             start = start,
             end = end,
             description = description,
-            internship = Some(true)
+            internship = Some(true),
+            skills = Some(skills),
+            skillsFormatted = Some(skillsFormatted)
           )
         )
       } else {

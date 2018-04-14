@@ -28,14 +28,16 @@ object DummyApplication {
       end = new Date(2013 - 1900, 5, 1),
       company = "Amazon",
       description = "",
-      role = "Intern"
+      role = "Intern",
+      skillsFormatted = Some("javascript python")
     ),
       Employment(
         start = new Date(2014 - 1900, 5, 1),
         end = new Date(2014 - 1900, 5, 1),
         company = "Apple",
         description = "",
-        role = "Intern"
+        role = "Intern",
+        skillsFormatted = Some("java python")
       ))
     val address = Address(zipCode = "94402",
       stateFullName = "California",

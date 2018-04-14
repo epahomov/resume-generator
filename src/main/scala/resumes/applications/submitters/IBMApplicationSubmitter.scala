@@ -105,6 +105,9 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
       driver.findElementById("jobtitle0").sendKeys(workExperience.role)
       driver.findElementById("startyear0").sendKeys((workExperience.start.getYear + 1900).toString)
       driver.findElementById("endyear0").sendKeys((workExperience.end.getYear + 1900).toString)
+      if (workExperience.skillsFormatted.isDefined) {
+        driver.findElementById("skillsControl").sendKeys(workExperience.skillsFormatted.get)
+      }
       if (firstExp) {
         firstExp = false
         driver.findElementById("chkexprecent0").click()

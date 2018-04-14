@@ -40,7 +40,7 @@ object PersonGenerator {
     val area = position.area.map(Area.withName(_))
     val internshipExperience = InternshipGenerator.generateInternships(education, area)
     if (!experienceLevel.equals(ExperienceLevel.Freshly_Graduate)) {
-      val (realWorkExperience, workExperienceComment) = EmploymentGenerator.generateEmployment(area.get, graduationYear, position.previousPosition)
+      val (realWorkExperience, workExperienceComment) = EmploymentGenerator.generateEmployment(area.get, graduationYear, position.previousPosition, position.skills)
       val (address, addressComment) = AddressGenerator.generateAddress(education, true, position)
       Person(
         id = UUID.randomUUID().toString,
