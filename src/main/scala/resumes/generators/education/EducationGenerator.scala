@@ -5,11 +5,13 @@ import java.util.Calendar
 import resumes.company.PositionManager.{Area, Position}
 import resumes.generators.Utils
 import resumes.generators.education.EducationUtils._
-import resumes.generators.education.Enums.Degree.{Associate, Bachelor, Master}
+import resumes.generators.education.Enums.Degree.{Associate, Bachelor, Degree, Master}
 import resumes.generators.education.Enums._
 import resumes.generators.education.UniversityGenerator.University
+import resumes.generators.person.PersonGenerator.Comment
 
 import scala.collection.mutable.ListBuffer
+import scala.util.Random
 
 object EducationGenerator {
 
@@ -49,11 +51,37 @@ object EducationGenerator {
 
   lazy val earnedAssociateDegreeSeparatelyGenerator = Utils.trueFalseDistribution(forTrue = 2, forFalse = 5)
   lazy val changedUniversityGenerator = Utils.trueFalseDistribution(forTrue = 1, forFalse = 8)
+  lazy val exactHighestDegree = Utils.trueFalseDistribution(forTrue = 3, forFalse = 1)
+  lazy val sameMajorGenerator = Utils.trueFalseDistribution(forTrue = 5, forFalse = 1)
+  lazy val closeMajor = Utils.trueFalseDistribution(forTrue = 5, forFalse = 1)
 
-  def generateEducation(position: Position, yearEnd: Int = Calendar.getInstance().get(Calendar.YEAR)): List[Education] = {
+  def getHighestDegreeEarned(position: Position): (Degree, Comment) = {
+    val someDegree = highestDegreeGenerator.sample()
+    position.minimumDegreeNecessary.map(Degree.withName(_)) match {
+      case Some(degree) => {
+        if (exactHighestDegree.sample()) {
+          (degree, "Used exact minimum degree")
+        } else {
+          degree match {
+            case Degree.Associate => (Degree.Bachelor, "Upgraded final degree")
+            case Degree.Bachelor => if (Random.nextBoolean()) {
+              (Degree.Master, "Upgraded final degree")
+            } else {
+              (Degree.Associate, "Downgraded final degree")
+            }
+            case Degree.Master => (Degree.Bachelor, "Downgraded final degree")
+          }
+        }
+      }
+      case None => {
+        (someDegree, "Minimum degree wasn't specified, used random one")
+      }
+    }
+  }
+  def generateEducation(position: Position, yearEnd: Int = Calendar.getInstance().get(Calendar.YEAR)): (List[Education], Comment) = {
     var currentYear = yearEnd
     val education = new ListBuffer[Education]
-    val highestDegreeEarned = position.minimumDegreeNecessary.getOrElse(highestDegreeGenerator.sample())
+    val (highestDegreeEarned, comment) = getHighestDegreeEarned(position)
     val requiredMajor = position.requiredMajor.getOrElse(getRandomMajorByArea(Area.withName(position.area.get)))
     val masterUniversity = if (highestDegreeEarned.equals(Master)) {
       val university = UniversityGenerator.generateRandomUniversity()
@@ -96,7 +124,7 @@ object EducationGenerator {
         education += Education(
           startYear = currentYear - 2,
           endYear = currentYear,
-          university = bachelorUniversity,
+          university = associateUniversity,
           degree = Associate.toString,
           major = Some(bachelorMajor.toString)
         )
@@ -110,7 +138,7 @@ object EducationGenerator {
         major = Some(requiredMajor.toString)
       )
     }
-    education.toList
+    (education.toList, comment)
   }
 
   def generateMajor(position: Position, requiredMajor: Major): Major = {
@@ -125,30 +153,6 @@ object EducationGenerator {
     }
   }
 
-  lazy val sameMajorGenerator = {
-    val distribution = List(
-      (true, 5),
-      (false, 1)
-    )
-    Utils.getGeneratorFrequency(distribution)
-  }
 
-  lazy val closeMajor = {
-    val distribution = List(
-      (true, 5),
-      (false, 1)
-    )
-    Utils.getGeneratorFrequency(distribution)
-  }
-
-  def main(args: Array[String]): Unit = {
-    println("Education generator:")
-    (0 to 100).foreach(_ => {
-      println("---------------------------")
-      val position = Position(null, null, area = Some(Area.PR.toString))
-      val education = generateEducation(position)
-      println(education.mkString("\n"))
-    })
-  }
 
 }

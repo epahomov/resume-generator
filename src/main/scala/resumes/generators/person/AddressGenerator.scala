@@ -4,6 +4,10 @@ import java.util
 
 import com.google.maps.model.{AddressComponent, LatLng}
 import com.google.maps.{GeoApiContext, GeocodingApi}
+import resumes.company.PositionManager.Position
+import resumes.generators.Utils
+import resumes.generators.education.EducationGenerator.Education
+import resumes.generators.person.PersonGenerator.Comment
 
 import scala.util.Random
 
@@ -22,7 +26,29 @@ object AddressGenerator {
     .apiKey(key)
     .build()
 
-  def generateAddress(location: String): Address = {
+  val sanFranciscoLocation = Utils.trueFalseDistribution(forTrue = 4, forFalse = 1)
+
+  def generateAddress(
+                       education: List[Education],
+                       real_work_experience: Boolean,
+                       position: Position
+                     ): (Address, Comment) = {
+    if (real_work_experience && position.address.isDefined) {
+      var location = position.address.get
+      if (location.equals("ML")) {
+        if (sanFranciscoLocation.sample()) {
+          location = "San Francisco, CA"
+        } else {
+          location = "New York City, NY"
+        }
+      }
+      (getAddressByLocation(location), "Got address from position")
+    } else {
+      (getAddressByLocation(education(0).university.city + ", " + education(0).university.state), "Got location from last university")
+    }
+  }
+
+  def getAddressByLocation(location: String): Address = {
     try {
       val cityCoordinates = GeocodingApi.geocode(context, location).await()(0).geometry.location
       val latDelta = Random.nextDouble() / 10
@@ -55,22 +81,9 @@ object AddressGenerator {
       )
     } catch {
       case e: Exception => {
-        generateAddress(location)
+        getAddressByLocation(location)
       }
     }
   }
-
-  def main(args: Array[String]): Unit = {
-    println(generateAddress("Columbus, OH"))
-    println(generateAddress("Columbus, OH"))
-    println(generateAddress("Columbus, OH"))
-    println(generateAddress("Columbus, OH"))
-    println(generateAddress("Ann Arbor, MI"))
-    println(generateAddress("Ann Arbor, MI"))
-    println(generateAddress("Ann Arbor, MI"))
-    println(generateAddress("Ann Arbor, MI"))
-
-  }
-
 
 }

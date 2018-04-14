@@ -8,8 +8,7 @@ object Submit {
   def main(args: Array[String]): Unit = {
     val numberOfApplicationsSelector = new NumberOfApplicationsSelector(companyManager)
     val submitters = List(
-      new IBMApplicationSubmitter(applicationManager, numberOfApplicationsSelector),
-      new SalesForceApplicationSubmitter(applicationManager, numberOfApplicationsSelector)
+      new IBMApplicationSubmitter(applicationManager, numberOfApplicationsSelector)
     )
     submitters.foreach(submitter => {
       submitter.submitAllNecessaryApplicationsForToday()

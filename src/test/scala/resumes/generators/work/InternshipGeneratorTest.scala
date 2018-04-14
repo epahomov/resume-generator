@@ -14,7 +14,7 @@ class InternshipGeneratorTest extends GeneratorsTest {
     (0 to 100).foreach(_ => {
       val area = Some(EducationUtils.randomAreaGenerator.sample())
       val position = new Position(company = null, url = null, area = area.map(x => x.toString))
-      val education = EducationGenerator.generateEducation(position)
+      val (education, _) = EducationGenerator.generateEducation(position)
       println(s"Area: $area, position: $position, education: $education")
       val internships = generateInternships(education, area)
       println(internships)

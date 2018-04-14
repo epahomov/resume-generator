@@ -118,7 +118,7 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     dropDownOffset(driver, drops.get(3), 3)
 
     smallPause
-    val offset = application.person.origin match {
+    val offset = Origin.withName(application.person.origin) match {
       case Origin.US => 8
       case Origin.India => 2
     }

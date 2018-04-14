@@ -49,8 +49,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     }
     formButton.get(0).click()
     averagePause
-    val a_s = driver.findElementByName("signInForm").findElements(By.tagName("a"))
-    a_s.get(a_s.size() - 1).click()
+    driver.findElementByCssSelector("[class^=newAccnt]").click()
     averagePause
     driver.findElementByTagName("button").click()
     driver.findElementById("username").sendKeys(application.email)

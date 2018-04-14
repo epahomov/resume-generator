@@ -10,9 +10,9 @@ import resumes.MongoDB
 import resumes.MongoDB.formats
 import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager.Position
+import resumes.generators.Utils
 
 import scala.collection.JavaConverters._
-import scala.util.Random
 
 object PositionManager {
 
@@ -26,7 +26,10 @@ object PositionManager {
                        requiredMajor: Option[String] = None,
                        area: Option[String] = None,
                        experienceLevel: Option[String] = None,
-                       minimumDegreeNecessary: Option[String] = None
+                       previousPosition: Option[String] = None,
+                       popularity: Option[Int] = Some(10),
+                       minimumDegreeNecessary: Option[String] = None,
+                       address: Option[String] = None
                      )
 
   object Area extends Enumeration {
@@ -50,7 +53,7 @@ object PositionManager {
 
 class PositionManager(database: MongoDatabase) {
 
-  val POSITIONS_COLLECTION = "positions2"
+  val POSITIONS_COLLECTION = "positions3"
   val MAX_FAILED_ATTEMPS = 3
 
   lazy val positions = {
@@ -59,6 +62,11 @@ class PositionManager(database: MongoDatabase) {
   }
 
   def uploadPositions(pos: List[Position]) = {
+    pos.foreach(position => {
+      if (getPositionByUrl(position.url).isDefined) {
+        throw new RuntimeException(s"${position.url} position with such url already exists")
+      }
+    })
     MongoDB.insertIntoCollection(pos, positions)
   }
 
@@ -66,9 +74,10 @@ class PositionManager(database: MongoDatabase) {
   def getRandomPosition(company: Companies.Value): Position = {
     val filter = Filters.and(Filters.eq("company", company.toString), Filters.eq("active", true))
     val positionsSnapshot = positions.find(filter).asScala.map(doc => {
-      parse(doc.toJson).extract[Position]
-    }).toArray
-    positionsSnapshot(Random.nextInt(positionsSnapshot.size))
+      val position = parse(doc.toJson).extract[Position]
+      (position, position.popularity.getOrElse(10))
+    }).toList
+    Utils.getGeneratorFrequency(positionsSnapshot).sample()
   }
 
   def getPositionById(id: String): Option[Position] = {
@@ -78,6 +87,10 @@ class PositionManager(database: MongoDatabase) {
     }
   }
 
+  def getAllPositions(): List[Position] = {
+    positions.find().asScala.map(doc => {parse(doc.toJson).extract[Position]}).toList
+  }
+
   def getPositionByUrl(url: String): Option[Position] = {
     positions.find(Filters.eq("url", url)).first() match {
       case null => None
@@ -85,6 +98,9 @@ class PositionManager(database: MongoDatabase) {
     }
   }
 
+  def updateAddressByUrl(url: String, address: String): Unit = {
+    positions.updateOne(Filters.eq("url", url), set("address", address))
+  }
 
   def failedToApplyToPosition(id: String) = {
     positions.updateOne(Filters.eq("id", id), inc("failedAttemptsToApply", 1))

@@ -54,8 +54,8 @@ object DummyApplication {
       education = education,
       address = address,
       phoneNumber = PhoneNumberGenerator.generateRandomNumber(),
-      gender = Gender.Male,
-      origin = Origin.US,
+      gender = Gender.Male.toString,
+      origin = Origin.US.toString,
       workExperience
     )
     Application(person = person,

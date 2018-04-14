@@ -12,13 +12,7 @@ import scala.util.Random
 
 object InternshipGenerator {
 
-  private lazy val hadInternship = {
-    val distribution = List(
-      (true, 1),
-      (false, 4)
-    )
-    Utils.getGeneratorFrequency(distribution)
-  }
+  private lazy val hadInternship = Utils.trueFalseDistribution(forTrue = 1, forFalse = 4)
 
   def generateInternships(educations: List[Education],
                           area: Option[Area]
@@ -40,7 +34,8 @@ object InternshipGenerator {
             role = role,
             start = start,
             end = end,
-            description = description
+            description = description,
+            internship = Some(true)
           )
         )
       } else {

@@ -23,33 +23,51 @@ object PersonGenerator {
                     education: List[Education],
                     address: Address,
                     phoneNumber: String,
-                    gender: Gender,
-                    origin: Origin,
-                    workExperience: List[Employment]
+                    gender: String,
+                    origin: String,
+                    workExperience: List[Employment],
+                    comments: Option[List[String]] = None
                    )
 
+  type Comment = String
+
   private def generatePerson(gender: Gender, origin: Origin, position: Position) = {
-    val experienceLevel = position.experienceLevel.map(ExperienceLevel.withName(_)).getOrElse(ExperienceLevel.Freshly_Graduate)
-    val graduationYear = EmploymentGenerator.getGraduationYear(experienceLevel)
+    val (experienceLevel, experienceLevelComment) = ExperienceLevelGenerator.generateExperienceLevel(position)
     val name = NameGenerator.generateRandomName(gender, origin)
-    val education = EducationGenerator.generateEducation(position, graduationYear)
-    val address = AddressGenerator.generateAddress(education(0).university.city + ", " + education(0).university.state)
+    val graduationYear = EmploymentGenerator.getGraduationYear(experienceLevel)
+    val (education, educationComment) = EducationGenerator.generateEducation(position, graduationYear)
     val phoneNumber = PhoneNumberGenerator.generateRandomNumber()
     val area = position.area.map(Area.withName(_))
-    var workExperience = InternshipGenerator.generateInternships(education, area)
+    val internshipExperience = InternshipGenerator.generateInternships(education, area)
     if (!experienceLevel.equals(ExperienceLevel.Freshly_Graduate)) {
-      workExperience = workExperience ++ EmploymentGenerator.generateEmployment(area.get, graduationYear)
+      val (realWorkExperience, workExperienceComment) = EmploymentGenerator.generateEmployment(area.get, graduationYear, position.previousPosition)
+      val (address, addressComment) = AddressGenerator.generateAddress(education, true, position)
+      Person(
+        id = UUID.randomUUID().toString,
+        name = name,
+        education = education,
+        address = address,
+        phoneNumber = phoneNumber,
+        gender = gender.toString,
+        origin = origin.toString,
+        workExperience = internshipExperience ++ realWorkExperience,
+        comments = Some(List(experienceLevelComment, educationComment, addressComment, workExperienceComment))
+      )
+    } else {
+      val (address, addressComment) = AddressGenerator.generateAddress(education, false, position)
+      Person(
+        id = UUID.randomUUID().toString,
+        name = name,
+        education = education,
+        address = address,
+        phoneNumber = phoneNumber,
+        gender = gender.toString,
+        origin = origin.toString,
+        workExperience = internshipExperience,
+        comments = Some(List(experienceLevelComment, educationComment, addressComment))
+      )
     }
-    Person(
-      id = UUID.randomUUID().toString,
-      name = name,
-      education = education,
-      address = address,
-      phoneNumber = phoneNumber,
-      gender = gender,
-      origin = origin,
-      workExperience = workExperience
-    )
+
   }
 
   def generatePerson(position: Position): Person = {

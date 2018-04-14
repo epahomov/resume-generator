@@ -4,8 +4,10 @@ import java.util.Date
 
 import org.joda.time.{DateTime, Period}
 import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
-import resumes.company.PositionManager.{Area, ExperienceLevel}
+import resumes.company.PositionManager.{Area, ExperienceLevel, Position}
+import resumes.generators.Utils
 import resumes.generators.Utils.generatorFromFile
+import resumes.generators.person.PersonGenerator.Comment
 
 import scala.collection.mutable.ListBuffer
 import scala.util.Random
@@ -18,7 +20,8 @@ object EmploymentGenerator {
                         description: String,
                         role: String,
                         current: Option[Boolean] = Some(false),
-                        experienceLevel: Option[String] = None
+                        experienceLevel: Option[String] = None,
+                        internship: Option[Boolean] = None
                        )
 
   def getGraduationYear(experienceLevel: ExperienceLevel): Int = {
@@ -36,13 +39,17 @@ object EmploymentGenerator {
     }
   }
 
-  def generateEmployment(area: Area.Value, graduationYear: Int): List[Employment] = {
+
+  val lastPositionMatch = Utils.trueFalseDistribution(forTrue = 5, forFalse = 1)
+
+  def generateEmployment(area: Area.Value, graduationYear: Int, previousPosition: Option[String]): (List[Employment], Comment) = {
 
     var currentEnd = new DateTime()
     val graduation = new DateTime(graduationYear, 5 + Random.nextInt(4), Random.nextInt(28) + 1, 1, 1)
     val result = new ListBuffer[Employment]
 
     var current = true
+    var comment = ""
     while (currentEnd.compareTo(graduation) > 0) {
       val yearsOnThisPlace = generatorFromFile("generators/work/employmentPerEmployee.txt").sample().toInt
       val end = currentEnd
@@ -54,7 +61,13 @@ object EmploymentGenerator {
         case x if x <= 6 && x > 2 => ExperienceLevel.Middle
         case x if x <= 2 => ExperienceLevel.Beginner
       }
-      val role = RoleGenerator.generateRole(Some(area), experienceLevel)
+      val role = if (current && previousPosition.isDefined && lastPositionMatch.sample()) {
+        comment = "Last role taken from position"
+        previousPosition.get
+      } else {
+        comment = "Last role generated randomly"
+        RoleGenerator.generateRole(Some(area), experienceLevel)
+      }
       val employment = Employment(
         start = start.toDate,
         end = end.toDate,
@@ -62,13 +75,14 @@ object EmploymentGenerator {
         description = description,
         role = role,
         current = Some(current),
-        experienceLevel = Some(experienceLevel.toString)
+        experienceLevel = Some(experienceLevel.toString),
+        internship = Some(false)
       )
       result += employment
       current = false
       currentEnd = start
     }
-    result.toList
+    (result.toList, comment)
   }
 
 

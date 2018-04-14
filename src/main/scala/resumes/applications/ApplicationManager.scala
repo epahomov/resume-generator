@@ -41,7 +41,7 @@ class ApplicationManager(emailsManager: EmailsManager,
                          database: MongoDatabase,
                         ) {
 
-  private val APPLICATION_COLLECTION = "applications"
+  private val APPLICATION_COLLECTION = "applications2"
 
   private val logger = LogManager.getLogger(this.getClass)
 
