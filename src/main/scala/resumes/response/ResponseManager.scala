@@ -34,8 +34,8 @@ class ResponseManager(applicationManager: ApplicationManager,
                      ) {
 
   private val companyToIdentifier = Map(
-    Companies.IBM.toString -> IBMRelevanceIdentifier,
-    Companies.SalesForce.toString -> SalesForceIdentifier
+    Companies.IBM.toString -> IBMRelevanceIdentifier
+    //Companies.SalesForce.toString -> SalesForceIdentifier
   )
 
   private val logger = LogManager.getLogger(this.getClass)
@@ -45,7 +45,7 @@ class ResponseManager(applicationManager: ApplicationManager,
   def collectResponses() = {
     val applications = applicationManager.getAllApplicationsWithUnknownResponse().par
     applications.tasksupport =  new ForkJoinTaskSupport(new scala.concurrent.forkjoin.ForkJoinPool(10))
-    applications.foreach(application => {
+    applications.map(application => {
       logger.info(s"Working with application ${application.id}")
       val emailPassword = emailsManager.getPassword(application.email)
       val credentials = Credentials(application.email, emailPassword)
@@ -62,6 +62,9 @@ class ResponseManager(applicationManager: ApplicationManager,
             companyToIdentifier.get(application.company).get.isRelevant(application, message)
           })
           logger.info(s"${application.id} :Number of messages, which passed filter is ${filteredMessages.size}")
+          filteredMessages.foreach(message => {
+            logger.debug(message)
+          })
           val resultMessages = mergeMessagesLists(existingMessages, filteredMessages)
           val newResponse = application.response match {
             case None => {
@@ -78,7 +81,7 @@ class ResponseManager(applicationManager: ApplicationManager,
           emailsManager.failedToAccess(application.email)
         }
       }
-    })
+    }).toList
   }
 
   private def mergeMessagesLists(firstList: List[Message], secondList: List[Message]) = {
