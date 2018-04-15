@@ -1,0 +1,401 @@
+M	Aiguo	love country; patriotic	Chinese
+M	An	peace	Chinese
+M	Angúo	protect the country	Chinese
+M	Bai	white	Chinese
+M	Bingwen	bright and cultivated	Chinese
+M	Bo	waves	Chinese
+M	Bohai	elder brother sea	Chinese
+M	Bojing	win admiration	Chinese
+M	Bolin	elder brother rain	Chinese
+M	Boqin	win respect	Chinese
+M	Changpu	forever simple	Chinese
+M	Chanming	forever bright	Chinese
+M	Chao	surpassing	Chinese
+M	Chaoxiang	expecting fortune	Chinese
+M	Chen	vast or great	Chinese
+M	Cheng	accomplished	Chinese
+M	Chenglei	become great	Chinese
+M	Cheung	good luck	Chinese
+M	Chi	the younger generation	Chinese
+M	Chongan	second brother peace	Chinese
+M	Chongkun	second brother Kunlun mountain	Chinese
+M	Chonglin	second brother unicorn	Chinese
+M	Chuanli	transmitting propriety	Chinese
+M	Chung	intelligent	Chinese
+M	Délì	virtuous	Chinese
+M	Déshì	a man of virtue	Chinese
+M	Déwei	highly virtuous	Chinese
+M	Da	attainment	Chinese
+M	Dai	martial arts sword technique	Chinese
+M	Delun	virtuous order	Chinese
+M	Deming	virtue bright	Chinese
+M	Dingbang	protect the country	Chinese
+M	Dingxiang	stability and fortune	Chinese
+M	Dong	east; winter	Chinese
+M	Donghai	eastern sea	Chinese
+M	Duyi	independent wholeness	Chinese
+M	Enlai	favor coming	Chinese
+M	Fa	setting off	Chinese
+M	Fai	growth; beginning of fly	Chinese
+M	Fang	honest and upright	Chinese
+M	Feng	sharp blade; wind	Chinese
+M	Fengge	phoenix pavilion	Chinese
+M	Fu	wealthy	Chinese
+M	Fuhua	fortune flourishing	Chinese
+M	Gan	dare; adventure	Chinese
+M	Gang	strength	Chinese
+M	Geming	revolution	Chinese
+M	Gen	root	Chinese
+M	Genghis	just, righteous; true	Chinese
+M	Guang	light	Chinese
+M	Guangli	making propriety bright	Chinese
+M	Gui	honored; noble	Chinese
+M	Guiren	valuing benevolence	Chinese
+M	Guoliang	may the country be kind	Chinese
+M	Guotin	polite, firm; strong leader	Chinese
+M	Guowei	state preserving	Chinese
+M	Guozhi	the state is ordered	Chinese
+M	Hai	sea	Chinese
+M	He	Yellow river	Chinese
+M	Heng	eternal	Chinese
+M	Ho	for the good	Chinese
+M	Hong	great; wild swan	Chinese
+M	Honghui	great splendor	Chinese
+M	Hongqi	red flag	Chinese
+M	Hop	agreeable	Chinese
+M	Huan	happiness	Chinese
+M	Huang Fu	rich future	Chinese
+M	Hui	splendor	Chinese
+M	Hulin	people of the Marrim city clan	Chinese
+M	Hung	flood; great	Chinese
+M	Huojin	fire metal	Chinese
+M	Jaw-long	like a dragon	Chinese
+M	Jian	healthy	Chinese
+M	Jiang	Yangtze river	Chinese
+M	Jianguo	building the country	Chinese
+M	Jianjun	building the army	Chinese
+M	Jianyu	building the universe	Chinese
+M	Jin	gold	Chinese
+M	Jing	capital city	Chinese
+M	Jingguo	administering the state	Chinese
+M	Jinhai	golden sea	Chinese
+M	Jinjing	gold mirror	Chinese
+M	Jun	truth	Chinese
+M	Junjie	handsome and outstanding	Chinese
+M	Kang	well-being	Chinese
+M	Keung	universe	Chinese
+M	Kong	glorious, sky	Chinese
+M	Lì	strength	Chinese
+M	Lei	thunder	Chinese
+M	Li	upright	Chinese
+M	Liang	bright	Chinese
+M	Liang	good, excellent	Chinese
+M	Liko	protected by Buddha	Chinese
+M	Ling	compassion or understanding	Chinese
+M	Liu	flowing	Chinese
+M	Liwei	profit and greatness	Chinese
+M	Lok	happiness	Chinese
+M	Longwei	dragon greatness	Chinese
+M	Manchu	pure	Chinese
+M	Ming-húa	brilliant, elite	Chinese
+M	Mingli	bright propriety	Chinese
+M	Ming-tun	intelligent; heavy	Chinese
+M	Minsheng	voice of the people	Chinese
+M	Minzhe	sensitive and wise	Chinese
+M	Nianzu	thinking of ancestors	Chinese
+M	On	peace	Chinese
+M	Park	the cypress tree	Chinese
+M	Peng	Roc - the bird of legend	Chinese
+M	Pengfei	flight of the roc	Chinese
+M	Ping	stable	Chinese
+M	Qi	enlightenment; wondrous	Chinese
+M	Qianfan	thousand sails	Chinese
+M	Qiang	strong	Chinese
+M	Qingshan	celebrating goodness	Chinese
+M	Qingsheng	celebrating birth	Chinese
+M	Qiquiang	enlightenment and strength	Chinese
+M	Qiu	autumn	Chinese
+M	Quan	fresh water spring	Chinese
+M	Quon	bright	Chinese
+M	Renshu	benevolent forbearance	Chinese
+M	Rong	martial	Chinese
+M	Ru	scholar	Chinese
+M	Shàoqiáng	strong and profound	Chinese
+M	Shìlín	intellectual	Chinese
+M	Shan	mountain	Chinese
+M	Shanyuan	mountain source	Chinese
+M	Shen	cautious; deep	Chinese
+M	Shen	spirit; deep thought	Chinese
+M	Shi	front horizontal bar on carriage or cart	Chinese
+M	Shing	victory	Chinese
+M	Shining	world at peace	Chinese
+M	Shirong	scholarly honor	Chinese
+M	Shoi-ming	life of sunshine	Chinese
+M	Shoushan	longevity mountain	Chinese
+M	Shunyuan	follow to the source	Chinese
+M	Shu-sai-chong	happy all his life long	Chinese
+M	Siyu	thinking of the world	Chinese
+M	Sueh-yén	continuity; harmonious	Chinese
+M	Sying	star	Chinese
+M	Tao	great waves	Chinese
+M	Tengfei	soaring high	Chinese
+M	Tingzhe	may the court be wise	Chinese
+M	Tsun-chùng	middle village	Chinese
+M	Tung	all, universal	Chinese
+M	Wang	hope, wish	Chinese
+M	Wei	greatness; impressive might	Chinese
+M	Weimin	bring greatness to the people	Chinese
+M	Weisheng	greatness is born	Chinese
+M	Weiyuan	preserving depth	Chinese
+M	Weizhe	great sage	Chinese
+M	Wencheng	refinement accomplished	Chinese
+M	Wenyan	refined and virtuous	Chinese
+M	Wing	glory	Chinese
+M	Wuzhou	five continents 	Chinese
+M	Xiang	circling in air like a bird	Chinese
+M	Xianliang	worthy brightness	Chinese
+M	Xiaobo	little wrestler	Chinese
+M	Xiaodan	little dawn	Chinese
+M	Xiaojian	little healthy	Chinese
+M	Xiaosi	filial thoughts	Chinese
+M	Xiaowen	filial, civil	Chinese
+M	Xiasheng	little birth	Chinese
+M	Xin	new	Chinese
+M	Xing	arising	Chinese
+M	Xiu	cultivated	Chinese
+M	Xue	studious	Chinese
+M	Xueqin	snow-white celery	Chinese
+M	Xueyou	studious and friendly	Chinese
+M	Yang	model; pattern	Chinese
+M	Yanlin	swallow forest; Beijing forest	Chinese
+M	Yaochuan	honoring the river	Chinese
+M	Yaoting	honoring the courtyard	Chinese
+M	Yaozu	honoring the ancestors	Chinese
+M	Ye	bright	Chinese
+M	Yi	firm and resolute	Chinese
+M	Yingjie	brave and heroic	Chinese
+M	Yingpei	should admire	Chinese
+M	Yong	brave	Chinese
+M	Yongliang	forever bright	Chinese
+M	Yongnian	eternal years	Chinese
+M	Yongrui	forever lucky	Chinese
+M	Yongzheng	forever upright	Chinese
+M	You	friend	Chinese
+M	Yuanjun	master of the Yuan river	Chinese
+M	Yunxu	cloudy emptiness	Chinese
+M	Yusheng	jade birth	Chinese
+M	Zedong	east of the marsh	Chinese
+M	Zemin	favor to the people	Chinese
+M	Zenguang	increasing brightness	Chinese
+M	Zhìxin	a man of ambition	Chinese
+M	Zhìyuan	ambition	Chinese
+M	Zhen	greatly astonished; shake	Chinese
+M	Zhengzhong	upright and loyal	Chinese
+M	Zhensheng	may the government rise	Chinese
+M	Zhihuán	ambitious	Chinese
+M	Zhiqiang	the will is strong	Chinese
+M	Zhong	loyal; steadfast	Chinese
+M	Zian	self peace	Chinese
+M	Zihao	son heroic	Chinese
+M	Zixin	self confidence	Chinese
+F	Ah Cy	lovely	Chinese
+F	Ah Kum	good as gold	Chinese
+F	Ah Lam	peace	Chinese
+F	Ai	loving	Chinese
+F	An	peace	Chinese
+F	Baozhai	precious hairpin	Chinese
+F	Bik	jade	Chinese
+F	Biyu	jasper; semi-precious stone	Chinese
+F	Bo	precious	Chinese
+F	Changchang	flourishing	Chinese
+F	Changying	flourishing & lustrous	Chinese
+F	Chao-xing	morning star	Chinese
+F	Chenguang	morning light	Chinese
+F	Chow	summertime	Chinese
+F	Chu hua	chrysanthemum	Chinese
+F	Chun	springtime	Chinese
+F	Chunhua	spring flower	Chinese
+F	Chuntao	spring peach	Chinese
+F	Chyou	sweet Autumn	Chinese
+F	Cuifen	emerald fragrance	Chinese
+F	Da Chun	long spring	Chinese
+F	Dai-tai	leading a boy in hopes	Chinese
+F	Daiyu	black jade	Chinese
+F	Dandan	cinnabar red	Chinese
+F	Da-Xia	long summer	Chinese
+F	Dongmei	winter plum	Chinese
+F	Eu-fùnh	playful phoenix	Chinese
+F	Eu-meh	especially beautiful	Chinese
+F	Fang	fragrant	Chinese
+F	Far	flower	Chinese
+F	Fenfang	fragrant	Chinese
+F	Fung	bird	Chinese
+F	Guan-yin	goddess of mercy	Chinese
+F	Hùifang	nice fragrance	Chinese
+F	Howin	a loyal swallow	Chinese
+F	Hu	tiger	Chinese
+F	Hua	flower	Chinese
+F	Hualing	flourishing herb	Chinese
+F	Huan	happiness	Chinese
+F	Huian	kind peace	Chinese
+F	Huidai	wise dai	Chinese
+F	Huifang	kind & fragrant	Chinese
+F	Huifen	wise & fragrant	Chinese
+F	Huilang	wise jade tinkling	Chinese
+F	Huiliang	kind & good	Chinese
+F	Huiqing	kind & affectionate	Chinese
+F	Huizhong	wise & loyal	Chinese
+F	Hwei-ru	wise, intelligent	Chinese
+F	Jia	beautiful 	Chinese
+F	Jiahui	nice person	Chinese
+F	Jiao	dainty & lovely	Chinese
+F	Jiayi	household fitting	Chinese
+F	Jiaying	household flourishing	Chinese
+F	Jie	cleanliness	Chinese
+F	Jingfei	still fragrance	Chinese
+F	Jinghua	situation splendid	Chinese
+F	Ju	chrysanthemum	Chinese
+F	Juan	graciousness	Chinese
+F	Jun	truth	Chinese
+F	Kuai hua	mallow blossom	Chinese
+F	Kue ching	piano reach-sounds good	Chinese
+F	Kwong	broad	Chinese
+F	Lì húa	beautiful pear blossom	Chinese
+F	Lìxúe	beautiful snow	Chinese
+F	Lan	orchid	Chinese
+F	Lanfen	orchid fragrance	Chinese
+F	Lanying	indigo lustrousness	Chinese
+F	Lee	plum	Chinese
+F	Li	upright	Chinese
+F	Lian	the graceful willow	Chinese
+F	Lien	lotus	Chinese
+F	Lien hua	lotus flower	Chinese
+F	Lifen	beautiful fragrance	Chinese
+F	Lihua	beautiful & flourishing	Chinese
+F	Lihwa	a Chinese princess	Chinese
+F	Lijuan	beautiful & graceful	Chinese
+F	Liling	beautiful jade tinkle	Chinese
+F	Lin	beautiful jade	Chinese
+F	Lin	beautiful jade	Chinese
+F	Ling	compassion & understanding	Chinese
+F	Ling	delicate & dainty	Chinese
+F	Linqin	beautiful zither	Chinese
+F	Liqiu	beautiful autumn	Chinese
+F	Liu	flowing	Chinese
+F	Luli	dewy jasmine	Chinese
+F	Méh-è	beautiful posture	Chinese
+F	Méh-fùnh	pretty or beautiful phoenix	Chinese
+F	Mei	plum	Chinese
+F	Mei	beautiful plum	Chinese
+F	Meifen	plum fragrance	Chinese
+F	Meifeng	beautiful wind	Chinese
+F	Meihui	beautiful wisdom	Chinese
+F	Meili	beautiful	Chinese
+F	Meilin	plum jade	Chinese
+F	Meirong	beautiful countenance	Chinese
+F	Meixiang	plum fragrance	Chinese
+F	Meixiu	beautiful grace	Chinese
+F	Meiying	beautiful flower	Chinese
+F	Meizhen	beautiful pearl	Chinese
+F	Ming-huá:	tomorrow's flower	Chinese
+F	Mingxia	bright glow through clouds	Chinese
+F	Mingyu	bright jade	Chinese
+F	Mingzhu	bright pearl	Chinese
+F	Mu lan	magnolia blossom	Chinese
+F	Mu tan	tree peony blossom	Chinese
+F	Ning	tranquility	Chinese
+F	Ninghong	tranquil red	Chinese
+F	Niu	girl	Chinese
+F	Nuo	graceful	Chinese
+F	Nuwa	mother goddess	Chinese
+F	Peijing	admiring luxuriance	Chinese
+F	Peizhi	admiring iris	Chinese
+F	Ping	duckweed	Chinese
+F	Qiànrú	nice smile	Chinese
+F	Qiao	skilful	Chinese
+F	Qiaohui	skilful & wise	Chinese
+F	Qiaolian	skilful always	Chinese
+F	Qing	dark blue 	Chinese
+F	Qingge	clear pavilion	Chinese
+F	Qingling	celebration of understanding	Chinese
+F	Qingzhao	clear understanding	Chinese
+F	Qiu	autumn	Chinese
+F	Qiuyue	autumn moon	Chinese
+F	Rùfen	nice fragrance	Chinese
+F	Renxiang	benevolent fragrance	Chinese
+F	Rong	martial	Chinese
+F	Rou	gentle; mild	Chinese
+F	Ruiling	auspicious jade tinkling	Chinese
+F	Ruolan	like an orchid	Chinese
+F	Ruomei	like a plum	Chinese
+F	Shaoqing	young blue	Chinese
+F	Sheu-fùh	elegant phoenix	Chinese
+F	Shihong	the world is red	Chinese
+F	Shu	fair	Chinese
+F	Shuang	frank; open-hearted	Chinese
+F	Shuchun	fair purity	Chinese
+F	Shun	smooth	Chinese
+F	Song	pine tree	Chinese
+F	Suyin	plain & unadorned sound	Chinese
+F	Syà	summertime	Chinese
+F	Sying	star	Chinese
+F	Tè	special	Chinese
+F	Tao	peach - symbol for long life	Chinese
+F	Ting	graceful	Chinese
+F	Tu	jade - element in earth cycle	Chinese
+F	Ushi	the ox	Chinese
+F	Weici	preserving love	Chinese
+F	Wen	refinement	Chinese
+F	Wenling	tinkling sound of refined jade	Chinese
+F	Wenquian	refined matter	Chinese
+F	Xia	rosy clouds	Chinese
+F	Xiaodan	little dawn	Chinese
+F	Xiaofan	little & ordinary	Chinese
+F	Xiaohui	little wisdom	Chinese
+F	Xiaojian	little healthy	Chinese
+F	Xiaojing	morning luxuriance	Chinese
+F	Xiaoli	morning jasmine	Chinese
+F	Xiaolian	little lotus	Chinese
+F	Xiaoling	morning tinkle	Chinese
+F	Xiaoqing	little blue	Chinese
+F	Xiaosheng	little birth	Chinese
+F	Xiaotong	morning redness	Chinese
+F	Xiaozhi	little iris	Chinese
+F	Xifeng	western phoenix	Chinese
+F	Xingjuan	arising grace	Chinese
+F	Xiu Mei	beautiful plum	Chinese
+F	Xiulan	graceful orchid	Chinese
+F	Xiurong	elegant countenance	Chinese
+F	Xiuying	graceful flower	Chinese
+F	Xueman	snowy grace	Chinese
+F	Yáng	sun Tiayang	Chinese
+F	Yín	silver	Chinese
+F	Yüying	jade flower	Chinese
+F	Yüzhen	jade gem	Chinese
+F	Ya	grace	Chinese
+F	Yan	swallow bird; gorgeous	Chinese
+F	Yanmei	Beijing plum	Chinese
+F	Yanyu	Beijing jade	Chinese
+F	Yet Kwai	beautiful as a rose	Chinese
+F	Ying	clever; eagle	Chinese
+F	Yingtai	flower terrace	Chinese
+F	Yow	feminine	Chinese
+F	Yu	jade; rain	Chinese
+F	Yuèhai	beautiful moon	Chinese
+F	Yuèqín	moon-shaped lute	Chinese
+F	Yuan	shining peace	Chinese
+F	Yubi	jade emerald	Chinese
+F	Yue	moon	Chinese
+F	Yuet	moon	Chinese
+F	Yu-jun	from Chongching	Chinese
+F	Yuk	moon	Chinese
+F	Yuke	jade	Chinese
+F	Yuming	jade brightness	Chinese
+F	Yun	cloud	Chinese
+F	Yunru	charming seeming	Chinese
+F	Yusheng	jade birth	Chinese
+F	Zhaohui	clear wisdom	Chinese
+F	Zhenzhen	precious	Chinese
+F	Zhilan	iris orchid	Chinese
+F	Zhu	bamboo	Chinese
+F	Zongying	taking flowers as a model	Chinese

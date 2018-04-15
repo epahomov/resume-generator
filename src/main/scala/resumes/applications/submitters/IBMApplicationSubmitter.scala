@@ -130,11 +130,14 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     dropDown("N", s"custom_6307_33_fname_slt_0_6307-button_text", driver)
 
 
-    if (application.person.origin.equals(Origin.US)) {
-      dropDown(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), 7)
-    } else {
-      dropDown(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), 2)
+    val offset = Origin.withName(application.person.origin) match {
+      case Origin.India => 2
+      case Origin.China => 2
+      case Origin.US => 7
     }
+
+    dropDown(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), offset)
+    dropDown(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), offset)
 
     dropDown(driver, driver.findElementById("custom_6582_33_fname_slt_0_6582-button_text"), 1)
     dropDown(driver, driver.findElementById("custom_6554_33_fname_slt_0_6554-button_text"), 1)
@@ -155,7 +158,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     bigPause
   }
 
-  private def dropDown( driver: RemoteWebDriver, element: WebElement, offset: Int): Unit = {
+  private def dropDown(driver: RemoteWebDriver, element: WebElement, offset: Int): Unit = {
     runWithTimeout(() => {
       import org.openqa.selenium.JavascriptExecutor
       driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
@@ -174,7 +177,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
 
   private def dropDown(value: String, parameter: String, driver: RemoteWebDriver) = {
     runWithTimeout(() => {
-      try{
+      try {
         val element = driver.findElementById(parameter)
         scrollTo(driver, element)
         Thread.sleep(500)
@@ -192,12 +195,13 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
           .pause(300)
           .sendKeys(Keys.ENTER)
           .perform()
-          })
+
         smallPause
       } catch {
         case e: Exception => {
           throw new RuntimeException(e)
         }
       }
+    })
   }
 }

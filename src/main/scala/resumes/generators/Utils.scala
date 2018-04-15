@@ -9,6 +9,10 @@ import scala.io.Source
 
 object Utils {
 
+  def getSimpleGenerator[T](data: scala.collection.immutable.Seq[T]): EnumeratedDistribution[T] = {
+    getGeneratorFrequency(data.map(x => (x, 1)))
+  }
+
   def getGeneratorFrequency[T](data: scala.collection.immutable.Seq[(T, Int)]): EnumeratedDistribution[T] = {
     val total = data.map(_._2).sum
     val normalized = data.map({ case (v, frequency) => {

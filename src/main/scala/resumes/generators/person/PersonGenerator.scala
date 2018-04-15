@@ -3,6 +3,7 @@ package resumes.generators.person
 import java.util.UUID
 
 import resumes.company.PositionManager.{Area, ExperienceLevel, Position}
+import resumes.generators.Utils
 import resumes.generators.education.EducationGenerator
 import resumes.generators.education.EducationGenerator.Education
 import resumes.generators.name.FirstNameGenerator.Gender.Gender
@@ -13,8 +14,6 @@ import resumes.generators.name.NameGenerator.Name
 import resumes.generators.person.AddressGenerator.Address
 import resumes.generators.work.EmploymentGenerator.Employment
 import resumes.generators.work.{EmploymentGenerator, InternshipGenerator}
-
-import scala.util.Random
 
 object PersonGenerator {
 
@@ -36,12 +35,12 @@ object PersonGenerator {
     val name = NameGenerator.generateRandomName(gender, origin)
     val graduationYear = EmploymentGenerator.getGraduationYear(experienceLevel)
     val (education, educationComment) = EducationGenerator.generateEducation(position, graduationYear)
-    val phoneNumber = PhoneNumberGenerator.generateRandomNumber()
     val area = position.area.map(Area.withName(_))
     val internshipExperience = InternshipGenerator.generateInternships(education, area)
     if (!experienceLevel.equals(ExperienceLevel.Freshly_Graduate)) {
       val (realWorkExperience, workExperienceComment) = EmploymentGenerator.generateEmployment(area.get, graduationYear, position.previousPosition, position.skills)
       val (address, addressComment) = AddressGenerator.generateAddress(education, true, position)
+      val phoneNumber = PhoneNumberGenerator.generateRandomNumber(address.stateShortName)
       Person(
         id = UUID.randomUUID().toString,
         name = name,
@@ -55,6 +54,7 @@ object PersonGenerator {
       )
     } else {
       val (address, addressComment) = AddressGenerator.generateAddress(education, false, position)
+      val phoneNumber = PhoneNumberGenerator.generateRandomNumber(address.stateShortName)
       Person(
         id = UUID.randomUUID().toString,
         name = name,
@@ -70,17 +70,27 @@ object PersonGenerator {
 
   }
 
+
+  private lazy val genderGenerator = {
+    val distribution = List(
+      (Gender.Female, 1),
+      (Gender.Male, 3)
+    )
+    Utils.getGeneratorFrequency(distribution)
+  }
+
+  private lazy val originGenerator = {
+    val distribution = List(
+      (Origin.US, 10),
+      (Origin.China, 7),
+      (Origin.India, 13)
+    )
+    Utils.getGeneratorFrequency(distribution)
+  }
+
   def generatePerson(position: Position): Person = {
-    val gender = if (Random.nextBoolean()) {
-      Gender.Female
-    } else {
-      Gender.Male
-    }
-    val origin = if (Random.nextBoolean()) {
-      Origin.India
-    } else {
-      Origin.US
-    }
+    val gender = genderGenerator.sample()
+    val origin = originGenerator.sample()
     generatePerson(gender, origin, position)
   }
 

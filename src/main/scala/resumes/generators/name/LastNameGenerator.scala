@@ -8,7 +8,7 @@ import scala.io.Source
 
 object LastNameGenerator {
 
-  lazy val indiaGenerator = {
+  private lazy val indiaGenerator = {
     val data = Source
       .fromResource("generators/names/india_last_names.txt")
       .getLines()
@@ -22,7 +22,7 @@ object LastNameGenerator {
     Utils.getGeneratorFrequency(data)
   }
 
-  lazy val usGenerator = {
+  private lazy val usGenerator = {
     //  1.	  Smith	1.01%
     //  2.	  Johnson	0.81%
     //  3.	  Williams	0.70%
@@ -40,18 +40,21 @@ object LastNameGenerator {
 
   }
 
-  def generateLastName(origin: Origin) = {
-    if (Origin.India.equals(origin)) {
-      indiaGenerator.sample()
-    } else {
-      usGenerator.sample()
-    }
+  private lazy val chinaGenerator = {
+    val data = Source
+      .fromResource("generators/names/chinese_last_names.txt")
+      .getLines()
+      .toSet
+      .toList
+    Utils.getSimpleGenerator(data)
+
   }
 
-  def main(args: Array[String]): Unit = {
-    println("Surnames")
-    for (i <- 1 to 100) {
-      println(generateLastName(Origin.India))
+  def generateLastName(origin: Origin) = {
+    origin match {
+      case Origin.US => usGenerator.sample()
+      case Origin.India => indiaGenerator.sample()
+      case Origin.China => chinaGenerator.sample()
     }
   }
 

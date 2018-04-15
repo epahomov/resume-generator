@@ -1,5 +1,6 @@
 package resumes.generators.name
 
+import org.apache.commons.math3.distribution.EnumeratedDistribution
 import resumes.generators.Utils
 import resumes.generators.name.FirstNameGenerator.Gender.Gender
 import resumes.generators.name.FirstNameGenerator.Origin.Origin
@@ -18,13 +19,14 @@ object FirstNameGenerator {
     type Origin = Value
     val US = Value("US")
     val India = Value("India")
+    val China = Value("China")
   }
 
   case class FirstName(name: String,
                        gender: Gender,
                        popularity: Int)
 
-  lazy val (usMaleNamesGenerator, usFemaleNamesGenerator) = {
+  private lazy val (usMaleNamesGenerator, usFemaleNamesGenerator) = {
 
     val all = Source
       .fromResource("generators/names/us_first_names.txt")
@@ -56,7 +58,7 @@ object FirstNameGenerator {
     (getGenerator(Gender.Male), getGenerator(Gender.Female))
   }
 
-  lazy val (indiaMaleNamesGenerator, indiaFemaleNamesGenerator) = {
+  private lazy val (indiaMaleNamesGenerator, indiaFemaleNamesGenerator) = {
 
     val rawData = Source
       .fromResource("generators/names/india_first_names.txt")
@@ -76,30 +78,47 @@ object FirstNameGenerator {
     getGenerator(all)
   }
 
-  def generateRandomFirstName(sex: Gender, origin: Origin) = {
-    if (origin.equals(Origin.India)) {
-      if (sex.equals(Gender.Male)) {
-        indiaMaleNamesGenerator.sample()
-      } else {
-        indiaFemaleNamesGenerator.sample()
-      }
-    } else {
-      if (sex.equals(Gender.Male)) {
-        usMaleNamesGenerator.sample()
-      } else {
-        usFemaleNamesGenerator.sample()
-      }
+  private lazy val (chineseMaleNamesGenerator, chineseFemaleNamesGenerator) = {
+    val rawData = Source
+      .fromResource("generators/names/chinese_first_names.txt")
+      .getLines()
+      .map(line => {
+        val splitted = line.split("\t")
+        val gender = if (splitted(0).equals("F")) FirstNameGenerator.Gender.Female else FirstNameGenerator.Gender.Male
+        val name = splitted(1)
+        (gender, name)
+      }).toList
+
+    def getGenerator(gender: Gender): EnumeratedDistribution[String] = {
+      val data = rawData
+        .filter(_._1.equals(gender))
+        .map({ case (_, name) => (name, 1) })
+      Utils.getGeneratorFrequency(data)
     }
+
+    (getGenerator(Gender.Male), getGenerator(Gender.Female))
   }
 
-  def main(args: Array[String]): Unit = {
-    println("Male names:")
-    for (i <- 1 to 100) {
-      println(generateRandomFirstName(Gender.Male, Origin.India))
-    }
-    println("Female names:")
-    for (i <- 1 to 100) {
-      println(generateRandomFirstName(Gender.Female, Origin.India))
+  def generateRandomFirstName(sex: Gender, origin: Origin) = {
+    origin match {
+      case Origin.India => {
+        sex match {
+          case Gender.Male => indiaMaleNamesGenerator.sample()
+          case Gender.Female => indiaFemaleNamesGenerator.sample()
+        }
+      }
+      case Origin.US => {
+        sex match {
+          case Gender.Male => usMaleNamesGenerator.sample()
+          case Gender.Female => usFemaleNamesGenerator.sample()
+        }
+      }
+      case Origin.China => {
+        sex match {
+          case Gender.Male => chineseMaleNamesGenerator.sample()
+          case Gender.Female => chineseFemaleNamesGenerator.sample()
+        }
+      }
     }
   }
 
