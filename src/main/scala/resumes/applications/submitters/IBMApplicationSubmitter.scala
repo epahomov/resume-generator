@@ -1,9 +1,9 @@
 package resumes.applications.submitters
 
 import org.apache.commons.lang3.RandomStringUtils
+import org.openqa.selenium.{Keys, WebElement}
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.remote.RemoteWebDriver
-import org.openqa.selenium.{By, Keys}
 import resumes.applications.ApplicationManager.Application
 import resumes.applications.submitters.SeleniumUtils._
 import resumes.applications.{ApplicationManager, NumberOfApplicationsSelector}
@@ -66,7 +66,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     driver.findElementById("startapply").click()
     bigPause
     driver.findElementById("profile_1_0_firstname_txt_0").sendKeys(application.person.name.firstName)
-    driver.findElementById("profile_3_0_lastname_txt_0").sendKeys(application.person.name.firstName)
+    driver.findElementById("profile_3_0_lastname_txt_0").sendKeys(application.person.name.lastName)
     driver.findElementById("profile_5_0_address1_txt_0").sendKeys(application.person.address.street + " " + application.person.address.house)
     dropDown("United Stat", "profile_9_0_country_slt_0_0-input", driver)
     dropDown(application.person.address.stateFullName, "profile_10_0_state_slt_0_0-input", driver)
@@ -117,7 +117,9 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     averagePause
     driver.findElementById(s"shownext").click()
     bigPause
+    bigPause
     dropDown("United Stat", s"custom_6140_32_fname_slt_0_6140-input", driver)
+    smallPause
     driver.findElementById(s"radio-7384-Yes").click()
     driver.findElementById(s"radio-7385-No").click()
     if (application.person.gender.equals(Gender.Male)) {
@@ -129,17 +131,17 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
 
 
     if (application.person.origin.equals(Origin.US)) {
-      dropDownOffset(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), 7)
+      dropDown(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), 7)
     } else {
-      dropDownOffset(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), 2)
+      dropDown(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), 2)
     }
 
-    dropDownOffset(driver, driver.findElementById("custom_6582_33_fname_slt_0_6582-button_text"), 1)
-    dropDownOffset(driver, driver.findElementById("custom_6554_33_fname_slt_0_6554-button_text"), 1)
+    dropDown(driver, driver.findElementById("custom_6582_33_fname_slt_0_6582-button_text"), 1)
+    dropDown(driver, driver.findElementById("custom_6554_33_fname_slt_0_6554-button_text"), 1)
     driver.findElementById(s"radio-6629-N").click()
     driver.findElementById(s"custom_6630_33_fname_txt_0").sendKeys(application.person.name.firstName + " " + application.person.name.lastName)
     driver.findElementById(s"buildResume").click()
-    dropDownOffset(driver, driver.findElementById("custom_6148_32_fname_slt_0_6148-button"), Random.nextInt(6) + 1)
+    dropDown(driver, driver.findElementById("custom_6148_32_fname_slt_0_6148-button"), Random.nextInt(6) + 1)
     driver.findElementById(s"shownext").click()
     bigPause
     driver.findElementById(s"checkbox-10885-Iagree").click()
@@ -153,26 +155,49 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     bigPause
   }
 
-  private def dropDown(value: String, parameter: String, driver: RemoteWebDriver) = {
+  private def dropDown( driver: RemoteWebDriver, element: WebElement, offset: Int): Unit = {
     runWithTimeout(() => {
-      val element = driver.findElementById(parameter)
-      scrollTo(driver, element)
+      import org.openqa.selenium.JavascriptExecutor
+      driver.asInstanceOf[JavascriptExecutor].executeScript("arguments[0].scrollIntoView(true);", element)
       Thread.sleep(500)
-      new Actions(driver)
+      var action = new Actions(driver)
         .moveToElement(element)
         .click()
-        .sendKeys(value)
-        .perform()
-      smallPause
-      new Actions(driver)
-        .moveToElement(element)
-        .sendKeys(Keys.ENTER)
-        .pause(300)
-        .sendKeys(Keys.DOWN)
-        .pause(300)
-        .sendKeys(Keys.ENTER)
+      (0 to offset - 1).foreach(_ => {
+        action = action.sendKeys(Keys.DOWN)
+      })
+      action.sendKeys(Keys.ENTER)
         .perform()
     })
-    smallPause
+    Thread.sleep(2000)
+  }
+
+  private def dropDown(value: String, parameter: String, driver: RemoteWebDriver) = {
+    runWithTimeout(() => {
+      try{
+        val element = driver.findElementById(parameter)
+        scrollTo(driver, element)
+        Thread.sleep(500)
+        new Actions(driver)
+          .moveToElement(element)
+          .click()
+          .sendKeys(value)
+          .perform()
+        smallPause
+        new Actions(driver)
+          .moveToElement(element)
+          .sendKeys(Keys.ENTER)
+          .pause(300)
+          .sendKeys(Keys.DOWN)
+          .pause(300)
+          .sendKeys(Keys.ENTER)
+          .perform()
+          })
+        smallPause
+      } catch {
+        case e: Exception => {
+          throw new RuntimeException(e)
+        }
+      }
   }
 }

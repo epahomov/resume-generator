@@ -1,6 +1,8 @@
 package resumes.applications.submitters
 
-import java.io.File
+import java.io.{BufferedReader, File, InputStreamReader}
+import java.util.concurrent.atomic.AtomicBoolean
+import java.util.{Timer, TimerTask}
 import javax.imageio.ImageIO
 
 import net.liftweb.json.Extraction.decompose
@@ -30,6 +32,18 @@ abstract class Submitter(applicationManager: ApplicationManager,
     val driver = new FirefoxDriver()
     driver.manage().window().maximize()
     Thread.sleep(2000)
+    val shouldKill = new AtomicBoolean(true)
+    new Timer().schedule(new TimerTask() {
+      override def run(): Unit = {
+        if (shouldKill.get()) {
+          logger.error("Took too long to submit applicaiton, killing firefox")
+          val builder = new ProcessBuilder("./kill_firefox.sh")
+          builder.redirectErrorStream(true)
+          builder.start()
+        }
+      }
+    }, 10L * 60L * 1000L)
+
     try {
       submitImpl(driver, application, reallySubmit)
       Success()
@@ -39,6 +53,7 @@ abstract class Submitter(applicationManager: ApplicationManager,
       }
     } finally {
       Try {
+        shouldKill.set(false)
         driver.close()
         driver.close()
         driver.close()
@@ -48,9 +63,9 @@ abstract class Submitter(applicationManager: ApplicationManager,
 
 
   def getScreenShot(driver: RemoteWebDriver, applicationId: String): Unit = {
-    try{
+    try {
 
-      val rootFolder="/Users/macbook"
+      val rootFolder = "/Users/macbook"
       val screenshotsDirectory = new File(s"$rootFolder/screenshots")
       if (!screenshotsDirectory.exists()) {
         screenshotsDirectory.mkdir()
@@ -62,7 +77,7 @@ abstract class Submitter(applicationManager: ApplicationManager,
         .takeScreenshot(driver)
       ImageIO.write(screenshot.getImage, "png", new File(screenShotFileName))
     } catch {
-      case e: Exception => logger.error(s"Could not save screenshot for application - $applicationId",e)
+      case e: Exception => logger.error(s"Could not save screenshot for application - $applicationId", e)
     }
   }
 

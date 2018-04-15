@@ -1,5 +1,6 @@
 package resumes.generators.person
 
+import org.apache.logging.log4j.LogManager
 import resumes.generators.Utils
 import resumes.generators.education.EducationUtils
 
@@ -16,6 +17,8 @@ object SkillsGenerator {
       .replaceAll("middle", "")
   }
 
+  protected val logger = LogManager.getLogger(this.getClass)
+
   private def getAllSkillsByRole(role: String): List[String] = {
     try {
       Source
@@ -24,7 +27,8 @@ object SkillsGenerator {
         .toList
     } catch {
       case e: Exception => {
-        throw new RuntimeException(s"Could not get list of skills for $role", e)
+        logger.error(s"Could not get list of skills for $role")
+        List.empty
       }
     }
   }
