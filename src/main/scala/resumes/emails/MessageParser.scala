@@ -34,14 +34,14 @@ object MessageParser {
   }
 
   private def getTextFromMessage(message: javax.mail.Message): String = {
-    var result = ""
     if (message.isMimeType("text/plain")) {
-      result = message.getContent.toString
+      message.getContent.toString
     } else if (message.isMimeType("multipart/*")) {
       val mimeMultipart = message.getContent.asInstanceOf[MimeMultipart]
-      result = getTextFromMimeMultipart(mimeMultipart)
+      getTextFromMimeMultipart(mimeMultipart)
+    } else {
+      message.getContent.toString
     }
-    result
   }
 
   //https://stackoverflow.com/questions/11240368/how-to-read-text-inside-body-of-mail-using-javax-mail/34689614

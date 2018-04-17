@@ -10,8 +10,7 @@ import scala.util.Random
 object SkillsGenerator {
 
   def normalize(role: String) = {
-    EducationUtils
-      .normalize(role)
+    resumes.Utils.normalize(role)
       .replaceAll("junior", "")
       .replaceAll("senior", "")
       .replaceAll("middle", "")

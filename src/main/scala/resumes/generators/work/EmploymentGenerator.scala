@@ -72,6 +72,8 @@ object EmploymentGenerator {
       val role = if (current && previousPosition.isDefined && lastPositionMatch.sample()) {
         comment = "Last role taken from position"
         previousPosition.get
+      } else if (current && area.equals(Area.Computer_Science)) {
+        if (Random.nextBoolean()) "Software developer" else "Software engineer"
       } else {
         comment = "Last role generated randomly"
         RoleGenerator.generateRole(Some(area), experienceLevel)

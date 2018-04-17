@@ -5,7 +5,7 @@ import resumes.emails.MessageParser.Message
 import resumes.response.relevance.SimpleRelevanceIdentifier
 
 object IBMRelevanceIdentifier extends SimpleRelevanceIdentifier {
-  val suffix: String = "ibm.com"
+  val suffix: String = "ibm"
 
   override def isRelevant(application: Application, message: Message): Boolean = {
     super.isRelevant(application, message) &&

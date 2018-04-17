@@ -30,7 +30,9 @@ object PositionManager {
                        popularity: Option[Int] = Some(10),
                        minimumDegreeNecessary: Option[String] = None,
                        address: Option[String] = None,
-                       skills: Option[List[String]] = None
+                       skills: Option[List[String]] = None,
+                       parsingComments: Option[List[String]] = None,
+                       text: Option[String] = None
                      )
 
   object Area extends Enumeration {
@@ -65,10 +67,11 @@ class PositionManager(database: MongoDatabase) {
   def uploadPositions(pos: List[Position]) = {
     pos.foreach(position => {
       if (getPositionByUrl(position.url).isDefined) {
-        throw new RuntimeException(s"${position.url} position with such url already exists")
+        positions.replaceOne(Filters.eq("url", position.url), resumes.Utils.toDoc(position))
+      } else {
+        MongoDB.insertValueIntoCollection(position, positions)
       }
     })
-    MongoDB.insertIntoCollection(pos, positions)
   }
 
 

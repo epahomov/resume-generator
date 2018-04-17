@@ -22,4 +22,6 @@ object Utils {
     })
   }
 
+  def normalize(string: String) = string.filter(_.isLetter).toLowerCase
+
 }

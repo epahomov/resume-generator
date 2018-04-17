@@ -20,6 +20,7 @@ object AddressGenerator {
                      street: String,
                      house: String
                     )
+  val MULTIPLE_LOCATIONS = "ML"
 
   val key = "AIzaSyCK1Ywod_Rn1bJ7YjKUWCQt-hTjT_lvBDY"
   val context = new GeoApiContext.Builder()
@@ -35,7 +36,8 @@ object AddressGenerator {
                      ): (Address, Comment) = {
     if (real_work_experience && position.address.isDefined) {
       var location = position.address.get
-      if (location.equals("ML")) {
+
+      if (location.equals(MULTIPLE_LOCATIONS)) {
         if (sanFranciscoLocation.sample()) {
           location = "San Francisco, CA"
         } else {

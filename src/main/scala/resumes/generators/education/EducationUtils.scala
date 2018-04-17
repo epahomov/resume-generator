@@ -20,13 +20,13 @@ object EducationUtils {
       }).toMap
   }
 
-  def normalize(string: String) = string.filter(_.isLetter).toLowerCase
+
 
   private lazy val normalizesAreaToArea: Map[String, Area] = {
     Area
       .values
       .map(area => {
-        normalize(area.toString) -> area
+        resumes.Utils.normalize(area.toString) -> area
       }).toMap
   }
 
@@ -38,7 +38,7 @@ object EducationUtils {
         val pair = line.split(",")
         val major = pair(0)
         val area = pair(1)
-        normalize(major) -> normalizesAreaToArea.get(normalize(area)).get
+        resumes.Utils.normalize(major) -> normalizesAreaToArea.get(resumes.Utils.normalize(area)).get
       }).toMap
   }
 
@@ -56,7 +56,7 @@ object EducationUtils {
   }
 
   def getAreaByMajor(major: Major): Area.Value = {
-    majorToArea.get(normalize(major)).get
+    majorToArea.get(resumes.Utils.normalize(major)).get
   }
 
   def getRandomMajor(): Major = {
