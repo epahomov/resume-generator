@@ -78,7 +78,7 @@ object EmploymentGenerator {
         comment = "Last role generated randomly"
         RoleGenerator.generateRole(Some(area), experienceLevel)
       }
-      val skills = SkillsGenerator.getSkillsList(role, requiredSkills, current)
+      val skills = SkillsGenerator.getSkillsList(role, requiredSkills, current, area)
       val skillsFormatted = formatter(skills)
       val employment = Employment(
         start = start.toDate,

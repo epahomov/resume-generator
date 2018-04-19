@@ -28,7 +28,7 @@ object InternshipGenerator {
         val start = new DateTime(summer, 5 + Random.nextInt(2), 1, 1, 1).toDate
         val end = new DateTime(summer, 8 + Random.nextInt(2), 1, 1, 1).toDate
         val description = ""
-        val skills = SkillsGenerator.getSkillsList(role, None, false)
+        val skills = SkillsGenerator.getSkillsList(role, None, false, area.get)
         val skillsFormatted = formatter(skills)
         Some(
           Employment(

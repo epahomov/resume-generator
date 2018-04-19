@@ -10,9 +10,9 @@ import scala.collection.mutable.ListBuffer
 
 object IBMPositionListParser {
 
-  val supportedAreas = Set(Area.Computer_Science)
   val areaToUrl = Map(
-    Area.Computer_Science -> "https://careers.ibm.com/ListJobs/All/Search/primary-job-category/software-development---support/country/us/sortasc-state/Page-"
+    Area.Computer_Science -> "https://careers.ibm.com/ListJobs/All/Search/primary-job-category/software-development---support/country/us/sortasc-state/Page-",
+    Area.Hardware -> "https://careers.ibm.com/ListJobs/All/search/primary-job-category/hardware-development---support/country/us/sortasc-state/Page-"
   )
 
   def getUrls(): List[(Area, String)] = {
@@ -21,7 +21,7 @@ object IBMPositionListParser {
     driver.manage().window().maximize()
 
 
-    val result = supportedAreas.toList.flatMap(area => {
+    val result = areaToUrl.keys.toList.flatMap(area => {
       val urlBase = areaToUrl.get(area).get
       val result = ListBuffer[String]()
       var pageNumber = 1

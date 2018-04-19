@@ -1,8 +1,9 @@
 package resumes.generators.person
 
 import org.apache.logging.log4j.LogManager
+import resumes.company.PositionManager.Area
+import resumes.company.PositionManager.Area.Area
 import resumes.generators.Utils
-import resumes.generators.education.EducationUtils
 
 import scala.io.Source
 import scala.util.Random
@@ -18,7 +19,12 @@ object SkillsGenerator {
 
   protected val logger = LogManager.getLogger(this.getClass)
 
-  private def getAllSkillsByRole(role: String): List[String] = {
+  def getSkillsByArea(area: Area): List[String] = {
+    val fileName = resumes.generators.Utils.areaToFileSystemName.get(area).get
+    Source.fromResource(s"skills/$fileName.txt").getLines().map(_.toLowerCase).toSet.toList
+  }
+
+  private def getAllSkillsByRole(role: String, area: Area): List[String] = {
     try {
       Source
         .fromResource(s"generators/work/role_to_skill/${normalize(role)}.txt")
@@ -27,7 +33,11 @@ object SkillsGenerator {
     } catch {
       case e: Exception => {
         logger.error(s"Could not get list of skills for $role")
-        List.empty
+        if (area.equals(Area.Hardware)) {
+          getSkillsByArea(area)
+        } else {
+          List.empty
+        }
       }
     }
   }
@@ -55,8 +65,10 @@ object SkillsGenerator {
 
   def getSkillsList(role: String,
                     requiredSkills: Option[List[String]],
-                    current: Boolean): List[String] = {
-    val allSkills = Random.shuffle(getAllSkillsByRole(role))
+                    current: Boolean,
+                    area: Area
+                   ): List[String] = {
+    val allSkills = Random.shuffle(getAllSkillsByRole(role, area))
     val randomSkills = allSkills.take(Math.min(randomSkillsToTakeGenerator.sample(), allSkills.size))
     if (current && requiredSkills.isDefined) {
       val requiredSkillsList = requiredSkills.get

@@ -1,0 +1,34 @@
+Java
+Python
+C++
+HFSS
+ADS
+CAD
+materials science
+electrical engineering
+physics
+Digital logic design
+Integrated circuit design
+Cadence
+RF design
+mixed-signal design
+SolidWorks
+ANSYS
+TwinCAT
+PCB design
+Allegro
+digital design
+microcontroller design
+Firmware design
+Hypervisor design
+Cache and memory hierarchy
+Processor microarchitecture
+Virtualization
+Compiler internals
+Linux
+Perl
+shell
+Circuit Simulation
+MRAM
+MTJ
+CDFs

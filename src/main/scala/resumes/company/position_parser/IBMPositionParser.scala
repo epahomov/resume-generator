@@ -10,17 +10,11 @@ import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager.Area.Area
 import resumes.company.PositionManager.{ExperienceLevel, Position}
 import resumes.generators.education.Enums.Degree
-import resumes.generators.person.AddressGenerator
+import resumes.generators.person.{AddressGenerator, SkillsGenerator}
 
 import scala.collection.JavaConverters._
-import scala.io.Source
 
 class IBMPositionParser {
-
-  private def getSkillsByArea(area: Area): List[String] = {
-    val fileName = resumes.generators.Utils.areaToFileSystemName.get(area).get
-    Source.fromResource(s"skills/$fileName.txt").getLines().map(_.toLowerCase).toSet.toList
-  }
 
 
   def parsePosition(url: String, area: Area): Position = {
@@ -109,7 +103,7 @@ class IBMPositionParser {
 
     val skills = {
       val normalized = softNormalize(text)
-      getSkillsByArea(area).filter(skill => normalized.contains(softNormalize(skill)))
+      SkillsGenerator.getSkillsByArea(area).filter(skill => normalized.contains(softNormalize(skill)))
     }
 
     val position = Position(
