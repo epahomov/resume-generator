@@ -48,10 +48,11 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
       throw new RuntimeException("Page does not have contain button anymore")
     }
     formButton.get(0).click()
-    averagePause
+    bigPause
     driver.findElementByCssSelector("[class^=newAccnt]").click()
     averagePause
     driver.findElementByTagName("button").click()
+    bigPause
     driver.findElementById("username").sendKeys(application.email)
     driver.findElementById("password").sendKeys(application.passwordToAccount)
     driver.findElementById("confirmPassword").sendKeys(application.passwordToAccount)
@@ -63,7 +64,12 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
     driver.findElementById("securityQuestion1Answer").sendKeys(RandomStringUtils.randomAlphanumeric(8, 12))
     driver.findElementById("createAccountForm_BUTTON_0").click()
     bigPause
-    driver.findElementById("startapply").click()
+    val startApply = driver.findElementsById("startapply")
+    if (startApply.size() == 0) {
+      throw new RuntimeException("Emails used")
+    } else {
+      startApply.get(0).click()
+    }
     bigPause
     driver.findElementById("profile_1_0_firstname_txt_0").sendKeys(application.person.name.firstName)
     driver.findElementById("profile_3_0_lastname_txt_0").sendKeys(application.person.name.lastName)
@@ -134,6 +140,7 @@ class IBMApplicationSubmitter(applicationManager: ApplicationManager,
       case Origin.India => 2
       case Origin.China => 2
       case Origin.US => 7
+      case Origin.Arab => 7
     }
 
     dropDown(driver, driver.findElementById("custom_6561_33_fname_slt_0_6561-button_text"), offset)

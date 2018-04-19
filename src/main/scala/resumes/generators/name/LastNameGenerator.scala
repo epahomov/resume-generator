@@ -50,11 +50,22 @@ object LastNameGenerator {
 
   }
 
+  private lazy val arabGenerator = {
+    val data = Source
+      .fromResource("generators/names/arab_last_names.txt")
+      .getLines()
+      .toSet
+      .toList
+    Utils.getSimpleGenerator(data)
+
+  }
+
   def generateLastName(origin: Origin) = {
     origin match {
       case Origin.US => usGenerator.sample()
       case Origin.India => indiaGenerator.sample()
       case Origin.China => chinaGenerator.sample()
+      case Origin.Arab => arabGenerator.sample()
     }
   }
 

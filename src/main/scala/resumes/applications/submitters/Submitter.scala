@@ -46,9 +46,17 @@ abstract class Submitter(applicationManager: ApplicationManager,
 
     try {
       submitImpl(driver, application, reallySubmit)
+      Try {
+        val builder = new ProcessBuilder("./kill_firefox.sh")
+        builder.redirectErrorStream(true)
+        builder.start()
+      }
       Success()
     } catch {
-      case e: Throwable => {
+      case e: Exception => {
+        if (e.getMessage.contains("Emails used")) {
+          applicationManager.getEmailsManager.markEmailAsUsedForApplication(application.email, Companies.withName(application.company))
+        }
         Failure(e)
       }
     } finally {

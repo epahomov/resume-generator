@@ -2,7 +2,7 @@ package resumes.generators.name
 
 import org.junit.Test
 import org.scalatest.junit.JUnitSuite
-import resumes.generators.name.FirstNameGenerator.{Gender, Origin}
+import resumes.generators.name.FirstNameGenerator.Origin
 
 class LastNameGeneratorTest extends JUnitSuite {
 

@@ -19,6 +19,7 @@ object FirstNameGenerator {
     type Origin = Value
     val US = Value("US")
     val India = Value("India")
+    val Arab = Value("Arab")
     val China = Value("China")
   }
 
@@ -99,6 +100,17 @@ object FirstNameGenerator {
     (getGenerator(Gender.Male), getGenerator(Gender.Female))
   }
 
+  private lazy val (arabMaleNamesGenerator, arabFemaleNamesGenerator) = {
+    def getGenerator(file: String) = {
+      val data = Source
+        .fromResource(s"generators/names/arab_${file}_first_names.txt")
+        .getLines()
+        .toList
+      Utils.getSimpleGenerator(data)
+    }
+    (getGenerator("male"), getGenerator("female"))
+  }
+
   def generateRandomFirstName(sex: Gender, origin: Origin) = {
     origin match {
       case Origin.India => {
@@ -117,6 +129,12 @@ object FirstNameGenerator {
         sex match {
           case Gender.Male => chineseMaleNamesGenerator.sample()
           case Gender.Female => chineseFemaleNamesGenerator.sample()
+        }
+      }
+      case Origin.Arab => {
+        sex match {
+          case Gender.Male => arabMaleNamesGenerator.sample()
+          case Gender.Female => arabFemaleNamesGenerator.sample()
         }
       }
     }

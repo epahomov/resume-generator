@@ -83,6 +83,7 @@ object PersonGenerator {
     val distribution = List(
       (Origin.US, 10),
       (Origin.China, 7),
+      (Origin.Arab, 2),
       (Origin.India, 13)
     )
     Utils.getGeneratorFrequency(distribution)
