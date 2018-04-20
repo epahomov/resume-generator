@@ -8,6 +8,7 @@ import resumes.MongoDB.formats
 import resumes.Utils.normalize
 import resumes.company.CompanyManager.Companies
 import resumes.company.PositionManager.Area.Area
+import resumes.company.PositionManager.ExperienceLevel.ExperienceLevel
 import resumes.company.PositionManager.{ExperienceLevel, Position}
 import resumes.generators.education.Enums.Degree
 import resumes.generators.person.{AddressGenerator, SkillsGenerator}
@@ -17,7 +18,7 @@ import scala.collection.JavaConverters._
 class IBMPositionParser {
 
 
-  def parsePosition(url: String, area: Area): Position = {
+  def parsePosition(url: String, area: Area, experienceLevelExtra: Option[ExperienceLevel]): Position = {
     System.setProperty("webdriver.gecko.driver", "/Users/macbook/Downloads/geckodriver_firefox")
     val driver = new FirefoxDriver()
     driver.manage().window().maximize()
@@ -32,7 +33,11 @@ class IBMPositionParser {
       .map(_.getText)
       .map(line => {
         val fieldName = line.split(":")(0)
-        val value = line.split(":")(1)
+        val value = if (line.split(":").length == 2) {
+          line.split(":")(1)
+        } else {
+          "multiple"
+        }
         fieldName -> value
       }).toMap
 
@@ -72,7 +77,9 @@ class IBMPositionParser {
     }
 
     val (experienceLevel, experienceLevelComment) = {
-      if (
+      if (experienceLevelExtra.isDefined) {
+        (experienceLevelExtra.get, "Got experience level from category")
+      } else if (
         normalize(text).take(100).contains("junior") ||
           normalize(text).take(100).contains("apprentice")
       ) {

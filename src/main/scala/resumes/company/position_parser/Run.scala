@@ -12,12 +12,13 @@ object Run {
       .toSet
     val urls = IBMPositionListParser
       .getUrls()
-      .filter({case (_, url) => !existingUrls.contains(url)})
+      .filter({case (_, url, _) => !existingUrls.contains(url)})
     val positionParser = new IBMPositionParser
-    val positions = urls.map({ case (area, url) => {
-      positionParser.parsePosition(url, area)
+    urls.foreach({ case (area, url, experienceLevel) => {
+      val position = positionParser.parsePosition(url, area, experienceLevel)
+      Instances.positionManager.uploadPositions(List(position))
     }
     })
-    Instances.positionManager.uploadPositions(positions)
+
   }
 }
