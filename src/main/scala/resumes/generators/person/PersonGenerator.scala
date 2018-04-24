@@ -49,7 +49,7 @@ object PersonGenerator {
         phoneNumber = phoneNumber,
         gender = gender.toString,
         origin = origin.toString,
-        workExperience = internshipExperience ++ realWorkExperience,
+        workExperience = realWorkExperience ++ internshipExperience,
         comments = Some(List(experienceLevelComment, educationComment, addressComment, workExperienceComment))
       )
     } else {

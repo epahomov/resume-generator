@@ -33,33 +33,32 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
   def submitImpl(driver: RemoteWebDriver, application: Application, reallySubmit: Boolean = false): Unit = {
     val url = application.positionUrl
     logger.info(s"Applying for position - ${url}")
+    bigPause
     driver.get(url)
     bigPause
     driver.findElementById("wd-DropDownCommandButton-commandButton.siteLabels['POSTING.Apply_Button']").click()
     bigPause
-    driver.findElementByClassName("WPIU").click()
+    driver.findElementByClassName("WBKU").click()
     bigPause
-    driver.findElementByClassName("WJ2L").findElement(By.tagName("input")).sendKeys(application.email)
+    driver.findElementByCssSelector("[data-automation-id^=userName]").findElement(By.tagName("input")).sendKeys(application.email)
     smallPause
-    driver.findElementsByClassName("WJ2L").get(1).findElement(By.tagName("input")).sendKeys(application.passwordToAccount)
+    driver.findElementByCssSelector("[data-automation-id^=password]").findElement(By.tagName("input")).sendKeys(application.passwordToAccount)
     smallPause
-    driver.findElementsByClassName("WJ2L").get(2).findElement(By.tagName("input")).sendKeys(application.passwordToAccount)
+    driver.findElementByCssSelector("[data-automation-id^=confirmPassword]").findElement(By.tagName("input")).sendKeys(application.passwordToAccount)
     smallPause
-    driver.findElementByClassName("WP-S").click()
+    driver.findElementByCssSelector("[data-automation-id^=click_filter]").click()
     bigPause
     nextPage(driver)
-    driver.findElementById("textInput.nameComponent--uid43-input").sendKeys(application.person.name.firstName)
-    driver.findElementById("textInput.nameComponent--uid44-input").sendKeys(application.person.name.lastName)
-    driver.findElementById("textInput.addressComponentsDeferred[i]--uid46-input")
-      .sendKeys(application.person.address.street + " " + application.person.address.house)
-    driver.findElementById("textInput.addressComponentsDeferred[i]--uid47-input")
-      .sendKeys(application.person.address.city)
-    driver.findElementById("textInput.addressComponentsDeferred[i]--uid49-input")
-      .sendKeys(application.person.address.zipCode)
-    driver.findElementById("textInput.phone--uid53-input")
+    bigPause
+    driver.findElementsByCssSelector("""[id^=textInput\.nameComponent]""").get(2).sendKeys(application.person.name.firstName)
+    driver.findElementsByCssSelector("""[id^=textInput\.nameComponent]""").get(5).sendKeys(application.person.name.lastName)
+    driver.findElementsByCssSelector("""[id^=textInput\.addressComponentsDeferred]""").get(2).sendKeys(application.person.address.street + " " + application.person.address.house)
+    driver.findElementsByCssSelector("""[id^=textInput\.addressComponentsDeferred]""").get(5).sendKeys(application.person.address.city)
+    driver.findElementsByCssSelector("""[id^=textInput\.addressComponentsDeferred]""").get(8).sendKeys(application.person.address.zipCode)
+    driver.findElementsByCssSelector("""[id^=textInput\.phone]""").get(2)
       .sendKeys(application.person.phoneNumber)
 
-    val element = driver.findElementById("dropDownSelectList.sources-input--uid54-input")
+    val element = driver.findElementsByCssSelector("""[id^=dropDownSelectList\.sources]""").get(1)
     val source = getSource()
     logger.info(s"Source - $source")
     dropDown(driver, element, source)
@@ -67,9 +66,11 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     nextPage(driver)
 
     var index = 0
+
     def add(index: Int): WebElement = {
       driver.findElementsByCssSelector("[title=Add]").get(index)
     }
+
     application.person.education.foreach(education => {
 
       scrollTo(driver, add(1))
@@ -79,7 +80,7 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
       val degreeElement = driver.findElements(By.cssSelector("""[id^=dropDownSelectList\.schoolDegrees""")).get(1 + index * 2)
       val firstLetterOfDegree = education.degree.head
       dropDown(driver, degreeElement, firstLetterOfDegree.toString)
-      val majorElement = driver.findElementsByClassName("WGKX").get(0 + index)
+      val majorElement = driver.findElementsByClassName("WLMX").get(0 + index)
       dropDown(driver, majorElement, education.major.get)
 
       driver.findElements(By.cssSelector("""[id^=textInput\.schoolGpa""")).get(2 + index * 3).sendKeys(education.GPA.get.toString)
@@ -90,6 +91,7 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     })
 
     index = 0
+    var current = false
     application.person.workExperience.foreach(employment => {
       scrollTo(driver, add(0))
       getParentNode(driver, add(0)).click()
@@ -97,13 +99,25 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
       driver.findElements(By.cssSelector("""[id^=textInput\.jobHistoryTitle]""")).get(2 + index * 3).sendKeys(employment.role)
       driver.findElements(By.cssSelector("""[id^=textInput\.jobHistoryCompany]""")).get(2 + index * 3).sendKeys(employment.company)
       driver.findElements(By.cssSelector("""[id^=dateInput\.jobStartDate]""")).get(2 + index * 3).sendKeys(DateTimeFormat.forPattern("MMyyyy").print(new DateTime(employment.start)))
-      driver.findElements(By.cssSelector("""[id^=dateInput\.jobEndDate]""")).get(2 + index * 3).sendKeys(DateTimeFormat.forPattern("MMyyyy").print(new DateTime(employment.end)))
+      if (!employment.internship.getOrElse(true) && index == 0) {
+        driver.findElementByCssSelector("""[id^=checkBoxInput]""").click()
+        current = true
+      } else {
+        val indexOffset = if (current) {
+          index - 1
+        } else {
+          index
+        }
+        driver.findElements(By.cssSelector("""[id^=dateInput\.jobEndDate]""")).get(2 + indexOffset * 3).sendKeys(DateTimeFormat.forPattern("MMyyyy").print(new DateTime(employment.end)))
+      }
+      driver.findElements(By.cssSelector("""[id^=textAreaInput\.jobSummary]""")).get(2 + index * 3).sendKeys(employment.skillsFormatted.get)
       index += 1
     })
 
     nextPage(driver)
 
     var drops = driver.findElements(By.cssSelector("""[id^=dropDownSelectList"""))
+    averagePause
     dropDown(driver, drops.get(1), "y")
     dropDown(driver, drops.get(3), "y")
     dropDown(driver, drops.get(5), "n")
@@ -120,7 +134,9 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     smallPause
     val offset = Origin.withName(application.person.origin) match {
       case Origin.US => 8
+      case Origin.Arab => 8
       case Origin.India => 2
+      case Origin.China => 2
     }
     dropDownOffset(driver, drops.get(5), offset)
 
@@ -136,7 +152,7 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
     driver.findElements(By.cssSelector("""[id^=dateInput\.todaysDateEnglish""")).get(2).sendKeys(today)
     averagePause
 
-    driver.findElementsByClassName("WJGF").get(1).click()
+    driver.findElementsByCssSelector("[data-automation-id=checkboxPanel]").get(1).click()
 
     nextPage(driver)
 
@@ -148,8 +164,6 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
   }
 
 
-
-
   private def nextPage(driver: RemoteWebDriver) = {
     smallPause
     driver.findElementsByCssSelector("[title=Next]").get(1).click()
@@ -159,7 +173,7 @@ class SalesForceApplicationSubmitter(applicationManager: ApplicationManager,
 
   def getSource() = {
     val options = List("s", "t", "u", "v", "x", "j", "l", "i")
-    options(Random.nextInt(options.size) - 1)
+    options(Random.nextInt(options.size - 1))
   }
 
 }

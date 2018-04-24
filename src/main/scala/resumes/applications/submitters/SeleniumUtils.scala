@@ -38,9 +38,15 @@ object SeleniumUtils {
       new Actions(driver)
         .moveToElement(dropDown)
         .click()
-        .pause(700)
+        .perform()
+      Thread.sleep(500)
+      new Actions(driver)
+        .moveToElement(dropDown)
         .sendKeys(keys)
-        .pause(700)
+        .perform()
+      Thread.sleep(1000)
+      new Actions(driver)
+        .moveToElement(dropDown)
         .sendKeys(Keys.ENTER)
         .perform()
     })
@@ -50,15 +56,16 @@ object SeleniumUtils {
   def dropDownOffset(driver: RemoteWebDriver, element: WebElement, offset: Int) = {
     runWithTimeout(() => {
       scrollTo(driver, element)
-      var action = new Actions(driver)
+      new Actions(driver)
         .moveToElement(element)
         .click()
-        .pause(700)
-
+        .perform()
+      Thread.sleep(1000)
       (0 to offset - 1).foreach(_ => {
-        action = action.sendKeys(Keys.DOWN).pause(200)
+        new Actions(driver).moveToElement(element).sendKeys(Keys.DOWN).perform()
+        Thread.sleep(400)
       })
-      action.sendKeys(Keys.ENTER).pause(700).perform()
+      new Actions(driver).moveToElement(element).sendKeys(Keys.ENTER).perform()
     })
     smallPause
   }

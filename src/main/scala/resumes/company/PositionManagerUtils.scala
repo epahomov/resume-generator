@@ -10,32 +10,19 @@ import scala.io.Source
 
 object PositionManagerUtils {
 
-  def uploadPositions(company: String, path: String, manager: PositionManager) = {
-    val positions = Source
-      .fromResource(path)
-      .getLines()
-      .map(line => {
-        Position(company = company,
-          url = line,
-          area = Some(Area.Computer_Science.toString),
-          experienceLevel = Some(ExperienceLevel.Freshly_Graduate.toString)
-        )
-      }).toList
-    manager.uploadPositions(positions)
-  }
-
   def main(args: Array[String]): Unit = {
     val manager = new PositionManager(MongoDB.database)
     val position = Position(
-      company = Companies.IBM.toString,
-      url = "560708",
+      company = Companies.SalesForce.toString,
+      url = "https://salesforce.wd1.myworkdayjobs.com/en-US/External_Career_Site/job/California---San-Francisco/Q3-Engineer_JR10280",
       requiredMajor = None,
       area = Some(Area.Computer_Science.toString),
-      experienceLevel = Some(ExperienceLevel.Freshly_Graduate.toString),
-      previousPosition = None,
+      experienceLevel = Some(ExperienceLevel.Middle.toString),
+      previousPosition = Some("Software Quality Engineer"),
       popularity = Some(100),
-      skills = Some(List("")),
-      minimumDegreeNecessary = Some(Degree.Master.toString)
+      skills = None,//Some(List("Java", "C#", "C++", "Python", "Ruby", "Perl")),
+      address = Some("San Francisco, CA"),
+      minimumDegreeNecessary = Some(Degree.Bachelor.toString)
     )
     manager.uploadPositions(List(position))
     //uploadPositions(company, path, manager)
