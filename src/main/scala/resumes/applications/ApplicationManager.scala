@@ -11,8 +11,8 @@ import resumes.MongoDB
 import resumes.applications.ApplicationManager.Application
 import resumes.company.{CompanyManager, PositionManager}
 import resumes.emails.EmailsManager
-import resumes.response.ResponseManager
-import resumes.response.ResponseManager.Response
+import resumes.response.ResponseCollector
+import resumes.response.ResponseCollector.{Decision, Response}
 import resumes.Utils._
 
 import scala.collection.JavaConverters._
@@ -55,7 +55,7 @@ class ApplicationManager(emailsManager: EmailsManager,
 
   def getAllApplicationsWithUnknownResponse(): List[Application] = {
     val filter = Filters.or(
-      Filters.eq("response.decision", ResponseManager.UNKNOWN),
+      Filters.eq("response.decision", Decision.UNKNOWN.toString),
       Filters.not(Filters.exists("response.decision")))
     applications.find(filter).asScala.toList.map(_.toJson).map(parse(_).extract[Application])
   }

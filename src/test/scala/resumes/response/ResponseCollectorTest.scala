@@ -9,11 +9,11 @@ import resumes.applications.{ApplicationManager, DummyApplication}
 import resumes.emails.EmailServerWrapper.Credentials
 import resumes.emails.MessageParser.Message
 import resumes.emails.{EmailServerWrapper, EmailsManager, MessageParser}
-import resumes.response.ResponseManager.{Response, _}
+import resumes.response.ResponseCollector.{Response, _}
 
 import scala.util.{Random, Success, Try}
 
-class ResponseManagerTest extends JUnitSuite {
+class ResponseCollectorTest extends JUnitSuite {
 
   @Test
   def testCollectResponses(): Unit = {
@@ -56,7 +56,7 @@ class ResponseManagerTest extends JUnitSuite {
 
     val dummyApplication = DummyApplication
       .veryPlainApplication("ibm", "1234")
-      .copy(response = Some(Response(messages = List(message1), decision = ACCEPTED)))
+      .copy(response = Some(Response(messages = List(message1), decision = Decision.ACCEPTED.toString)))
     var methodsInvocation = 0
     val emailPasswd = Random.nextString(10)
 
@@ -98,7 +98,7 @@ class ResponseManagerTest extends JUnitSuite {
       }
     }
 
-    val responseManager = new ResponseManager(applicationManager,
+    val responseManager = new ResponseCollector(applicationManager,
       emailServerWrapper
     )
 

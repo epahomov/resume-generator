@@ -8,34 +8,36 @@ import resumes.company.CompanyManager.Companies
 import resumes.emails.EmailServerWrapper
 import resumes.emails.EmailServerWrapper.Credentials
 import resumes.emails.MessageParser.Message
-import resumes.response.ResponseManager.Response
-import resumes.response.relevance.identifiers.{IBMRelevanceIdentifier, SalesForceIdentifier}
+import resumes.response.ResponseCollector.Response
+import resumes.response.relevance.identifiers.{IBMRelevanceIdentifier, SalesForceRelevanceIdentifier}
 
 import scala.collection.parallel.ForkJoinTaskSupport
 import scala.util.{Failure, Success}
 
-object ResponseManager {
+object ResponseCollector {
 
-  val DECLINED = "DECLINED"
-  val ACCEPTED = "ACCEPTED"
-  val UNKNOWN = "UNKNOWN"
-  val EMAIL_BLOCKED = "EMAIL_BLOCKED"
+  object Decision extends Enumeration {
+    type Decision = Value
+    val DECLINED = Value("DECLINED")
+    val ACCEPTED = Value("ACCEPTED")
+    val UNKNOWN = Value("UNKNOWN")
+  }
 
   case class Response(
                        messages: List[Message] = List(),
                        lastTimeChecked: Date = new Date(),
-                       decision: String = UNKNOWN
+                       decision: String = Decision.UNKNOWN.toString
                      )
 
 }
 
-class ResponseManager(applicationManager: ApplicationManager,
-                      emailServerWrapper: EmailServerWrapper
+class ResponseCollector(applicationManager: ApplicationManager,
+                        emailServerWrapper: EmailServerWrapper
                      ) {
 
   private val companyToIdentifier = Map(
-    Companies.IBM.toString -> IBMRelevanceIdentifier
-    //Companies.SalesForce.toString -> SalesForceIdentifier
+    Companies.IBM.toString -> IBMRelevanceIdentifier,
+    Companies.SalesForce.toString -> SalesForceRelevanceIdentifier
   )
 
   private val logger = LogManager.getLogger(this.getClass)
@@ -63,7 +65,7 @@ class ResponseManager(applicationManager: ApplicationManager,
           })
           logger.info(s"${application.id} :Number of messages, which passed filter is ${filteredMessages.size}")
           filteredMessages.foreach(message => {
-            logger.debug(message)
+            logger.info(message)
           })
           val resultMessages = mergeMessagesLists(existingMessages, filteredMessages)
           val newResponse = application.response match {

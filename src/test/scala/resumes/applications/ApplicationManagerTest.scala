@@ -5,7 +5,7 @@ import resumes.MongoTest
 import resumes.company.CompanyManager.Companies
 import resumes.company.{CompanyManager, PositionManager}
 import resumes.emails.{EmailsManager, EmailsManagerUtils}
-import resumes.response.ResponseManager._
+import resumes.response.ResponseCollector._
 
 import scala.util.Random
 
@@ -54,13 +54,13 @@ class ApplicationManagerTest extends MongoTest {
     val unknownResponse =
       dummyApplication
         .copy(id = Random.nextString(10))
-        .copy(response = Some(Response(decision = UNKNOWN)))
+        .copy(response = Some(Response(decision = Decision.UNKNOWN.toString)))
     applicationManager.storeApplication(unknownResponse)
     assert(applicationManager.getAllApplicationsWithUnknownResponse().size === 2)
     val knownResponse =
       dummyApplication
         .copy(id = Random.nextString(10))
-        .copy(response = Some(Response(decision = ACCEPTED)))
+        .copy(response = Some(Response(decision = Decision.UNKNOWN.toString)))
     applicationManager.storeApplication(knownResponse)
     assert(applicationManager.getAllApplicationsWithUnknownResponse().size === 2)
   }
@@ -71,9 +71,9 @@ class ApplicationManagerTest extends MongoTest {
     val dummyApplication = DummyApplication.veryPlainApplication(applicationCompany, "123")
     applicationManager.storeApplication(dummyApplication)
     assert(applicationManager.getApplication(dummyApplication.id).response === None)
-    val response = Response(decision = ACCEPTED)
+    val response = Response(decision = Decision.ACCEPTED.toString)
     applicationManager.updateResponse(dummyApplication.id, response)
-    assert(applicationManager.getApplication(dummyApplication.id).response.get.decision === ACCEPTED)
+    assert(applicationManager.getApplication(dummyApplication.id).response.get.decision === Decision.ACCEPTED.toString)
   }
 
   @Test
