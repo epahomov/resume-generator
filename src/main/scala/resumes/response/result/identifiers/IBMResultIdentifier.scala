@@ -8,7 +8,9 @@ object IBMResultIdentifier extends SimpleResultIdentifier {
     "a cognitive ability assessment",
     "send me a copy",
     "a complete resume",
-    "potential match"
+    "potential match",
+    "detailed Resume",
+    "resubmit your resume"
   )
   val DECLINED_STRINGS: List[String] = List(
     "pursuing other candidates"

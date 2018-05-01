@@ -52,7 +52,7 @@ object LinkedInParser {
       var startPageNumber = 2
       (startPageNumber to 1000).foreach(pageNumber => {
         logger.info(s"startPageNumber == $startPageNumber")
-        driver.get(s"https://www.linkedin.com/search/results/index/?keywords=software engineer&origin=GLOBAL_SEARCH_HEADER&page=$pageNumber")
+        driver.get(s"https://www.linkedin.com/search/results/index/?keywords=quality assurance&origin=GLOBAL_SEARCH_HEADER&page=$pageNumber")
         Thread.sleep(5000)
         val links = driver
           .findElementsByCssSelector("[class^=search-result__result-link]")

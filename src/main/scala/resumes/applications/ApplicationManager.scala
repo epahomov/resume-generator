@@ -54,9 +54,7 @@ class ApplicationManager(emailsManager: EmailsManager,
   def getEmailsManager = emailsManager
 
   def getAllApplicationsWithUnknownResponse(): List[Application] = {
-    val filter = Filters.or(
-      Filters.eq("response.decision", Decision.UNKNOWN.toString),
-      Filters.not(Filters.exists("response.decision")))
+    val filter = Filters.eq("response.decision", Decision.UNKNOWN.toString)
     applications.find(filter).asScala.toList.map(_.toJson).map(parse(_).extract[Application])
   }
 

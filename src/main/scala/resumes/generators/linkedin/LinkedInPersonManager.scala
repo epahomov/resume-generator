@@ -6,6 +6,7 @@ import net.liftweb.json.parse
 import org.bson.Document
 import resumes.MongoDB
 import resumes.generators.linkedin.LinkedInParser.LinkedInPerson
+import scala.collection.JavaConverters._
 
 class LinkedInPersonManager(database: MongoDatabase) {
 
@@ -21,6 +22,10 @@ class LinkedInPersonManager(database: MongoDatabase) {
 
   def uploadPerson(person: LinkedInPerson) = {
     MongoDB.insertValueIntoCollection(person, people)
+  }
+
+  def getUrls() = {
+    people.find().asScala.map(fromDoc).map(_.url).toSet
   }
 
   def getPerson(url: String): LinkedInPerson = {
